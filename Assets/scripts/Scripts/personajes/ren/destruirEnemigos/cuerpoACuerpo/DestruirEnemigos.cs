@@ -15,8 +15,16 @@ public class DestruirEnemigos : MonoBehaviour
         if (collision.gameObject.tag =="Enemigo")
         {
 
-            Destroy(collision.gameObject);
-            //Destroy(gameObject);            
+
+                if (collision.TryGetComponent<EsqueletoControl>(out var esqueleto))
+                {
+                    esqueleto.controlVida();
+                }
+                else if (collision.TryGetComponent<SlieControl>(out var slime))
+                {
+                    slime.controlVida();
+                }
+                //Destroy(gameObject);        
         }
 
     }

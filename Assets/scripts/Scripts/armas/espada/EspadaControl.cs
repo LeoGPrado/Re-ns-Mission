@@ -12,7 +12,7 @@ public class EspadaControl : MonoBehaviour
     [SerializeField] Animator ImpoctoArma;
 
     private float tiempoUltimoAtaque = 0f;  
-    private float tiempoEspera = 3f;
+    private float tiempoEspera = 0.5f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -77,12 +77,10 @@ public class EspadaControl : MonoBehaviour
     IEnumerator ataqueCuerpoCuerpoEspecial()
     {
 
-        ImpoctoArma.SetBool("ImpactoP", true);
-
-        EsqueletoControl.Esqueleto.quemarEsqueleto();
+        ImpoctoArma.SetBool("AaqueEspecialP", true);
 
         yield return new WaitForSeconds(0.5f);
 
-        ImpoctoArma.SetBool("ImpactoP", false);
+        ImpoctoArma.SetBool("AaqueEspecialP", false);
     }
 }

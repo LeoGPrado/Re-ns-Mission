@@ -29,6 +29,6 @@ public class OscurecerEscena : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("NivelBosque");
+        SceneManager.LoadScene("Testeos Generales");
     }
 }

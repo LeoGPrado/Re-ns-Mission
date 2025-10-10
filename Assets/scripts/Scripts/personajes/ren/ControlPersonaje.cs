@@ -12,6 +12,9 @@ public class ControlPersonaje : MonoBehaviour
 
     public GameObject espada;
 
+    //vida
+    [SerializeField] public int vidaInicial = 10;
+
 
 
     public bool desactivar;
@@ -84,6 +87,12 @@ public class ControlPersonaje : MonoBehaviour
             desactivar = true;
             Vector2 direction = collision.contacts[0].normal;
             ren.AddForce(direction * 5, ForceMode2D.Impulse);
+            vidaInicial--;
+            if (vidaInicial == 0)
+            {
+                Destroy(gameObject);
+            }
+
             Invoke(nameof(activar), 0.5f);
         }
         

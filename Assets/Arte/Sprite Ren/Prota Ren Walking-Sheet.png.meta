@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: c94ca9f280f0c0448b8f9e18fc9f5971
+guid: fd082a7b536ad8c47bb6a1cc981aacdd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3867076372470614172
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_0
+      213: -5627762897925087524
+    second: Prota Ren Walking-Sheet_0
   - first:
-      213: -2159878296800388655
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_1
+      213: -6115304600741018852
+    second: Prota Ren Walking-Sheet_1
   - first:
-      213: -6003611924300321570
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_2
+      213: -7097526678174581289
+    second: Prota Ren Walking-Sheet_2
   - first:
-      213: 1501231219607845037
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_3
+      213: -3367955444249346214
+    second: Prota Ren Walking-Sheet_3
   - first:
-      213: -2299087055714039181
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_4
+      213: 7489486840939237137
+    second: Prota Ren Walking-Sheet_4
   - first:
-      213: 7421716716985807986
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_5
+      213: -2672709048530530774
+    second: Prota Ren Walking-Sheet_5
   - first:
-      213: 6980146725764174192
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_6
+      213: -4500846002178209020
+    second: Prota Ren Walking-Sheet_6
   - first:
-      213: 1905811616092351774
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_7
+      213: -6266458545063488938
+    second: Prota Ren Walking-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,181 +117,194 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_0
+      name: Prota Ren Walking-Sheet_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 149
-        width: 27
-        height: 28
+        x: 0
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46735932782655ac0800000000000000
-      internalID: -3867076372470614172
+      spriteID: cde5d05267b26e1b0800000000000000
+      internalID: -5627762897925087524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_1
+      name: Prota Ren Walking-Sheet_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 111
-        width: 73
-        height: 82
+        x: 36
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d91321f1229602e0800000000000000
-      internalID: -2159878296800388655
+      spriteID: c13058badd2122ba0800000000000000
+      internalID: -6115304600741018852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_2
+      name: Prota Ren Walking-Sheet_2
       rect:
         serializedVersion: 2
-        x: 186
-        y: 52
-        width: 127
-        height: 168
+        x: 72
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edca7ca63c2eeaca0800000000000000
-      internalID: -6003611924300321570
+      spriteID: 7ddbb8b2715808d90800000000000000
+      internalID: -7097526678174581289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_3
+      name: Prota Ren Walking-Sheet_3
       rect:
         serializedVersion: 2
-        x: 339
-        y: 53
-        width: 160
-        height: 129
+        x: 108
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da8b37227d175d410800000000000000
-      internalID: 1501231219607845037
+      spriteID: a5fbc2e1e5e9241d0800000000000000
+      internalID: -3367955444249346214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_4
+      name: Prota Ren Walking-Sheet_4
       rect:
         serializedVersion: 2
-        x: 547
-        y: 81
-        width: 110
-        height: 97
+        x: 144
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37a477001800810e0800000000000000
-      internalID: -2299087055714039181
+      spriteID: 11f4520d99000f760800000000000000
+      internalID: 7489486840939237137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_5
+      name: Prota Ren Walking-Sheet_5
       rect:
         serializedVersion: 2
-        x: 727
-        y: 83
-        width: 64
-        height: 80
+        x: 180
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 274748b380c3ff660800000000000000
-      internalID: 7421716716985807986
+      spriteID: a2e8d5ee741a8ead0800000000000000
+      internalID: -2672709048530530774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_6
+      name: Prota Ren Walking-Sheet_6
       rect:
         serializedVersion: 2
-        x: 858
-        y: 110
-        width: 44
-        height: 42
+        x: 216
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0719745f6767ed060800000000000000
-      internalID: 6980146725764174192
+      spriteID: 40b4e635868c981c0800000000000000
+      internalID: -4500846002178209020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_7
+      name: Prota Ren Walking-Sheet_7
       rect:
         serializedVersion: 2
-        x: 948
-        y: 135
-        width: 39
-        height: 28
+        x: 252
+        y: 0
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d6ff1419dc27a10800000000000000
-      internalID: 1905811616092351774
+      spriteID: 65297c587211909a0800000000000000
+      internalID: -6266458545063488938
       vertices: []
       indices: 
       edges: []
@@ -300,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 23493e4b61586b243bcf96806afc9316
     internalID: 0
     vertices: []
     indices: 
@@ -310,14 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_0: -3867076372470614172
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_1: -2159878296800388655
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_2: -6003611924300321570
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_3: 1501231219607845037
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_4: -2299087055714039181
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_5: 7421716716985807986
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_6: 6980146725764174192
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_7: 1905811616092351774
+      Prota Ren Walking-Sheet_0: -5627762897925087524
+      Prota Ren Walking-Sheet_1: -6115304600741018852
+      Prota Ren Walking-Sheet_2: -7097526678174581289
+      Prota Ren Walking-Sheet_3: -3367955444249346214
+      Prota Ren Walking-Sheet_4: 7489486840939237137
+      Prota Ren Walking-Sheet_5: -2672709048530530774
+      Prota Ren Walking-Sheet_6: -4500846002178209020
+      Prota Ren Walking-Sheet_7: -6266458545063488938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

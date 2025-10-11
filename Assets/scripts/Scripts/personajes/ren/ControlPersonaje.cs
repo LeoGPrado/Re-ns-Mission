@@ -4,6 +4,8 @@ public class ControlPersonaje : MonoBehaviour
 {
 
     [SerializeField] Rigidbody2D ren;
+    [SerializeField] Animator animRen;
+
     public BoxCollider2D DetectarEnemigo;
     public Transform puntoDeAtaque;
 
@@ -22,10 +24,11 @@ public class ControlPersonaje : MonoBehaviour
     //movimiento
     public int velocidadMovimiento = 5;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         ren = GetComponent<Rigidbody2D>();
+        animRen = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -38,7 +41,7 @@ public class ControlPersonaje : MonoBehaviour
 
         if (mousePos.x < transform.position.x)
         {
-            sr.flipX = true;   
+            sr.flipX = false;   
             Vector3 pos = puntoDeAtaque.localPosition;
             pos.x = -Mathf.Abs(pos.x);  
             puntoDeAtaque.localPosition = pos;
@@ -47,7 +50,7 @@ public class ControlPersonaje : MonoBehaviour
         }
         else
         {
-            sr.flipX = false;  
+            sr.flipX = true;  
             Vector3 pos = puntoDeAtaque.localPosition;
             pos.x = Mathf.Abs(pos.x);  
             puntoDeAtaque.localPosition = pos;
@@ -63,21 +66,30 @@ public class ControlPersonaje : MonoBehaviour
 
     void movimiento()
     {
+        float horizontal = 0;
+        float vertical = 0;
+
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             
-            float horizontal = Input.GetAxisRaw("Horizontal");
+             horizontal = Input.GetAxisRaw("Horizontal");
             ren.linearVelocity = new Vector2(horizontal * velocidadMovimiento, ren.linearVelocity.y);
 
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
         {
 
-            float vertical = Input.GetAxisRaw("Vertical");
+             vertical = Input.GetAxisRaw("Vertical");
             ren.linearVelocity = new Vector2(ren.linearVelocity.x, vertical * velocidadMovimiento);
 
 
         }
+
+         bool Moviendose = (horizontal != 0 || vertical != 0);
+         animRen.SetBool("SeMueve", Moviendose);
+
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

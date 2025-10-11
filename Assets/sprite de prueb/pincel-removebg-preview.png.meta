@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f3ac5b0f50299a74cad3c3e369e3b202
+guid: 82db91df08fa6b14ea455fe72a12488e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7965358996524768193
-    second: Captura5-removebg-preview_0
+      213: -2867565686866457613
+    second: pincel-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura5-removebg-preview_0
+      name: pincel-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 2
-        width: 164
-        height: 161
+        x: 45
+        y: 34
+        width: 185
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cb12581ec3aa8e60800000000000000
-      internalID: 7965358996524768193
+      spriteID: 3fbc938633c5438d0800000000000000
+      internalID: -2867565686866457613
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Captura5-removebg-preview_0: 7965358996524768193
+      pincel-removebg-preview_0: -2867565686866457613
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

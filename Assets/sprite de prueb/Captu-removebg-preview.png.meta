@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c1cae06b307dc34eb96a23a1468e19f
+guid: 2014fd08544c5f641958b69c1b0cc325
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7787883730425381743
-    second: sword-pixel-art-free-vector-removebg-preview_0
+      213: 9146226384544337823
+    second: Captu-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sword-pixel-art-free-vector-removebg-preview_0
+      name: Captu-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 23
-        width: 454
-        height: 454
+        x: 54
+        y: 89
+        width: 189
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19c73f75201ebe390800000000000000
-      internalID: -7787883730425381743
+      spriteID: f9f021e107cedee70800000000000000
+      internalID: 9146226384544337823
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sword-pixel-art-free-vector-removebg-preview_0: -7787883730425381743
+      Captu-removebg-preview_0: 9146226384544337823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

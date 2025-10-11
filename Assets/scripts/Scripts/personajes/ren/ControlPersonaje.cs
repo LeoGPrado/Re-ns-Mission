@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlPersonaje : MonoBehaviour
 {
@@ -102,6 +103,7 @@ public class ControlPersonaje : MonoBehaviour
             vidaInicial--;
             if (vidaInicial == 0)
             {
+                SceneManager.LoadScene("FinDemo"); 
                 Destroy(gameObject);
             }
 

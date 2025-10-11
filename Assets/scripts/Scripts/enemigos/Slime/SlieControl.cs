@@ -11,6 +11,8 @@ public class SlieControl : MonoBehaviour
 
     public int VidaEnemigo = 1;
 
+
+
     private void Awake()
     {
         if (slime == null)
@@ -29,17 +31,30 @@ public class SlieControl : MonoBehaviour
         {
             objetivo = obj.transform;
         }
+
     }
 
     void Update()
     {
-        if (objetivo == true)
+
+        if (objetivo != null)  
         {
-
-
-            transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 2f);
+           transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
+          
+            if (objetivo.position.x < transform.position.x)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (objetivo.position.x > transform.position.x)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
 
         }
+
+
+
+
     }
 
     public void controlVida()

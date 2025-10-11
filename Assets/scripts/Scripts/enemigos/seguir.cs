@@ -7,6 +7,10 @@ public class seguir : MonoBehaviour
     private Vector3 velo = Vector3.zero;
     GameObject obj;
 
+    private Vector3 ultimaPosicion;
+    private Animator animSlime;
+    private SpriteRenderer slimerender;
+
 
     void Start()
     {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class ControlPersonaje : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class ControlPersonaje : MonoBehaviour
     [SerializeField] SpriteRenderer sr;
 
     public GameObject espada;
+    public static ControlPersonaje Ren;
 
     //vida
     [SerializeField] public int vidaInicial = 10;
@@ -24,6 +26,13 @@ public class ControlPersonaje : MonoBehaviour
 
     //movimiento
     public int velocidadMovimiento = 5;
+    private void Awake()
+    {
+        if (Ren == null)
+        {
+            Ren = this;
+        }
+    }
 
     void Start()
     {
@@ -73,14 +82,14 @@ public class ControlPersonaje : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             
-             horizontal = Input.GetAxisRaw("Horizontal");
+            horizontal = Input.GetAxisRaw("Horizontal");
             ren.linearVelocity = new Vector2(horizontal * velocidadMovimiento, ren.linearVelocity.y);
 
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
         {
 
-             vertical = Input.GetAxisRaw("Vertical");
+            vertical = Input.GetAxisRaw("Vertical");
             ren.linearVelocity = new Vector2(ren.linearVelocity.x, vertical * velocidadMovimiento);
 
 
@@ -95,8 +104,9 @@ public class ControlPersonaje : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemigo")
+        /*if (collision.gameObject.tag == "Enemigo")
         {
+
             desactivar = true;
             Vector2 direction = collision.contacts[0].normal;
             ren.AddForce(direction * 5, ForceMode2D.Impulse);
@@ -107,8 +117,10 @@ public class ControlPersonaje : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            Invoke(nameof(activar), 0.5f);
-        }
+            StartCoroutine(Detener());
+
+            //Invoke(nameof(activar), 0.5f);
+        }*/
         
     }
 
@@ -116,4 +128,16 @@ public class ControlPersonaje : MonoBehaviour
     {
         desactivar = false;
     }
+
+    /*IEnumerator Detener()
+    {
+
+        yield return new WaitForSeconds(2f);
+
+        ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
+        yield return new WaitForSeconds(0.2f);
+
+        float horizontal = Input.GetAxis("Horizontal");
+        ren.linearVelocity = new Vector2(horizontal * velocidadMovimiento, ren.linearVelocity.y);
+    }*/
 }

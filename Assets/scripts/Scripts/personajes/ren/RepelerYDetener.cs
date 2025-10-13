@@ -51,6 +51,7 @@ public class RepelerYDetener : MonoBehaviour
 
         renScript.enabled = true;
         ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
+        ren.linearVelocity = new Vector2(ren.linearVelocity.x, 0f);
         yield return new WaitForSeconds(0.2f);
 
     }

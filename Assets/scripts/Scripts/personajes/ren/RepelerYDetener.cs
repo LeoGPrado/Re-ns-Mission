@@ -31,7 +31,7 @@ public class RepelerYDetener : MonoBehaviour
         {
 
             Vector2 direction = collision.contacts[0].normal;
-            ren.AddForce(direction * FuerzaDeRetroceso * Time.timeScale, ForceMode2D.Impulse);
+            ren.AddForce(direction * FuerzaDeRetroceso * Time.timeScale, ForceMode2D.Force);
             //NoranonAnimaciones.SetTrigger("HeridoP");
             renScript.enabled = false;
 

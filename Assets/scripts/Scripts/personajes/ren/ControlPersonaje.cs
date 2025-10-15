@@ -98,30 +98,26 @@ public class ControlPersonaje : MonoBehaviour
          bool Moviendose = (horizontal != 0 || vertical != 0);
          animRen.SetBool("SeMueve", Moviendose);
 
-
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /*if (collision.gameObject.tag == "Enemigo")
+        if (collision.gameObject.tag == "Enemigo")
         {
 
-            desactivar = true;
-            Vector2 direction = collision.contacts[0].normal;
-            ren.AddForce(direction * 5, ForceMode2D.Impulse);
-            vidaInicial--;
-            if (vidaInicial == 0)
-            {
-                SceneManager.LoadScene("FinDemo"); 
-                Destroy(gameObject);
-            }
-
-            StartCoroutine(Detener());
-
-            //Invoke(nameof(activar), 0.5f);
-        }*/
+            perderVida();
+        }
         
+    }
+
+    public void perderVida()
+    {
+        vidaInicial--;
+        if (vidaInicial == 0)
+        {
+            SceneManager.LoadScene("FinDemo");
+            Destroy(gameObject);
+        }
     }
 
     private void activar()

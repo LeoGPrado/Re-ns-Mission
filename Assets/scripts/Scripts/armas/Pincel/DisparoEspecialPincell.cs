@@ -14,6 +14,8 @@ public class DisparoEspecialPincell : MonoBehaviour
         {
             enemigo = obj.transform;
         }
+
+
     }
 
     void Update()

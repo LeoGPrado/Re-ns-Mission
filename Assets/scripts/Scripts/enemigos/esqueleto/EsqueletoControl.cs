@@ -9,6 +9,7 @@ public class EsqueletoControl : MonoBehaviour
     GameObject obj;
 
     public static EsqueletoControl Esqueleto;
+    public Animator EsqueletoAnimacion;
 
     public int VidaEnemigo=2;
 
@@ -74,4 +75,21 @@ public class EsqueletoControl : MonoBehaviour
 
 
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "protagonista")
+        {
+            EsqueletoAnimacion.SetBool("atacarP", true);
+        }
+    }
+
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "protagonista")
+        {
+            EsqueletoAnimacion.SetBool("atacarP", false);
+        }
+    }
+
 }

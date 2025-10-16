@@ -36,10 +36,10 @@ public class AtaqueDistanciaSlime : MonoBehaviour
 
     }
 
-    void TiempoDeAtaqueSlime()
+    IEnumerator FrenarRetroceso()
     {
-        GameObject balNormal = Instantiate(balaEnemiga, puntoAparicion.position, puntoAparicion.rotation);
-        Destroy(balNormal, 3f);
 
+
+        yield return new WaitForSeconds(2f);
     }
 }

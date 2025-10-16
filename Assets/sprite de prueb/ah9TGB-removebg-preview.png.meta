@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 94b8c87e3231c414a9a26c7848b8f833
+guid: ea62aa2db1aed534187e9bcc4bcb9ed5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2559957428457420787
-    second: 189704809-pixel-art-bullet-removebg-preview_0
+      213: 813002574070833289
+    second: ah9TGB-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 189704809-pixel-art-bullet-removebg-preview_0
+      name: ah9TGB-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 153
-        y: 196
-        width: 194
-        height: 108
+        x: 48
+        y: 53
+        width: 180
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f7b35bc7bbc68320800000000000000
-      internalID: 2559957428457420787
+      spriteID: 98068fc988d584b00800000000000000
+      internalID: 813002574070833289
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      189704809-pixel-art-bullet-removebg-preview_0: 2559957428457420787
+      ah9TGB-removebg-preview_0: 813002574070833289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

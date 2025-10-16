@@ -29,7 +29,7 @@ public class DestruirEnemigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemigo"))
+        if (collision.gameObject.tag=="Enemigo")
         {
             if(ImpoctoArma == null)
             {

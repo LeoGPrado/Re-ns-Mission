@@ -1616,7 +1616,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 8.8
+  orthographic size: 12.39
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21072,7 +21072,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 40
-    OrthographicSize: 8.8
+    OrthographicSize: 12.39
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -21102,7 +21102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoundingShape2D: {fileID: 0}
+  BoundingShape2D: {fileID: 1319878391}
   Damping: 0
   SlowingDistance: 0
   OversizeWindow:
@@ -21446,7 +21446,7 @@ Transform:
   m_GameObject: {fileID: 1319878389}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21498,11 +21498,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4523964, y: 16.870132}
-      - {x: -19.070946, y: 16.83678}
-      - {x: -19.037125, y: -15.26219}
-      - {x: 48.232475, y: -15.102424}
-      - {x: 48.372417, y: 16.612436}
+    - - {x: -0.89684296, y: 26.314802}
+      - {x: -12.054904, y: 26.371399}
+      - {x: -12.021083, y: -16.971222}
+      - {x: 37.978264, y: -16.451662}
+      - {x: 38.02826, y: 26.237005}
   m_UseDelaunayMesh: 0
 --- !u!1 &1345744114
 GameObject:

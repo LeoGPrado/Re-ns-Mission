@@ -81,15 +81,17 @@ public class EsqueletoControl : MonoBehaviour
         if (collision.gameObject.tag == "protagonista")
         {
             EsqueletoAnimacion.SetBool("atacarP", true);
+
+            StartCoroutine(FrenarRetroceso());
+
         }
     }
 
-    public void OnCollisionExit2D(Collision2D collision)
+    IEnumerator FrenarRetroceso()
     {
-        if (collision.gameObject.tag == "protagonista")
-        {
-            EsqueletoAnimacion.SetBool("atacarP", false);
-        }
+
+        yield return new WaitForSeconds(0.5f);
+        EsqueletoAnimacion.SetBool("atacarP", false);
     }
 
 }

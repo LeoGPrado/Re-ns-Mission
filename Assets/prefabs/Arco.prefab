@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60676cd4314282448a2b0f82f4a7ab3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balaNormal: {fileID: 3456130279922145432, guid: eaf6154e9fce5c841a1502aabe129e89, type: 3}
+  balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
   balaEspecialPrefab: {fileID: 0}
   puntoAparicion: {fileID: 2379163169153250784}
   FlipArco: {fileID: 0}

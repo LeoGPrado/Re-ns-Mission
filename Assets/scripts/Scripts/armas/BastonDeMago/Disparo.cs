@@ -19,6 +19,14 @@ public class Disparo : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
+        GameObject prota = GameObject.Find("PuntoAtaque");
+
+        FlipBaston = prota.GetComponent<Transform>();
+
+        GameObject protagonista = GameObject.Find("personaje");
+
+        personaje = protagonista.GetComponent<SpriteRenderer>();
+
 
         if (mousePos.x < transform.position.x)
         {

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2379163169153250784}
   m_Layer: 7
-  m_Name: PuntoAtaque
+  m_Name: PuntoAtaqueArco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.15, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2379163169153250784}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balaNormal: {fileID: 3456130279922145432, guid: eaf6154e9fce5c841a1502aabe129e89, type: 3}
-  balaEspecialPrefab: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
+  balaEspecialPrefab: {fileID: 0}
   puntoAparicion: {fileID: 2379163169153250784}
   FlipArco: {fileID: 0}
   velocidadBala: 10

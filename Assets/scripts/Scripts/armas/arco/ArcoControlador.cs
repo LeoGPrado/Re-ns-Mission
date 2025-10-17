@@ -13,11 +13,24 @@ public class ArcoControlador : MonoBehaviour
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer arco;
 
+    private void Start()
+    {
+        //FlipArco = transform.parent;
+    }
     void Update()
     {
         Vector3 mousePos = Input.mousePosition;
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        GameObject prota = GameObject.Find("PuntoAtaque");
+
+        FlipArco = prota.GetComponent<Transform>();
+
+        GameObject protagonista = GameObject.Find("personaje");
+
+        personaje=protagonista.GetComponent<SpriteRenderer>();
+
 
 
         if (mousePos.x < transform.position.x)

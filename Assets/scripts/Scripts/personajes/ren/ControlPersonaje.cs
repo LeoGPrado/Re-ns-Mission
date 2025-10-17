@@ -97,6 +97,7 @@ public class ControlPersonaje : MonoBehaviour
 
          bool Moviendose = (horizontal != 0 || vertical != 0);
          animRen.SetBool("SeMueve", Moviendose);
+         
 
     }
 

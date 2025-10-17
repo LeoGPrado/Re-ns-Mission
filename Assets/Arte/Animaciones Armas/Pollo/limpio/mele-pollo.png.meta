@@ -1,31 +1,52 @@
 fileFormatVersion: 2
-guid: c94ca9f280f0c0448b8f9e18fc9f5971
+guid: 6e05cfaa2c544144a8c5d308e77cadc9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3867076372470614172
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_0
+      213: 727116365615961062
+    second: mele-pollo_0
   - first:
-      213: -2159878296800388655
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_1
+      213: -6922000326189551593
+    second: mele-pollo_1
   - first:
-      213: -6003611924300321570
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_2
+      213: -4699541993679396171
+    second: mele-pollo_2
   - first:
-      213: 1501231219607845037
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_3
+      213: 1569093391932454618
+    second: mele-pollo_3
   - first:
-      213: -2299087055714039181
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_4
+      213: 7258425373236384652
+    second: mele-pollo_4
   - first:
-      213: 7421716716985807986
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_5
+      213: -7498606981763351887
+    second: mele-pollo_5
   - first:
-      213: 6980146725764174192
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_6
+      213: 5570343037961242270
+    second: mele-pollo_6
   - first:
-      213: 1905811616092351774
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_7
+      213: -6341167057767346634
+    second: mele-pollo_7
+  - first:
+      213: -3865194799730212225
+    second: mele-pollo_8
+  - first:
+      213: -5483420587192310241
+    second: mele-pollo_9
+  - first:
+      213: 9209888722001608497
+    second: mele-pollo_10
+  - first:
+      213: -6570246802848081454
+    second: mele-pollo_11
+  - first:
+      213: 2828537351396745285
+    second: mele-pollo_12
+  - first:
+      213: 4275411002916104392
+    second: mele-pollo_13
+  - first:
+      213: 3456225022340155570
+    second: mele-pollo_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 74
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,11 +139,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,11 +152,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -148,7 +169,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -160,13 +181,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_0
+      name: mele-pollo_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 149
-        width: 27
-        height: 28
+        x: 0
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46735932782655ac0800000000000000
-      internalID: -3867076372470614172
+      spriteID: 6e399ea6b7c371a00800000000000000
+      internalID: 727116365615961062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_1
+      name: mele-pollo_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 111
-        width: 73
-        height: 82
+        x: 74
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d91321f1229602e0800000000000000
-      internalID: -2159878296800388655
+      spriteID: 710755ea06d10ff90800000000000000
+      internalID: -6922000326189551593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_2
+      name: mele-pollo_2
       rect:
         serializedVersion: 2
-        x: 186
-        y: 52
-        width: 127
-        height: 168
+        x: 148
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edca7ca63c2eeaca0800000000000000
-      internalID: -6003611924300321570
+      spriteID: 5b265bbb47fd7ceb0800000000000000
+      internalID: -4699541993679396171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_3
+      name: mele-pollo_3
       rect:
         serializedVersion: 2
-        x: 339
-        y: 53
-        width: 160
-        height: 129
+        x: 222
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da8b37227d175d410800000000000000
-      internalID: 1501231219607845037
+      spriteID: ad6fb85602a86c510800000000000000
+      internalID: 1569093391932454618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_4
+      name: mele-pollo_4
       rect:
         serializedVersion: 2
-        x: 547
-        y: 81
-        width: 110
-        height: 97
+        x: 296
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37a477001800810e0800000000000000
-      internalID: -2299087055714039181
+      spriteID: c83df609b6b1bb460800000000000000
+      internalID: 7258425373236384652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_5
+      name: mele-pollo_5
       rect:
         serializedVersion: 2
-        x: 727
-        y: 83
-        width: 64
-        height: 80
+        x: 370
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 274748b380c3ff660800000000000000
-      internalID: 7421716716985807986
+      spriteID: 1ba3bbdeda89fe790800000000000000
+      internalID: -7498606981763351887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_6
+      name: mele-pollo_6
       rect:
         serializedVersion: 2
-        x: 858
-        y: 110
-        width: 44
-        height: 42
+        x: 444
+        y: 0
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,30 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0719745f6767ed060800000000000000
-      internalID: 6980146725764174192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_7
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 135
-        width: 39
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1d6ff1419dc27a10800000000000000
-      internalID: 1905811616092351774
+      spriteID: e9600c6ea75dd4d40800000000000000
+      internalID: 5570343037961242270
       vertices: []
       indices: 
       edges: []
@@ -339,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c322b75bb1feb0a418ed63b31227b2cc
     internalID: 0
     vertices: []
     indices: 
@@ -349,14 +348,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_0: -3867076372470614172
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_1: -2159878296800388655
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_2: -6003611924300321570
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_3: 1501231219607845037
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_4: -2299087055714039181
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_5: 7421716716985807986
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_6: 6980146725764174192
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_7: 1905811616092351774
+      mele-pollo_0: 727116365615961062
+      mele-pollo_1: -6922000326189551593
+      mele-pollo_2: -4699541993679396171
+      mele-pollo_3: 1569093391932454618
+      mele-pollo_4: 7258425373236384652
+      mele-pollo_5: -7498606981763351887
+      mele-pollo_6: 5570343037961242270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

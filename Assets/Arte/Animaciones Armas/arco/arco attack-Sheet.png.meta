@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: c94ca9f280f0c0448b8f9e18fc9f5971
+guid: aa76dbb5670c4bc43bb153aa8f0b508b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3867076372470614172
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_0
+      213: 2666667910797850850
+    second: arco attack-Sheet_0
   - first:
-      213: -2159878296800388655
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_1
+      213: -3747398081248366284
+    second: arco attack-Sheet_1
   - first:
-      213: -6003611924300321570
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_2
+      213: 1504191034216990175
+    second: arco attack-Sheet_2
   - first:
-      213: 1501231219607845037
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_3
+      213: -1693475109177152547
+    second: arco attack-Sheet_3
   - first:
-      213: -2299087055714039181
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_4
+      213: 8906957768817040870
+    second: arco attack-Sheet_4
   - first:
-      213: 7421716716985807986
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_5
+      213: 5203016183487491466
+    second: arco attack-Sheet_5
   - first:
-      213: 6980146725764174192
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_6
-  - first:
-      213: 1905811616092351774
-    second: animation-light-being-hit-by-260nw-1234097254-removebg-preview_7
+      213: -6412311070606423516
+    second: arco attack-Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,11 +115,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,11 +128,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -148,7 +145,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -160,12 +157,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_0
+      name: arco attack-Sheet_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 149
-        width: 27
+        x: 12
+        y: 0
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8f9051658e10520800000000000000
+      internalID: 2666667910797850850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arco attack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 28
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,151 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46735932782655ac0800000000000000
-      internalID: -3867076372470614172
+      spriteID: 431f537bc419efbc0800000000000000
+      internalID: -3747398081248366284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_1
+      name: arco attack-Sheet_2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 111
-        width: 73
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d91321f1229602e0800000000000000
-      internalID: -2159878296800388655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_2
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 52
-        width: 127
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edca7ca63c2eeaca0800000000000000
-      internalID: -6003611924300321570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_3
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 53
-        width: 160
-        height: 129
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da8b37227d175d410800000000000000
-      internalID: 1501231219607845037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_4
-      rect:
-        serializedVersion: 2
-        x: 547
-        y: 81
-        width: 110
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37a477001800810e0800000000000000
-      internalID: -2299087055714039181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_5
-      rect:
-        serializedVersion: 2
-        x: 727
-        y: 83
-        width: 64
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 274748b380c3ff660800000000000000
-      internalID: 7421716716985807986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_6
-      rect:
-        serializedVersion: 2
-        x: 858
-        y: 110
-        width: 44
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0719745f6767ed060800000000000000
-      internalID: 6980146725764174192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation-light-being-hit-by-260nw-1234097254-removebg-preview_7
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 135
-        width: 39
+        x: 99
+        y: 0
+        width: 32
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -329,8 +216,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d6ff1419dc27a10800000000000000
-      internalID: 1905811616092351774
+      spriteID: fd5c4dca6c5ffd410800000000000000
+      internalID: 1504191034216990175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arco attack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddba7815c519f78e0800000000000000
+      internalID: -1693475109177152547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arco attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eddebf46eedb9b70800000000000000
+      internalID: 8906957768817040870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arco attack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d6161f6a3d43840800000000000000
+      internalID: 5203016183487491466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arco attack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a033f1e05e207a0800000000000000
+      internalID: -6412311070606423516
       vertices: []
       indices: 
       edges: []
@@ -349,14 +324,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_0: -3867076372470614172
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_1: -2159878296800388655
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_2: -6003611924300321570
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_3: 1501231219607845037
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_4: -2299087055714039181
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_5: 7421716716985807986
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_6: 6980146725764174192
-      animation-light-being-hit-by-260nw-1234097254-removebg-preview_7: 1905811616092351774
+      arco attack-Sheet_0: 2666667910797850850
+      arco attack-Sheet_1: -3747398081248366284
+      arco attack-Sheet_2: 1504191034216990175
+      arco attack-Sheet_3: -1693475109177152547
+      arco attack-Sheet_4: 8906957768817040870
+      arco attack-Sheet_5: 5203016183487491466
+      arco attack-Sheet_6: -6412311070606423516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

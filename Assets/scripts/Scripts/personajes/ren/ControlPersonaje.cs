@@ -5,6 +5,7 @@ using System.Collections;
 public class ControlPersonaje : MonoBehaviour
 {
 
+    [SerializeField] private string escena;
     [SerializeField] Rigidbody2D ren;
     [SerializeField] Animator animRen;
 
@@ -19,6 +20,15 @@ public class ControlPersonaje : MonoBehaviour
 
     //vida
     [SerializeField] public int vidaInicial = 10;
+
+    //corazones de vida
+    public GameObject Corazon1;
+    public GameObject Corazon2;
+    public GameObject Corazon3;
+    public GameObject Corazon4;
+    public GameObject Corazon5;
+
+    public int contador = 1;
 
 
 
@@ -105,8 +115,31 @@ public class ControlPersonaje : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-
-            perderVida();
+            if (contador == 1)
+            {
+                Corazon1.SetActive(false);
+                contador++;
+            }
+            else if (contador == 2)
+            {
+                Corazon2.SetActive(false);
+                contador++;
+            }
+            else if (contador == 3)
+            {
+                Corazon3.SetActive(false);
+                contador++;
+            }
+            else if (contador == 4)
+            {
+                Corazon4.SetActive(false);
+                contador++;
+            }
+            else if (contador == 5)
+            {
+                Corazon5.SetActive(false);
+            }
+                perderVida();
         }
         
     }

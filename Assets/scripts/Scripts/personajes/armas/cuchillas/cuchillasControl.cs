@@ -19,6 +19,13 @@ public class cuchillasControl : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
+        GameObject prota = GameObject.Find("PuntoAtaque");
+
+        FlipCuchillas = prota.GetComponent<Transform>();
+
+        GameObject protagonista = GameObject.Find("personaje");
+
+        personaje = protagonista.GetComponent<SpriteRenderer>();
 
         if (mousePos.x < transform.position.x)
         {

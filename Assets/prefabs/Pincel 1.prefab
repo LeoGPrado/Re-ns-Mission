@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8aeb177acfd6a84eb6f2f4bed550195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balaNormal: {fileID: 3456130279922145432, guid: eaf6154e9fce5c841a1502aabe129e89, type: 3}
-  balaEspecialPrefab: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
+  balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
+  balaEspecialPrefab: {fileID: 3456130279922145432, guid: 3e0b96d76a861e747b50620179330f13, type: 3}
   puntoAparicionBala: {fileID: 3499362722535382767}
   FlipPincel: {fileID: 0}
   velocidadBala: 20

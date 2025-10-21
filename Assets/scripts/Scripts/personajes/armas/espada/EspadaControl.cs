@@ -30,6 +30,11 @@ public class EspadaControl : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
+
+        GameObject protagonista = GameObject.Find("personaje");
+
+        personaje = protagonista.GetComponent<SpriteRenderer>();
+
         if (mousePos.x > transform.position.x)
         {
 

@@ -1,16 +1,12 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class cambioPantallas : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+  
+
+    public void cambioEscena(int nivel)
     {
-        
+        SceneManager.LoadScene(nivel);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -3,9 +3,6 @@ using UnityEngine;
 public class NuevoEspadaControl : MonoBehaviour
 {
 
-    public Transform puntoAparicion;
-
-
     public Transform FlipEspada;
     public float velocidadBala = 20f;
 
@@ -14,7 +11,7 @@ public class NuevoEspadaControl : MonoBehaviour
 
     private void Start()
     {
-        //FlipArco = transform.parent;
+
     }
     void Update()
     {
@@ -35,18 +32,14 @@ public class NuevoEspadaControl : MonoBehaviour
         if (mousePos.x < transform.position.x)
         {
             Espada.flipX = true;
-            Vector3 pos = puntoAparicion.localPosition;
-            pos.x = -Mathf.Abs(pos.x);
-            puntoAparicion.localPosition = pos;
+
             Espada.transform.localPosition = FlipEspada.localPosition;
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
             Espada.flipX = false;
-            Vector3 pos = puntoAparicion.localPosition;
-            pos.x = Mathf.Abs(pos.x);
-            puntoAparicion.localPosition = pos;
+
             Espada.transform.localPosition = FlipEspada.localPosition;
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }

@@ -27,7 +27,11 @@ public class PuertaHP : MonoBehaviour
 
     public void BajarHP()
     {
-        HealthSize -= 100;
+        HealthSize -= 400;
         HealthUI.sizeDelta = new Vector2(HealthSize, 50);
+        if (HealthSize < 0)
+        {
+            SceneManager.LoadScene("FinDemo");
+        }
     }
 }

@@ -4,7 +4,7 @@ public class NuevoEspadaControl : MonoBehaviour
 {
 
     public Transform FlipEspada;
-    public float velocidadBala = 20f;
+
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer Espada;

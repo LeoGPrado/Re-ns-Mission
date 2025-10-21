@@ -184,11 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e39676c46d8c248874586fc0401b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pollo: {fileID: 2295982455334585658}
-  puntoAparicion: {fileID: 0}
+  FlipPollo: {fileID: 0}
   personaje: {fileID: 0}
-  pollo: {fileID: 1984370803898185317}
-  ImpoctoArma: {fileID: 3703615822890842183}
+  Pollo: {fileID: 1984370803898185317}
 --- !u!50 &2587174167505972301
 Rigidbody2D:
   serializedVersion: 5

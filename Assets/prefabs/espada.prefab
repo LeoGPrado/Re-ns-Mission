@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -7787883730425381743, guid: 6c1cae06b307dc34eb96a23a1468e19f, type: 3}
+  m_Sprite: {fileID: 2746389821064550707, guid: bde818dcf40a9924a91d16e413c00568, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,7 +157,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.27, y: 2.27}
+    oldSize: {x: 0.625, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -212,6 +212,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlipEspada: {fileID: 0}
-  velocidadBala: 20
   personaje: {fileID: 0}
   Espada: {fileID: 4245704468696561272}

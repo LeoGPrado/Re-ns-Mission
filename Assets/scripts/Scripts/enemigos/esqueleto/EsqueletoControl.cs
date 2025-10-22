@@ -41,6 +41,14 @@ public class EsqueletoControl : MonoBehaviour
 
             transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 2f);
 
+            if (objetivo.position.x < transform.position.x)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (objetivo.position.x > transform.position.x)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
         }
     }
 

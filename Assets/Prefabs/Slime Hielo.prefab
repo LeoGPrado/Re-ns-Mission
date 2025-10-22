@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7068186703206470632}
   - component: {fileID: 859249785686918011}
   m_Layer: 6
-  m_Name: Slime
+  m_Name: Slime Hielo
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4468784460436927292, guid: bdabb6db047942246891bf6d22a3c1ba, type: 3}
+  m_Sprite: {fileID: 3550576660386070563, guid: de520044ff902c74c836a3682c942845, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,7 +156,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5555556, y: 1.0833334}
+    oldSize: {x: 1.75, y: 1.3125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -189,7 +189,7 @@ Animator:
   m_GameObject: {fileID: 4891012412717606429}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9d419cca914254b439d25fa42688af68, type: 2}
+  m_Controller: {fileID: 9100000, guid: f84a46904361c0d4e86c2ca38b16a4d3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

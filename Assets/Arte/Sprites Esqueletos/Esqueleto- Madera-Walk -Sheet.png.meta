@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 98444a42aba33e94892d3d4b7c8d130e
+guid: 69dc60c71f2e60847b86febfea7d5272
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1122523370717706831
-    second: Goblin Normal WALK-Sheet_0
+      213: -1178106444048503911
+    second: Esqueleto- Madera-Walk -Sheet_0
   - first:
-      213: -2748682320147945875
-    second: Goblin Normal WALK-Sheet_1
+      213: -780580303272458501
+    second: Esqueleto- Madera-Walk -Sheet_1
   - first:
-      213: -9006515965969951534
-    second: Goblin Normal WALK-Sheet_2
+      213: 9206299369031835243
+    second: Esqueleto- Madera-Walk -Sheet_2
   - first:
-      213: -310831387318257860
-    second: Goblin Normal WALK-Sheet_3
+      213: 4223873604922735430
+    second: Esqueleto- Madera-Walk -Sheet_3
   - first:
-      213: 6035274030692020514
-    second: Goblin Normal WALK-Sheet_4
+      213: 8350932105486684682
+    second: Esqueleto- Madera-Walk -Sheet_4
   - first:
-      213: -176349253353802708
-    second: Goblin Normal WALK-Sheet_5
+      213: -6382090599870758290
+    second: Esqueleto- Madera-Walk -Sheet_5
   - first:
-      213: -6420173062156286671
-    second: Goblin Normal WALK-Sheet_6
+      213: 5554624006054815933
+    second: Esqueleto- Madera-Walk -Sheet_6
   - first:
-      213: -9062306739687333651
-    second: Goblin Normal WALK-Sheet_7
+      213: -2607283997780104630
+    second: Esqueleto- Madera-Walk -Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_0
+      name: Esqueleto- Madera-Walk -Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4af3bbee01049f00800000000000000
-      internalID: 1122523370717706831
+      spriteID: 99be3e65e6686afe0800000000000000
+      internalID: -1178106444048503911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_1
+      name: Esqueleto- Madera-Walk -Sheet_1
       rect:
         serializedVersion: 2
-        x: 27
+        x: 32
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d666f233ef7bad9d0800000000000000
-      internalID: -2748682320147945875
+      spriteID: bf647c09952da25f0800000000000000
+      internalID: -780580303272458501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_2
+      name: Esqueleto- Madera-Walk -Sheet_2
       rect:
         serializedVersion: 2
-        x: 54
+        x: 64
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d41a70927d620380800000000000000
-      internalID: -9006515965969951534
+      spriteID: b6e9b03cf7853cf70800000000000000
+      internalID: 9206299369031835243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_3
+      name: Esqueleto- Madera-Walk -Sheet_3
       rect:
         serializedVersion: 2
-        x: 81
+        x: 96
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c377ad50084bfabf0800000000000000
-      internalID: -310831387318257860
+      spriteID: 64b71952aa63e9a30800000000000000
+      internalID: 4223873604922735430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_4
+      name: Esqueleto- Madera-Walk -Sheet_4
       rect:
         serializedVersion: 2
-        x: 108
+        x: 128
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 221b98131c991c350800000000000000
-      internalID: 6035274030692020514
+      spriteID: a0250fa318874e370800000000000000
+      internalID: 8350932105486684682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_5
+      name: Esqueleto- Madera-Walk -Sheet_5
       rect:
         serializedVersion: 2
-        x: 135
+        x: 160
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c24f075d94b7d8df0800000000000000
-      internalID: -176349253353802708
+      spriteID: e620856c9624e67a0800000000000000
+      internalID: -6382090599870758290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_6
+      name: Esqueleto- Madera-Walk -Sheet_6
       rect:
         serializedVersion: 2
-        x: 162
+        x: 192
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13584a19d96f6e6a0800000000000000
-      internalID: -6420173062156286671
+      spriteID: db821c59a1df51d40800000000000000
+      internalID: 5554624006054815933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Normal WALK-Sheet_7
+      name: Esqueleto- Madera-Walk -Sheet_7
       rect:
         serializedVersion: 2
-        x: 189
+        x: 224
         y: 0
-        width: 27
-        height: 27
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,8 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de0ee4fc8083c3280800000000000000
-      internalID: -9062306739687333651
+      spriteID: a4aa1cb940111dbd0800000000000000
+      internalID: -2607283997780104630
       vertices: []
       indices: 
       edges: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a7a11e55700254e41a9bc2065a911a7a
+    spriteID: de3d1966385a548449ba4d7669c5ccb6
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Goblin Normal WALK-Sheet_0: 1122523370717706831
-      Goblin Normal WALK-Sheet_1: -2748682320147945875
-      Goblin Normal WALK-Sheet_2: -9006515965969951534
-      Goblin Normal WALK-Sheet_3: -310831387318257860
-      Goblin Normal WALK-Sheet_4: 6035274030692020514
-      Goblin Normal WALK-Sheet_5: -176349253353802708
-      Goblin Normal WALK-Sheet_6: -6420173062156286671
-      Goblin Normal WALK-Sheet_7: -9062306739687333651
+      Esqueleto- Madera-Walk -Sheet_0: -1178106444048503911
+      Esqueleto- Madera-Walk -Sheet_1: -780580303272458501
+      Esqueleto- Madera-Walk -Sheet_2: 9206299369031835243
+      Esqueleto- Madera-Walk -Sheet_3: 4223873604922735430
+      Esqueleto- Madera-Walk -Sheet_4: 8350932105486684682
+      Esqueleto- Madera-Walk -Sheet_5: -6382090599870758290
+      Esqueleto- Madera-Walk -Sheet_6: 5554624006054815933
+      Esqueleto- Madera-Walk -Sheet_7: -2607283997780104630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

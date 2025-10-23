@@ -564,6 +564,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4614806189316533081, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+      propertyPath: EsqueletoAnimacion
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_Name
       value: EsqueletoTutorial
@@ -576,6 +580,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
+    - target: {fileID: 5106864149912469739, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1428936365920215071, guid: d02257e788102e24aa22c92dd577bfb9, type: 3}
     - target: {fileID: 7467787864324314476, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_Enabled
       value: 0

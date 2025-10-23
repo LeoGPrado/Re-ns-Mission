@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class pincelControl : MonoBehaviour
 {
     public GameObject balaNormal;
     public GameObject balaEspecialPrefab;
     public Transform puntoAparicionBala;
+    [SerializeField] PostProcessingTest postProcessing;
 
 
     public Transform FlipPincel;
@@ -12,6 +14,8 @@ public class pincelControl : MonoBehaviour
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer pincel;
+
+
 
     void Update()
     {
@@ -72,5 +76,16 @@ public class pincelControl : MonoBehaviour
         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicionBala.position, puntoAparicionBala.rotation);
         Destroy(bala, 1f);
 
+        if (postProcessing != null)
+        {
+            postProcessing.SaturacionGradual(-100f, 0.5f);
+            StartCoroutine(RestaurarDelay(0.4f));          
+        }
+
+        IEnumerator RestaurarDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            postProcessing.RestaurarSaturacion(1f);
+        }
     }
 }

@@ -35,7 +35,7 @@ public class Disparo : MonoBehaviour
             pos.x = -Mathf.Abs(pos.x);
             puntoAparicion.localPosition = pos;
             baston.transform.localPosition = FlipBaston.localPosition;
-            baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
@@ -44,7 +44,7 @@ public class Disparo : MonoBehaviour
             pos.x = Mathf.Abs(pos.x);
             puntoAparicion.localPosition = pos;
             baston.transform.localPosition = FlipBaston.localPosition;
-            baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
         if (Input.GetMouseButtonDown(0))

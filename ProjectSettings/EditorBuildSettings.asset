@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/prueba mapa 1.unity
     guid: d926556e3e2dd7449a356745536d1458
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 1eeda41456eded543beb4aa7bda99b6f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

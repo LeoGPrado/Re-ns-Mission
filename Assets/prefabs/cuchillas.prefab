@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
-  balaEspecialPrefab: {fileID: 3456130279922145432, guid: eaf6154e9fce5c841a1502aabe129e89, type: 3}
+  balaEspecialPrefab: {fileID: 3456130279922145432, guid: 1b8e3c67cc21b79419ec058593d4db5a, type: 3}
   puntoAparicion: {fileID: 4568793825358778717}
   FlipCuchillas: {fileID: 0}
   velocidadBala: 20

@@ -109,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 113042430993985849, guid: c487eb78ffa6dc04d8b689b6eca52c02, type: 3}
+  m_Sprite: {fileID: -728035610534921769, guid: 251b6e1a7a939ee40ad4129262c0ab4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
-  balaEspecialPrefab: {fileID: 0}
+  balaEspecialPrefab: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
   puntoAparicion: {fileID: 2379163169153250784}
   FlipArco: {fileID: 0}
   velocidadBala: 10

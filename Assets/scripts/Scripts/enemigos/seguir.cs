@@ -1,4 +1,6 @@
+using TreeEditor;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class seguir : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class seguir : MonoBehaviour
     private Animator animSlime;
     private SpriteRenderer slimerender;
 
-
+ 
     void Start()
     {
         obj = GameObject.Find("personaje");
@@ -35,3 +37,6 @@ public class seguir : MonoBehaviour
         }
     }
 }
+
+
+

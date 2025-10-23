@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2600475200246545416}
   - component: {fileID: 9104381370506901857}
   - component: {fileID: -7456945259910059318}
-  - component: {fileID: 4491395403390849927}
+  - component: {fileID: 3112490223411949406}
   - component: {fileID: 5606605136726024014}
   m_Layer: 0
   m_Name: mazo
@@ -157,7 +157,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.24, y: 1.25}
+    oldSize: {x: 1.9076923, y: 1.9230769}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -187,7 +187,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4491395403390849927
+--- !u!114 &3112490223411949406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,10 +196,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866861353659222703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df456a3c299cd4144a87c13a0de16f28, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ef140d10f544ed4fa1a5b738114f08b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpoctoArma: {fileID: -7456945259910059318}
+  FlipMazo: {fileID: 0}
+  personaje: {fileID: 0}
+  Mazo: {fileID: 4245704468696561272}
 --- !u!114 &5606605136726024014
 MonoBehaviour:
   m_ObjectHideFlags: 0

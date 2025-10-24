@@ -278,7 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1504494034}
   hour: 0
-  cdTimer: 30
+  minutos: 0
+  cdTimer: 2
 --- !u!114 &216545844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,7 +372,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216545842}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c4321912ffd4514eb0746d10ae94bdd, type: 3}
   m_Name: 

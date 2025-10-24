@@ -1,11 +1,13 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class TimerHoras : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private int hour = 0;
+    [SerializeField] private int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
 
 
@@ -25,17 +27,31 @@ public class TimerHoras : MonoBehaviour
 
     IEnumerator UpdateEvery30s()
     {
-        while (hour < 6)
+        while (hour <= 60)
         {
+            if (hour == 60)
+            {
+                hour = 0;
+                minutos += 1;
+
+                if (minutos == 6)
+                {
+                    SceneManager.LoadScene("FinDemo");
+                }
+                UpdateTime();
+
+            }
+
             yield return new WaitForSeconds(cdTimer);
-            hour++;
+            hour+=30;
 
             UpdateTime();
         }
+
     }
 
     void UpdateTime()
     {
-        timerText.text = hour.ToString("00") + ":00";
+        timerText.text = minutos.ToString("00") + hour.ToString(":00");
     }
 }

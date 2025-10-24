@@ -31,7 +31,7 @@ public class RepelerYDetener : MonoBehaviour
         {
 
             Vector2 direction = collision.contacts[0].normal;
-            ren.AddForce(direction * FuerzaDeRetroceso * Time.timeScale, ForceMode2D.Impulse);
+            ren.AddForce(direction * FuerzaDeRetroceso, ForceMode2D.Impulse);
             //NoranonAnimaciones.SetTrigger("HeridoP");
             renScript.enabled = false;
 
@@ -46,13 +46,13 @@ public class RepelerYDetener : MonoBehaviour
     IEnumerator FrenarRetroceso()
     {
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.8f);
 
-
+        ren.linearVelocity = Vector2.zero;
         renScript.enabled = true;
-        ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
-        ren.linearVelocity = new Vector2(ren.linearVelocity.x, 0f);
-        yield return new WaitForSeconds(0.2f);
+        //ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
+        //ren.linearVelocity = new Vector2(ren.linearVelocity.x, 0f);
+
 
     }
 }

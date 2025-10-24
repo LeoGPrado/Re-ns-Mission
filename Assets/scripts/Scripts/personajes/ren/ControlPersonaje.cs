@@ -146,7 +146,7 @@ public class ControlPersonaje : MonoBehaviour
 
     public void perderVida()
     {
-        PuertaHP.BarraVida.BajarHP();
+        //PuertaHP.BarraVida.BajarHP();
         vidaInicial--;
         if (vidaInicial == 0)
         {

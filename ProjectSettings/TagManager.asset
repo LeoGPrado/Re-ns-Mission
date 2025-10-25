@@ -7,6 +7,9 @@ TagManager:
   - protagonista
   - Enemigo
   - Esqueleto
+  - enemy
+  - bala
+  - Spawn
   layers:
   - Default
   - TransparentFX

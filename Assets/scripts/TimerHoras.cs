@@ -9,8 +9,7 @@ public class TimerHoras : MonoBehaviour
     [SerializeField] private int hour = 0;
     [SerializeField] private int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
-
-
+    [SerializeField] GameObject[] spawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +35,11 @@ public class TimerHoras : MonoBehaviour
 
                 if (minutos == 6)
                 {
+                    for (int i = 0; i < spawn.Length; i++)
+                    {
+                        Destroy(spawn[i]);
+                    }
+
                     SceneManager.LoadScene("FinDemo");
                 }
                 UpdateTime();

@@ -7,6 +7,7 @@ public class SpawnEnemigo : MonoBehaviour
 
     [SerializeField] GameObject puntoAparicion;
     [SerializeField] float TiempoAparicion = 3;
+    public Transform parent;
 
     //[SerializeField] BoxCollider2D jugador;
 
@@ -24,6 +25,6 @@ public class SpawnEnemigo : MonoBehaviour
 
     void Enemigo()
     {
-        Instantiate(enemigo, puntoAparicion.transform.position, Quaternion.identity);
+        Instantiate(enemigo, puntoAparicion.transform.position, Quaternion.identity,parent);
     }
 }

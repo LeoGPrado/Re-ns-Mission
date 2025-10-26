@@ -1777,6 +1777,7 @@ MonoBehaviour:
   enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   puntoAparicion: {fileID: 1214845466}
   TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &462636396
 Transform:
   m_ObjectHideFlags: 0
@@ -1785,13 +1786,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462636394}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.36, y: -10.28, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1214845467}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1000857808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462636397
 MonoBehaviour:
@@ -1805,6 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1490793251}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -21637,6 +21639,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903470320}
   m_CullTransparentMesh: 1
+--- !u!1 &1000857807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000857808}
+  m_Layer: 0
+  m_Name: Spawner Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1000857808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000857807}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.36, y: -10.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 462636396}
+  - {fileID: 1669923097}
+  - {fileID: 1971618065}
+  - {fileID: 2012106150}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1060134772
 GameObject:
   m_ObjectHideFlags: 0
@@ -22524,11 +22561,8 @@ MonoBehaviour:
   hour: 0
   minutos: 0
   cdTimer: 30
-  spawn:
-  - {fileID: 462636394}
-  - {fileID: 1669923094}
-  - {fileID: 1971618062}
-  - {fileID: 2012106147}
+  parentSpawners: {fileID: 1000857807}
+  parentEnemy: {fileID: 1490793251}
 --- !u!4 &1361321642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2462034734992712805, guid: 5d8d809d7d06776449e2d5d50998c0ec, type: 3}
@@ -22801,6 +22835,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8d809d7d06776449e2d5d50998c0ec, type: 3}
+--- !u!1 &1490793250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1490793251}
+  m_Layer: 0
+  m_Name: Enemigo Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1490793251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490793250}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.36, y: -10.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531625467
 GameObject:
   m_ObjectHideFlags: 0
@@ -23110,6 +23175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1490793251}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23139,6 +23205,7 @@ MonoBehaviour:
   enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   puntoAparicion: {fileID: 1920166904}
   TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &1669923097
 Transform:
   m_ObjectHideFlags: 0
@@ -23147,13 +23214,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669923094}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.13, y: -0.86, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.2300014, y: 9.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1920166905}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1000857808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1720703793
 GameObject:
@@ -23586,6 +23653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1490793251}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23615,6 +23683,7 @@ MonoBehaviour:
   enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   puntoAparicion: {fileID: 1720703793}
   TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &1971618065
 Transform:
   m_ObjectHideFlags: 0
@@ -23623,13 +23692,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971618062}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.81, y: -16.07, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5500011, y: -5.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1720703794}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1000857808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012106147
 GameObject:
@@ -23661,6 +23730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1490793251}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23690,6 +23760,7 @@ MonoBehaviour:
   enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   puntoAparicion: {fileID: 688328066}
   TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &2012106150
 Transform:
   m_ObjectHideFlags: 0
@@ -23698,13 +23769,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012106147}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.18, y: -0.64, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.8199997, y: 9.639999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 688328067}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1000857808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084416605
 GameObject:
@@ -23758,10 +23829,8 @@ SceneRoots:
   - {fileID: 1731515872}
   - {fileID: 1531625471}
   - {fileID: 1345744117}
-  - {fileID: 462636396}
-  - {fileID: 1669923097}
-  - {fileID: 1971618065}
-  - {fileID: 2012106150}
+  - {fileID: 1490793251}
+  - {fileID: 1000857808}
   - {fileID: 278130277}
   - {fileID: 116645903}
   - {fileID: 1315788805}

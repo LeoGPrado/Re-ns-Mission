@@ -5,6 +5,7 @@ using System.Collections;
 public class SpawnEnemyV2 : MonoBehaviour
 
 {
+    public Transform parent;
     //Prefabs
     [SerializeField] private GameObject slimeNormal;
     [SerializeField] private GameObject slimeHielo;
@@ -49,7 +50,7 @@ public class SpawnEnemyV2 : MonoBehaviour
     {
         if (punto == null) return;
 
-        Instantiate(ElegirSlime(), punto.position, Quaternion.identity);
+        Instantiate(ElegirSlime(), punto.position, Quaternion.identity, parent);
     }
 
     private GameObject ElegirSlime()

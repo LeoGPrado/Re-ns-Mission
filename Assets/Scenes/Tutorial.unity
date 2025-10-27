@@ -344,6 +344,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: personaje
       objectReference: {fileID: 0}
+    - target: {fileID: 4378033607731932917, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378033607731932917, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.268
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673692624916123969, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689352427508813845, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4870671377898635733, guid: 38281e44763843342a54810a33ec87bd, type: 3}
     - target: {fileID: 8028158967636652219, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6886024
@@ -383,6 +399,14 @@ PrefabInstance:
     - target: {fileID: 8028158967636652219, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659931898890525359, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036728509542026592, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -734,6 +758,11 @@ Transform:
   - {fileID: 1143896621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1058776921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5673692624916123969, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+  m_PrefabInstance: {fileID: 394794959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1143896620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelDialogoInicial: {fileID: 103194274}
-  armaTutorial: {fileID: 0}
+  armaTutorial: {fileID: 1058776921}
   EnemigoTutorial: {fileID: 901325902}
   textoDialogoInicial: {fileID: 10510734}
   dialogosIniciales:

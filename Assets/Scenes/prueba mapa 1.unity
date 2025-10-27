@@ -1597,6 +1597,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 70.510864, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &375244697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375244698}
+  m_Layer: 0
+  m_Name: Spawner Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375244698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375244697}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 462636396}
+  - {fileID: 1669923097}
+  - {fileID: 1971618065}
+  - {fileID: 2012106150}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &386945566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &462636395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1774,9 +1809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  puntoAparicion: {fileID: 1214845466}
-  TiempoAparicion: 3
 --- !u!4 &462636396
 Transform:
   m_ObjectHideFlags: 0
@@ -1785,13 +1817,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462636394}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -21.36, y: -10.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1214845467}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 375244698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462636397
 MonoBehaviour:
@@ -1805,6 +1837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1596869807}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -2023,7 +2056,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.33081, y: 0.32299006, z: -10}
+  m_LocalPosition: {x: -3.113316, y: 4.70009, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22524,6 +22557,8 @@ MonoBehaviour:
   hour: 0
   minutos: 0
   cdTimer: 30
+  parentSpawners: {fileID: 375244697}
+  parentEnemy: {fileID: 1596869807}
 --- !u!4 &1361321642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2462034734992712805, guid: 5d8d809d7d06776449e2d5d50998c0ec, type: 3}
@@ -22948,6 +22983,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1596869806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596869807}
+  m_Layer: 0
+  m_Name: Enemy Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596869807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596869806}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620078654
 GameObject:
   m_ObjectHideFlags: 0
@@ -23092,7 +23158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1669923095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23105,6 +23171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1596869807}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23131,9 +23198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  puntoAparicion: {fileID: 1920166904}
-  TiempoAparicion: 3
 --- !u!4 &1669923097
 Transform:
   m_ObjectHideFlags: 0
@@ -23142,13 +23206,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669923094}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -17.13, y: -0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1920166905}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 375244698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1720703793
 GameObject:
@@ -23568,7 +23632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23581,6 +23645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1596869807}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23607,9 +23672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  puntoAparicion: {fileID: 1720703793}
-  TiempoAparicion: 3
 --- !u!4 &1971618065
 Transform:
   m_ObjectHideFlags: 0
@@ -23618,13 +23680,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971618062}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.81, y: -16.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1720703794}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 375244698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012106147
 GameObject:
@@ -23643,7 +23705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2012106148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23656,6 +23718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 1596869807}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23682,9 +23745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  puntoAparicion: {fileID: 688328066}
-  TiempoAparicion: 3
 --- !u!4 &2012106150
 Transform:
   m_ObjectHideFlags: 0
@@ -23693,13 +23753,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012106147}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.18, y: -0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 688328067}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 375244698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084416605
 GameObject:
@@ -23753,10 +23813,8 @@ SceneRoots:
   - {fileID: 1731515872}
   - {fileID: 1531625471}
   - {fileID: 1345744117}
-  - {fileID: 462636396}
-  - {fileID: 1669923097}
-  - {fileID: 1971618065}
-  - {fileID: 2012106150}
+  - {fileID: 375244698}
+  - {fileID: 1596869807}
   - {fileID: 278130277}
   - {fileID: 116645903}
   - {fileID: 1315788805}

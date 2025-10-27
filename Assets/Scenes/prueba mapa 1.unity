@@ -1703,7 +1703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 599.3999, y: -36}
+  m_AnchoredPosition: {x: 599.4, y: -36}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &407578363
@@ -1774,6 +1774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  puntoAparicion: {fileID: 1214845466}
+  TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &462636396
 Transform:
   m_ObjectHideFlags: 0
@@ -1889,11 +1893,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469633420}
   m_CullTransparentMesh: 1
---- !u!1 &491037002 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715175727974460864, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
-  m_PrefabInstance: {fileID: 1254898805}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2025,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.33081, y: 0.32299006, z: -10}
+  m_LocalPosition: {x: -3.1133163, y: 4.70009, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21655,7 +21654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1000857808
 Transform:
   m_ObjectHideFlags: 0
@@ -22143,10 +22142,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: personaje
       objectReference: {fileID: 0}
-    - target: {fileID: 2421474397778324994, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
-      propertyPath: espada
-      value: 
-      objectReference: {fileID: 491037002}
     - target: {fileID: 2421474397778324994, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: Corazon1
       value: 
@@ -23207,6 +23202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  puntoAparicion: {fileID: 1920166904}
+  TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &1669923097
 Transform:
   m_ObjectHideFlags: 0
@@ -23681,6 +23680,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  puntoAparicion: {fileID: 1720703793}
+  TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &1971618065
 Transform:
   m_ObjectHideFlags: 0
@@ -23754,6 +23757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  puntoAparicion: {fileID: 688328066}
+  TiempoAparicion: 3
+  parent: {fileID: 1490793251}
 --- !u!4 &2012106150
 Transform:
   m_ObjectHideFlags: 0

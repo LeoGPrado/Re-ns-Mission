@@ -1805,6 +1805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -22101,6 +22102,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1385277539441924364, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2179521831041320432, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Name
       value: personaje
@@ -22127,7 +22132,7 @@ PrefabInstance:
       objectReference: {fileID: 469633420}
     - target: {fileID: 5673692624916123969, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5689352427508813845, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Sprite
@@ -22524,6 +22529,8 @@ MonoBehaviour:
   hour: 0
   minutos: 0
   cdTimer: 30
+  parentSpawners: {fileID: 0}
+  parentEnemy: {fileID: 0}
 --- !u!4 &1361321642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2462034734992712805, guid: 5d8d809d7d06776449e2d5d50998c0ec, type: 3}
@@ -23105,6 +23112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23581,6 +23589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
@@ -23656,6 +23665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}

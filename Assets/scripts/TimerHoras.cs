@@ -35,18 +35,18 @@ public class TimerHoras : MonoBehaviour
                 hour = 0;
                 minutos += 1;
 
-                if (minutos >= 6)
+                if (minutos >= 8)
                 {
                     Destroy(parentSpawners);
 
                 }
+                Debug.Log(cantidadEnemigos);
                 UpdateTime();
 
             }
 
             yield return new WaitForSeconds(cdTimer);
             hour += 30;
-
             if (cantidadEnemigos <= 0)
             {
                 SceneManager.LoadScene("FinDemo");

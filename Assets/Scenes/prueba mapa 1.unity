@@ -1761,7 +1761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &462636395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22522,6 +22522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 303800696}
   hour: 0
+  minutos: 0
   cdTimer: 30
 --- !u!4 &1361321642 stripped
 Transform:
@@ -23091,7 +23092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1669923095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23567,7 +23568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23642,7 +23643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2012106148
 MonoBehaviour:
   m_ObjectHideFlags: 0

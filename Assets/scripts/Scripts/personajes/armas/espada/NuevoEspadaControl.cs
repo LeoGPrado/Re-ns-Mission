@@ -33,14 +33,14 @@ public class NuevoEspadaControl : MonoBehaviour
         {
             Espada.flipX = true;
 
-            Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0.6f, 0f);
+            Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0f, 0f);
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
             Espada.flipX = false;
 
-            Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0.6f, 0f);
+            Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0f, 0f);
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 

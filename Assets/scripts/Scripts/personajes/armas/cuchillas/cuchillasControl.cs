@@ -32,18 +32,18 @@ public class cuchillasControl : MonoBehaviour
             cuchillas.flipX = true;
             Vector3 pos = puntoAparicion.localPosition;
             pos.x = -Mathf.Abs(pos.x);
-            puntoAparicion.localPosition = pos;
+            puntoAparicion.localPosition = -pos;
             cuchillas.transform.localPosition = FlipCuchillas.localPosition;
-            cuchillas.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //cuchillas.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
             cuchillas.flipX = false;
             Vector3 pos = puntoAparicion.localPosition;
             pos.x = Mathf.Abs(pos.x);
-            puntoAparicion.localPosition = pos;
+            puntoAparicion.localPosition = -pos;
             cuchillas.transform.localPosition = FlipCuchillas.localPosition;
-            cuchillas.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //cuchillas.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
         if (Input.GetMouseButtonDown(0))

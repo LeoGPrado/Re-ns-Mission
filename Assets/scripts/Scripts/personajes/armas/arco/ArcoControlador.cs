@@ -40,7 +40,7 @@ public class ArcoControlador : MonoBehaviour
             pos.x = -Mathf.Abs(pos.x);
             puntoAparicion.localPosition = pos;
             arco.transform.localPosition = FlipArco.localPosition;
-            arco.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //arco.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
@@ -49,7 +49,7 @@ public class ArcoControlador : MonoBehaviour
             pos.x = Mathf.Abs(pos.x);
             puntoAparicion.localPosition = pos;
             arco.transform.localPosition = FlipArco.localPosition;
-            arco.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //arco.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
         if (Input.GetMouseButtonDown(0))

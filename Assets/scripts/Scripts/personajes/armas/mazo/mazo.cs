@@ -35,14 +35,14 @@ public class mazo : MonoBehaviour
             Mazo.flipX = true;
 
             Mazo.transform.localPosition = FlipMazo.localPosition;
-            Mazo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //Mazo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
             Mazo.flipX = false;
 
             Mazo.transform.localPosition = FlipMazo.localPosition;
-            Mazo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //Mazo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
         if (Input.GetMouseButtonDown(0))

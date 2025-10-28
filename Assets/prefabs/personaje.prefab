@@ -1130,7 +1130,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: -0.09418533, y: 0.10729501}
     oldSize: {x: 0.625, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -1537,7 +1537,6 @@ GameObject:
   - component: {fileID: 3988715262358564079}
   - component: {fileID: 5872722707589103428}
   - component: {fileID: 5373299011567723410}
-  - component: {fileID: 7075797839785802448}
   - component: {fileID: 345977077987510976}
   m_Layer: 0
   m_Name: mazo
@@ -1726,21 +1725,6 @@ MonoBehaviour:
   FlipMazo: {fileID: 0}
   personaje: {fileID: 3295980962635202491}
   Mazo: {fileID: 5831015250374401825}
---- !u!114 &7075797839785802448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5831015250374401825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef140d10f544ed4fa1a5b738114f08b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FlipMazo: {fileID: 0}
-  personaje: {fileID: 0}
-  Mazo: {fileID: 8352000564690854902}
 --- !u!114 &345977077987510976
 MonoBehaviour:
   m_ObjectHideFlags: 0

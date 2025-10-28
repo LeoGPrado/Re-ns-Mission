@@ -34,14 +34,14 @@ public class polloControlador : MonoBehaviour
             Pollo.flipX = true;
 
             Pollo.transform.localPosition = FlipPollo.localPosition;
-            Pollo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //Pollo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
         else
         {
             Pollo.flipX = false;
 
             Pollo.transform.localPosition = FlipPollo.localPosition;
-            Pollo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            //Pollo.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
         if (Input.GetMouseButtonDown(0))

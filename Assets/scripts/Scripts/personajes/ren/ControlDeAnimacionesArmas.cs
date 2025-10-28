@@ -11,6 +11,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     [SerializeField] GameObject Pincel;
     [SerializeField] GameObject Baston;
     [SerializeField] GameObject Cuchilla;
+    public float ActivarArmaE = 0f;
 
     [SerializeField] Animator Ren;
 
@@ -35,6 +36,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
             {
                 Pollo.SetActive(false);
                 Ren.SetTrigger("AtaquePolloP");
+                ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(Pollo));
             }
 
@@ -45,7 +47,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     IEnumerator ActivarArma(GameObject arma)
     {
 
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(ActivarArmaE);
 
         arma.SetActive(true);
 

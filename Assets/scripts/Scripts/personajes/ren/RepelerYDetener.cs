@@ -26,7 +26,7 @@ public class RepelerYDetener : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemigo")
         {
@@ -42,6 +42,16 @@ public class RepelerYDetener : MonoBehaviour
 
         }
 
+    }*/
+
+    public void Golpeado(Collision2D collision)
+    {
+        Vector2 direction = collision.contacts[0].normal;
+        ren.AddForce(direction * FuerzaDeRetroceso, ForceMode2D.Impulse);
+        //NoranonAnimaciones.SetTrigger("HeridoP");
+        renScript.enabled = false;
+
+        StartCoroutine(FrenarRetroceso());
     }
 
     IEnumerator FrenarRetroceso()

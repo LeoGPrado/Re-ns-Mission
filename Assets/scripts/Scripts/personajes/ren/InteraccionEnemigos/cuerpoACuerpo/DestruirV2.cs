@@ -14,7 +14,17 @@ public class DestruirV2 : MonoBehaviour
         puedeDestruir = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!puedeDestruir) return;
+
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!puedeDestruir) return;
 

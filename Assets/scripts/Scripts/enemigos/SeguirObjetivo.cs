@@ -17,6 +17,6 @@ public class SeguirObjetivo : MonoBehaviour
 
     private void Update()
     {
-        navMeshAgent.SetDestination(objetivo.position);
+        //navMeshAgent.SetDestination(objetivo.position);
     }
 }

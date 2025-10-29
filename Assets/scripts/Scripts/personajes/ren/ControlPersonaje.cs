@@ -14,6 +14,7 @@ public class ControlPersonaje : MonoBehaviour
 
 
     [SerializeField] SpriteRenderer sr;
+    [SerializeField] private BoxCollider2D boxRen;
 
     public GameObject espada;
     public static ControlPersonaje Ren;
@@ -62,20 +63,12 @@ public class ControlPersonaje : MonoBehaviour
         if (mousePos.x < transform.position.x)
         {
             sr.flipX = false;   
-            Vector3 pos = puntoDeAtaque.localPosition;
-            pos.x = -Mathf.Abs(pos.x);  
-            puntoDeAtaque.localPosition = pos;
-            espada.transform.localPosition = puntoDeAtaque.localPosition;
-            espada.GetComponent<SpriteRenderer>().flipX = sr.flipX;
+  
         }
         else
         {
             sr.flipX = true;  
-            Vector3 pos = puntoDeAtaque.localPosition;
-            pos.x = Mathf.Abs(pos.x);  
-            puntoDeAtaque.localPosition = pos;
-            espada.transform.localPosition = puntoDeAtaque.localPosition;
-            espada.GetComponent<SpriteRenderer>().flipX = sr.flipX;
+
         }
 
 

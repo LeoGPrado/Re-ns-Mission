@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ArcoControlador : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ArcoControlador : MonoBehaviour
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer arco;
+
+    public float cooldown = 2f;
+    private bool puedeDisparar = true;
 
     private void Start()
     {
@@ -52,15 +56,26 @@ public class ArcoControlador : MonoBehaviour
             //arco.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && puedeDisparar)
         {
-            DisparoNormal();
+            StartCoroutine(DisparoConCooldown());
         }
 
-        if (Input.GetMouseButtonDown(1))
+        /*if (Input.GetMouseButtonDown(1))
         {
             DisparoEspecial();
-        }
+        }*/
+    }
+
+    IEnumerator DisparoConCooldown()
+    {
+        puedeDisparar = false;
+        yield return new WaitForSeconds(0.2f);
+
+        DisparoNormal();
+
+        yield return new WaitForSeconds(cooldown);
+        puedeDisparar = true;
     }
 
     void DisparoNormal()

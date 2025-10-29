@@ -48,6 +48,16 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srArco));
             }
+            else if (Baston != null && Baston.activeInHierarchy)
+            {
+                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
+                srBaston.enabled = false;
+
+                Ren.SetTrigger("AtaqueBastonP");
+                ActivarArmaE = 0.5f;
+                StartCoroutine(ActivarArma(srBaston));
+            }
+
 
 
         }

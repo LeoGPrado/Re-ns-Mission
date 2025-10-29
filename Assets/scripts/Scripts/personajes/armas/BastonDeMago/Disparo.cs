@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class Disparo : MonoBehaviour
 {
     public GameObject balaNormal;
@@ -7,11 +7,15 @@ public class Disparo : MonoBehaviour
     public Transform puntoAparicion;
 
 
+
     public Transform FlipBaston;
     public float velocidadBala = 20f;
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer baston;
+
+    public float cooldown = 0.5f;
+    private bool puedeDisparar = true;
 
     void Update()
     {
@@ -47,15 +51,26 @@ public class Disparo : MonoBehaviour
             //baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && puedeDisparar)
         {
-            DisparoNormal();
+            StartCoroutine(DisparoConCooldown());
         }
 
         if (Input.GetMouseButtonDown(1))
         {
             DisparoEspecial();
         }
+    }
+
+    IEnumerator DisparoConCooldown()
+    {
+        puedeDisparar = false;
+        yield return new WaitForSeconds(0.2f);
+
+        DisparoNormal();
+
+        yield return new WaitForSeconds(cooldown);
+        puedeDisparar = true;
     }
 
     void DisparoNormal()

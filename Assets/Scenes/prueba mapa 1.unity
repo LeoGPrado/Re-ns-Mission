@@ -22218,6 +22218,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2287201427275582910, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: cooldown
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2375141590772032339, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Layer
       value: 0

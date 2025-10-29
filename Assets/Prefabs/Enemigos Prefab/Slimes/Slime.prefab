@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   velocidad: 1.55
-  VidaEnemigo: 1
+  VidaEnemigo: 3
 --- !u!95 &859249785686918011
 Animator:
   serializedVersion: 7

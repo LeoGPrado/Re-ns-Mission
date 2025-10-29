@@ -30,7 +30,16 @@ public class DestruirV2 : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemigo"))
         {
-            Destroy(collision.gameObject);
+            if (collision.TryGetComponent<EsqueletoControl>(out var esqueleto))
+            {
+                esqueleto.controlVida();
+            }
+            else if (collision.TryGetComponent<SlieControl>(out var slime))
+            {
+                slime.controlVida();
+            }
+
+            //Destroy(collision.gameObject);
         }
     }
 }

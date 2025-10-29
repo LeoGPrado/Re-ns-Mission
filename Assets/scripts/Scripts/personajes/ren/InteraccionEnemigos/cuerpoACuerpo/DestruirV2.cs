@@ -13,7 +13,7 @@ public class DestruirV2 : MonoBehaviour
         if (collision.gameObject.tag == "Enemigo")
         {
 
-            Destroy(collision.gameObject);        
+            //Destroy(collision.gameObject);        
         }
     }
 }

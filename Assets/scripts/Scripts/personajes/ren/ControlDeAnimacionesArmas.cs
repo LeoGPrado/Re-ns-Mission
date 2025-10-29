@@ -34,10 +34,12 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
             }
             else if (Pollo != null && Pollo.activeInHierarchy)
             {
-                Pollo.SetActive(false);
+                SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
+                srPollo.enabled = false;
+
                 Ren.SetTrigger("AtaquePolloP");
                 ActivarArmaE = 0.6f;
-                //StartCoroutine(ActivarArma(Pollo));
+                StartCoroutine(ActivarArma(srPollo));
             }
             else if (Arco != null && Arco.activeInHierarchy)
             {

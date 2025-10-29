@@ -4,6 +4,7 @@ using System.Collections;
 public class RepelerYDetener : MonoBehaviour
 {
     [SerializeField] Rigidbody2D ren;
+    [SerializeField] BoxCollider2D renCuerpo;
     //[SerializeField] Animator renAnimaciones;
 
     public ControlPersonaje renScript;

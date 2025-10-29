@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class SeguirObjetivo : MonoBehaviour
 {
-    [SerializeField] private Transform objetivo;
+    /*[SerializeField] private Transform objetivo;
     private NavMeshAgent navMeshAgent;
 
     private void Start()
@@ -13,7 +13,7 @@ public class SeguirObjetivo : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
-    }
+    }*/
 
     private void Update()
     {

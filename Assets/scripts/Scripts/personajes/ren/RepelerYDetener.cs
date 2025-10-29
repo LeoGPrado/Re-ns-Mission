@@ -46,7 +46,7 @@ public class RepelerYDetener : MonoBehaviour
     IEnumerator FrenarRetroceso()
     {
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.3f);
 
         ren.linearVelocity = Vector2.zero;
         renScript.enabled = true;

@@ -21601,6 +21601,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903470320}
   m_CullTransparentMesh: 1
+--- !u!1001 &974902330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -138810320447680425, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_Size.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -138810320447680425, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_Name
+      value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3738847
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.0230217
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735429471866289084, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
 --- !u!1 &1060134772
 GameObject:
   m_ObjectHideFlags: 0
@@ -21980,7 +22045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b882d348b2568324797564a2aa07a31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetivo: {fileID: 0}
 --- !u!195 &1230459875
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22069,7 +22133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Size.x
-      value: 1.5123208
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_Size.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Enabled
@@ -22077,11 +22145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Offset.x
-      value: 0.25616038
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Offset.y
-      value: -0.0046014786
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsTrigger
@@ -22206,6 +22274,10 @@ PrefabInstance:
     - target: {fileID: 6606665953792077383, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976932713633505040, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: FuerzaDeRetroceso
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7376626178870164355, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Sprite
@@ -23679,7 +23751,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1971618065}
-  - component: {fileID: 1971618064}
   - component: {fileID: 1971618063}
   m_Layer: 0
   m_Name: spawn (5)
@@ -23687,7 +23758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23702,9 +23773,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
   punto3: {fileID: 0}
@@ -23715,18 +23786,6 @@ MonoBehaviour:
   probNaturaleza: 15
   tiempoMin: 1
   tiempoMax: 3
---- !u!114 &1971618064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971618062}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f74fd9608cde7eb46a395bc069d23ec4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1971618065
 Transform:
   m_ObjectHideFlags: 0
@@ -23891,3 +23950,4 @@ SceneRoots:
   - {fileID: 1230459873}
   - {fileID: 1219788872}
   - {fileID: 1254898805}
+  - {fileID: 974902330}

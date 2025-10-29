@@ -30,26 +30,35 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
             {
                 Espada.SetActive(false);
                 Ren.SetTrigger("AtaqueEspadaP");
-                StartCoroutine(ActivarArma(Espada));
+                //StartCoroutine(ActivarArma(Espada));
             }
             else if (Pollo != null && Pollo.activeInHierarchy)
             {
                 Pollo.SetActive(false);
                 Ren.SetTrigger("AtaquePolloP");
                 ActivarArmaE = 0.6f;
-                StartCoroutine(ActivarArma(Pollo));
+                //StartCoroutine(ActivarArma(Pollo));
+            }
+            else if (Arco != null && Arco.activeInHierarchy)
+            {
+                SpriteRenderer srArco = Arco.GetComponent<SpriteRenderer>();
+                srArco.enabled = false;
+
+                Ren.SetTrigger("AtaqueArcoP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srArco));
             }
 
 
         }
     }
 
-    IEnumerator ActivarArma(GameObject arma)
+    IEnumerator ActivarArma(SpriteRenderer arma)
     {
 
         yield return new WaitForSeconds(ActivarArmaE);
 
-        arma.SetActive(true);
+        arma.enabled = true;
 
 
 

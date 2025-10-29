@@ -22133,11 +22133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 1.077244
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 1.0579329
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Enabled
@@ -22145,11 +22145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.5213965
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: 0.028966427
       objectReference: {fileID: 0}
     - target: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsTrigger
@@ -22183,6 +22183,14 @@ PrefabInstance:
       propertyPath: Corazon5
       value: 
       objectReference: {fileID: 469633420}
+    - target: {fileID: 2421474397778324994, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: boxRenDerechaAtaque
+      value: 
+      objectReference: {fileID: 1254898807}
+    - target: {fileID: 2421474397778324994, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: boxRenIzquierdaAtaque
+      value: 
+      objectReference: {fileID: 1254898806}
     - target: {fileID: 3097924536505116458, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalScale.x
       value: -1
@@ -22222,6 +22230,22 @@ PrefabInstance:
     - target: {fileID: 4715175727974460864, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936712209483102576, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2203188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936712209483102576, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_Size.y
+      value: 1.058538
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936712209483102576, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.6393032
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936712209483102576, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.034565926
       objectReference: {fileID: 0}
     - target: {fileID: 5373299011567723410, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: Mazo
@@ -22356,7 +22380,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4936712209483102576, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
     - {fileID: 7423421040954724631, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22368,6 +22391,16 @@ PrefabInstance:
       insertIndex: 4
       addedObject: {fileID: 280438908}
   m_SourcePrefab: {fileID: 100100000, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+--- !u!61 &1254898806 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4936712209483102576, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+  m_PrefabInstance: {fileID: 1254898805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1254898807 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1774489094680115102, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+  m_PrefabInstance: {fileID: 1254898805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1257002510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6606665953792077383, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
@@ -23758,7 +23791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0

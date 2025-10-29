@@ -14,7 +14,9 @@ public class ControlPersonaje : MonoBehaviour
 
 
     [SerializeField] SpriteRenderer sr;
-    [SerializeField] private BoxCollider2D boxRen;
+    [SerializeField] private BoxCollider2D boxRenDerechaAtaque;
+    [SerializeField] private BoxCollider2D boxRenIzquierdaAtaque;
+
 
     public GameObject espada;
     public static ControlPersonaje Ren;
@@ -60,15 +62,19 @@ public class ControlPersonaje : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
 
+
+
         if (mousePos.x < transform.position.x)
         {
-            sr.flipX = false;   
-  
+            sr.flipX = false;
+            boxRenDerechaAtaque.enabled = false;
+            boxRenIzquierdaAtaque.enabled = true;
         }
         else
         {
-            sr.flipX = true;  
-
+            sr.flipX = true;
+            boxRenDerechaAtaque.enabled = true;
+            boxRenIzquierdaAtaque.enabled = false;
         }
 
 

@@ -7,6 +7,7 @@ TagManager:
   - protagonista
   - Enemigo
   - Esqueleto
+  - CuerpoRen
   layers:
   - Default
   - TransparentFX

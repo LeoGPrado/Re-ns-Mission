@@ -101,13 +101,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ab271666c1e3d448737f1c91bc6c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
-  balaEspecialPrefab: {fileID: 3456130279922145432, guid: eaf6154e9fce5c841a1502aabe129e89, type: 3}
+  balaNormal: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
+  balaEspecialPrefab: {fileID: 31823557697410391, guid: a1986fd1dbf69ac42ac92ba350b76e50, type: 3}
   puntoAparicion: {fileID: 8460295731221750211}
   FlipBaston: {fileID: 0}
   velocidadBala: 10
   personaje: {fileID: 0}
   baston: {fileID: 530377582370610979}
+  cooldown: 2
 --- !u!1 &6246048459167385802
 GameObject:
   m_ObjectHideFlags: 0

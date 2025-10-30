@@ -82,6 +82,13 @@ public class ArcoControlador : MonoBehaviour
     {
 
         GameObject balNormal = Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
+        SpriteRenderer srBala = balNormal.GetComponent<SpriteRenderer>();
+
+        if (personaje.flipX)
+        {
+            srBala.flipX = true;
+        }
+
         Destroy(balNormal, 3f);
 
     }

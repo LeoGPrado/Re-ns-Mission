@@ -7,6 +7,9 @@ public class SlieControl : MonoBehaviour
     private Vector3 velo = Vector3.zero;
     GameObject obj;
 
+    public CircleCollider2D AreaDeteccionJugador;
+    public bool DetectaAlJugador = false;
+
     public static SlieControl slime;
 
     public int VidaEnemigo = 1;
@@ -67,6 +70,32 @@ public class SlieControl : MonoBehaviour
         else
         {
             VidaEnemigo--;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "protagonista")
+        {
+            obj = GameObject.Find("personaje");
+
+            if (obj != null)
+            {
+                objetivo = obj.transform;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "protagonista")
+        {
+            obj = GameObject.Find("PuntoEntrada");
+
+            if (obj != null)
+            {
+                objetivo = obj.transform;
+            }
         }
     }
 }

@@ -16,13 +16,13 @@ public class seguir : MonoBehaviour
  
     void Start()
     {
-        obj = GameObject.Find("PuntoEntrada");
+        /*obj = GameObject.Find("PuntoEntrada");
 
    
         if (obj != null)
         {
             objetivo = obj.transform;
-        }
+        }*/
     }
 
     // Update is called once per frame

@@ -132,10 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60676cd4314282448a2b0f82f4a7ab3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
-  balaEspecialPrefab: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
+  balaNormal: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
+  balaEspecialPrefab: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
   puntoAparicion: {fileID: 2379163169153250784}
   FlipArco: {fileID: 0}
   velocidadBala: 10
   personaje: {fileID: 0}
   arco: {fileID: 2578225532646330291}
+  cooldown: 0.5

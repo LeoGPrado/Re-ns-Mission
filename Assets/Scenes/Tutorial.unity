@@ -184,8 +184,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.4
-  m_fontSizeBase: 46.4
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2689,16 +2689,16 @@ MonoBehaviour:
   EnemigoTutorial: {fileID: 901325902}
   textoDialogoInicial: {fileID: 10510734}
   dialogosIniciales:
-  - 'Bienvenido a la demo de ren mission,para continuar presiona el boton ''E'' '
+  - 'Bienvenido a la demo de ren mission,para continuar presiona el boton ''E''. '
   - Para moverte por la sala usa A,S,D,W.
-  - Lo que acaba de aparecer es un enemigo
-  - Te daremos un arma para este tutorial
-  - Con click izquierdo podras lanzar un ataque normal con el arma
-  - Con Click Derecho podras lanzar un ataque especial con el arma
+  - Lo que acaba de aparecer es un enemigo.
+  - Te daremos un arma para este tutorial.
+  - Con click izquierdo podras lanzar un ataque normal con el arma.
+  - Con Click Derecho podras lanzar un ataque especial con el arma.
   - La gran mayoria de armas tendra un ataque normal y especial , algunas solo tienen
-    un ataque normal
+    un ataque normal.
   - Ahora que ya aprendiste como jugar dale a 'siguiente'(E)  una vez mas para empezar
-    el juego
+    el juego.
 --- !u!4 &1383959835
 Transform:
   m_ObjectHideFlags: 0
@@ -2829,7 +2829,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -56, y: 45}
+  m_AnchoredPosition: {x: -56, y: 36.03}
   m_SizeDelta: {x: 209.6, y: 51.25}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1694478196

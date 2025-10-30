@@ -16,7 +16,7 @@ public class seguir : MonoBehaviour
  
     void Start()
     {
-        obj = GameObject.Find("personaje");
+        obj = GameObject.Find("PuntoEntrada");
 
    
         if (obj != null)
@@ -32,7 +32,7 @@ public class seguir : MonoBehaviour
         {
 
 
-            transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo , 2f);
+            //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo , 2f);
 
         }
     }

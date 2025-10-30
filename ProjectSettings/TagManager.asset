@@ -8,6 +8,7 @@ TagManager:
   - Enemigo
   - Esqueleto
   - CuerpoRen
+  - Puerta1
   layers:
   - Default
   - TransparentFX

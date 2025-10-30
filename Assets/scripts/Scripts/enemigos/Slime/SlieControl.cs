@@ -24,7 +24,7 @@ public class SlieControl : MonoBehaviour
 
     void Start()
     {
-        obj = GameObject.Find("personaje");
+        obj = GameObject.Find("PuntoEntrada");
 
 
         if (obj != null)
@@ -39,8 +39,9 @@ public class SlieControl : MonoBehaviour
 
         if (objetivo != null)  
         {
-           transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
-          
+            transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
+            //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
+
             if (objetivo.position.x < transform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);

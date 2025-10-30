@@ -25,6 +25,15 @@ public class PuertaHP : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemigo") 
+        {
+            BajarHP();
+            Destroy(collision.gameObject);
+        }
+    }
+
     public void BajarHP()
     {
         HealthSize -= 50;

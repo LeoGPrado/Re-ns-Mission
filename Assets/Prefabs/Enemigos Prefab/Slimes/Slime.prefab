@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
-  velocidad: 1.55
+  velocidad: 3
   VidaEnemigo: 3
 --- !u!95 &859249785686918011
 Animator:

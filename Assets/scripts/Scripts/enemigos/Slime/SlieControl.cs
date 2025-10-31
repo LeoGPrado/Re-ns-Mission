@@ -12,6 +12,7 @@ public class SlieControl : MonoBehaviour
 
     public static SlieControl slime;
 
+    private Transform player, door;
     public int VidaEnemigo = 1;
 
 
@@ -28,37 +29,42 @@ public class SlieControl : MonoBehaviour
     void Start()
     {
         obj = GameObject.Find("PuntoEntrada");
-
+        player = GameObject.FindWithTag("protagonista").transform;
 
         if (obj != null)
         {
-            objetivo = obj.transform;
+            door = objetivo = obj.transform;
         }
 
     }
 
     void Update()
     {
-
-        if (objetivo != null)  
+        //area de deteccion
+        Vector2 direccion = player.position - transform.position;
+        if (direccion.magnitude < 5)
         {
-            transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
-            //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
-
-            if (objetivo.position.x < transform.position.x)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-            else if (objetivo.position.x > transform.position.x)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
-
+            objetivo = player;
+        }
+        else
+        {
+            objetivo = door;
         }
 
+        //seguir objetivo
+        if (objetivo == null) return;
 
+        transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
+        //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
 
-
+        if (objetivo.position.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (objetivo.position.x > transform.position.x)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 
     public void controlVida()
@@ -73,7 +79,7 @@ public class SlieControl : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "protagonista")
         {
@@ -97,5 +103,5 @@ public class SlieControl : MonoBehaviour
                 objetivo = obj.transform;
             }
         }
-    }
+    }*/
 }

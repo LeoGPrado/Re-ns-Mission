@@ -9,6 +9,8 @@ public class TimerHoras : MonoBehaviour
     [SerializeField] private int hour = 0;
     [SerializeField] private int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
+
+    //[SerializeField] private GameObject[] enemigos;
     [SerializeField] public GameObject parentSpawners;
     public Transform parentEnemy;
     private int cantidadEnemigos;
@@ -23,7 +25,7 @@ public class TimerHoras : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cantidadEnemigos = parentEnemy.childCount;
+        //cantidadEnemigos = parentEnemy.childCount;
     }
 
     IEnumerator UpdateEvery30s()
@@ -35,8 +37,15 @@ public class TimerHoras : MonoBehaviour
                 hour = 0;
                 minutos += 1;
 
-                if (minutos >= 8)
+                if (minutos == 6)
                 {
+                    /*enemigos = GameObject.FindGameObjectsWithTag("Enemigo");
+
+                    for(int i= enemigos.Length - 1; i > 0; i++)
+                    {
+                        Destroy(enemigos[i]);
+                    }*/
+
                     Destroy(parentSpawners);
 
                 }
@@ -47,10 +56,10 @@ public class TimerHoras : MonoBehaviour
 
             yield return new WaitForSeconds(cdTimer);
             hour += 30;
-            if (cantidadEnemigos <= 0)
+            /*if (cantidadEnemigos <= 0)
             {
                 SceneManager.LoadScene("FinDemo");
-            }
+            }*/
 
             UpdateTime();
         }

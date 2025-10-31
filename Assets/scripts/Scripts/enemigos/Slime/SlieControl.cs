@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SlieControl : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SlieControl : MonoBehaviour
 
     public static SlieControl slime;
 
+    private NavMeshAgent agent;
     private Transform player, door;
     public int VidaEnemigo = 1;
 
@@ -19,6 +21,9 @@ public class SlieControl : MonoBehaviour
 
     private void Awake()
     {
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
         if (slime == null)
         {
             slime = this;
@@ -54,7 +59,8 @@ public class SlieControl : MonoBehaviour
         //seguir objetivo
         if (objetivo == null) return;
 
-        transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
+        agent.SetDestination(objetivo.position);
+        //transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
         //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
 
         if (objetivo.position.x < transform.position.x)

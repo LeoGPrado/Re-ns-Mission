@@ -26,6 +26,11 @@ public class TimerHoras : MonoBehaviour
     void Update()
     {
         cantidadEnemigos = parentEnemy.childCount;
+
+        if (cantidadEnemigos <= 0 && minutos==6)
+        {
+            SceneManager.LoadScene("FinDemo");
+        }
     }
 
     IEnumerator UpdateEvery30s()
@@ -48,15 +53,31 @@ public class TimerHoras : MonoBehaviour
 
             }
 
+
             yield return new WaitForSeconds(cdTimer);
 
-            hour += 30;
+            if (minutos != 6)
+            {
+                hour += 30;
+                /*if (cantidadEnemigos <= 0)
+                {
+                    SceneManager.LoadScene("FinDemo");
+                }*/
+
+                UpdateTime();
+            }
+            else
+            {
+                break;
+            }
+
+            /*hour += 30;
             if (cantidadEnemigos <= 0)
             {
                 SceneManager.LoadScene("FinDemo");
             }
 
-            UpdateTime();
+            UpdateTime();*/
         }
 
     }

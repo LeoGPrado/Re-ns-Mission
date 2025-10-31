@@ -6129,7 +6129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   luzDeDia: {fileID: 619394801}
-  tiempoDeOscuridad: 10
+  tiempoDeOscuridad: 120
   tiempoDeTransicion: 60
   intensidadInicial: 0.5
   intensidadFinal: 1

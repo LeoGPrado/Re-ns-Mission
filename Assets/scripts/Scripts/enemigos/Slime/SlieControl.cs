@@ -17,6 +17,8 @@ public class SlieControl : MonoBehaviour
     private Transform player, door;
     public int VidaEnemigo = 1;
 
+    [SerializeField] private GameObject manaPartícula;
+
 
 
     private void Awake()
@@ -78,6 +80,7 @@ public class SlieControl : MonoBehaviour
         if (VidaEnemigo <= 1)
         {
             Destroy(gameObject);
+            Instantiate(manaPartícula, transform.position, Quaternion.identity);
         }
         else
         {

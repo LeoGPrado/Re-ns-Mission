@@ -12,6 +12,7 @@ TagManager:
   - enemy
   - bala
   - CuerpoEnemigo
+  - ManaCollider
   layers:
   - Default
   - TransparentFX

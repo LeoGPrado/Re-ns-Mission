@@ -20,7 +20,7 @@ public class SelectorArmas : MonoBehaviour
 
     private void Awake()
     {
-        randomizer1 = 1; //Random.Range(0, 8);
+        randomizer1 = 0; //Random.Range(0, 8);
         randomizer2 = 2; //Random.Range(0, 8);
         randomizer3 = 3; //Random.Range(0, 8);
 
@@ -31,6 +31,9 @@ public class SelectorArmas : MonoBehaviour
     void Start()
     {
         abrirSelector();
+        listaBotonesA1[randomizer1].SetActive(true);
+        listaBotonesA2[randomizer2].SetActive(true);
+        listaBotonesA3[randomizer3].SetActive(true);
     }
 
     // Update is called once per frame
@@ -73,6 +76,7 @@ public class SelectorArmas : MonoBehaviour
     public void ElegirBaston()
     {
         armasIndex = 0;
+        elegirArma = true;
     }
 
     public void ElegirPincel()

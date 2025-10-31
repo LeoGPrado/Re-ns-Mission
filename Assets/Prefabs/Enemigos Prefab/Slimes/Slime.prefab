@@ -232,6 +232,7 @@ MonoBehaviour:
   AreaDeteccionJugador: {fileID: -1982440893698779119}
   DetectaAlJugador: 0
   VidaEnemigo: 3
+  "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
 --- !u!95 &859249785686918011
 Animator:
   serializedVersion: 7

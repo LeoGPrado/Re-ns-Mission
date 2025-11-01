@@ -21,10 +21,11 @@ public class ManáParticlePc : MonoBehaviour
     [SerializeField] private bool isMoving;
     [SerializeField] private float delayTimer = 0f;
     [SerializeField] private Vector2 currentParticleVel;
+    [SerializeField] private PlayerEnergyController pEnergy;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("protagonista").transform;
 
         Destroy(gameObject, lifeTime);
 
@@ -55,9 +56,9 @@ public class ManáParticlePc : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("ManaCollider"))
         {
-            other.GetComponent<PlayerEnergyController>().ManaCharge();
+            pEnergy.ManaCharge();
 
             //if (PickUpsfx)
             //{

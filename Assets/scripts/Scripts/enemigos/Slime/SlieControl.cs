@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SlieControl : MonoBehaviour
 {
@@ -12,12 +13,19 @@ public class SlieControl : MonoBehaviour
 
     public static SlieControl slime;
 
+    private NavMeshAgent agent;
+    private Transform player, door;
     public int VidaEnemigo = 1;
+
+    [SerializeField] private GameObject manaPartícula;
 
 
 
     private void Awake()
     {
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
         if (slime == null)
         {
             slime = this;
@@ -28,37 +36,43 @@ public class SlieControl : MonoBehaviour
     void Start()
     {
         obj = GameObject.Find("PuntoEntrada");
-
+        player = GameObject.FindWithTag("protagonista").transform;
 
         if (obj != null)
         {
-            objetivo = obj.transform;
+            door = objetivo = obj.transform;
         }
 
     }
 
     void Update()
     {
-
-        if (objetivo != null)  
+        //area de deteccion
+        Vector2 direccion = player.position - transform.position;
+        if (direccion.magnitude < 5)
         {
-            transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
-            //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
-
-            if (objetivo.position.x < transform.position.x)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-            else if (objetivo.position.x > transform.position.x)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
-
+            objetivo = player;
+        }
+        else
+        {
+            objetivo = door;
         }
 
+        //seguir objetivo
+        if (objetivo == null) return;
 
+        agent.SetDestination(objetivo.position);
+        //transform.position = Vector3.MoveTowards(transform.position, objetivo.position, velocidad * Time.deltaTime);
+        //transform.position = Vector3.SmoothDamp(transform.position, objetivo.position, ref velo, 3f);
 
-
+        if (objetivo.position.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (objetivo.position.x > transform.position.x)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 
     public void controlVida()
@@ -66,6 +80,7 @@ public class SlieControl : MonoBehaviour
         if (VidaEnemigo <= 1)
         {
             Destroy(gameObject);
+            Instantiate(manaPartícula, transform.position, Quaternion.identity);
         }
         else
         {
@@ -73,7 +88,7 @@ public class SlieControl : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "protagonista")
         {
@@ -97,5 +112,5 @@ public class SlieControl : MonoBehaviour
                 objetivo = obj.transform;
             }
         }
-    }
+    }*/
 }

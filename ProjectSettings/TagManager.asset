@@ -9,6 +9,10 @@ TagManager:
   - Esqueleto
   - CuerpoRen
   - Puerta1
+  - enemy
+  - bala
+  - CuerpoEnemigo
+  - ManaCollider
   layers:
   - Default
   - TransparentFX

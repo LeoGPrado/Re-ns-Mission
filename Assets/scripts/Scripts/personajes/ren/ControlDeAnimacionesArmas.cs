@@ -28,8 +28,12 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         {
             if(Espada != null && Espada.activeInHierarchy)
             {
-                Espada.SetActive(false);
+                SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
+                srEspada.enabled = false;
+
                 Ren.SetTrigger("AtaqueEspadaP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srEspada));
                 //StartCoroutine(ActivarArma(Espada));
             }
             else if (Pollo != null && Pollo.activeInHierarchy)

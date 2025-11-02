@@ -8,8 +8,8 @@ public class SlieControl : MonoBehaviour
     private Vector3 velo = Vector3.zero;
     GameObject obj;
 
-    public CircleCollider2D AreaDeteccionJugador;
-    public bool DetectaAlJugador = false;
+    //public CircleCollider2D AreaDeteccionJugador;
+    //public bool DetectaAlJugador = false;
 
     public static SlieControl slime;
 

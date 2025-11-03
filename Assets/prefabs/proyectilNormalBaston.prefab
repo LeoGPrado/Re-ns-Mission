@@ -133,6 +133,10 @@ MonoBehaviour:
   velocidad: 5
   quieto: 0
   ImpoctoArma: {fileID: 0}
+  DFuego: 0
+  Dhielo: 1
+  Dnaturaleza: 0
+  Dnormal: 0
 --- !u!58 &1318121328455716405
 CircleCollider2D:
   m_ObjectHideFlags: 0

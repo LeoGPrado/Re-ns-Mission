@@ -19,13 +19,17 @@ public class SlieControl : MonoBehaviour
 
     [SerializeField] private GameObject manaPartícula;
 
-
+    public bool slimeFuego=false;
+    public bool slimeHielo=false;
+    public bool slimeNaturaleza=false;
+    public bool Slime=false;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
         if (slime == null)
         {
             slime = this;
@@ -77,15 +81,61 @@ public class SlieControl : MonoBehaviour
 
     public void controlVida()
     {
-        if (VidaEnemigo <= 1)
+        if (VidaEnemigo < 1)
         {
             Destroy(gameObject);
             Instantiate(manaPartícula, transform.position, Quaternion.identity);
         }
         else
         {
-            VidaEnemigo--;
+            if (slimeFuego == true)
+            {
+                VidaEnemigo --;
+            }
+            else if (slimeHielo==true)
+            {
+
+                VidaEnemigo--;
+            }
+            else if (slimeNaturaleza == true)
+            {
+
+                VidaEnemigo--;
+            }
+            else if (slime == true)
+            {
+
+                VidaEnemigo--;
+            }
+
         }
+    }
+    public bool confirmarElemento()
+    {
+        if (slimeFuego == true)
+        {
+            return true;
+        }
+        else if (slimeHielo == true)
+        {
+
+            return true;
+        }
+        else if (slimeNaturaleza == true)
+        {
+
+            return true;
+        }
+        else if (slime == true)
+        {
+
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        
     }
 
     /*private void OnTriggerEnter2D(Collider2D collision)

@@ -5,6 +5,20 @@ public class DestruirEnemigo : MonoBehaviour
     [SerializeField] float velocidad = 5f;
     public bool quieto = true;
     [SerializeField] Animator ImpoctoArma;
+    public static DestruirEnemigo DEnemigo;
+
+    public bool DFuego=false;
+    public bool Dhielo=false;
+    public bool Dnaturaleza=false;
+    public bool Dnormal=false;
+
+    private void Awake()
+    {
+        if (DEnemigo == null)
+        {
+            DEnemigo = this;
+        }
+    }
 
     void Start()
     {
@@ -39,7 +53,40 @@ public class DestruirEnemigo : MonoBehaviour
                 }
                 else if (collision.TryGetComponent<SlieControl>(out var slime))
                 {
-                    slime.controlVida();
+                    //si coloco un nuevo metodo en slimecontrol que decuelva un true o folse
+                    if (SlieControl.slime.confirmarElemento()==true)//y lo cocloca aqui ya que slimecontrol es static
+                    {
+                        print("La bala ha entrado a enemigo de fuego");
+                        slime.controlVida();
+                        slime.controlVida();
+                        slime.controlVida();
+                    }
+                    else if (SlieControl.slime.confirmarElemento() == true)
+                    {
+                        print("La bala ha entrado a enemigo de hielo");
+                        slime.controlVida();
+                        slime.controlVida();
+                        slime.controlVida();
+                    }
+                    else if (SlieControl.slime.confirmarElemento() == true)
+                    {
+                        print("La bala ha entrado a enemigo de naturaleza");
+                        slime.controlVida();
+                        slime.controlVida();
+                        slime.controlVida();
+                    }
+                    else if (SlieControl.slime.confirmarElemento() == true)
+                    {
+                        print("La bala ha entrado a enemigo normal");
+                        slime.controlVida();
+                        slime.controlVida();
+                    }
+                    else
+                    {
+                        print("La bala ha entrado a resistencia");
+                        slime.controlVida();
+                    }
+                    //slime.controlVida();
                 }
                 Destroy(gameObject);
             }

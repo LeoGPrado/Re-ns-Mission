@@ -226,8 +226,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   velocidad: 3
-  VidaEnemigo: 3
+  VidaEnemigo: 5
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
+  slimeFuego: 1
+  slimeHielo: 0
+  slimeNaturaleza: 0
+  Slime: 0
 --- !u!95 &859249785686918011
 Animator:
   serializedVersion: 7

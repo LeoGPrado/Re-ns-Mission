@@ -110,30 +110,31 @@ public class SlieControl : MonoBehaviour
 
         }
     }
-    public bool confirmarElemento()
+    public string confirmarElemento()
     {
         if (slimeFuego == true)
         {
-            return true;
+            print("slimeFuegoEsTrue");
+            return "fuego";
         }
         else if (slimeHielo == true)
         {
 
-            return true;
+            return "hielo";
         }
         else if (slimeNaturaleza == true)
         {
 
-            return true;
+            return "naturaleza";
         }
         else if (slime == true)
         {
 
-            return true;
+            return "normal";
         }
         else
         {
-            return false;
+            return "desconocido";
         }
         
     }

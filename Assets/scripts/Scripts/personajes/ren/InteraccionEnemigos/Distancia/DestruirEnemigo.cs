@@ -53,29 +53,32 @@ public class DestruirEnemigo : MonoBehaviour
                 }
                 else if (collision.TryGetComponent<SlieControl>(out var slime))
                 {
+                    string tipoSlime = slime.confirmarElemento();
+                    print("Elemento detectado en enemigo: " + tipoSlime);
+
                     //si coloco un nuevo metodo en slimecontrol que decuelva un true o folse
-                    if (SlieControl.slime.confirmarElemento()==true)//y lo cocloca aqui ya que slimecontrol es static
+                    if (tipoSlime=="fuego" && DFuego == true)//y lo cocloca aqui ya que slimecontrol es static
                     {
                         print("La bala ha entrado a enemigo de fuego");
                         slime.controlVida();
                         slime.controlVida();
                         slime.controlVida();
                     }
-                    else if (SlieControl.slime.confirmarElemento() == true)
+                    else if (tipoSlime == "hielo" && Dhielo == true)
                     {
                         print("La bala ha entrado a enemigo de hielo");
                         slime.controlVida();
                         slime.controlVida();
                         slime.controlVida();
                     }
-                    else if (SlieControl.slime.confirmarElemento() == true)
+                    else if (tipoSlime == "naturaleza" && Dnaturaleza == true)
                     {
                         print("La bala ha entrado a enemigo de naturaleza");
                         slime.controlVida();
                         slime.controlVida();
                         slime.controlVida();
                     }
-                    else if (SlieControl.slime.confirmarElemento() == true)
+                    else if (tipoSlime == "normal" && Dnormal == true)
                     {
                         print("La bala ha entrado a enemigo normal");
                         slime.controlVida();

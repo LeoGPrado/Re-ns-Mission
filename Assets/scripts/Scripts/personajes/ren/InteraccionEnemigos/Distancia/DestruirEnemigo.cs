@@ -57,28 +57,75 @@ public class DestruirEnemigo : MonoBehaviour
                     print("Elemento detectado en enemigo: " + tipoSlime);
 
                     //si coloco un nuevo metodo en slimecontrol que decuelva un true o folse
-                    if (tipoSlime=="fuego" && DFuego == true)//y lo cocloca aqui ya que slimecontrol es static
+                    if (tipoSlime=="fuego")//y lo cocloca aqui ya que slimecontrol es static
                     {
-                        print("La bala ha entrado a enemigo de fuego");
+                        if (DFuego == true)
+                        {
+                            slime.controlVida();
+                        }
+                        else if (Dhielo == true)
+                        {
+                            slime.controlVida();
+                            slime.controlVida();
+                            slime.controlVida();
+                        }
+                        else
+                        {
+                            slime.controlVida();
+                            slime.controlVida();
+                        }
+                        /*print("La bala ha entrado a enemigo de fuego");
                         slime.controlVida();
                         slime.controlVida();
-                        slime.controlVida();
+                        slime.controlVida();*/
                     }
-                    else if (tipoSlime == "hielo" && Dhielo == true)
+                    else if (tipoSlime == "hielo")
                     {
-                        print("La bala ha entrado a enemigo de hielo");
+                        if (Dhielo == true)
+                        {
+                            slime.controlVida();
+                        }
+                        else if (Dnaturaleza == true)
+                        {
+                            slime.controlVida();
+                            slime.controlVida();
+                            slime.controlVida();
+                        }
+                        else
+                        {
+                            slime.controlVida();
+                            slime.controlVida();
+                        }
+
+                        /*print("La bala ha entrado a enemigo de hielo");
                         slime.controlVida();
                         slime.controlVida();
-                        slime.controlVida();
+                        slime.controlVida();*/
                     }
-                    else if (tipoSlime == "naturaleza" && Dnaturaleza == true)
+                    else if (tipoSlime == "naturaleza")
                     {
-                        print("La bala ha entrado a enemigo de naturaleza");
+                        if (Dnaturaleza == true)
+                        {
+                            slime.controlVida();
+                        }
+                        else if (DFuego == true)
+                        {
+                            slime.controlVida();
+                            slime.controlVida();
+                            slime.controlVida();
+                        }
+                        else
+                        {
+                            slime.controlVida();
+                            slime.controlVida();
+                        }
+
+                        /*print("La bala ha entrado a enemigo de naturaleza");
                         slime.controlVida();
                         slime.controlVida();
-                        slime.controlVida();
+                        slime.controlVida();*/
                     }
-                    else if (tipoSlime == "normal" && Dnormal == true)
+                    else if (tipoSlime == "normal")
                     {
                         print("La bala ha entrado a enemigo normal");
                         slime.controlVida();
@@ -86,8 +133,8 @@ public class DestruirEnemigo : MonoBehaviour
                     }
                     else
                     {
-                        print("La bala ha entrado a resistencia");
-                        slime.controlVida();
+                        /*print("La bala ha entrado a resistencia");
+                        slime.controlVida();*/
                     }
                     //slime.controlVida();
                 }

@@ -35166,18 +35166,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
+  slimeNormal: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
   punto3: {fileID: 0}
   punto4: {fileID: 0}
-  probNormal: 50
-  probHielo: 20
-  probFuego: 15
-  probNaturaleza: 15
+  probNormal: 25
+  probHielo: 25
+  probFuego: 25
+  probNaturaleza: 25
   tiempoMin: 2
   tiempoMax: 4
 --- !u!4 &1971618065

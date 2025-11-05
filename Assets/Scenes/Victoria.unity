@@ -1058,7 +1058,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 548, y: -135}
-  m_SizeDelta: {x: 320, y: 60}
+  m_SizeDelta: {x: 480, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397814745
 MonoBehaviour:
@@ -1104,10 +1104,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1304154045}
-        m_TargetAssemblyTypeName: SalirDelJuego, Assembly-CSharp
-        m_MethodName: SalirJuego
-        m_Mode: 1
+      - m_Target: {fileID: 1304154046}
+        m_TargetAssemblyTypeName: cambioPantallas, Assembly-CSharp
+        m_MethodName: cambioEscena
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

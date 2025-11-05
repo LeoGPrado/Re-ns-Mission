@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: c5cfc2848cfe64744ae7e438af3c12ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 968365341772464557
+    second: objetos de gremio_0
+  - first:
+      213: 7227486441588688536
+    second: objetos de gremio_1
+  - first:
+      213: 8712884387467390334
+    second: objetos de gremio_2
+  - first:
+      213: 8701739580922911513
+    second: objetos de gremio_3
+  - first:
+      213: 1702349077502184584
+    second: objetos de gremio_4
+  - first:
+      213: 2484419445832577104
+    second: objetos de gremio_5
+  - first:
+      213: -2024628122693795333
+    second: objetos de gremio_6
+  - first:
+      213: 4185370294113057155
+    second: objetos de gremio_7
+  - first:
+      213: -7382138742059628933
+    second: objetos de gremio_8
+  - first:
+      213: -7408151379395788460
+    second: objetos de gremio_9
+  - first:
+      213: -266766213638009858
+    second: objetos de gremio_10
+  - first:
+      213: -5359592902206064877
+    second: objetos de gremio_11
+  - first:
+      213: -7638854447114767256
+    second: objetos de gremio_12
+  - first:
+      213: 5899919975368785609
+    second: objetos de gremio_13
+  - first:
+      213: -6137829347335620253
+    second: objetos de gremio_14
+  - first:
+      213: -3186373647609591775
+    second: objetos de gremio_15
+  - first:
+      213: -6144590210659852793
+    second: objetos de gremio_16
+  - first:
+      213: -1649390486050146924
+    second: objetos de gremio_17
+  - first:
+      213: 2964068308128148926
+    second: objetos de gremio_18
+  - first:
+      213: 8256008544219822847
+    second: objetos de gremio_19
+  - first:
+      213: 7965357695106788958
+    second: objetos de gremio_20
+  - first:
+      213: -5053685135217065846
+    second: objetos de gremio_21
+  - first:
+      213: 7257519164611680445
+    second: objetos de gremio_22
+  - first:
+      213: 1368973321336856824
+    second: objetos de gremio_23
+  - first:
+      213: -8307862966057045644
+    second: objetos de gremio_24
+  - first:
+      213: 8240726178595271428
+    second: objetos de gremio_25
+  - first:
+      213: -5762664623775624582
+    second: objetos de gremio_26
+  - first:
+      213: -4711538365166986716
+    second: objetos de gremio_27
+  - first:
+      213: -1370743439402547668
+    second: objetos de gremio_28
+  - first:
+      213: -8847400225235584352
+    second: objetos de gremio_29
+  - first:
+      213: 3424635130895205108
+    second: objetos de gremio_30
+  - first:
+      213: -6832142863077893171
+    second: objetos de gremio_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: objetos de gremio_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 198
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1c521d523507d00800000000000000
+      internalID: 968365341772464557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 224
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89688d130a03d4460800000000000000
+      internalID: 7227486441588688536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 224
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d6a0400326ae870800000000000000
+      internalID: 8712884387467390334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 227
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bddd88b0ac2c870800000000000000
+      internalID: 8701739580922911513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 227
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c4b307775ff9710800000000000000
+      internalID: 1702349077502184584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 194
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0507ceda25e6a7220800000000000000
+      internalID: 2484419445832577104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 194
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf10298037317e3e0800000000000000
+      internalID: -2024628122693795333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 195
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389b4128b1c651a30800000000000000
+      internalID: 4185370294113057155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 196
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7603e42def5d8990800000000000000
+      internalID: -7382138742059628933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 143
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4514bcc0295f03990800000000000000
+      internalID: -7408151379395788460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 161
+        width: 136
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbc706ca814c4cf0800000000000000
+      internalID: -266766213638009858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_11
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 160
+        width: 74
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3177d4bd6a6ee95b0800000000000000
+      internalID: -5359592902206064877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 129
+        width: 136
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864bfcc4a565df590800000000000000
+      internalID: -7638854447114767256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 137
+        width: 58
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce761f55f9b0e150800000000000000
+      internalID: 5899919975368785609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 77
+        width: 131
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369b71c6abc02daa0800000000000000
+      internalID: -6137829347335620253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_15
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 50
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1288094bc0ab7c3d0800000000000000
+      internalID: -3186373647609591775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 50
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ed64342c70abaa0800000000000000
+      internalID: -6144590210659852793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 50
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495721f77103c19e0800000000000000
+      internalID: -1649390486050146924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 62
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebda8f30c6c722920800000000000000
+      internalID: 2964068308128148926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_19
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 49
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffaffcc570c339270800000000000000
+      internalID: 8256008544219822847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 62
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ea3c51f92aa8e60800000000000000
+      internalID: 7965357695106788958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_21
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 49
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8007b42524bdd9b0800000000000000
+      internalID: -5053685135217065846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_22
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 62
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8d44d6a33e7b460800000000000000
+      internalID: 7257519164611680445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_23
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 49
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0254d8bf19ff210800000000000000
+      internalID: 1368973321336856824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 62
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471fb8936aa84bc80800000000000000
+      internalID: -8307862966057045644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403fe665cc0fc5270800000000000000
+      internalID: 8240726178595271428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72d42c7e07e600b0800000000000000
+      internalID: -5762664623775624582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_27
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 36
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ad896d1d04d9eb0800000000000000
+      internalID: -4711538365166986716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_28
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 36
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26c638ba142afce0800000000000000
+      internalID: -1370743439402547668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa3f15ee58b73580800000000000000
+      internalID: -8847400225235584352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_30
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 81
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2055ec18fb68f20800000000000000
+      internalID: 3424635130895205108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos de gremio_31
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 81
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb9587a34a5f21a0800000000000000
+      internalID: -6832142863077893171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      objetos de gremio_0: 968365341772464557
+      objetos de gremio_1: 7227486441588688536
+      objetos de gremio_10: -266766213638009858
+      objetos de gremio_11: -5359592902206064877
+      objetos de gremio_12: -7638854447114767256
+      objetos de gremio_13: 5899919975368785609
+      objetos de gremio_14: -6137829347335620253
+      objetos de gremio_15: -3186373647609591775
+      objetos de gremio_16: -6144590210659852793
+      objetos de gremio_17: -1649390486050146924
+      objetos de gremio_18: 2964068308128148926
+      objetos de gremio_19: 8256008544219822847
+      objetos de gremio_2: 8712884387467390334
+      objetos de gremio_20: 7965357695106788958
+      objetos de gremio_21: -5053685135217065846
+      objetos de gremio_22: 7257519164611680445
+      objetos de gremio_23: 1368973321336856824
+      objetos de gremio_24: -8307862966057045644
+      objetos de gremio_25: 8240726178595271428
+      objetos de gremio_26: -5762664623775624582
+      objetos de gremio_27: -4711538365166986716
+      objetos de gremio_28: -1370743439402547668
+      objetos de gremio_29: -8847400225235584352
+      objetos de gremio_3: 8701739580922911513
+      objetos de gremio_30: 3424635130895205108
+      objetos de gremio_31: -6832142863077893171
+      objetos de gremio_4: 1702349077502184584
+      objetos de gremio_5: 2484419445832577104
+      objetos de gremio_6: -2024628122693795333
+      objetos de gremio_7: 4185370294113057155
+      objetos de gremio_8: -7382138742059628933
+      objetos de gremio_9: -7408151379395788460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

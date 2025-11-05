@@ -5,7 +5,8 @@ public class Disparo : MonoBehaviour
     public GameObject balaNormal;
     public GameObject balaEspecialPrefab;
     public Transform puntoAparicion;
-    [SerializeField] private MedidorArteEspecial medidor;
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
 
 
 
@@ -98,12 +99,13 @@ public class Disparo : MonoBehaviour
 
     void DisparoEspecial()
     {
-        if (medidor.canUseUltimate)
-        {
-            GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-            Destroy(bala, 1f);
-            medidor.canUseUltimate = false;
-        }
+        
+        
+         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+         Destroy(bala, 1f);
+         medidor.canUseUltimate = false;
+         playerEC.Ultimate();
+        
         
 
     }

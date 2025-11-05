@@ -67,9 +67,9 @@ public class MedidorArteEspecial : MonoBehaviour
         UltCooldown();
         AlphaVfx();
 
-        if (playerMana.currentMana >= playerMana.maxMana && !isOnCooldown)
+        if (playerMana.energycharged && !isOnCooldown)
         {
-            UseWeaponArt();
+            CanUseWeaponArt();
             ultReady.gameObject.SetActive(true);
         }
         else
@@ -134,7 +134,7 @@ public class MedidorArteEspecial : MonoBehaviour
     }
 
     //Método para el uso de la ulti
-    public void UseWeaponArt()
+    public void CanUseWeaponArt()
     {
         
         

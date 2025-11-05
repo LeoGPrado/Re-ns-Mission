@@ -13,6 +13,7 @@ public class PlayerEnergyController : MonoBehaviour
     public float manaPerEnemy = 20f;
     public float baseMana = 0f;
     public bool usedUltimate = false;
+    public bool energycharged = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,9 +28,9 @@ public class PlayerEnergyController : MonoBehaviour
     void Update()
     {
 
-        if(ultimate.canUseUltimate && Input.GetMouseButtonDown(1))
+        if(currentMana >= maxMana)
         {
-            Ultimate();
+            energycharged = true;
         }
     }
 
@@ -45,10 +46,10 @@ public class PlayerEnergyController : MonoBehaviour
     }
 
 
-    private void Ultimate()
+    public void Ultimate()
     {
     
-        
+        energycharged = false;
         usedUltimate = true;
         currentMana = baseMana;
             

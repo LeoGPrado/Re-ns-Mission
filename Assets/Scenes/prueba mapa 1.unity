@@ -26798,6 +26798,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1531625472}
     - target: {fileID: 2287201427275582910, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: playerEC
+      value: 
+      objectReference: {fileID: 1254898821}
+    - target: {fileID: 2287201427275582910, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: balaNormal
       value: 
       objectReference: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
@@ -27019,6 +27023,7 @@ MonoBehaviour:
   manaPerEnemy: 20
   baseMana: 0
   usedUltimate: 0
+  energycharged: 0
 --- !u!1 &1256993272
 GameObject:
   m_ObjectHideFlags: 0

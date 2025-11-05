@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1920957630}
+      - m_Target: {fileID: 1920957632}
         m_TargetAssemblyTypeName: cambioPantallas, Assembly-CSharp
         m_MethodName: cambioEscena
         m_Mode: 3
@@ -271,7 +271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &74406352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -391,7 +391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &567672562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -493,37 +493,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567672561}
   m_CullTransparentMesh: 1
---- !u!1 &692263683
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 692263684}
-  m_Layer: 0
-  m_Name: controladorReiniciar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &692263684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692263683}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 635.35583, y: 323.95502, z: 4.6270614}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &796049530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +986,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1920957630}
+      - m_Target: {fileID: 1920957632}
         m_TargetAssemblyTypeName: cambioPantallas, Assembly-CSharp
         m_MethodName: cambioEscena
         m_Mode: 3
@@ -1227,7 +1196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1920957631}
-  - component: {fileID: 1920957630}
+  - component: {fileID: 1920957632}
   m_Layer: 0
   m_Name: CambiadorEscena
   m_TagString: Untagged
@@ -1235,18 +1204,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1920957630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920957629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7d8fa75d5ff25349ab06829918f019a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1920957631
 Transform:
   m_ObjectHideFlags: 0
@@ -1262,6 +1219,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920957632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920957629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d8fa75d5ff25349ab06829918f019a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1979586195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1396,5 @@ SceneRoots:
   - {fileID: 796049533}
   - {fileID: 807966776}
   - {fileID: 2024451212}
-  - {fileID: 692263684}
   - {fileID: 1251113601}
   - {fileID: 1920957631}

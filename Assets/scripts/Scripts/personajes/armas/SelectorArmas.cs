@@ -63,7 +63,8 @@ public class SelectorArmas : MonoBehaviour
 
             armaElegida = true;
             panelArmas.SetActive(false);
-            Time.timeScale = 1.0f;
+            //PausaV2.pausa.SeguirTiempo();
+            //Time.timeScale = 1.0f;
 
         }
     }
@@ -77,6 +78,8 @@ public class SelectorArmas : MonoBehaviour
     {
         armasIndex = 0;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     public void ElegirPincel()
@@ -84,51 +87,62 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 1;
         elegirArma = true;
 
+        PausaV2.pausa.SeguirTiempo();
+
     }
 
     public void ElegirPollo()
     {
         armasIndex = 2;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     public void ElegirEspadas()
     {
         armasIndex = 3;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     public void ElegirMazo()
     {
         armasIndex = 4;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     public void ElegirPescado()
     {
         armasIndex = 5;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     public void ElegirArco()
     {
         armasIndex = 6;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     public void ElegirCuchillas()
     {
         armasIndex = 7;
         elegirArma = true;
+
+        PausaV2.pausa.SeguirTiempo();
     }
 
     void abrirSelector()
     {
         panelArmas.SetActive(true);
-        Time.timeScale = 0;
+        PausaV2.pausa.ParaTiempo();
+        //Time.timeScale = 0;
     }
-
-
-
-
 }

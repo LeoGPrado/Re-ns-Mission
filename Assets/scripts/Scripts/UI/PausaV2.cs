@@ -70,7 +70,7 @@ public class PausaV2 : MonoBehaviour
         //ParaTiempo();
         //Pausa = true;
 
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }

@@ -15,6 +15,7 @@ public class SelectorArmas : MonoBehaviour
     [SerializeField] private bool elegirArma = false;
     public int numeroArma;
     [SerializeField] private int armasIndex;
+    
 
 
 
@@ -63,8 +64,7 @@ public class SelectorArmas : MonoBehaviour
 
             armaElegida = true;
             panelArmas.SetActive(false);
-            //PausaV2.pausa.SeguirTiempo();
-            //Time.timeScale = 1.0f;
+            
 
         }
     }
@@ -79,7 +79,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 0;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     public void ElegirPincel()
@@ -87,7 +87,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 1;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
 
     }
 
@@ -96,7 +96,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 2;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     public void ElegirEspadas()
@@ -104,7 +104,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 3;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     public void ElegirMazo()
@@ -112,7 +112,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 4;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     public void ElegirPescado()
@@ -120,7 +120,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 5;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     public void ElegirArco()
@@ -128,7 +128,7 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 6;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     public void ElegirCuchillas()
@@ -136,13 +136,12 @@ public class SelectorArmas : MonoBehaviour
         armasIndex = 7;
         elegirArma = true;
 
-        PausaV2.pausa.SeguirTiempo();
+        Time.timeScale = 1;
     }
 
     void abrirSelector()
     {
         panelArmas.SetActive(true);
-        PausaV2.pausa.ParaTiempo();
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
     }
 }

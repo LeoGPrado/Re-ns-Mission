@@ -5,6 +5,7 @@ public class Disparo : MonoBehaviour
     public GameObject balaNormal;
     public GameObject balaEspecialPrefab;
     public Transform puntoAparicion;
+    [SerializeField] private MedidorArteEspecial medidor;
 
 
 
@@ -56,10 +57,14 @@ public class Disparo : MonoBehaviour
             StartCoroutine(DisparoConCooldown());
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (medidor.canUseUltimate)
         {
-            DisparoEspecial();
+            if (Input.GetMouseButtonDown(1))
+            {
+                DisparoEspecial();
+            }
         }
+      
     }
 
     IEnumerator DisparoConCooldown()
@@ -93,9 +98,13 @@ public class Disparo : MonoBehaviour
 
     void DisparoEspecial()
     {
-
-        GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-        Destroy(bala, 1f);
+        if (medidor.canUseUltimate)
+        {
+            GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+            Destroy(bala, 1f);
+            medidor.canUseUltimate = false;
+        }
+        
 
     }
 }

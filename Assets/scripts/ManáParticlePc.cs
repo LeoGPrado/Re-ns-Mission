@@ -26,6 +26,7 @@ public class ManáParticlePc : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("protagonista").transform;
+        pEnergy = GameObject.FindAnyObjectByType<PlayerEnergyController>();
 
         Destroy(gameObject, lifeTime);
 

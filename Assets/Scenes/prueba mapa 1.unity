@@ -26011,13 +26011,14 @@ GameObject:
   - component: {fileID: 1164081335}
   - component: {fileID: 1164081334}
   - component: {fileID: 1164081339}
+  - component: {fileID: 1164081340}
   m_Layer: 5
   m_Name: CanvasPausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1164081334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26030,8 +26031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb79c9b19225f5e409171d216bde3f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjetoMenuPausa: {fileID: 1207037830}
-  Pausa: 0
 --- !u!114 &1164081335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26129,6 +26128,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectMenuPuase: {fileID: 1207037830}
   Pause: 0
+--- !u!114 &1164081340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164081333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd96c68b19cda4d8ec127d7e08de34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjetoMenuPausa: {fileID: 1207037830}
+  Pausa: 0
 --- !u!1 &1165823778
 GameObject:
   m_ObjectHideFlags: 0
@@ -26781,6 +26794,10 @@ PrefabInstance:
       value: personaje
       objectReference: {fileID: 0}
     - target: {fileID: 2287201427275582910, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: medidor
+      value: 
+      objectReference: {fileID: 1531625472}
+    - target: {fileID: 2287201427275582910, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: balaNormal
       value: 
       objectReference: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
@@ -26816,6 +26833,10 @@ PrefabInstance:
       propertyPath: balaEspecialPrefab
       value: 
       objectReference: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
+    - target: {fileID: 4398519475133523806, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_TagString
+      value: ManaCollider
+      objectReference: {fileID: 0}
     - target: {fileID: 4416200143450333265, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.02
@@ -26891,6 +26912,10 @@ PrefabInstance:
     - target: {fileID: 8028158967636652219, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608612857243921303, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8759404865153799779, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalPosition.x

@@ -22861,9 +22861,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1164081339}
-        m_TargetAssemblyTypeName: ScriptPausa, Assembly-CSharp
-        m_MethodName: Reanudar
+      - m_Target: {fileID: 1164081340}
+        m_TargetAssemblyTypeName: PausaV2, Assembly-CSharp
+        m_MethodName: Continuar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25968,7 +25968,6 @@ GameObject:
   - component: {fileID: 1164081336}
   - component: {fileID: 1164081335}
   - component: {fileID: 1164081334}
-  - component: {fileID: 1164081339}
   - component: {fileID: 1164081340}
   m_Layer: 5
   m_Name: CanvasPausa
@@ -25976,7 +25975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1164081334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26072,20 +26071,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1164081339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164081333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 761513ae60c87df4ba1f35f53abedffc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectMenuPuase: {fileID: 1207037830}
-  Pause: 0
 --- !u!114 &1164081340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26326,7 +26311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1207037831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26533,7 +26518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1219788872
 Transform:
   m_ObjectHideFlags: 0
@@ -26896,12 +26881,13 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 464263088021695907, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2179521831041320432, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
-      insertIndex: -1
+      insertIndex: 6
       addedObject: {fileID: 1254898807}
     - targetCorrespondingSourceObject: {fileID: 2179521831041320432, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       insertIndex: -1

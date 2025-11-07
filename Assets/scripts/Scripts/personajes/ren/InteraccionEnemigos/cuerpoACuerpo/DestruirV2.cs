@@ -1,8 +1,28 @@
 using UnityEngine;
+using System.Collections;
 
 public class DestruirV2 : MonoBehaviour
 {
     private bool puedeDestruir = false;
+    float xDist = 0;
+    GameObject Player;
+
+    [SerializeField] Rigidbody2D slimeR;
+    public SlieControl slimeScript;
+
+
+    void Start()
+    {
+        slimeR = GetComponent<Rigidbody2D>();
+
+        Player = GameObject.FindWithTag("protagonista");
+    }
+
+    private void Update()
+    {
+
+
+    }
 
     public void ActivarDestruccion()
     {
@@ -32,14 +52,42 @@ public class DestruirV2 : MonoBehaviour
         {
             if (collision.TryGetComponent<EsqueletoControl>(out var esqueleto))
             {
+
                 esqueleto.controlVida();
             }
             else if (collision.TryGetComponent<SlieControl>(out var slime))
             {
+                xDist = transform.position.x - collision.transform.position.x;
+                Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
+                slimeScript = collision.GetComponent<SlieControl>();
+
+
+                if (xDist <= 0)
+                {
+                    Vector2 directionEnemy = (transform.position - (collision.transform.position)).normalized;
+                    rb.AddForce(directionEnemy * -100, ForceMode2D.Impulse);
+
+                    //slimeScript.enabled = false;
+                    print("esta entrando en trigger");
+                    collision.GetComponent<repelerEnemigo>().Hitted();
+                }
+                else
+                {
+                    Vector2 directionEnemy = (transform.position - (collision.transform.position)).normalized;
+                    rb.AddForce(directionEnemy * -100, ForceMode2D.Impulse);
+
+                    slimeScript.enabled = false;
+                    print("esta entrando en trigger");
+                    collision.GetComponent<repelerEnemigo>().Hitted();
+                }
+
                 slime.controlVida();
             }
 
             //Destroy(collision.gameObject);
         }
     }
+
+
+
 }

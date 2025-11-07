@@ -37,6 +37,18 @@ public class repelerEnemigo : MonoBehaviour
         }*/
     }
 
+    public void Hitted()
+    {
+        slimeScript.enabled = false;
+
+        Invoke("Reactivate", 0.3f);
+    }
+
+    public void Reactivate()
+    {
+        slimeScript.enabled = true;
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "proyectil")
@@ -94,7 +106,7 @@ public class repelerEnemigo : MonoBehaviour
     IEnumerator FrenarRetroceso()
     {
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
 
         slimeR.linearVelocity = Vector2.zero;
         slimeScript.enabled = true;

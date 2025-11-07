@@ -53,6 +53,7 @@ public class SlieControl : MonoBehaviour
 
     }
 
+
     void Update()
     {
         //area de deteccion

@@ -50,7 +50,8 @@ public class SpawnEnemyV2 : MonoBehaviour
     {
         if (punto == null) return;
 
-        Instantiate(ElegirSlime(), punto.position, Quaternion.identity, parent);
+        GameObject objeto = Instantiate(ElegirSlime(), punto.position, Quaternion.identity, parent);
+
     }
 
     private GameObject ElegirSlime()

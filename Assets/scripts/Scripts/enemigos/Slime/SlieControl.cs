@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
+using System.Collections;
 
 public class SlieControl : MonoBehaviour
 {
@@ -7,6 +9,7 @@ public class SlieControl : MonoBehaviour
     public float velocidad = 5f;
     private Vector3 velo = Vector3.zero;
     GameObject obj;
+    //public Rigidbody2D slimeR;
 
     //public CircleCollider2D AreaDeteccionJugador;
     //public bool DetectaAlJugador = false;
@@ -27,6 +30,7 @@ public class SlieControl : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        //slimeR = GetComponent<Rigidbody2D>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
@@ -78,6 +82,7 @@ public class SlieControl : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
     }
+   
 
     public void controlVida()
     {
@@ -138,6 +143,8 @@ public class SlieControl : MonoBehaviour
         }
         
     }
+
+
 
     /*private void OnTriggerEnter2D(Collider2D collision)
     {

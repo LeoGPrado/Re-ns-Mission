@@ -6206,7 +6206,7 @@ MonoBehaviour:
   luzDeDia: {fileID: 619394801}
   tiempoDeOscuridad: 120
   tiempoDeTransicion: 60
-  intensidadInicial: 0.09
+  intensidadInicial: 0.3
   intensidadFinal: 1
 --- !u!1 &627511494
 GameObject:
@@ -23832,7 +23832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &820139415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28976,7 +28976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18beb0c28f2e7234fa97a2ede2999535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthUI: {fileID: 2079442205}
+  HealthUI: {fileID: 1758065552}
 --- !u!61 &1394096925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35913,7 +35913,7 @@ MonoBehaviour:
   probHielo: 25
   probFuego: 25
   probNaturaleza: 25
-  tiempoMin: 2
+  tiempoMin: 0.9
   tiempoMax: 4
 --- !u!4 &1971618065
 Transform:
@@ -36187,7 +36187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Ult Ready
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

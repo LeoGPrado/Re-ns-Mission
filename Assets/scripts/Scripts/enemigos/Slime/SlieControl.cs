@@ -39,7 +39,17 @@ public class SlieControl : MonoBehaviour
             slime = this;
         }
     }
+    private void OnEnable()
+    {
+        obj = GameObject.Find("PuntoEntrada");
+        player = GameObject.FindWithTag("protagonista").transform;
 
+        if (obj != null)
+        {
+            door = objetivo = obj.transform;
+        }
+
+    }
 
     void Start()
     {

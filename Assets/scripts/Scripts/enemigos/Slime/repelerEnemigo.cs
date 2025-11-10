@@ -7,6 +7,7 @@ public class repelerEnemigo : MonoBehaviour
     public SlieControl slimeScript;
     public float FuerzaDeRetroceso;
     GameObject Player;
+    //bool fueGolpeado = false;
 
     float xDist = 0;
 
@@ -39,6 +40,9 @@ public class repelerEnemigo : MonoBehaviour
 
     public void Hitted()
     {
+        //if (fueGolpeado) return;
+        //fueGolpeado = true;
+
         slimeScript.enabled = false;
 
         Invoke("Reactivate", 0.3f);

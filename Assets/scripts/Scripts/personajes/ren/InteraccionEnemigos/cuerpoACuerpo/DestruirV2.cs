@@ -121,7 +121,7 @@ public class DestruirV2 : MonoBehaviour
                     //rb.angularVelocity = 0f;
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
-                    slimeR.AddForce(directionEnemy * 500, ForceMode2D.Impulse);
+                    slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
 
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");
@@ -134,7 +134,7 @@ public class DestruirV2 : MonoBehaviour
                     // rb.angularVelocity = 0f;
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
-                    slimeR.AddForce(directionEnemy * -500, ForceMode2D.Impulse);
+                    slimeR.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
 
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");

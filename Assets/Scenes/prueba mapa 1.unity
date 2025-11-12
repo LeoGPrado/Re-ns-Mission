@@ -6206,7 +6206,7 @@ MonoBehaviour:
   luzDeDia: {fileID: 619394801}
   tiempoDeOscuridad: 120
   tiempoDeTransicion: 60
-  intensidadInicial: 0.3
+  intensidadInicial: 0.09
   intensidadFinal: 1
 --- !u!1 &627511494
 GameObject:

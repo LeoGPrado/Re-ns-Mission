@@ -5,7 +5,7 @@ public class RepelerYDetener : MonoBehaviour
 {
     [SerializeField] Rigidbody2D ren;
     [SerializeField] BoxCollider2D renCuerpo;
-    //[SerializeField] Animator renAnimaciones;
+    [SerializeField] Animator renAnimaciones;
 
     public ControlPersonaje renScript;
 
@@ -16,7 +16,7 @@ public class RepelerYDetener : MonoBehaviour
     void Start()
     {
         ren = GetComponent<Rigidbody2D>();
-        //renAnimaciones = GetComponent<Animator>();
+        renAnimaciones = GetComponent<Animator>();
         renScript = GetComponent<ControlPersonaje>();
     }
 
@@ -48,7 +48,8 @@ public class RepelerYDetener : MonoBehaviour
     {
         Vector2 direction = collision.contacts[0].normal;
         ren.AddForce(direction * FuerzaDeRetroceso, ForceMode2D.Impulse);
-        //NoranonAnimaciones.SetTrigger("HeridoP");
+
+        renAnimaciones.SetTrigger("HeridoP");
         renScript.enabled = false;
 
         StartCoroutine(FrenarRetroceso());

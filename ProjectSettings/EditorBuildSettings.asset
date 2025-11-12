@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Pantalla inicio.unity
     guid: 451c5a2eb3209f64890de1cfe63f7814
   - enabled: 1
-    path: Assets/Scenes/EjemploCinematica.unity
+    path: Assets/Scenes/CinematicaInicial.unity
     guid: cbc6c61fe01b5414194cd9c2f57b3ae3
   - enabled: 1
     path: Assets/Scenes/FinDemo.unity

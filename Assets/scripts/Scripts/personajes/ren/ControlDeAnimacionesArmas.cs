@@ -12,6 +12,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     [SerializeField] GameObject Baston;
     [SerializeField] GameObject Cuchilla;
     public float ActivarArmaE = 0f;
+    public int verificarMazo = 0;
 
     [SerializeField] Animator Ren;
 
@@ -117,7 +118,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
                 srBaston.enabled = false;
 
-                Ren.SetTrigger("AtaqueBastonP");
+                Ren.SetTrigger("EspecialMazo");
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
             }
@@ -128,7 +129,17 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
 
                 Ren.SetTrigger("AtaqueMazoP");
                 ActivarArmaE = 0.7f;
+                if (verificarMazo == 0)
+                {
+                    transform.localScale *= 3;
+                    verificarMazo++;
+                }
+
                 StartCoroutine(ActivarArma(srMazo));
+                StartCoroutine(RegresarNormalidad());
+
+                //transform.localScale = Vector3.one;
+                //verificarMazo = 0;
             }
             else if (Pescado != null && Pescado.activeInHierarchy)
             {
@@ -153,7 +164,12 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
 
         arma.enabled = true;
 
+    }
 
-
+    IEnumerator RegresarNormalidad()
+    {
+        yield return new WaitForSeconds(6);
+        transform.localScale = Vector3.one;
+        verificarMazo = 0;
     }
 }

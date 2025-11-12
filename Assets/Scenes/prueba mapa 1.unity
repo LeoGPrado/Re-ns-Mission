@@ -26939,7 +26939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715175727974460864, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5484890415022503521, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: Espada
@@ -26963,7 +26963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831015250374401825, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6606665953792077383, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive

@@ -77,7 +77,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
                 srPescado.enabled = false;
 
-                Ren.SetTrigger("AtaqueMazoP");
+                Ren.SetTrigger("AtaquePescadoP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
             }

@@ -26739,19 +26739,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 763033258081721176, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.09589997
+      value: 0.16035
       objectReference: {fileID: 0}
     - target: {fileID: 763033258081721176, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.10769999
+      value: -0.13085002
       objectReference: {fileID: 0}
     - target: {fileID: 763033258081721176, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.9663
+      value: 1.00405
       objectReference: {fileID: 0}
     - target: {fileID: 763033258081721176, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 1.0769
+      value: 1.18185
       objectReference: {fileID: 0}
     - target: {fileID: 763033258081721176, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_ShapePath.Array.data[0].x

@@ -27,6 +27,7 @@ public class DestruirV2 : MonoBehaviour
     public void ActivarDestruccion()
     {
         puedeDestruir = true;
+        
     }
 
     public void DesactivarDestruccion()
@@ -123,6 +124,8 @@ public class DestruirV2 : MonoBehaviour
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
 
+                    SlieControl.slime.quemarSlime();
+
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");
                     StartCoroutine(FrenarRetroceso());
@@ -135,6 +138,8 @@ public class DestruirV2 : MonoBehaviour
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
+
+                    SlieControl.slime.quemarSlime();
 
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");

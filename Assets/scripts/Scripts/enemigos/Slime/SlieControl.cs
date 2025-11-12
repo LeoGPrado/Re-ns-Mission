@@ -154,6 +154,26 @@ public class SlieControl : MonoBehaviour
         }
         
     }
+    public void quemarSlime()
+    {
+        StartCoroutine(DañoPorFuego());
+    }
+
+    IEnumerator DañoPorFuego()
+    {
+        int repeticiones = 3;
+
+        for (int i = 0; i < repeticiones; i++)
+        {
+            controlVida();
+
+            GetComponent<SpriteRenderer>().color = Color.red;
+
+            yield return new WaitForSeconds(2f);
+        }
+
+
+    }
 
 
 

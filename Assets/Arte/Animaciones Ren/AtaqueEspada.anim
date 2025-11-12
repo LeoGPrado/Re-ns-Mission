@@ -729,7 +729,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.5
-    functionName: ataqueNormal
+    functionName: DesactivarFuego
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

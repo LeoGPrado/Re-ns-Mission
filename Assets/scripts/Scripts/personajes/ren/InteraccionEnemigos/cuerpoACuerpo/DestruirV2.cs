@@ -12,6 +12,13 @@ public class DestruirV2 : MonoBehaviour
     public SlieControl slimeScript;
     float fuerzaRechazoConstante = 300;
 
+
+    public bool ataqueDeFuego = false;
+
+
+    public void ActivarFuego() => ataqueDeFuego = true;
+    public void DesactivarFuego() => ataqueDeFuego = false;
+
     void Start()
     {
 
@@ -81,6 +88,15 @@ public class DestruirV2 : MonoBehaviour
                     slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
                     //slimeScript.controlVida();
 
+                    if (ataqueDeFuego)
+                    {
+                        StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+                    }
+                    else
+                    {
+                        slime.controlVida();
+                    }
+
 
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");
@@ -94,6 +110,15 @@ public class DestruirV2 : MonoBehaviour
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
                     //slimeScript.controlVida();
+
+                    if (ataqueDeFuego)
+                    {
+                        StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+                    }
+                    else
+                    {
+                        slime.controlVida();
+                    }
 
 
 

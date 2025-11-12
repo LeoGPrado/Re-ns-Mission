@@ -161,16 +161,25 @@ public class SlieControl : MonoBehaviour
 
     IEnumerator DañoPorFuego()
     {
-        int repeticiones = 3;
+        int repeticiones = 0;
+        GetComponent<SpriteRenderer>().color = Color.red;
 
-        for (int i = 0; i < repeticiones; i++)
+        while (repeticiones > 6)
+        {
+            repeticiones++;
+            controlVida();
+
+            yield return new WaitForSeconds(1f);
+        }
+
+        /*for (int i = 0; i < repeticiones; i++)
         {
             controlVida();
 
-            GetComponent<SpriteRenderer>().color = Color.red;
+            //GetComponent<SpriteRenderer>().color = Color.red;
 
-            yield return new WaitForSeconds(2f);
-        }
+            yield return new WaitForSeconds(1f);
+        }*/
 
 
     }

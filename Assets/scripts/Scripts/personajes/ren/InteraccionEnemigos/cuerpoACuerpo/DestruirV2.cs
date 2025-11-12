@@ -8,21 +8,17 @@ public class DestruirV2 : MonoBehaviour
     GameObject Player;
 
     [SerializeField] Rigidbody2D slimeR;
+    [SerializeField] SpriteRenderer SlimeSprite;
     public SlieControl slimeScript;
     float fuerzaRechazoConstante = 300;
 
     void Start()
     {
-        // slimeR = GetComponent<Rigidbody2D>();
+
 
         Player = GameObject.FindWithTag("protagonista");
     }
 
-    private void Update()
-    {
-
-
-    }
 
     public void ActivarDestruccion()
     {
@@ -35,68 +31,24 @@ public class DestruirV2 : MonoBehaviour
         puedeDestruir = false;
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    /*public void quemarSlimeEspada()
     {
-        if (!puedeDestruir) return;
-
-        if (collision.gameObject.CompareTag("Enemigo"))
-        {
-            Destroy(collision.gameObject);
-        }
+        StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
     }*/
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator DañoPorFuegoEspada(SlieControl slime, SpriteRenderer sr)
     {
-        if (!puedeDestruir) return;
+        int repeticiones = 6;
+        sr.GetComponent<SpriteRenderer>().color = Color.red;
 
-        if (collision.gameObject.CompareTag("Enemigo"))
+        for (int i = 0; i < repeticiones; i++)
         {
-            if (collision.TryGetComponent<EsqueletoControl>(out var esqueleto))
-            {
+            slime.controlVida();
 
-                esqueleto.controlVida();
-            }
-            else if (collision.TryGetComponent<SlieControl>(out var slime))
-            {
-                xDist = transform.position.x - collision.transform.position.x;
-                Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
-                slimeScript = collision.GetComponent<SlieControl>();
-
-                if (xDist <= 0)
-                {
-
-                    //rb.linearVelocity = Vector2.zero; // ← detiene cualquier movimiento previo
-                    //rb.angularVelocity = 0f;
-
-                    Vector2 directionEnemy = (collision.transform.position - transform.position).normalized;
-                    rb.AddForce(directionEnemy * fuerzaRechazoConstante, ForceMode2D.Impulse);
-
-                    //slimeScript.enabled = false;
-                    print("esta entrando en trigger");
-                    collision.GetComponent<repelerEnemigo>().Hitted();
-                }
-                else
-                {
-                    //rb.linearVelocity = Vector2.zero; // ← detiene cualquier movimiento previo
-                   // rb.angularVelocity = 0f;
-
-                    Vector2 directionEnemy = (collision.transform.position - transform.position).normalized;
-                    rb.AddForce(directionEnemy * fuerzaRechazoConstante, ForceMode2D.Impulse);
-
-                    //slimeScript.enabled = false;
-                    print("esta entrando en trigger");
-                    collision.GetComponent<repelerEnemigo>().Hitted();
-                    slime.controlVida();
-                }
-
-                //slime.controlVida();
-            }
-
-            //Destroy(collision.gameObject);
+            yield return new WaitForSeconds(1f);
         }
 
-
-    }*/
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -113,18 +65,20 @@ public class DestruirV2 : MonoBehaviour
             {
                 xDist = transform.position.x - collision.transform.position.x;
                 slimeR = collision.GetComponent<Rigidbody2D>();
+                SlimeSprite = collision.GetComponent<SpriteRenderer>();
                 slimeScript = collision.GetComponent<SlieControl>();
 
                 if (xDist <= 0)
                 {
 
-                    //rb.linearVelocity = Vector2.zero; // ← detiene cualquier movimiento previo
-                    //rb.angularVelocity = 0f;
+
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
 
-                    SlieControl.slime.quemarSlime();
+
+                    StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+
 
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");
@@ -133,25 +87,18 @@ public class DestruirV2 : MonoBehaviour
                 }
                 else
                 {
-                    //rb.linearVelocity = Vector2.zero; // ← detiene cualquier movimiento previo
-                    // rb.angularVelocity = 0f;
+
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
+                    StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
 
-                    SlieControl.slime.quemarSlime();
 
                     slimeScript.enabled = false;
                     print("esta entrando en trigger");
                     StartCoroutine(FrenarRetroceso());
                 }
 
-                /*Vector2 directionEnemy = (transform.position - (collision.transform.position*10)).normalized;
-                slimeR.AddForce(directionEnemy * 500, ForceMode2D.Impulse);
-
-                slimeScript.enabled = false;
-                print("esta entrando en trigger");
-                StartCoroutine(FrenarRetroceso());*/
             }
 
         }
@@ -162,12 +109,10 @@ public class DestruirV2 : MonoBehaviour
 
             slimeR.linearVelocity = Vector2.zero;
             slimeScript.enabled = true;
-            //ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
-            //ren.linearVelocity = new Vector2(ren.linearVelocity.x, 0f);
+
 
 
         }
-
 
 
     }

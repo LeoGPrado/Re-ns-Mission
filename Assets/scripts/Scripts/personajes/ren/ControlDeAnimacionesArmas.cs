@@ -81,6 +81,64 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
             }
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            if (Espada != null && Espada.activeInHierarchy)
+            {
+                SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
+                srEspada.enabled = false;
+
+                Ren.SetTrigger("EspecialEspadaP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srEspada));
+                //StartCoroutine(ActivarArma(Espada));
+            }
+            else if (Pollo != null && Pollo.activeInHierarchy)
+            {
+                SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
+                srPollo.enabled = false;
+
+                Ren.SetTrigger("AtaquePolloP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srPollo));
+            }
+            else if (Arco != null && Arco.activeInHierarchy)
+            {
+                SpriteRenderer srArco = Arco.GetComponent<SpriteRenderer>();
+                srArco.enabled = false;
+
+                Ren.SetTrigger("AtaqueArcoP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srArco));
+            }
+            else if (Baston != null && Baston.activeInHierarchy)
+            {
+                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
+                srBaston.enabled = false;
+
+                Ren.SetTrigger("AtaqueBastonP");
+                ActivarArmaE = 0.5f;
+                StartCoroutine(ActivarArma(srBaston));
+            }
+            else if (Mazo != null && Mazo.activeInHierarchy)
+            {
+                SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
+                srMazo.enabled = false;
+
+                Ren.SetTrigger("AtaqueMazoP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srMazo));
+            }
+            else if (Pescado != null && Pescado.activeInHierarchy)
+            {
+                SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
+                srPescado.enabled = false;
+
+                Ren.SetTrigger("AtaquePescadoP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srPescado));
+            }
 
 
 

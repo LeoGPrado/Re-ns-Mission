@@ -18,6 +18,15 @@ public class DestruirV2 : MonoBehaviour
 
         Player = GameObject.FindWithTag("protagonista");
     }
+    public void ataqueNormal()
+    {
+        slimeScript.controlVida();
+    }
+
+    public void ataqueEspaceial()
+    {
+        StartCoroutine(DañoPorFuegoEspada(slimeScript, SlimeSprite));
+    }
 
 
     public void ActivarDestruccion()
@@ -30,11 +39,6 @@ public class DestruirV2 : MonoBehaviour
     {
         puedeDestruir = false;
     }
-
-    /*public void quemarSlimeEspada()
-    {
-        StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
-    }*/
 
     IEnumerator DañoPorFuegoEspada(SlieControl slime, SpriteRenderer sr)
     {
@@ -75,9 +79,7 @@ public class DestruirV2 : MonoBehaviour
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
-
-
-                    StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+                    //slimeScript.controlVida();
 
 
                     slimeScript.enabled = false;
@@ -91,7 +93,8 @@ public class DestruirV2 : MonoBehaviour
 
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
-                    StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+                    //slimeScript.controlVida();
+
 
 
                     slimeScript.enabled = false;
@@ -113,7 +116,6 @@ public class DestruirV2 : MonoBehaviour
 
 
         }
-
 
     }
 }

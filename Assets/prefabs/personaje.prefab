@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 1774489094680115102}
   - component: {fileID: 4936712209483102576}
   - component: {fileID: 6821654622315246704}
+  - component: {fileID: 763033258081721176}
   m_Layer: 0
   m_Name: personaje
   m_TagString: protagonista
@@ -628,6 +629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a43016754bde24382a3a0c3ac79779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slimeR: {fileID: 0}
+  slimeScript: {fileID: 0}
 --- !u!114 &5484890415022503521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ren: {fileID: 6652193161669070881}
   renCuerpo: {fileID: 4008435910296219831}
+  renAnimaciones: {fileID: 0}
   renScript: {fileID: 2421474397778324994}
   FuerzaDeRetroceso: 10
 --- !u!114 &464263088021695907
@@ -873,6 +877,58 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &763033258081721176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179521831041320432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.733
+  m_Color: {r: 0.06250317, g: 0.025542898, b: 0.13207549, a: 1}
+  m_Intensity: 1.55
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 2
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 359.99997
+  m_PointLightOuterAngle: 359.99997
+  m_PointLightInnerRadius: 0.5
+  m_PointLightOuterRadius: 2.31
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &2235632050375804924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1126,10 @@ MonoBehaviour:
   velocidad: 5
   quieto: 1
   ImpoctoArma: {fileID: 0}
+  DFuego: 0
+  Dhielo: 0
+  Dnaturaleza: 0
+  Dnormal: 0
 --- !u!58 &2457198789284167682
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1505,6 +1565,8 @@ MonoBehaviour:
   balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
   balaEspecialPrefab: {fileID: 3456130279922145432, guid: eaf6154e9fce5c841a1502aabe129e89, type: 3}
   puntoAparicion: {fileID: 4378033607731932917}
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
   FlipBaston: {fileID: 8659931898890525359}
   velocidadBala: 10
   personaje: {fileID: 3295980962635202491}

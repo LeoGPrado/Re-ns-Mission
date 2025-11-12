@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: b1f2d48a3454b8e418d8a9ebe5e9af46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1245404583676347857
+    second: ReworkBolaDeMagiaMayor-Sheet_0
+  - first:
+      213: 3943155399734947408
+    second: ReworkBolaDeMagiaMayor-Sheet_1
+  - first:
+      213: -3757513603681045187
+    second: ReworkBolaDeMagiaMayor-Sheet_2
+  - first:
+      213: -6118406644550587343
+    second: ReworkBolaDeMagiaMayor-Sheet_3
+  - first:
+      213: 3391957835804159029
+    second: ReworkBolaDeMagiaMayor-Sheet_4
+  - first:
+      213: -1220891701719114886
+    second: ReworkBolaDeMagiaMayor-Sheet_5
+  - first:
+      213: 5266830138832775181
+    second: ReworkBolaDeMagiaMayor-Sheet_6
+  - first:
+      213: 3554186128779139704
+    second: ReworkBolaDeMagiaMayor-Sheet_7
+  - first:
+      213: -9111977341044603586
+    second: ReworkBolaDeMagiaMayor-Sheet_8
+  - first:
+      213: 2934568559590581569
+    second: ReworkBolaDeMagiaMayor-Sheet_9
+  - first:
+      213: 6473675304281315619
+    second: ReworkBolaDeMagiaMayor-Sheet_10
+  - first:
+      213: -1393314347290057010
+    second: ReworkBolaDeMagiaMayor-Sheet_11
+  - first:
+      213: -6825517579638612583
+    second: ReworkBolaDeMagiaMayor-Sheet_12
+  - first:
+      213: 3138644434204492735
+    second: ReworkBolaDeMagiaMayor-Sheet_13
+  - first:
+      213: -5321458489837694823
+    second: ReworkBolaDeMagiaMayor-Sheet_14
+  - first:
+      213: 6370519964390298888
+    second: ReworkBolaDeMagiaMayor-Sheet_15
+  - first:
+      213: 2999026026542217034
+    second: ReworkBolaDeMagiaMayor-Sheet_16
+  - first:
+      213: 7379496787993970827
+    second: ReworkBolaDeMagiaMayor-Sheet_17
+  - first:
+      213: -761588477321974203
+    second: ReworkBolaDeMagiaMayor-Sheet_18
+  - first:
+      213: -2129319968350647291
+    second: ReworkBolaDeMagiaMayor-Sheet_19
+  - first:
+      213: -5090002907150680578
+    second: ReworkBolaDeMagiaMayor-Sheet_20
+  - first:
+      213: 4084631657251026540
+    second: ReworkBolaDeMagiaMayor-Sheet_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 10
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d50ca3ded0984110800000000000000
+      internalID: 1245404583676347857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 10
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e6d5fb1f6e8b630800000000000000
+      internalID: 3943155399734947408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 10
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35b4ed1941aadbc0800000000000000
+      internalID: -3757513603681045187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c2c20d29d071ba0800000000000000
+      internalID: -6118406644550587343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 10
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ca5382ea7a21f20800000000000000
+      internalID: 3391957835804159029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 10
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b5fc147758e0fe0800000000000000
+      internalID: -1220891701719114886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 7
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08e27d3b1a871940800000000000000
+      internalID: 5266830138832775181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 6
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a50870471035130800000000000000
+      internalID: 3554186128779139704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35c0a9b2e0cb8180800000000000000
+      internalID: -9111977341044603586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1452d639e8ea9b820800000000000000
+      internalID: 2934568559590581569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 12
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32918e6e36d17d950800000000000000
+      internalID: 6473675304281315619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec62255bbf3f9ace0800000000000000
+      internalID: -1393314347290057010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 17
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dd479ace3e641a0800000000000000
+      internalID: -6825517579638612583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb30401db74be8b20800000000000000
+      internalID: 3138644434204492735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990dc32a2b16626b0800000000000000
+      internalID: -5321458489837694823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 12
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8059408b722a86850800000000000000
+      internalID: 6370519964390298888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a473338184eae9920800000000000000
+      internalID: 2999026026542217034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 0
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88448dfa3d396660800000000000000
+      internalID: 7379496787993970827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e6130a05b4e65f0800000000000000
+      internalID: -761588477321974203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c405935c22372e0800000000000000
+      internalID: -2129319968350647291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdf39de25dac59b0800000000000000
+      internalID: -5090002907150680578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReworkBolaDeMagiaMayor-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 12
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6633c8d9d68fa830800000000000000
+      internalID: 4084631657251026540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ReworkBolaDeMagiaMayor-Sheet_0: 1245404583676347857
+      ReworkBolaDeMagiaMayor-Sheet_1: 3943155399734947408
+      ReworkBolaDeMagiaMayor-Sheet_10: 6473675304281315619
+      ReworkBolaDeMagiaMayor-Sheet_11: -1393314347290057010
+      ReworkBolaDeMagiaMayor-Sheet_12: -6825517579638612583
+      ReworkBolaDeMagiaMayor-Sheet_13: 3138644434204492735
+      ReworkBolaDeMagiaMayor-Sheet_14: -5321458489837694823
+      ReworkBolaDeMagiaMayor-Sheet_15: 6370519964390298888
+      ReworkBolaDeMagiaMayor-Sheet_16: 2999026026542217034
+      ReworkBolaDeMagiaMayor-Sheet_17: 7379496787993970827
+      ReworkBolaDeMagiaMayor-Sheet_18: -761588477321974203
+      ReworkBolaDeMagiaMayor-Sheet_19: -2129319968350647291
+      ReworkBolaDeMagiaMayor-Sheet_2: -3757513603681045187
+      ReworkBolaDeMagiaMayor-Sheet_20: -5090002907150680578
+      ReworkBolaDeMagiaMayor-Sheet_21: 4084631657251026540
+      ReworkBolaDeMagiaMayor-Sheet_3: -6118406644550587343
+      ReworkBolaDeMagiaMayor-Sheet_4: 3391957835804159029
+      ReworkBolaDeMagiaMayor-Sheet_5: -1220891701719114886
+      ReworkBolaDeMagiaMayor-Sheet_6: 5266830138832775181
+      ReworkBolaDeMagiaMayor-Sheet_7: 3554186128779139704
+      ReworkBolaDeMagiaMayor-Sheet_8: -9111977341044603586
+      ReworkBolaDeMagiaMayor-Sheet_9: 2934568559590581569
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

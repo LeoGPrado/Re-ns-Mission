@@ -63,6 +63,25 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
             }
+            else if (Mazo != null && Mazo.activeInHierarchy)
+            {
+                SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
+                srMazo.enabled = false;
+
+                Ren.SetTrigger("AtaqueMazoP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srMazo));
+            }
+            else if (Pescado != null && Pescado.activeInHierarchy)
+            {
+                SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
+                srPescado.enabled = false;
+
+                Ren.SetTrigger("AtaqueMazoP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srPescado));
+            }
+
 
 
 

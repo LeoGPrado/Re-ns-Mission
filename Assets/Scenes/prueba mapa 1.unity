@@ -38869,9 +38869,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+  slimeNormal: {fileID: 4891012412717606429, guid: 3a73b3eee0dd850448ef9dbfa42d02c2, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 70287364f16c3f54b97d1be4473a2bb8, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 7109fc9dd40c48e4f8582c9b2ec33656, type: 3}
   slimeNaturaleza: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
@@ -38892,7 +38892,7 @@ Transform:
   m_GameObject: {fileID: 1971618062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.88, y: -14.15, z: 0}
+  m_LocalPosition: {x: 30.8, y: -14.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39641,7 +39641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2068018585
 Transform:
   m_ObjectHideFlags: 0
@@ -39651,7 +39651,7 @@ Transform:
   m_GameObject: {fileID: 2068018584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5600004, y: 3.9799995, z: 0}
+  m_LocalPosition: {x: 7.68, y: -14.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40582,6 +40582,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1531625472}
     - target: {fileID: 4553777821808253100, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: cooldown
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553777821808253100, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: playerEC
       value: 
       objectReference: {fileID: 1254898821}
@@ -40713,6 +40717,10 @@ PrefabInstance:
       propertyPath: medidor
       value: 
       objectReference: {fileID: 1531625472}
+    - target: {fileID: 5191960523741171534, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: cooldown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5191960523741171534, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: balaEspecialPrefab
       value: 

@@ -8,6 +8,8 @@ public class NuevoEspadaControl : MonoBehaviour
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer Espada;
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
 
     private void Start()
     {
@@ -42,6 +44,11 @@ public class NuevoEspadaControl : MonoBehaviour
 
             Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0f, 0f);
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            medidor.canUseUltimate = false;
+            playerEC.Ultimate();
         }
     }
 }

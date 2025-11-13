@@ -67,7 +67,7 @@ public class DialogosTexto : MonoBehaviour
         {
             // Si no hay más diálogos iniciales, ocultar el panel inicial
             panelDialogoInicial.SetActive(false);
-            SceneManager.LoadScene("prueba mapa 1");
+            SceneManager.LoadScene("CinematicaPostTutorial");
             //PanelSaltear.SetActive(false);
             //BotonJugar.SetActive(true);
             //CambioTutorial.SetActive(true);

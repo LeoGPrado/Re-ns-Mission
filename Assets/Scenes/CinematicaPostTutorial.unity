@@ -603,12 +603,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689763039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c69f83826f4146347a09a1a66801b125, type: 3}
+  m_Script: {fileID: 11500000, guid: 45af6bb1477bbd1448aea48eb1831625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1689763040}
   saltarCinematica: {fileID: 1197976245}
-  siguienteEscena: prueba nivel 1
+  siguienteEscena: escena
 --- !u!1 &1834543721
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,6 @@ public class OscurecerEscena : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("CinematicaInicial");
     }
 }

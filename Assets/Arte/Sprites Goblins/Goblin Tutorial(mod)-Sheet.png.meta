@@ -1,10 +1,73 @@
 fileFormatVersion: 2
-guid: 2c97a76fa651854418bb5cb411479b14
+guid: 01e28a8e56a965d4e8fa87633e79db6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -975694667430421
-    second: Goblin Tutorial_0
+      213: 3176240657941498547
+    second: Goblin Tutorial(mod)-Sheet_0
+  - first:
+      213: 4243951944038073138
+    second: Goblin Tutorial(mod)-Sheet_1
+  - first:
+      213: -608346482718330910
+    second: Goblin Tutorial(mod)-Sheet_2
+  - first:
+      213: -2990472225522928664
+    second: Goblin Tutorial(mod)-Sheet_3
+  - first:
+      213: 1558259525447041344
+    second: Goblin Tutorial(mod)-Sheet_4
+  - first:
+      213: 8448327602578077541
+    second: Goblin Tutorial(mod)-Sheet_5
+  - first:
+      213: -8994076189938883851
+    second: Goblin Tutorial(mod)-Sheet_6
+  - first:
+      213: 9035480810719707205
+    second: Goblin Tutorial(mod)-Sheet_7
+  - first:
+      213: 110238416720552861
+    second: Goblin Tutorial(mod)-Sheet_8
+  - first:
+      213: 9150274543857246306
+    second: Goblin Tutorial(mod)-Sheet_9
+  - first:
+      213: 333709685134403783
+    second: Goblin Tutorial(mod)-Sheet_10
+  - first:
+      213: 6659716598491388414
+    second: Goblin Tutorial(mod)-Sheet_11
+  - first:
+      213: 5408453483329911105
+    second: Goblin Tutorial(mod)-Sheet_12
+  - first:
+      213: -8925314587410302107
+    second: Goblin Tutorial(mod)-Sheet_13
+  - first:
+      213: 7993098245751437816
+    second: Goblin Tutorial(mod)-Sheet_14
+  - first:
+      213: -8787354164102882544
+    second: Goblin Tutorial(mod)-Sheet_15
+  - first:
+      213: -3985360796237036703
+    second: Goblin Tutorial(mod)-Sheet_16
+  - first:
+      213: -9071974024256597057
+    second: Goblin Tutorial(mod)-Sheet_17
+  - first:
+      213: -4882747566918619777
+    second: Goblin Tutorial(mod)-Sheet_18
+  - first:
+      213: 8851528392585647798
+    second: Goblin Tutorial(mod)-Sheet_19
+  - first:
+      213: -1061851212632335552
+    second: Goblin Tutorial(mod)-Sheet_20
+  - first:
+      213: 8696000907768333227
+    second: Goblin Tutorial(mod)-Sheet_21
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 34
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,12 +176,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Goblin Tutorial_0
+      name: Goblin Tutorial(mod)-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,19 +191,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be540f16c988cfff0800000000000000
-      internalID: -975694667430421
+      spriteID: 3ba81c9cc06441c20800000000000000
+      internalID: 3176240657941498547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_1
+      name: Goblin Tutorial(mod)-Sheet_1
       rect:
         serializedVersion: 2
-        x: 116
+        x: 144
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -148,21 +211,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a0e6a270a81d4ff47b7db5a4048514fe
-      internalID: 1502383251
+      spriteID: 233c734cecb85ea30800000000000000
+      internalID: 4243951944038073138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_2
+      name: Goblin Tutorial(mod)-Sheet_2
       rect:
         serializedVersion: 2
-        x: 232
+        x: 288
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -170,21 +233,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7bb2b7f7173b00749a33c12eeacf99a6
-      internalID: 844705073
+      spriteID: 2ef273dd818be87f0800000000000000
+      internalID: -608346482718330910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_3
+      name: Goblin Tutorial(mod)-Sheet_3
       rect:
         serializedVersion: 2
-        x: 348
+        x: 432
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,21 +255,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: de0908815a9ff804fabeec4c7d8a797a
-      internalID: -2110660576
+      spriteID: 8e3b807ea55bf76d0800000000000000
+      internalID: -2990472225522928664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_4
+      name: Goblin Tutorial(mod)-Sheet_4
       rect:
         serializedVersion: 2
-        x: 464
+        x: 576
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -214,21 +277,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4653cc01b1ef957409050467d6635351
-      internalID: 1805267546
+      spriteID: 041c32a48cc00a510800000000000000
+      internalID: 1558259525447041344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_5
+      name: Goblin Tutorial(mod)-Sheet_5
       rect:
         serializedVersion: 2
-        x: 580
+        x: 720
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,21 +299,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7de73db06b85dea468d8198f0a8bbe42
-      internalID: -1758875373
+      spriteID: 5673bc1813d7e3570800000000000000
+      internalID: 8448327602578077541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_6
+      name: Goblin Tutorial(mod)-Sheet_6
       rect:
         serializedVersion: 2
-        x: 696
+        x: 864
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -258,21 +321,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1a499780f3d89a0448cc859b7919c551
-      internalID: -2051529087
+      spriteID: 5f2e4ef9b5f9e2380800000000000000
+      internalID: -8994076189938883851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_7
+      name: Goblin Tutorial(mod)-Sheet_7
       rect:
         serializedVersion: 2
-        x: 812
+        x: 1008
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -280,21 +343,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0d2425a2c72491a4daec397e19562394
-      internalID: -748801268
+      spriteID: 5408ec1ece9746d70800000000000000
+      internalID: 9035480810719707205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_8
+      name: Goblin Tutorial(mod)-Sheet_8
       rect:
         serializedVersion: 2
-        x: 928
+        x: 1152
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -302,21 +365,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4149933f2df62874ab4f468fb7cd6c1d
-      internalID: 633900655
+      spriteID: d93ea358145a78100800000000000000
+      internalID: 110238416720552861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_9
+      name: Goblin Tutorial(mod)-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1044
+        x: 1296
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -324,21 +387,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9315b896bce96734d93cee3b3651e167
-      internalID: 1111372332
+      spriteID: 26029e7a73e4cfe70800000000000000
+      internalID: 9150274543857246306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_10
+      name: Goblin Tutorial(mod)-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1160
+        x: 1440
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -346,21 +409,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5a540e093602caf40b65bfc539bd3b8e
-      internalID: 839200689
+      spriteID: 7c82b88c03391a400800000000000000
+      internalID: 333709685134403783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_11
+      name: Goblin Tutorial(mod)-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1276
+        x: 1584
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -368,21 +431,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cb27b0fe2654cb244b0e928772051f52
-      internalID: -254898147
+      spriteID: ef91add26f01c6c50800000000000000
+      internalID: 6659716598491388414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_12
+      name: Goblin Tutorial(mod)-Sheet_12
       rect:
         serializedVersion: 2
-        x: 1392
+        x: 1728
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -390,21 +453,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 71b2566fde5dc394b90ad6625a7c25f4
-      internalID: -1682990028
+      spriteID: 1497a12b9cfae0b40800000000000000
+      internalID: 5408453483329911105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_13
+      name: Goblin Tutorial(mod)-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1508
+        x: 1872
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -412,21 +475,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a865bf0bc5a01944d96b48522fc009b1
-      internalID: -667805971
+      spriteID: 56bfbcccba9e22480800000000000000
+      internalID: -8925314587410302107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_14
+      name: Goblin Tutorial(mod)-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1624
+        x: 2016
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -434,21 +497,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9366f05a2aded6c4a914dbb19fc7bafd
-      internalID: -1370060940
+      spriteID: 8f9ffc851803dee60800000000000000
+      internalID: 7993098245751437816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_15
+      name: Goblin Tutorial(mod)-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1740
+        x: 2160
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -456,21 +519,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7f0e2c45f838122499b0890a3c377949
-      internalID: 192671498
+      spriteID: 01b1915f1fb0d0680800000000000000
+      internalID: -8787354164102882544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_16
+      name: Goblin Tutorial(mod)-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1856
+        x: 2304
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -478,21 +541,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 04045c0281845f54ead6a401b32fb558
-      internalID: 172814309
+      spriteID: 163068e987721b8c0800000000000000
+      internalID: -3985360796237036703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_17
+      name: Goblin Tutorial(mod)-Sheet_17
       rect:
         serializedVersion: 2
-        x: 1972
+        x: 2448
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -500,21 +563,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 055da8d4c481e264ebbdbe4add7577ac
-      internalID: 1008605239
+      spriteID: fb35d98b0bfd91280800000000000000
+      internalID: -9071974024256597057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin Tutorial_18
+      name: Goblin Tutorial(mod)-Sheet_18
       rect:
         serializedVersion: 2
-        x: 2088
+        x: 2592
         y: 0
-        width: 116
+        width: 144
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -522,10 +585,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8e130f6bb99a9434da7f6dee76d259d5
-      internalID: -334757067
+      spriteID: f7da9e135fefc3cb0800000000000000
+      internalID: -4882747566918619777
       vertices: []
       indices: 
       edges: []
@@ -534,7 +597,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c962fd58cc6962c428db66751ba80ccb
+    spriteID: 23d94bbbb2a40014996aea7b69e293c5
     internalID: 0
     vertices: []
     indices: 
@@ -544,25 +607,25 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Goblin Tutorial_0: -975694667430421
-      Goblin Tutorial_1: 1502383251
-      Goblin Tutorial_10: 839200689
-      Goblin Tutorial_11: -254898147
-      Goblin Tutorial_12: -1682990028
-      Goblin Tutorial_13: -667805971
-      Goblin Tutorial_14: -1370060940
-      Goblin Tutorial_15: 192671498
-      Goblin Tutorial_16: 172814309
-      Goblin Tutorial_17: 1008605239
-      Goblin Tutorial_18: -334757067
-      Goblin Tutorial_2: 844705073
-      Goblin Tutorial_3: -2110660576
-      Goblin Tutorial_4: 1805267546
-      Goblin Tutorial_5: -1758875373
-      Goblin Tutorial_6: -2051529087
-      Goblin Tutorial_7: -748801268
-      Goblin Tutorial_8: 633900655
-      Goblin Tutorial_9: 1111372332
+      Goblin Tutorial(mod)-Sheet_0: 3176240657941498547
+      Goblin Tutorial(mod)-Sheet_1: 4243951944038073138
+      Goblin Tutorial(mod)-Sheet_10: 333709685134403783
+      Goblin Tutorial(mod)-Sheet_11: 6659716598491388414
+      Goblin Tutorial(mod)-Sheet_12: 5408453483329911105
+      Goblin Tutorial(mod)-Sheet_13: -8925314587410302107
+      Goblin Tutorial(mod)-Sheet_14: 7993098245751437816
+      Goblin Tutorial(mod)-Sheet_15: -8787354164102882544
+      Goblin Tutorial(mod)-Sheet_16: -3985360796237036703
+      Goblin Tutorial(mod)-Sheet_17: -9071974024256597057
+      Goblin Tutorial(mod)-Sheet_18: -4882747566918619777
+      Goblin Tutorial(mod)-Sheet_2: -608346482718330910
+      Goblin Tutorial(mod)-Sheet_3: -2990472225522928664
+      Goblin Tutorial(mod)-Sheet_4: 1558259525447041344
+      Goblin Tutorial(mod)-Sheet_5: 8448327602578077541
+      Goblin Tutorial(mod)-Sheet_6: -8994076189938883851
+      Goblin Tutorial(mod)-Sheet_7: 9035480810719707205
+      Goblin Tutorial(mod)-Sheet_8: 110238416720552861
+      Goblin Tutorial(mod)-Sheet_9: 9150274543857246306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

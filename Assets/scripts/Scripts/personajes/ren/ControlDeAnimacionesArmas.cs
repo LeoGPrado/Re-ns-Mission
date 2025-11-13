@@ -13,6 +13,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     [SerializeField] GameObject Cuchilla;
     public float ActivarArmaE = 0f;
     public int verificarMazo = 0;
+    public SelectorArmas index;
 
     [SerializeField] Animator Ren;
 
@@ -27,7 +28,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(Espada != null && Espada.activeInHierarchy)
+            if(index.armasIndex == 4)
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
                 srEspada.enabled = false;
@@ -37,7 +38,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srEspada));
                 //StartCoroutine(ActivarArma(Espada));
             }
-            else if (Pollo != null && Pollo.activeInHierarchy)
+            else if (index.armasIndex == 2)
             {
                 SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
                 srPollo.enabled = false;
@@ -46,7 +47,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srPollo));
             }
-            else if (Arco != null && Arco.activeInHierarchy)
+            else if (index.armasIndex == 1)
             {
                 SpriteRenderer srArco = Arco.GetComponent<SpriteRenderer>();
                 srArco.enabled = false;
@@ -55,7 +56,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srArco));
             }
-            else if (Baston != null && Baston.activeInHierarchy)
+            else if (index.armasIndex == 0)
             {
                 SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
                 srBaston.enabled = false;
@@ -64,7 +65,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
             }
-            else if (Mazo != null && Mazo.activeInHierarchy)
+            else if (index.armasIndex == 3)
             {
                 SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
                 srMazo.enabled = false;
@@ -85,7 +86,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         }
         else if (Input.GetMouseButtonDown(1))
         {
-            if (Espada != null && Espada.activeInHierarchy)
+            if (index.armasIndex == 4)
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
                 srEspada.enabled = false;
@@ -95,7 +96,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srEspada));
                 //StartCoroutine(ActivarArma(Espada));
             }
-            else if (Pollo != null && Pollo.activeInHierarchy)
+            else if (index.armasIndex == 2)
             {
                 SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
                 srPollo.enabled = false;
@@ -104,7 +105,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srPollo));
             }
-            else if (Arco != null && Arco.activeInHierarchy)
+            else if (index.armasIndex == 1)
             {
                 SpriteRenderer srArco = Arco.GetComponent<SpriteRenderer>();
                 srArco.enabled = false;
@@ -113,7 +114,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srArco));
             }
-            else if (Baston != null && Baston.activeInHierarchy)
+            else if (index.armasIndex == 0)
             {
                 SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
                 srBaston.enabled = false;
@@ -122,7 +123,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
             }
-            else if (Mazo != null && Mazo.activeInHierarchy)
+            else if (index.armasIndex == 3)
             {
                 SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
                 srMazo.enabled = false;

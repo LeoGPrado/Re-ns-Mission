@@ -14,16 +14,16 @@ public class SelectorArmas : MonoBehaviour
     [SerializeField] private bool armaElegida = false;
     [SerializeField] private bool elegirArma = false;
     public int numeroArma;
-    [SerializeField] private int armasIndex;
+    public int armasIndex;
     
 
 
 
     private void Awake()
     {
-        randomizer1 = 0; //Random.Range(0, 8);
-        randomizer2 = 2; //Random.Range(0, 8);
-        randomizer3 = 3; //Random.Range(0, 8);
+        randomizer1 = Random.Range(0, 5); //Random.Range(0, 8);
+        randomizer2 = Random.Range(0, 5); //Random.Range(0, 8);
+        randomizer3 = Random.Range(0, 5); //Random.Range(0, 8);
 
 
     }
@@ -82,13 +82,12 @@ public class SelectorArmas : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void ElegirPincel()
+    public void ElegirArco()
     {
         armasIndex = 1;
         elegirArma = true;
 
         Time.timeScale = 1;
-
     }
 
     public void ElegirPollo()
@@ -99,7 +98,7 @@ public class SelectorArmas : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void ElegirEspadas()
+    public void ElegirMazo()
     {
         armasIndex = 3;
         elegirArma = true;
@@ -107,7 +106,7 @@ public class SelectorArmas : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void ElegirMazo()
+    public void ElegirEspadas()
     {
         armasIndex = 4;
         elegirArma = true;
@@ -123,13 +122,17 @@ public class SelectorArmas : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void ElegirArco()
+  
+
+    public void ElegirPincel()
     {
         armasIndex = 6;
         elegirArma = true;
 
         Time.timeScale = 1;
+
     }
+
 
     public void ElegirCuchillas()
     {

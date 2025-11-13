@@ -137,7 +137,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -183,7 +183,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -230,6 +230,7 @@ MonoBehaviour:
   VidaEnemigo: 5
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
   manaPartCount: 4
+  canDropMana: 1
   slimeFuego: 0
   slimeHielo: 1
   slimeNaturaleza: 0

@@ -14,8 +14,24 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     public float ActivarArmaE = 0f;
     public int verificarMazo = 0;
     public SelectorArmas index;
+    public MedidorArteEspecial medidor;
 
     [SerializeField] Animator Ren;
+
+    public static ControlDeAnimacionesArmas ControlEspecial;
+
+    public bool verificar = false;
+
+    private void Awake()
+    {
+
+        if (ControlEspecial == null)
+        {
+            ControlEspecial = this;
+        }
+
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,12 +39,18 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         
     }
 
+    public void usarEspecial()
+    {
+        verificar = true;
+    }
+
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(index.armasIndex == 4)
+            if (index.armasIndex == 4)
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
                 srEspada.enabled = false;
@@ -84,7 +106,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srPescado));
             }
         }
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1)&&verificar==true) 
         {
             if (index.armasIndex == 4)
             {
@@ -92,8 +114,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 srEspada.enabled = false;
 
                 Ren.SetTrigger("EspecialEspadaP");
+                verificar = false;
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srEspada));
+
                 //StartCoroutine(ActivarArma(Espada));
             }
             else if (index.armasIndex == 2)
@@ -102,8 +126,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 srPollo.enabled = false;
 
                 Ren.SetTrigger("AtaquePolloP");
+                verificar = false;
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srPollo));
+
             }
             else if (index.armasIndex == 1)
             {
@@ -111,8 +137,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 srArco.enabled = false;
 
                 Ren.SetTrigger("AtaqueArcoP");
+                verificar = false;
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srArco));
+
             }
             else if (index.armasIndex == 0)
             {
@@ -120,8 +148,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 srBaston.enabled = false;
 
                 Ren.SetTrigger("AtaqueBastonP");
+                verificar = false;
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
+       
             }
             else if (index.armasIndex == 3)
             {
@@ -129,6 +159,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 srMazo.enabled = false;
 
                 Ren.SetTrigger("AtaqueMazoP");
+                verificar = false;
                 ActivarArmaE = 0.7f;
                 if (verificarMazo == 0)
                 {
@@ -139,6 +170,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
 
                 StartCoroutine(ActivarArma(srMazo));
                 StartCoroutine(RegresarNormalidad());
+          
 
                 //transform.localScale = Vector3.one;
                 //verificarMazo = 0;
@@ -151,6 +183,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 Ren.SetTrigger("AtaquePescadoP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
+ 
             }
 
 

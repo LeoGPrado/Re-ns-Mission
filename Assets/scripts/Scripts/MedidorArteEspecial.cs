@@ -70,6 +70,7 @@ public class MedidorArteEspecial : MonoBehaviour
         if (playerMana.energycharged && !isOnCooldown)
         {
             CanUseWeaponArt();
+            ControlDeAnimacionesArmas.ControlEspecial.usarEspecial();
             ultReady.gameObject.SetActive(true);
         }
         else
@@ -136,13 +137,12 @@ public class MedidorArteEspecial : MonoBehaviour
     //Método para el uso de la ulti
     public void CanUseWeaponArt()
     {
-        
-        
-            //Debug.Log("Lanzar ulti");
-            //playerMana.currentMana = 0;
-            //StartCD();
 
-            canUseUltimate = true;
+
+        //Debug.Log("Lanzar ulti");
+        //playerMana.currentMana = 0;
+        //StartCD();
+        canUseUltimate = true;
             
 
 

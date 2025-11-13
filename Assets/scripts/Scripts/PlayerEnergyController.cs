@@ -16,6 +16,8 @@ public class PlayerEnergyController : MonoBehaviour
     public bool energycharged = false;
     public bool canObtainMana = true;
 
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -32,6 +34,7 @@ public class PlayerEnergyController : MonoBehaviour
         if(currentMana >= maxMana)
         {
             energycharged = true;
+
         }
     }
 
@@ -57,8 +60,8 @@ public class PlayerEnergyController : MonoBehaviour
         energycharged = false;
         usedUltimate = true;
         currentMana = baseMana;
-            
-        
+
+
     }
 
     

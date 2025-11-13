@@ -6848,7 +6848,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.60960305, g: 0.721631, b: 0.9716981, a: 1}
-  m_Intensity: 0.09
+  m_Intensity: 0.6
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -6913,7 +6913,7 @@ MonoBehaviour:
   luzDeDia: {fileID: 619394801}
   tiempoDeOscuridad: 120
   tiempoDeTransicion: 60
-  intensidadInicial: 0.09
+  intensidadInicial: 0.6
   intensidadFinal: 1
 --- !u!1 &619836957
 GameObject:
@@ -30708,7 +30708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1219788872
 Transform:
   m_ObjectHideFlags: 0
@@ -32324,6 +32324,7 @@ GameObject:
   - component: {fileID: 1394096926}
   - component: {fileID: 1394096925}
   - component: {fileID: 1394096924}
+  - component: {fileID: 1394096928}
   m_Layer: 0
   m_Name: PuertaDelCastillo
   m_TagString: Untagged
@@ -32460,6 +32461,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1394096928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394096923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.727
+  m_Color: {r: 0.80387276, g: 0.8679245, b: 0.045033824, a: 1}
+  m_Intensity: 0.51
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0.01880002, y: -2.80725, z: 0}
+    m_Extent: {x: 5.5827, y: 4.70645, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 3.57
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -1.9949846, y: -3.942953, z: 0}
+  - {x: 2.0320482, y: -3.8998165, z: 0}
+  - {x: 1.270091, y: -1.6716557, z: 0}
+  - {x: -1.2542086, y: -1.6716537, z: 0}
 --- !u!1 &1407460338
 GameObject:
   m_ObjectHideFlags: 0

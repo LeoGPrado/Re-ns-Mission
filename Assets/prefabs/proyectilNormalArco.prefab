@@ -134,6 +134,7 @@ MonoBehaviour:
   velocidad: 5
   quieto: 0
   ImpoctoArma: {fileID: 0}
+  rb: {fileID: 0}
   DFuego: 0
   Dhielo: 0
   Dnaturaleza: 1
@@ -211,9 +212,9 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.733
-  m_Color: {r: 0.06250317, g: 0.025542898, b: 0.13207549, a: 1}
-  m_Intensity: 1.55
+  m_FalloffIntensity: 0.546
+  m_Color: {r: 0.10012458, g: 0.8490566, b: 0.14729871, a: 1}
+  m_Intensity: 1.01
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000

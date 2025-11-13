@@ -17,12 +17,25 @@ public class DestruirV2 : MonoBehaviour
     public bool Dnaturaleza = false;
     public bool Dnormal = false;
 
+    public static DestruirV2 SeleccionElemento;
+
 
     public bool ataqueDeFuego = false;
 
 
     public void ActivarFuego() => ataqueDeFuego = true;
     public void DesactivarFuego() => ataqueDeFuego = false;
+    private void Awake()
+    {
+
+        if (SeleccionElemento == null)
+        {
+            SeleccionElemento = this;
+        }
+
+    }
+
+
 
     void Start()
     {

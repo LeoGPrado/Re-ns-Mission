@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7963a9d6d31504aaad151c8545734c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slimeR: {fileID: 0}
+  slimeR: {fileID: 4139868696333227180}
   slimeScript: {fileID: 7068186703206470632}
   FuerzaDeRetroceso: 100
 --- !u!95 &859249785686918011

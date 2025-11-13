@@ -4484,8 +4484,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09c8280b92e32de46b98ebb7d687b6fc, type: 2}
+  m_sharedMaterial: {fileID: 5713654448352698058, guid: 09c8280b92e32de46b98ebb7d687b6fc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4509,8 +4509,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 52.42
+  m_fontSizeBase: 52.42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -30708,7 +30708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1219788872
 Transform:
   m_ObjectHideFlags: 0
@@ -38990,8 +38990,8 @@ MonoBehaviour:
   probHielo: 25
   probFuego: 25
   probNaturaleza: 25
-  tiempoMin: 0.9
-  tiempoMax: 4
+  tiempoMin: 1.04
+  tiempoMax: 4.17
 --- !u!4 &1971618065
 Transform:
   m_ObjectHideFlags: 0
@@ -39792,8 +39792,8 @@ MonoBehaviour:
   probHielo: 25
   probFuego: 25
   probNaturaleza: 25
-  tiempoMin: 0.9
-  tiempoMax: 4
+  tiempoMin: 1.98
+  tiempoMax: 5.08
 --- !u!1 &2076876664
 GameObject:
   m_ObjectHideFlags: 0

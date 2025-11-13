@@ -626,7 +626,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4185370294113057155, guid: c5cfc2848cfe64744ae7e438af3c12ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1213,11 +1213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -138810320447680425, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.4666667
+      value: 0.675
       objectReference: {fileID: 0}
     - target: {fileID: -138810320447680425, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.1333334
+      value: 0.675
       objectReference: {fileID: 0}
     - target: {fileID: 2544960743788468259, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_Enabled
@@ -1241,7 +1241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_TagString
@@ -1250,26 +1250,26 @@ PrefabInstance:
     - target: {fileID: 5106864149912469739, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -257598843580502124, guid: fd3ca7feab63e354bac635695d967168, type: 3}
+      objectReference: {fileID: 1122523370717706831, guid: 98444a42aba33e94892d3d4b7c8d130e, type: 3}
     - target: {fileID: 7467787864324314476, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8735429471866289084, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8735429471866289084, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8735429471866289084, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.79
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 8735429471866289084, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.86
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 8735429471866289084, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1309,7 +1309,10 @@ PrefabInstance:
     - {fileID: 3056612014882842199, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 901325909}
   m_SourcePrefab: {fileID: 100100000, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
 --- !u!1001 &893905120
 PrefabInstance:
@@ -1385,6 +1388,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
   m_PrefabInstance: {fileID: 755985183}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &901325909
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901325902}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1e2045e7aaae324c9466a30300c7846, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &934680993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,6 +4206,7 @@ GameObject:
   - component: {fileID: 1787721283}
   - component: {fileID: 1787721282}
   - component: {fileID: 1787721281}
+  - component: {fileID: 1787721284}
   m_Layer: 0
   m_Name: Mesa tutorial (Goblin)
   m_TagString: Untagged
@@ -4253,7 +4279,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3176240657941498547, guid: 01e28a8e56a965d4e8fa87633e79db6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4274,12 +4300,25 @@ Transform:
   m_GameObject: {fileID: 1787721280}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.001347661, y: -0.36075795, z: 0}
+  m_LocalPosition: {x: -0.02, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787721284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787721280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518ed6744ded96045aa830772091e418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goblinTutorial: {fileID: 901325902}
 --- !u!4 &1810261923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8659931898890525359, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
@@ -6521,7 +6560,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4185370294113057155, guid: c5cfc2848cfe64744ae7e438af3c12ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

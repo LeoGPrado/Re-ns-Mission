@@ -26518,7 +26518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1219788872
 Transform:
   m_ObjectHideFlags: 0
@@ -26939,7 +26939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715175727974460864, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5484890415022503521, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: Espada
@@ -26947,6 +26947,10 @@ PrefabInstance:
       objectReference: {fileID: 2023505892}
     - target: {fileID: 5484890415022503521, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606819598077831379, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
+      propertyPath: DFuego
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5606819598077831379, guid: a1d0cad9846b79c4ea96be4059fb9529, type: 3}
@@ -36052,9 +36056,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
   slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
   punto3: {fileID: 0}

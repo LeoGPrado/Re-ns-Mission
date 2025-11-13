@@ -27643,17 +27643,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
   m_PrefabInstance: {fileID: 1802798253}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &681740470 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4614806189316533081, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
-  m_PrefabInstance: {fileID: 1802798253}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681740464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34ef5c6007130854f91f66061a909358, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &681740474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27668,7 +27657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 3
   vidaSlime: {fileID: 0}
-  vidaEsque: {fileID: 681740470}
+  vidaEsque: {fileID: 0}
   "manaPart\xEDcula": {fileID: 0}
   manaParticleCount: 4
 --- !u!1 &688328066
@@ -37653,14 +37642,6 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4614806189316533081, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
-      propertyPath: velocidad
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4614806189316533081, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
-      propertyPath: VidaEnemigo
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
       propertyPath: m_Name
       value: Esqueleto
@@ -38888,10 +38869,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeNormal: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
   punto3: {fileID: 0}

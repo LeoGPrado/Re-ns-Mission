@@ -118,7 +118,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
                 srBaston.enabled = false;
 
-                Ren.SetTrigger("EspecialMazo");
+                Ren.SetTrigger("AtaqueBastonP");
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
             }

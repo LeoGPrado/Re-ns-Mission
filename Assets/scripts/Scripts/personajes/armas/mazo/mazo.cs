@@ -9,6 +9,8 @@ public class mazo : MonoBehaviour
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer Mazo;
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
 
     private void Start()
     {
@@ -52,7 +54,8 @@ public class mazo : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-
+            medidor.canUseUltimate = false;
+            playerEC.Ultimate();
         }
     }
 

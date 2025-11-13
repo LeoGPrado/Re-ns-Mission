@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class DestruirEnemigo : MonoBehaviour
 {
-    [SerializeField] float velocidad = 5f;
+    [SerializeField] float velocidad = 8f;
     public bool quieto = true;
     [SerializeField] Animator ImpoctoArma;
     public static DestruirEnemigo DEnemigo;
+    [SerializeField] private Rigidbody2D rb;
 
     public bool DFuego=false;
     public bool Dhielo=false;
@@ -14,6 +15,8 @@ public class DestruirEnemigo : MonoBehaviour
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
+
         if (DEnemigo == null)
         {
             DEnemigo = this;
@@ -39,6 +42,16 @@ public class DestruirEnemigo : MonoBehaviour
             GetComponent<Rigidbody2D>().linearVelocity = direccion * velocidad;
         }
         
+    }
+
+    private void Update()
+    {
+        Vector2 dir = rb.linearVelocity;
+        if(dir.sqrMagnitude > 0.01f)
+        {
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

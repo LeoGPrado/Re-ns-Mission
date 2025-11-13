@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor;
 
 public class ArcoControlador : MonoBehaviour
 {
@@ -15,7 +16,14 @@ public class ArcoControlador : MonoBehaviour
     [SerializeField] SpriteRenderer arco;
 
     public float cooldown = 2f;
+    public float ultcooldown = 1f;
     private bool puedeDisparar = true;
+    public float timer = 0;
+    [SerializeField] private bool ultTriggered = false;
+    private bool isOnUltimate = false;
+
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
 
     private void Start()
     {
@@ -56,15 +64,34 @@ public class ArcoControlador : MonoBehaviour
             //arco.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
-        if (Input.GetMouseButtonDown(0) && puedeDisparar)
+        if (!isOnUltimate)
         {
-            StartCoroutine(DisparoConCooldown());
+            if (Input.GetMouseButtonDown(0) && puedeDisparar)
+            {
+                StartCoroutine(DisparoConCooldown());
+            }
         }
+        else if (isOnUltimate)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                StartCoroutine(DisparoConCooldown());
+                
+            }
+        }
+
+
 
         /*if (Input.GetMouseButtonDown(1))
         {
             DisparoEspecial();
         }*/
+
+        if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
+        {         
+            StartCoroutine(DisparoEspecial());
+            StartCoroutine(ManaObtain());
+        }
     }
 
     IEnumerator DisparoConCooldown()
@@ -76,6 +103,25 @@ public class ArcoControlador : MonoBehaviour
 
         yield return new WaitForSeconds(cooldown);
         puedeDisparar = true;
+    }
+
+    IEnumerator CooldownUltBurst()
+    {
+        puedeDisparar = false;
+        yield return new WaitForSeconds(0.2f);
+
+        DisparoNormal();
+
+        yield return new WaitForSeconds(ultcooldown);
+        puedeDisparar = true;
+    }
+
+    IEnumerator ManaObtain()
+    {
+        playerEC.canObtainMana = false;
+
+        yield return new WaitForSeconds(2f);
+        playerEC.canObtainMana = true;
     }
 
     void DisparoNormal()
@@ -93,11 +139,17 @@ public class ArcoControlador : MonoBehaviour
 
     }
 
-    void DisparoEspecial()
+    IEnumerator DisparoEspecial()
     {
+        isOnUltimate = true;
+        medidor.canUseUltimate = false;
+        playerEC.Ultimate();
+        
 
-        GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-        Destroy(bala, 1f);
+        yield return new WaitForSeconds(2.5f);
+        isOnUltimate = false;
+
+        StopCoroutine(DisparoEspecial());
 
     }
 }

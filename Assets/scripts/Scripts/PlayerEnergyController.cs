@@ -10,10 +10,11 @@ public class PlayerEnergyController : MonoBehaviour
     public MedidorArteEspecial ultimate;
     public float maxMana = 100f;
     public float currentMana;
-    public float manaPerEnemy = 20f;
+    public float manaPerParticle = 5f;
     public float baseMana = 0f;
     public bool usedUltimate = false;
     public bool energycharged = false;
+    public bool canObtainMana = true;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,8 +37,12 @@ public class PlayerEnergyController : MonoBehaviour
 
     public void ManaCharge()
     {
-        currentMana += manaPerEnemy;
-        currentMana = Mathf.Clamp(currentMana, 0, maxMana);
+        if (canObtainMana)
+        {
+            currentMana += manaPerParticle;
+            currentMana = Mathf.Clamp(currentMana, 0, maxMana);
+        }
+        
     }
 
     public void ConsumeMana()

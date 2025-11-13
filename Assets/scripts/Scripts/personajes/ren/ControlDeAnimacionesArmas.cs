@@ -134,6 +134,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 {
                     transform.localScale *= 3;
                     verificarMazo++;
+
                 }
 
                 StartCoroutine(ActivarArma(srMazo));

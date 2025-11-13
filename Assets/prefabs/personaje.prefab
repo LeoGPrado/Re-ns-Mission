@@ -1478,6 +1478,7 @@ MonoBehaviour:
   Cuchilla: {fileID: 3889435653079392495}
   ActivarArmaE: 0
   verificarMazo: 0
+  index: {fileID: 0}
   Ren: {fileID: 145401186623800058}
 --- !u!114 &5757480769003061603
 MonoBehaviour:
@@ -1503,7 +1504,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7365231029725861165}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c16c2731cbe2354d8ae6a3512eb2591, type: 3}
   m_Name: 

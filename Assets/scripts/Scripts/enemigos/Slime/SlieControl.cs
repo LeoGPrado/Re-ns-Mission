@@ -19,8 +19,11 @@ public class SlieControl : MonoBehaviour
     private NavMeshAgent agent;
     private Transform player, door;
     public int VidaEnemigo = 1;
+    
 
     [SerializeField] private GameObject manaPartícula;
+    [SerializeField] private float manaPartCount = 4f;
+    [SerializeField] private bool canDropMana = true;
 
     public bool slimeFuego=false;
     public bool slimeHielo=false;
@@ -99,8 +102,10 @@ public class SlieControl : MonoBehaviour
     {
         if (VidaEnemigo < 1)
         {
+            StartCoroutine(DropAndCooldown());
             Destroy(gameObject);
-            Instantiate(manaPartícula, transform.position, Quaternion.identity);
+            
+            
         }
         else
         {
@@ -157,6 +162,31 @@ public class SlieControl : MonoBehaviour
     public void quemarSlime()
     {
         StartCoroutine(DañoPorFuego());
+    }
+
+    public void ManaDrop()
+    {
+
+        for (int i = 0; i < manaPartCount; i++)
+        {
+            Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle.normalized * Random.Range(0.5f, 1.5f);
+            GameObject particle = Instantiate(manaPartícula, transform.position, Quaternion.identity);
+
+      
+        }
+    }
+
+    IEnumerator DropAndCooldown()
+    {
+        if (canDropMana)
+        {
+            ManaDrop();
+            canDropMana = false;
+        }
+        
+
+        yield return new WaitForSeconds(1f);
+        canDropMana = true;
     }
 
     IEnumerator DañoPorFuego()

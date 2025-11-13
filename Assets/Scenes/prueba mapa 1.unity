@@ -36400,6 +36400,10 @@ PrefabInstance:
       propertyPath: ultimate
       value: 
       objectReference: {fileID: 1531625472}
+    - target: {fileID: 2124830460431483517, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3061341676892101196, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.94
@@ -36460,6 +36464,14 @@ PrefabInstance:
       propertyPath: Corazon5
       value: 
       objectReference: {fileID: 469633420}
+    - target: {fileID: 4248948275373792429, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: panelArmas
       value: 
@@ -36564,6 +36576,10 @@ PrefabInstance:
       propertyPath: medidor
       value: 
       objectReference: {fileID: 1531625472}
+    - target: {fileID: 5191960523741171534, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: balaEspecialPrefab
+      value: 
+      objectReference: {fileID: 31823557697410391, guid: a1986fd1dbf69ac42ac92ba350b76e50, type: 3}
     - target: {fileID: 7365231029725861165, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_Name
       value: personaje

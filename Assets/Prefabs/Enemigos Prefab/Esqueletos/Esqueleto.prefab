@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7467787864324314476}
   - component: {fileID: 3056612014882842199}
   - component: {fileID: 2544960743788468259}
+  - component: {fileID: 3375965746480309621}
   m_Layer: 6
   m_Name: Esqueleto
   m_TagString: Enemigo
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -257598843580502124, guid: fd3ca7feab63e354bac635695d967168, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -256,6 +257,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.16289711, y: 0}
   m_Radius: 3.664443
+--- !u!195 &3375965746480309621
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891012412717606429}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.625
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.0833334
+  m_BaseOffset: 0.5416667
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &9001329941077397239
 GameObject:
   m_ObjectHideFlags: 0

@@ -104,8 +104,6 @@ public class DestruirV2 : MonoBehaviour
                 if (xDist <= 0)
                 {
 
-
-
                     Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
                     slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
                     //slimeScript.controlVida();

@@ -40682,6 +40682,14 @@ PrefabInstance:
       propertyPath: Corazon5
       value: 
       objectReference: {fileID: 469633420}
+    - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: balaNormal
+      value: 
+      objectReference: {fileID: 5231000209351257341, guid: c0552805be991024097b009a5d7b5614, type: 3}
+    - target: {fileID: 3889435653079392495, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4248948275373792429, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -40837,6 +40845,10 @@ PrefabInstance:
     - target: {fileID: 7365231029725861165, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_Name
       value: personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055186321541561714, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

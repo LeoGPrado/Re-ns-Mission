@@ -134,6 +134,7 @@ MonoBehaviour:
   velocidad: 5
   quieto: 0
   ImpoctoArma: {fileID: 0}
+  rb: {fileID: 0}
   DFuego: 1
   Dhielo: 0
   Dnaturaleza: 0

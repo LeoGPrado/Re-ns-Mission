@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class DestruirV2 : MonoBehaviour
 {
@@ -87,12 +88,15 @@ public class DestruirV2 : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (!puedeDestruir) return;
+        print("deteccion!!!!");
 
         if (collision.gameObject.tag == "Enemigo")
         {
+            print("enemigo!!!!");
             //talvez esto sea el problema
             if (collision.TryGetComponent<SlieControl>(out var slime))
             {
+                print("tiene componente!!!!");
                 xDist = transform.position.x - collision.transform.position.x;
                 slimeR = collision.GetComponent<Rigidbody2D>();
                 SlimeSprite = collision.GetComponent<SpriteRenderer>();
@@ -101,192 +105,78 @@ public class DestruirV2 : MonoBehaviour
                 string tipoSlime = slime.confirmarElemento();
                 print("Elemento detectado en enemigo: " + tipoSlime);
 
+                Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
+
                 if (xDist <= 0)
                 {
-
-                    Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
-                    slimeR.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
-                    //slimeScript.controlVida();
-
-
-                    if (ataqueDeFuego)
-                    {
-                        StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
-                    }
-                    else
-                    {
-
-                        if (tipoSlime == "fuego")
-                        {
-                            if (DFuego == true)
-                            {
-                                ataqueNormal();
-                            }
-                            else if (Dhielo == true)
-                            {
-                                ataqueNormal();
-                                ataqueNormal();
-                                ataqueNormal();
-                            }
-                            else
-                            {
-                                ataqueNormal();
-                                ataqueNormal();
-                            }
-
-                        }
-                        else if (tipoSlime == "hielo")
-                        {
-                            if (Dhielo == true)
-                            {
-                                ataqueNormal();
-                            }
-                            else if (Dnaturaleza == true)
-                            {
-                                ataqueNormal();
-                                ataqueNormal();
-                                ataqueNormal();
-                            }
-                            else
-                            {
-                                ataqueNormal();
-                                ataqueNormal();
-                            }
-
-                        }
-                        else if (tipoSlime == "naturaleza")
-                        {
-                            if (Dnaturaleza == true)
-                            {
-                                ataqueNormal();
-                            }
-                            else if (DFuego == true)
-                            {
-                                ataqueNormal();
-                                ataqueNormal();
-                                ataqueNormal();
-                            }
-                            else
-                            {
-                                ataqueNormal();
-                                ataqueNormal();
-                            }
-
-                        }
-                        else if (tipoSlime == "normal")
-                        {
-                            print("La bala ha entrado a enemigo normal");
-                            ataqueNormal();
-                            ataqueNormal();
-                        }
-                    }
-
-
-                    slimeScript.enabled = false;
-                    print("esta entrando en trigger");
-                    StartCoroutine(FrenarRetroceso());
-
+                    slimeR?.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
                 }
                 else
                 {
+                    slimeR?.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
+                }
 
-
-                    Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
-                    slimeR.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
-                    //slimeScript.controlVida();
-
-                    if (ataqueDeFuego)
+                if (ataqueDeFuego)
+                {
+                    StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+                }
+                else
+                {
+                    switch (tipoSlime)
                     {
-                        StartCoroutine(DañoPorFuegoEspada(slime, SlimeSprite));
+                        case "fuego": ApplyDamage(DFuego, Dhielo); break;
+                        case "hielo": ApplyDamage(Dhielo, Dnaturaleza); break;
+                        case "naturaleza": ApplyDamage(Dnaturaleza, DFuego); break;
+                        default: ataqueNormal(); break;
+                    }
+                    if (tipoSlime == "normal")
+                    {
+                        print("La bala ha entrado a enemigo normal");
+                        ataqueNormal();
+                        ataqueNormal();
                     }
                     else
                     {
-
-                        if (tipoSlime == "fuego")
-                        {
-                            if (DFuego == true)
-                            {
-                                slime.controlVida();
-                            }
-                            else if (Dhielo == true)
-                            {
-                                slime.controlVida();
-                                slime.controlVida();
-                                slime.controlVida();
-                            }
-                            else
-                            {
-                                slime.controlVida();
-                                slime.controlVida();
-                            }
-
-                        }
-                        else if (tipoSlime == "hielo")
-                        {
-                            if (Dhielo == true)
-                            {
-                                slime.controlVida();
-                            }
-                            else if (Dnaturaleza == true)
-                            {
-                                slime.controlVida();
-                                slime.controlVida();
-                                slime.controlVida();
-                            }
-                            else
-                            {
-                                slime.controlVida();
-                                slime.controlVida();
-                            }
-
-                        }
-                        else if (tipoSlime == "naturaleza")
-                        {
-                            if (Dnaturaleza == true)
-                            {
-                                slime.controlVida();
-                            }
-                            else if (DFuego == true)
-                            {
-                                slime.controlVida();
-                                slime.controlVida();
-                                slime.controlVida();
-                            }
-                            else
-                            {
-                                slime.controlVida();
-                                slime.controlVida();
-                            }
-
-                        }
-                        else if (tipoSlime == "normal")
-                        {
-                            print("La bala ha entrado a enemigo normal");
-                            slime.controlVida();
-                            slime.controlVida();
-                        }
+                        ataqueNormal();
                     }
-
-
-
-                    slimeScript.enabled = false;
-                    print("esta entrando en trigger");
-                    StartCoroutine(FrenarRetroceso());
                 }
 
+
+                slimeScript.enabled = false;
+                print("esta entrando en trigger");
+                StartCoroutine(FrenarRetroceso());
             }
 
+        }
+
+        void ApplyDamage(bool firstOption, bool secondOption)
+        {
+            if (firstOption)
+            {
+                ataqueNormal();
+            }
+            else if (secondOption)
+            {
+                ataqueNormal();
+                ataqueNormal();
+                ataqueNormal();
+            }
+            else
+            {
+                ataqueNormal();
+                ataqueNormal();
+            }
         }
         IEnumerator FrenarRetroceso()
         {
 
             yield return new WaitForSeconds(0.5f);
 
-            slimeR.linearVelocity = Vector2.zero;
-            slimeScript.enabled = true;
-
-
-
+            if (slimeR)
+                slimeR.linearVelocity = Vector2.zero;
+            
+            if (slimeScript)
+                slimeScript.enabled = true;
         }
 
     }

@@ -100,6 +100,7 @@ public class SlieControl : MonoBehaviour
 
     public void controlVida()
     {
+        print("RECIVIO DAÑO!!!!");
         if (VidaEnemigo < 1)
         {
             StartCoroutine(DropAndCooldown());
@@ -128,7 +129,10 @@ public class SlieControl : MonoBehaviour
 
                 VidaEnemigo--;
             }
-
+            else
+            {
+                VidaEnemigo--;
+            }
         }
     }
     public string confirmarElemento()

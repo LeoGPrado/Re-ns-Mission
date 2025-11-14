@@ -32173,7 +32173,7 @@ MonoBehaviour:
   timerText: {fileID: 303800696}
   hour: 0
   minutos: 0
-  cdTimer: 30
+  cdTimer: 4
   parentSpawners: {fileID: 1618029185}
   parentEnemy: {fileID: 1700568973}
 --- !u!1 &1385731508
@@ -38964,7 +38964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38972,7 +38972,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971618062}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c56db84e4239e0f41bd62f2b2c2262cd, type: 3}
   m_Name: 
@@ -38990,8 +38990,8 @@ MonoBehaviour:
   probHielo: 25
   probFuego: 25
   probNaturaleza: 25
-  tiempoMin: 1.04
-  tiempoMax: 4.17
+  tiempoMin: 1.98
+  tiempoMax: 5.08
 --- !u!4 &1971618065
 Transform:
   m_ObjectHideFlags: 0
@@ -39750,7 +39750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2068018585
 Transform:
   m_ObjectHideFlags: 0
@@ -39792,8 +39792,8 @@ MonoBehaviour:
   probHielo: 25
   probFuego: 25
   probNaturaleza: 25
-  tiempoMin: 1.98
-  tiempoMax: 5.08
+  tiempoMin: 2
+  tiempoMax: 4
 --- !u!1 &2076876664
 GameObject:
   m_ObjectHideFlags: 0

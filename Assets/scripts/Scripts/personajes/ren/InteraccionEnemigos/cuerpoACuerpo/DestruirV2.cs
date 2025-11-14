@@ -95,6 +95,7 @@ public class DestruirV2 : MonoBehaviour
 
                 esqueleto.controlVida();
             }
+            //talvez esto sea el problema
             else if (collision.TryGetComponent<SlieControl>(out var slime))
             {
                 xDist = transform.position.x - collision.transform.position.x;

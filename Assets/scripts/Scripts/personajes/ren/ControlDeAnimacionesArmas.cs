@@ -105,6 +105,15 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
             }
+            else if (Cuchilla != null && Cuchilla.activeInHierarchy)
+            {
+                SpriteRenderer srCuchilla = Cuchilla.GetComponent<SpriteRenderer>();
+                srCuchilla.enabled = false;
+
+                Ren.SetTrigger("AtaqueCuchillaP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srCuchilla));
+            }
         }
         else if (Input.GetMouseButtonDown(1)&&verificar==true) 
         {

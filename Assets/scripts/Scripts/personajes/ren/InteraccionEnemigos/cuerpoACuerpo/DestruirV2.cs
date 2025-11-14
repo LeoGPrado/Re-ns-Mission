@@ -90,13 +90,8 @@ public class DestruirV2 : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemigo")
         {
-            if (collision.TryGetComponent<EsqueletoControl>(out var esqueleto))
-            {
-
-                esqueleto.controlVida();
-            }
             //talvez esto sea el problema
-            else if (collision.TryGetComponent<SlieControl>(out var slime))
+            if (collision.TryGetComponent<SlieControl>(out var slime))
             {
                 xDist = transform.position.x - collision.transform.position.x;
                 slimeR = collision.GetComponent<Rigidbody2D>();

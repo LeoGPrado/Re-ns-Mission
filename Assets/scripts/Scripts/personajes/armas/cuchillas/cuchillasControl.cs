@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class cuchillasControl : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class cuchillasControl : MonoBehaviour
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer cuchillas;
+
+    public float cooldown = 0.5f;
+    private bool puedeDisparar = true;
 
     void Update()
     {
@@ -46,15 +50,26 @@ public class cuchillasControl : MonoBehaviour
             //cuchillas.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && puedeDisparar)
         {
-            DisparoNormal();
+            StartCoroutine(DisparoConCooldown());
         }
 
         if (Input.GetMouseButtonDown(1))
         {
             DisparoEspecial();
         }
+    }
+
+    IEnumerator DisparoConCooldown()
+    {
+        puedeDisparar = false;
+        yield return new WaitForSeconds(0.2f);
+
+        DisparoNormal();
+
+        yield return new WaitForSeconds(cooldown);
+        puedeDisparar = true;
     }
 
     void DisparoNormal()

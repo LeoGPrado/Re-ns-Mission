@@ -45,7 +45,7 @@ public class TimerHoras : MonoBehaviour
                 if (minutos == 3)
                 {
 
-                    Destroy(parentSpawners);
+                    parentSpawners.SetActive(false);
 
                 }
                 Debug.Log(cantidadEnemigos);

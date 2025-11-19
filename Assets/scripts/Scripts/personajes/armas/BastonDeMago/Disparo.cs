@@ -83,12 +83,9 @@ public class Disparo : MonoBehaviour
     {
 
         GameObject balNormal = Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
-        SpriteRenderer srBala = balNormal.GetComponent<SpriteRenderer>();
+        SpriteRenderer srBala = balNormal.GetComponentInChildren<SpriteRenderer>();
 
-        if (personaje.flipX)
-        {
-            srBala.flipX = true;
-        }
+        
 
 
 

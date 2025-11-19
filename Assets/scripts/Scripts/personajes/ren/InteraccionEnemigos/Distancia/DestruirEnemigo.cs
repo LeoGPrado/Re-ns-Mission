@@ -7,6 +7,7 @@ public class DestruirEnemigo : MonoBehaviour
     [SerializeField] Animator ImpoctoArma;
     public static DestruirEnemigo DEnemigo;
     [SerializeField] private Rigidbody2D rb;
+    public Transform spriteHijo;
 
     public bool DFuego=false;
     public bool Dhielo=false;
@@ -47,11 +48,14 @@ public class DestruirEnemigo : MonoBehaviour
     private void Update()
     {
         Vector2 dir = rb.linearVelocity;
-        if(dir.sqrMagnitude > 0.01f)
+
+        if (dir.sqrMagnitude > 0.01f)
         {
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+            spriteHijo.rotation = Quaternion.Euler(0f, 0f, angle + 180f);
         }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

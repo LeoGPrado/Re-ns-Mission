@@ -43,7 +43,7 @@ public class TimerMinutos : MonoBehaviour
         //minutesText.text = $"{min:0}:{sec:00}";
         int min = (int)elpTime / 30;
         int sec = (int)elpTime % 30;
-        minutesText.text = string.Format("{0:00}:{1:00}", min, sec); //$"{:00}:{sec:00}";
+        minutesText.text = string.Format("{0:00}:{1:00} AM", min, sec); //$"{:00}:{sec:00}";
     }
 
 

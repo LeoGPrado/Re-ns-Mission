@@ -84,6 +84,7 @@ public class TimerHoras : MonoBehaviour
 
     void UpdateTime()
     {
-        timerText.text = minutos.ToString("00") + hour.ToString(":00");
+        timerText.text = minutos.ToString("00") + hour.ToString(":00") + " AM";
+
     }
 }

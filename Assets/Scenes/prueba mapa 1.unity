@@ -34042,6 +34042,7 @@ MonoBehaviour:
   cdTimer: 4
   parentSpawners: {fileID: 1618029185}
   parentEnemy: {fileID: 1700568973}
+  sceneName: prueba mapa 2
 --- !u!1 &1385731508
 GameObject:
   m_ObjectHideFlags: 0
@@ -35274,7 +35275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1531625468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35333,7 +35334,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 4
@@ -39432,7 +39433,7 @@ RectTransform:
   m_Father: {fileID: 1334909084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 340.77, y: -7.209999}
   m_SizeDelta: {x: 647.5, y: -24.31}
   m_Pivot: {x: 0.5, y: 0.5}

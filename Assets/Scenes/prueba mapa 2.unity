@@ -40619,15 +40619,15 @@ RectTransform:
   m_GameObject: {fileID: 707651682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.12658, y: 0.05534, z: 0.05534}
+  m_LocalScale: {x: 0.46338406, y: 0.20258866, z: 0.20258866}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1531625471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.66, y: 1.46}
-  m_SizeDelta: {x: 68.51, y: 24.47}
+  m_AnchoredPosition: {x: -6.5852, y: 464.9202}
+  m_SizeDelta: {x: 1556.1438, y: 578.547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &722781433
 GameObject:
@@ -45100,7 +45100,7 @@ MonoBehaviour:
   timerText: {fileID: 303800696}
   hour: 0
   minutos: 0
-  cdTimer: 30
+  cdTimer: 15
   parentSpawners: {fileID: 1618029185}
   parentEnemy: {fileID: 1700568973}
 --- !u!1 &1385731508
@@ -46122,6 +46122,7 @@ RectTransform:
   - {fileID: 268277512}
   - {fileID: 2079442205}
   - {fileID: 168174864}
+  - {fileID: 707651686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -51673,7 +51674,7 @@ Canvas:
   m_GameObject: {fileID: 2139170231}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -52077,7 +52078,6 @@ SceneRoots:
   - {fileID: 1731515872}
   - {fileID: 2139170235}
   - {fileID: 1531625471}
-  - {fileID: 707651686}
   - {fileID: 1345744117}
   - {fileID: 1618029186}
   - {fileID: 1700568973}

@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicaPostTutorial.unity
     guid: 07a2b215dde59e9478caeb9f1ae8fa25
+  - enabled: 1
+    path: Assets/Scenes/prueba mapa 2.unity
+    guid: bb81ead166bf5d84e991c3e0e1342d8d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

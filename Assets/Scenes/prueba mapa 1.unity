@@ -5339,14 +5339,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 8203f034b9f0eb54ba24176058e1ef06, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6087,6 +6087,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1214845467}
+  - {fileID: 1668797851}
   m_Father: {fileID: 1618029186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462636397
@@ -6107,15 +6108,15 @@ MonoBehaviour:
   slimeFuego: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
   slimeNaturaleza: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
   punto1: {fileID: 1214845467}
-  punto2: {fileID: 0}
+  punto2: {fileID: 1668797851}
   punto3: {fileID: 0}
   punto4: {fileID: 0}
   probNormal: 50
   probHielo: 20
   probFuego: 15
   probNaturaleza: 15
-  tiempoMin: 1
-  tiempoMax: 3
+  tiempoMin: 10
+  tiempoMax: 20
 --- !u!1 &469633420
 GameObject:
   m_ObjectHideFlags: 0
@@ -6166,14 +6167,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 8203f034b9f0eb54ba24176058e1ef06, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6667,7 +6668,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.746626, y: 10.547279, z: -10}
+  m_LocalPosition: {x: -11.755675, y: 10.54729, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29249,14 +29250,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 8203f034b9f0eb54ba24176058e1ef06, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -30249,14 +30250,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 8203f034b9f0eb54ba24176058e1ef06, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -31707,7 +31708,7 @@ Transform:
   m_GameObject: {fileID: 1214845466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.36, y: 3.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35140,6 +35141,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647492803}
   m_CullTransparentMesh: 1
+--- !u!1 &1668797850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668797851}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668797851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668797850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.12, y: 2.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 462636396}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1669923094
 GameObject:
   m_ObjectHideFlags: 0
@@ -35175,7 +35207,7 @@ MonoBehaviour:
   slimeFuego: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
   slimeNaturaleza: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
   punto1: {fileID: 1920166905}
-  punto2: {fileID: 0}
+  punto2: {fileID: 1669923097}
   punto3: {fileID: 0}
   punto4: {fileID: 0}
   probNormal: 50
@@ -35193,7 +35225,7 @@ Transform:
   m_GameObject: {fileID: 1669923094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2300014, y: 9.42, z: 0}
+  m_LocalPosition: {x: -0.83, y: -0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39857,14 +39889,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 8203f034b9f0eb54ba24176058e1ef06, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -41730,11 +41762,11 @@ PrefabInstance:
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Corazon1
       value: 
-      objectReference: {fileID: 386945566}
+      objectReference: {fileID: 469633420}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Corazon2
       value: 
-      objectReference: {fileID: 903470320}
+      objectReference: {fileID: 1925542579}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Corazon3
       value: 
@@ -41742,11 +41774,11 @@ PrefabInstance:
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Corazon4
       value: 
-      objectReference: {fileID: 1925542579}
+      objectReference: {fileID: 903470320}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Corazon5
       value: 
-      objectReference: {fileID: 469633420}
+      objectReference: {fileID: 386945566}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: vidaInicial
       value: 5

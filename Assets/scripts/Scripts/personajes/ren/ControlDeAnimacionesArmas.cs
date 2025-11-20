@@ -113,6 +113,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 Ren.SetTrigger("AtaqueCuchillaP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srCuchilla));
+
+            }
+            else
+            {
             }
         }
         else if (Input.GetMouseButtonDown(1)&&verificar==true) 

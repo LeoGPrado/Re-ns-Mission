@@ -18,7 +18,7 @@ public class SlieControl : MonoBehaviour
 
     private NavMeshAgent agent;
     private Transform player, door;
-    public int VidaEnemigo = 1;
+    [SerializeField] public int VidaEnemigo = 5;
     
 
     [SerializeField] private GameObject manaPartícula;

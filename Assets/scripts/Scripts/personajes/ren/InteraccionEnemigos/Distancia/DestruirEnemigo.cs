@@ -64,12 +64,9 @@ public class DestruirEnemigo : MonoBehaviour
         {
             if(ImpoctoArma == null)
             {
-                if (collision.TryGetComponent<EsqueletoControl>(out var esqueleto))
+                if (collision.TryGetComponent<SlieControl>(out var slime))
                 {
-                    esqueleto.controlVida();
-                }
-                else if (collision.TryGetComponent<SlieControl>(out var slime))
-                {
+                    print("entrando");
                     string tipoSlime = slime.confirmarElemento();
                     print("Elemento detectado en enemigo: " + tipoSlime);
 
@@ -150,6 +147,7 @@ public class DestruirEnemigo : MonoBehaviour
                     }
                     else
                     {
+                        Destroy(collision.gameObject);
                         /*print("La bala ha entrado a resistencia");
                         slime.controlVida();*/
                     }

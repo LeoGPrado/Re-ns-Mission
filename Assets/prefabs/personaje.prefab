@@ -293,6 +293,8 @@ MonoBehaviour:
   FlipMazo: {fileID: 0}
   personaje: {fileID: 4706434216651177473}
   Mazo: {fileID: 3362627317001316173}
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
 --- !u!114 &8721681266710796225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,6 +442,8 @@ MonoBehaviour:
   velocidad: 5
   quieto: 1
   ImpoctoArma: {fileID: 0}
+  rb: {fileID: 0}
+  spriteHijo: {fileID: 0}
   DFuego: 0
   Dhielo: 0
   Dnaturaleza: 0
@@ -649,13 +653,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba5a2368fc051742984ef911738ca8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
+  balaNormal: {fileID: 5231000209351257341, guid: 4055800efc0b5c54688328243bda5790, type: 3}
   balaEspecialPrefab: {fileID: 3456130279922145432, guid: 1b8e3c67cc21b79419ec058593d4db5a, type: 3}
   puntoAparicion: {fileID: 423470282243220024}
   FlipCuchillas: {fileID: 493896438784138397}
   velocidadBala: 20
   personaje: {fileID: 4706434216651177473}
   cuchillas: {fileID: 4029553892581726688}
+  cooldown: 0.5
 --- !u!1 &4248948275373792429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1268,8 @@ MonoBehaviour:
   FlipEspada: {fileID: 0}
   personaje: {fileID: 0}
   Espada: {fileID: 6275741657326952805}
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
 --- !u!1 &6787534163119950829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1486,9 @@ MonoBehaviour:
   ActivarArmaE: 0
   verificarMazo: 0
   index: {fileID: 0}
+  medidor: {fileID: 0}
   Ren: {fileID: 145401186623800058}
+  verificar: 0
 --- !u!114 &5757480769003061603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1568,10 +1577,11 @@ MonoBehaviour:
   ultimate: {fileID: 0}
   maxMana: 100
   currentMana: 0
-  manaPerEnemy: 20
+  manaPerParticle: 5
   baseMana: 0
   usedUltimate: 0
   energycharged: 0
+  canObtainMana: 1
 --- !u!114 &6644170932034376416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,6 +2182,11 @@ MonoBehaviour:
   personaje: {fileID: 4706434216651177473}
   arco: {fileID: 4450799608934398597}
   cooldown: 0.5
+  ultcooldown: 1
+  timer: 0
+  ultTriggered: 0
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
 --- !u!1 &9055186321541561714
 GameObject:
   m_ObjectHideFlags: 0

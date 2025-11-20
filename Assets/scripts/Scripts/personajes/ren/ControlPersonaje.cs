@@ -22,7 +22,7 @@ public class ControlPersonaje : MonoBehaviour
     public static ControlPersonaje Ren;
 
     //vida
-    [SerializeField] public int vidaInicial = 10;
+    [SerializeField] public int vidaInicial = 5;
 
     //corazones de vida
     public GameObject Corazon1;

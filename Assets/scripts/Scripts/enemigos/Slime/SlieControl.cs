@@ -100,7 +100,7 @@ public class SlieControl : MonoBehaviour
 
     public void controlVida()
     {
-        print("RECIVIO DAÑO!!!!");
+        print("RECIBIO DAÑO!!!!");
         if (VidaEnemigo < 1)
         {
             StartCoroutine(DropAndCooldown());

@@ -6102,10 +6102,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeNormal: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
   punto1: {fileID: 1214845467}
   punto2: {fileID: 0}
   punto3: {fileID: 0}
@@ -6667,7 +6667,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.755675, y: 10.54729, z: -10}
+  m_LocalPosition: {x: -11.746626, y: 10.547279, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33115,7 +33115,7 @@ MonoBehaviour:
   timerText: {fileID: 303800696}
   hour: 0
   minutos: 0
-  cdTimer: 4
+  cdTimer: 15
   parentSpawners: {fileID: 1618029185}
   parentEnemy: {fileID: 1700568973}
 --- !u!1 &1385731508
@@ -40029,7 +40029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40043,10 +40043,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
+  slimeNormal: {fileID: 0}
+  slimeHielo: {fileID: 0}
+  slimeFuego: {fileID: 0}
+  slimeNaturaleza: {fileID: 0}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
   punto3: {fileID: 0}
@@ -41749,7 +41749,7 @@ PrefabInstance:
       objectReference: {fileID: 469633420}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: vidaInicial
-      value: 100000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: balaNormal

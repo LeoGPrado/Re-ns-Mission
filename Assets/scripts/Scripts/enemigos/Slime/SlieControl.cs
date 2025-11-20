@@ -18,7 +18,7 @@ public class SlieControl : MonoBehaviour
 
     private NavMeshAgent agent;
     private Transform player, door;
-    [SerializeField] public int VidaEnemigo = 5;
+    [SerializeField] public int VidaEnemigo;
     
 
     [SerializeField] private GameObject manaPartícula;
@@ -58,6 +58,8 @@ public class SlieControl : MonoBehaviour
     {
         obj = GameObject.Find("PuntoEntrada");
         player = GameObject.FindWithTag("protagonista").transform;
+
+        VidaEnemigo = 5;
 
         if (obj != null)
         {

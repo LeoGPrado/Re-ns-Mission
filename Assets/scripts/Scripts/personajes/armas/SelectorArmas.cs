@@ -21,9 +21,9 @@ public class SelectorArmas : MonoBehaviour
 
     private void Awake()
     {
-        randomizer1 = Random.Range(0, 5); //Random.Range(0, 8);
-        randomizer2 = Random.Range(0, 5); //Random.Range(0, 8);
-        randomizer3 = Random.Range(0, 5); //Random.Range(0, 8);
+        randomizer1 = Random.Range(0, 8); //Random.Range(0, 8);
+        randomizer2 = Random.Range(0, 8); //Random.Range(0, 8);
+        randomizer3 = Random.Range(0, 8); //Random.Range(0, 8);
 
 
     }
@@ -42,7 +42,9 @@ public class SelectorArmas : MonoBehaviour
     {
         if (elegirArma)
         {
-            switch (armasIndex)
+            ActivarArmas();
+
+            /*switch (armasIndex)
             {
                 case 0: ActivarArmas(); 
                     break;
@@ -60,7 +62,7 @@ public class SelectorArmas : MonoBehaviour
                     break;
                 case 7: ActivarArmas(); 
                     break;
-            }
+            }*/
 
             armaElegida = true;
             panelArmas.SetActive(false);
@@ -74,7 +76,15 @@ public class SelectorArmas : MonoBehaviour
         listaArmas[armasIndex].SetActive(true);
     }
 
-    public void ElegirBaston()
+    public void EleccionDeArmas(int armasIndice)
+    {
+        armasIndex = armasIndice;
+        elegirArma = true;
+
+        Time.timeScale = 1;
+    }
+
+    /*public void ElegirBaston()
     {
         armasIndex = 0;
         elegirArma = true;
@@ -140,7 +150,7 @@ public class SelectorArmas : MonoBehaviour
         elegirArma = true;
 
         Time.timeScale = 1;
-    }
+    }*/
 
     void abrirSelector()
     {

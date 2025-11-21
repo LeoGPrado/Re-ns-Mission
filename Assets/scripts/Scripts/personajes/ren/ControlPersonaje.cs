@@ -115,32 +115,37 @@ public class ControlPersonaje : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            contador++;
+            //contador++;
             if (contador == 1)
             {
                 Corazon1.SetActive(false);
+                contador++;
 
             }
             else if (contador == 2)
             {
                 Corazon2.SetActive(false);
+                contador++;
 
             }
             else if (contador == 3)
             {
                 Corazon3.SetActive(false);
+                contador++;
 
             }
             else if (contador == 4)
             {
                 Corazon4.SetActive(false);
+                contador++;
 
             }
             else if (contador == 5)
             {
                 Corazon5.SetActive(false);
+                contador++;
             }
-                perderVida();
+            perderVida();
         }
         
     }

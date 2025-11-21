@@ -40869,6 +40869,7 @@ MonoBehaviour:
   hour: 0
   minutos: 0
   cdTimer: 15
+  SiguienteEscena: FinDelJuego
   parentSpawners: {fileID: 1618029185}
   parentEnemy: {fileID: 1700568973}
 --- !u!1 &1385731508

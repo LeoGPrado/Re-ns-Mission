@@ -67,8 +67,8 @@ public class repelerEnemigo : MonoBehaviour
 
             if (xDist <= 0)
             {
-                Vector2 directionEnemy = (transform.position - (collision.transform.position * 8)).normalized;
-                slimeR.AddForce(directionEnemy * 500, ForceMode2D.Impulse);
+                Vector2 directionEnemy = (collision.transform.position - transform.position).normalized;
+                slimeR.AddForce(-directionEnemy * 500, ForceMode2D.Impulse);
 
                 slimeScript.enabled = false;
                 print("esta entrando en trigger");
@@ -76,8 +76,8 @@ public class repelerEnemigo : MonoBehaviour
             }
             else
             {
-                Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
-                slimeR.AddForce(directionEnemy * -500, ForceMode2D.Impulse);
+                Vector2 directionEnemy = (collision.transform.position -transform.position).normalized;
+                slimeR.AddForce(-directionEnemy * 500, ForceMode2D.Impulse);
 
                 slimeScript.enabled = false;
                 print("esta entrando en trigger");

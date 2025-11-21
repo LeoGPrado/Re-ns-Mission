@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   velocidad: 3
-  VidaEnemigo: 5
+  VidaEnemigo: 10
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
   manaPartCount: 4
   canDropMana: 1

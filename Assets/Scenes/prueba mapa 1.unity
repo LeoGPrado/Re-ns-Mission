@@ -205,12 +205,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPincel
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -940,12 +940,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirEspadas
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1496,12 +1496,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirEspadas
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4629,12 +4629,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPollo
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4974,12 +4974,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPollo
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5797,12 +5797,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirArco
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6643,7 +6643,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 6.64
+  orthographic size: 3.54
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6668,7 +6668,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.755675, y: 10.54729, z: -10}
+  m_LocalPosition: {x: -14.09081, y: 25.07299, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28546,8 +28546,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirBaston
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -28941,12 +28941,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPescado
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -30152,12 +30152,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPincel
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -30638,12 +30638,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirEspadas
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -30930,12 +30930,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPincel
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -31344,8 +31344,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirBaston
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31635,12 +31635,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPescado
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -31928,12 +31928,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPincel
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -32295,12 +32295,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirArco
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -32429,8 +32429,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirBaston
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -32699,12 +32699,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirMazo
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -34770,12 +34770,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirMazo
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -35094,12 +35094,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPincel
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -38669,12 +38669,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirArco
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -39641,12 +39641,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPollo
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -39998,12 +39998,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPescado
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -40192,12 +40192,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirPincel
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -40978,12 +40978,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254898807}
         m_TargetAssemblyTypeName: SelectorArmas, Assembly-CSharp
-        m_MethodName: ElegirMazo
-        m_Mode: 1
+        m_MethodName: EleccionDeArmas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -41891,7 +41891,7 @@ PrefabInstance:
     - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: 'listaBotonesA2.Array.data[5]'
       value: 
-      objectReference: {fileID: 1970415746}
+      objectReference: {fileID: 1210576976}
     - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: 'listaBotonesA2.Array.data[6]'
       value: 
@@ -41899,7 +41899,7 @@ PrefabInstance:
     - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: 'listaBotonesA2.Array.data[7]'
       value: 
-      objectReference: {fileID: 1145472}
+      objectReference: {fileID: 1647492803}
     - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: 'listaBotonesA3.Array.data[0]'
       value: 

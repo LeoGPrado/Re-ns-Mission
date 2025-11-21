@@ -15,9 +15,9 @@ public class SelectorArmas : MonoBehaviour
     [SerializeField] private bool elegirArma = false;
     public int numeroArma;
     public int armasIndex;
-    
 
 
+    private List<int> numeros = new();
 
     private void Awake()
     {
@@ -25,7 +25,15 @@ public class SelectorArmas : MonoBehaviour
         randomizer2 = Random.Range(0, 8); //Random.Range(0, 8);
         randomizer3 = Random.Range(0, 8); //Random.Range(0, 8);
 
+        numeros.Clear();
 
+        int random = Random.Range(0, listaArmas.Count);
+
+        if (!numeros.Contains(random))
+        {
+            numeros.Add(random);
+
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

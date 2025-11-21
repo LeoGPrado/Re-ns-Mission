@@ -8,6 +8,7 @@ public class ControlPersonaje : MonoBehaviour
     [SerializeField] private string escena;
     [SerializeField] Rigidbody2D ren;
     [SerializeField] Animator animRen;
+    [SerializeField] public string NDerrota;
 
     public BoxCollider2D DetectarEnemigo;
     public Transform puntoDeAtaque;
@@ -149,7 +150,7 @@ public class ControlPersonaje : MonoBehaviour
         vidaInicial--;
         if (vidaInicial == 0)
         {
-            SceneManager.LoadScene("FinDemo");
+            SceneManager.LoadScene(NDerrota);
             Destroy(gameObject);
         }
     }

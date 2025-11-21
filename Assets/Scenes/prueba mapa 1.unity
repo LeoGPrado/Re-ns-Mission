@@ -6104,9 +6104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
   slimeNormal: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: e4f5c36779426d042b079fef748cab5f, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: cc611a08d5143b5469ccd56d7164dc46, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   punto1: {fileID: 1214845467}
   punto2: {fileID: 1668797851}
   punto3: {fileID: 0}
@@ -6115,8 +6115,8 @@ MonoBehaviour:
   probHielo: 20
   probFuego: 15
   probNaturaleza: 15
-  tiempoMin: 10
-  tiempoMax: 20
+  tiempoMin: 2
+  tiempoMax: 6
 --- !u!1 &469633420
 GameObject:
   m_ObjectHideFlags: 0
@@ -35189,7 +35189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1669923095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35203,9 +35203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
+  slimeNormal: {fileID: 4891012412717606429, guid: 6731567aad9de0e4fa2b36d06847a8cc, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 4b60c96f79fb6a446b6f3e9efebad6b8, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 49afcda86b137704eb7b80c30f2df4e3, type: 3}
   slimeNaturaleza: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
   punto1: {fileID: 1920166905}
   punto2: {fileID: 1669923097}
@@ -35226,7 +35226,7 @@ Transform:
   m_GameObject: {fileID: 1669923094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.83, y: -0.64, z: 0}
+  m_LocalPosition: {x: 31.69, y: -15.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

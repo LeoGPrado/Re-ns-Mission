@@ -9,6 +9,7 @@ public class TimerHoras : MonoBehaviour
     [SerializeField] private int hour = 0;
     [SerializeField] private int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
+    [SerializeField] public string SiguienteEscena;
 
     //[SerializeField] private GameObject[] enemigos;
     [SerializeField] public GameObject parentSpawners;
@@ -29,7 +30,7 @@ public class TimerHoras : MonoBehaviour
 
         if (cantidadEnemigos <= 0 && minutos==4)
         {
-            SceneManager.LoadScene("Victoria");
+            SceneManager.LoadScene(SiguienteEscena);
         }
     }
 

@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/prueba mapa 2.unity
     guid: bb81ead166bf5d84e991c3e0e1342d8d
+  - enabled: 1
+    path: Assets/Scenes/Victoria 2.unity
+    guid: 61e3042febbd14f4a93357621ae06a87
+  - enabled: 1
+    path: Assets/Scenes/prueba mapa 3.unity
+    guid: 4bcae7c549994244fb17dcf9f6a0ef60
+  - enabled: 1
+    path: Assets/Scenes/FinDelJuego.unity
+    guid: 926377463ed87c34187e780db5aca777
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

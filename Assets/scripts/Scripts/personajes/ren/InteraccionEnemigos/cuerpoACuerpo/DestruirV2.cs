@@ -44,19 +44,11 @@ public class DestruirV2 : MonoBehaviour
 
         Player = GameObject.FindWithTag("protagonista");
     }
-    //ataque normal
+
     public void ataqueNormal()
     {
         slimeScript.controlVida();
     }
-
-
-    //espada
-    /*public void ataqueEspaceial()
-    {
-        StartCoroutine(DañoPorFuegoEspada(slimeScript, SlimeSprite));
-    }*/
-
 
     public void ActivarDestruccion()
     {
@@ -69,8 +61,6 @@ public class DestruirV2 : MonoBehaviour
         puedeDestruir = false;
     }
 
-
-    //parte de la espada
     IEnumerator DañoPorFuegoEspada(SlieControl slime, SpriteRenderer sr)
     {
         int repeticiones = 6;

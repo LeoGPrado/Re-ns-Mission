@@ -115,25 +115,26 @@ public class ControlPersonaje : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
+            contador++;
             if (contador == 1)
             {
                 Corazon1.SetActive(false);
-                contador++;
+
             }
             else if (contador == 2)
             {
                 Corazon2.SetActive(false);
-                contador++;
+
             }
             else if (contador == 3)
             {
                 Corazon3.SetActive(false);
-                contador++;
+
             }
             else if (contador == 4)
             {
                 Corazon4.SetActive(false);
-                contador++;
+
             }
             else if (contador == 5)
             {
@@ -159,16 +160,4 @@ public class ControlPersonaje : MonoBehaviour
     {
         desactivar = false;
     }
-
-    /*IEnumerator Detener()
-    {
-
-        yield return new WaitForSeconds(2f);
-
-        ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
-        yield return new WaitForSeconds(0.2f);
-
-        float horizontal = Input.GetAxis("Horizontal");
-        ren.linearVelocity = new Vector2(horizontal * velocidadMovimiento, ren.linearVelocity.y);
-    }*/
 }

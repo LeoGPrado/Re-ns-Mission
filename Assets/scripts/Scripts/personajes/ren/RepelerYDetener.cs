@@ -20,29 +20,6 @@ public class RepelerYDetener : MonoBehaviour
         renScript = GetComponent<ControlPersonaje>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemigo")
-        {
-
-            Vector2 direction = collision.contacts[0].normal;
-            ren.AddForce(direction * FuerzaDeRetroceso, ForceMode2D.Impulse);
-            //NoranonAnimaciones.SetTrigger("HeridoP");
-            renScript.enabled = false;
-
-            StartCoroutine(FrenarRetroceso());
-
-
-
-        }
-
-    }*/
 
     public void Golpeado(Collision2D collision)
     {
@@ -62,9 +39,6 @@ public class RepelerYDetener : MonoBehaviour
 
         ren.linearVelocity = Vector2.zero;
         renScript.enabled = true;
-        //ren.linearVelocity = new Vector2(0f, ren.linearVelocity.y);
-        //ren.linearVelocity = new Vector2(ren.linearVelocity.x, 0f);
-
 
     }
 }

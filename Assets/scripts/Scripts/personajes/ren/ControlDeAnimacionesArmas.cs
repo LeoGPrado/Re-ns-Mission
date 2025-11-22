@@ -109,6 +109,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
             }
             else
             {
+                return;
             }
         }
         else if (Input.GetMouseButtonDown(1)&&verificar==true) 
@@ -189,6 +190,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
  
+            }
+            else
+            {
+                return;
             }
 
 

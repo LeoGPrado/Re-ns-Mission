@@ -39,10 +39,19 @@ public class SelectorArmas : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        abrirSelector();
-        listaBotonesA1[randomizer1].SetActive(true);
-        listaBotonesA2[randomizer2].SetActive(true);
-        listaBotonesA3[randomizer3].SetActive(true);
+        if (panelArmas == null)
+        {
+            return;
+
+        }
+        else
+        {
+            abrirSelector();
+            listaBotonesA1[randomizer1].SetActive(true);
+            listaBotonesA2[randomizer2].SetActive(true);
+            listaBotonesA3[randomizer3].SetActive(true);
+        }
+
     }
 
     // Update is called once per frame

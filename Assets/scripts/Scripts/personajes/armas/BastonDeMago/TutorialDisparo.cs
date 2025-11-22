@@ -63,15 +63,6 @@ public class TutorialDisparo : MonoBehaviour
         {
             DisparoEspecial();
         }
-
-        /*if (medidor.canUseUltimate)
-        {
-            if (Input.GetMouseButtonDown(1))
-            {
-                DisparoEspecial();
-            }
-        }*/
-
     }
 
     IEnumerator DisparoConCooldown()

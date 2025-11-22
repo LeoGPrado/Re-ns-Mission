@@ -1,16 +1,13 @@
 using UnityEngine;
 using TMPro; // Necesario para usar TextMeshPro
-using UnityEngine.UI; // Necesario para usar UI en general
 using UnityEngine.SceneManagement;
 
 public class DialogosTexto : MonoBehaviour
 {
-    // Asigna estos GameObjects desde el Inspector de Unity
+
     public GameObject panelDialogoInicial;
     //public GameObject PanelSaltear;
-    //public GameObject BotonJugar;
-    //public GameObject CambioTutorial;
-    //public GameObject presionarJugar;
+
     public GameObject armaTutorial;
     public GameObject EnemigoTutorial;
 
@@ -34,10 +31,10 @@ public class DialogosTexto : MonoBehaviour
 
     void Start()
     {
-        // Asegúrate de que los paneles estén configurados correctamente al inicio
-        panelDialogoInicial.SetActive(true); // El primer diálogo está activo al inicio
+        
+        panelDialogoInicial.SetActive(true); 
 
-        // Muestra el primer diálogo inicial
+        
         MostrarDialogoInicial();
     }
 
@@ -65,19 +62,13 @@ public class DialogosTexto : MonoBehaviour
         }
         else
         {
-            // Si no hay más diálogos iniciales, ocultar el panel inicial
+
             panelDialogoInicial.SetActive(false);
             SceneManager.LoadScene("CinematicaPostTutorial");
-            //PanelSaltear.SetActive(false);
-            //BotonJugar.SetActive(true);
-            //CambioTutorial.SetActive(true);
-            //presionarJugar.SetActive(true);
-            // Aquí puedes hacer que el juego comience si el diálogo inicial es una intro
+            
             Debug.Log("Diálogo inicial terminado. El juego puede comenzar ahora.");
         }
     }
-
-    // Esta función se llamará cuando pulses el botón de "Continuar" del primer diálogo
     public void ContinuarDialogoInicial()
     {
         indiceDialogoInicial++;

@@ -2336,6 +2336,7 @@ MonoBehaviour:
   hour: 0
   minutos: 0
   cdTimer: 2
+  SiguienteEscena: 
   parentSpawners: {fileID: 0}
   parentEnemy: {fileID: 0}
 --- !u!114 &216545844
@@ -10235,7 +10236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &519420029
 AudioListener:
   m_ObjectHideFlags: 0

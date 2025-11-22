@@ -138,17 +138,23 @@ public class ArcoControlador : MonoBehaviour
 
 
 
-IEnumerator DisparoEspecial()
+    IEnumerator DisparoEspecial()
     {
         isOnUltimate = true;
         medidor.canUseUltimate = false;
         playerEC.Ultimate();
-        
 
-        yield return new WaitForSeconds(2.5f);
+        int cantidadDeFlechas = 140;      
+        float intervalo = 0.01f;         
+
+        for (int i = 0; i < cantidadDeFlechas; i++)
+        {
+            DisparoNormal();           
+            yield return new WaitForSeconds(intervalo);
+        }
+
         isOnUltimate = false;
-
-        StopCoroutine(DisparoEspecial());
-
     }
+
+
 }

@@ -291,10 +291,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlipMazo: {fileID: 0}
-  personaje: {fileID: 4706434216651177473}
   Mazo: {fileID: 3362627317001316173}
   medidor: {fileID: 0}
   playerEC: {fileID: 0}
+  ultiDuration: 3
+  ultiScaleMultiplier: 1.7
 --- !u!114 &8721681266710796225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,7 +1342,7 @@ Transform:
   m_GameObject: {fileID: 7365231029725861165}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.94, y: 19.63, z: 0}
+  m_LocalPosition: {x: 10.94, y: 19.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1428,6 +1429,7 @@ MonoBehaviour:
   escena: 
   ren: {fileID: 0}
   animRen: {fileID: 145401186623800058}
+  NDerrota: 
   DetectarEnemigo: {fileID: 0}
   puntoDeAtaque: {fileID: 493896438784138397}
   sr: {fileID: 4706434216651177473}

@@ -1,33 +1,38 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PuertaHP : MonoBehaviour
 {
-    public RectTransform HealthUI;
-    private float HealthSize = 647.5f;
-    public static PuertaHP BarraVida;
-    private void Awake()
+
+    [SerializeField] private Slider sliderVida;
+    [SerializeField] private int vidaMax = 650;
+    [SerializeField] private int vidaActual;
+
+    private void Start()
     {
-        if (BarraVida == null) 
-        {
-            BarraVida = this;
-        }
+        vidaActual = vidaMax;
+        sliderVida.maxValue = vidaMax;
+        sliderVida.value = vidaActual;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemigo") 
+        if (collision.CompareTag("Enemigo"))
         {
-            BajarHP();
+            BajarHP(50);
             Destroy(collision.gameObject);
         }
     }
 
-    public void BajarHP()
+    void BajarHP(int daño)
     {
-        HealthSize -= 50;
-        HealthUI.sizeDelta = new Vector2(HealthSize, 4.945001f);
-        if (HealthSize < 0)
+        vidaActual -= daño;
+        vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
+
+        sliderVida.value = vidaActual;
+
+        if (vidaActual <= 0)
         {
             SceneManager.LoadScene("FinDemo");
         }

@@ -18,6 +18,8 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
 
     [SerializeField] Animator Ren;
 
+
+
     public static ControlDeAnimacionesArmas ControlEspecial;
 
     public bool verificar = false;

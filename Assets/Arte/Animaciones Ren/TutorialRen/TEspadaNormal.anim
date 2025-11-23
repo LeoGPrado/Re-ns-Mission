@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Mu\xF1ecoImpacto"
+  m_Name: TEspadaNormal
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,17 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -6007857137893288414, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+      value: {fileID: -9198910713257673982, guid: ee2149967f278214abfb47e01805ec20, type: 3}
     - time: 0.1
-      value: {fileID: 4245052342988409972, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+      value: {fileID: 5855241057625730007, guid: ee2149967f278214abfb47e01805ec20, type: 3}
     - time: 0.2
-      value: {fileID: -7732569738864306783, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+      value: {fileID: -2876252484239585175, guid: ee2149967f278214abfb47e01805ec20, type: 3}
     - time: 0.3
-      value: {fileID: 360050356498797049, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+      value: {fileID: -3690260300036891967, guid: ee2149967f278214abfb47e01805ec20, type: 3}
     - time: 0.4
-      value: {fileID: 6951114633567200485, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+      value: {fileID: 616183530305045052, guid: ee2149967f278214abfb47e01805ec20, type: 3}
     - time: 0.5
-      value: {fileID: -6880077232281017949, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+      value: {fileID: 7831940055108476400, guid: ee2149967f278214abfb47e01805ec20, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -54,12 +54,12 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -6007857137893288414, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
-    - {fileID: 4245052342988409972, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
-    - {fileID: -7732569738864306783, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
-    - {fileID: 360050356498797049, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
-    - {fileID: 6951114633567200485, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
-    - {fileID: -6880077232281017949, guid: 84fc7f8106b737e48bddc600638915c4, type: 3}
+    - {fileID: -9198910713257673982, guid: ee2149967f278214abfb47e01805ec20, type: 3}
+    - {fileID: 5855241057625730007, guid: ee2149967f278214abfb47e01805ec20, type: 3}
+    - {fileID: -2876252484239585175, guid: ee2149967f278214abfb47e01805ec20, type: 3}
+    - {fileID: -3690260300036891967, guid: ee2149967f278214abfb47e01805ec20, type: 3}
+    - {fileID: 616183530305045052, guid: ee2149967f278214abfb47e01805ec20, type: 3}
+    - {fileID: 7831940055108476400, guid: ee2149967f278214abfb47e01805ec20, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -84,4 +84,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.4
+    functionName: "impactoMu\xF1eco"
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

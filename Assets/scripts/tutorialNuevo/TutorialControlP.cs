@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,7 @@ public class TutorialControlP : MonoBehaviour
     [SerializeField] Animator animRen;
     [SerializeField] SpriteRenderer srRenTutorial;
     public int velocidadMovimiento = 5;
+    public bool Colisionando = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -68,5 +70,29 @@ public class TutorialControlP : MonoBehaviour
 
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "MuñecoPrueba")
+        {
+            Colisionando = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "MuñecoPrueba")
+        {
+            Colisionando = false;
+        }
+    }
+
+    void impactoMuñeco()
+    {
+        if (Colisionando == true)
+        {
+            TutorialMuñeco.muñecoScript.AnimacionRecibirDañlo();
+        }
     }
 }

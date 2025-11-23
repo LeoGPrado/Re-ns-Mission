@@ -15,6 +15,7 @@ TagManager:
   - ManaCollider
   - proyectil
   - CuerpoAcuerpo
+  - "Mu\xF1ecoPrueba"
   layers:
   - Default
   - TransparentFX

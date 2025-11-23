@@ -9,7 +9,11 @@ public class TutorialMuñeco : MonoBehaviour
 
     private void Awake()
     {
-        muñecoScript = this;
+        if (muñecoScript == null)
+        {
+            muñecoScript = this;
+        }
+ 
     }
 
 
@@ -28,7 +32,7 @@ public class TutorialMuñeco : MonoBehaviour
         }
     }
 
-    void AnimacionRecibirDañlo()
+    public void AnimacionRecibirDañlo()
     {
         muñeco.SetTrigger("ImpactoMP");
     }

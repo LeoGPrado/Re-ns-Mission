@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8729523800106324969}
   - component: {fileID: -5737653307805296072}
   m_Layer: 0
-  m_Name: proyectilNormalBaston
+  m_Name: TutorialProyectil
   m_TagString: proyectil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

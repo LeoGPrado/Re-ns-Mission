@@ -108,6 +108,16 @@ public class TutorialArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srCuchilla));
 
             }
+            else if (Pincel.activeInHierarchy)
+            {
+                SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
+                srPincel.enabled = false;
+
+                Ren.SetTrigger("TAtaquePincelP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srPincel));
+
+            }
             else
             {
                 return;

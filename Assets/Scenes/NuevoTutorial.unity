@@ -3498,7 +3498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8647985321230463150}
   - component: {fileID: 5593323626007347250}
-  - component: {fileID: 4905511743250697389}
+  - component: {fileID: 8647985321230463151}
   m_Layer: 0
   m_Name: Pincel
   m_TagString: Untagged
@@ -4139,26 +4139,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4905511743250697389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029584343332704806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8aeb177acfd6a84eb6f2f4bed550195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balaNormal: {fileID: 3456130279922145432, guid: d8def9b029a428949931f5deb646dd22, type: 3}
-  balaEspecialPrefab: {fileID: 3456130279922145432, guid: 3e0b96d76a861e747b50620179330f13, type: 3}
-  puntoAparicionBala: {fileID: 8046243701070143950}
-  postProcessing: {fileID: 0}
-  FlipPincel: {fileID: 7447370483067040713}
-  velocidadBala: 20
-  personaje: {fileID: 2364512079374913877}
-  pincel: {fileID: 5593323626007347250}
 --- !u!114 &5022475361601248707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4475,7 +4455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6191957199240405170
 Transform:
   m_ObjectHideFlags: 0
@@ -4592,9 +4572,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670558980665821805}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.15, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.273965, y: 0, z: 0}
+  m_LocalScale: {x: 1.0751, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9157181896473969719}
@@ -4617,7 +4597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &6648607618044843473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5059,8 +5039,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029584343332704806}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: 0.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: 0.100000024, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5068,6 +5048,26 @@ Transform:
   - {fileID: 4465908125537015702}
   m_Father: {fileID: 5475499494864794904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8647985321230463151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029584343332704806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba5a2368fc051742984ef911738ca8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balaNormal: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
+  balaEspecialPrefab: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
+  puntoAparicion: {fileID: 8046243701070143950}
+  FlipCuchillas: {fileID: 7447370483067040713}
+  velocidadBala: 20
+  personaje: {fileID: 2364512079374913877}
+  cuchillas: {fileID: 5593323626007347250}
+  cooldown: 0.5
 --- !u!4 &8790835719802888927
 Transform:
   m_ObjectHideFlags: 0

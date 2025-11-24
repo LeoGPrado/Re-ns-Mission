@@ -12,6 +12,8 @@ public class TutorialArmasEspeciales : MonoBehaviour
     [SerializeField] GameObject Baston;
     [SerializeField] GameObject Cuchilla;
 
+
+
     public float ActivarArmaE = 0f;
     public int verificarMazo = 0;
     public SelectorArmas index;
@@ -96,7 +98,7 @@ public class TutorialArmasEspeciales : MonoBehaviour
                 SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
                 srPescado.enabled = false;
 
-                Ren.SetTrigger("TAtaquePescadoP");
+                Ren.SetTrigger("TEspecialPescadoP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
             }
@@ -143,5 +145,11 @@ public class TutorialArmasEspeciales : MonoBehaviour
         yield return new WaitForSeconds(6);
         transform.localScale = Vector3.one;
         verificarMazo = 0;
+    }
+    void ejecutarEspecialPescado()
+    {
+
+        TutorialPescado.PescadoEspecial.iniciarSpecialPescado();
+
     }
 }

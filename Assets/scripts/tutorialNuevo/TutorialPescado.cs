@@ -10,6 +10,16 @@ public class TutorialPescado : MonoBehaviour
     [SerializeField] SpriteRenderer Pescado;
     public GameObject Especial;
 
+    public static TutorialPescado PescadoEspecial;
+
+    private void Awake()
+    {
+        if (PescadoEspecial == null)
+        {
+            PescadoEspecial = this;
+        }
+    }
+
     private void Start()
     {
         Animator animacionEspecial = Especial.GetComponent<Animator>();
@@ -45,11 +55,10 @@ public class TutorialPescado : MonoBehaviour
             Pescado.transform.localPosition = FlipPescado.localPosition;
             Pescado.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            StartCoroutine(TiempoEspecial());
-        }
+    }
+    public void iniciarSpecialPescado()
+    {
+        StartCoroutine(TiempoEspecial());
     }
 
     IEnumerator TiempoEspecial()

@@ -16,6 +16,7 @@ TagManager:
   - proyectil
   - CuerpoAcuerpo
   - "Mu\xF1ecoPrueba"
+  - areaPescado
   layers:
   - Default
   - TransparentFX

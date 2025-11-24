@@ -30,6 +30,10 @@ public class TutorialMuñeco : MonoBehaviour
             AnimacionRecibirDañlo();
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "areaPescado")
+        {
+            AnimacionRecibirDañlo();
+        }
     }
 
     public void AnimacionRecibirDañlo()

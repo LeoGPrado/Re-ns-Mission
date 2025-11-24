@@ -51,7 +51,7 @@ public class TutorialArmasEspeciales : MonoBehaviour
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
                 srEspada.enabled = false;
 
-                Ren.SetTrigger("TAtaqueEspadaP");
+                Ren.SetTrigger("TEspecialEspadaP");
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srEspada));
             }

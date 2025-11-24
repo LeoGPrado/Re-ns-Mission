@@ -45,10 +45,5 @@ public class NuevoEspadaControl : MonoBehaviour
             Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0f, 0f);
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
-        if (Input.GetMouseButtonDown(1))
-        {
-            medidor.canUseUltimate = false;
-            playerEC.Ultimate();
-        }
     }
 }

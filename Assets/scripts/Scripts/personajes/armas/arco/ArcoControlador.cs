@@ -26,16 +26,7 @@ public class ArcoControlador : MonoBehaviour
     public PlayerEnergyController playerEC;
 
 
-    public bool ActivarEspacialArco = false;
-    public static ArcoControlador arcoEspecialT;
 
-    public void Awake()
-    {
-        if (arcoEspecialT == null)
-        {
-            arcoEspecialT = this;
-        }
-    }
     private void Start()
     {
         //FlipArco = transform.parent;
@@ -98,11 +89,12 @@ public class ArcoControlador : MonoBehaviour
             DisparoEspecial();
         }*/
 
-        if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate || ActivarEspacialArco==true)
+        if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
         {         
             StartCoroutine(DisparoEspecial());
             StartCoroutine(ManaObtain());
         }
+
     }
 
     IEnumerator DisparoConCooldown()

@@ -1,25 +1,40 @@
 using UnityEngine;
 using System.Collections;
-public class Disparo : MonoBehaviour
+
+public class TutorialArcoControl : MonoBehaviour
 {
     public GameObject balaNormal;
     public GameObject balaEspecialPrefab;
     public Transform puntoAparicion;
+
+
+    public Transform FlipArco;
+    public float velocidadBala = 20f;
+
+    [SerializeField] SpriteRenderer personaje;
+    [SerializeField] SpriteRenderer arco;
+
+    public float cooldown = 2f;
+    public float ultcooldown = 1f;
+    private bool puedeDisparar = true;
+    public float timer = 0;
+    [SerializeField] private bool ultTriggered = false;
+
+
     public MedidorArteEspecial medidor;
     public PlayerEnergyController playerEC;
 
+    public static TutorialArcoControl TArcoEspecial;
+    public bool AtqueEspecial = false;
 
+    public void Awake()
+    {
+        if (TArcoEspecial == null)
+        {
+            TArcoEspecial = this;
+        }
 
-    public Transform FlipBaston;
-    public float velocidadBala = 20f;
-
-
-
-    [SerializeField] SpriteRenderer personaje;
-    [SerializeField] SpriteRenderer baston;
-
-    public float cooldown = 0.5f;
-    private bool puedeDisparar = true;
+    }
 
 
 
@@ -31,30 +46,31 @@ public class Disparo : MonoBehaviour
 
         GameObject prota = GameObject.Find("PuntoAtaque");
 
-        FlipBaston = prota.GetComponent<Transform>();
+        FlipArco = prota.GetComponent<Transform>();
 
         GameObject protagonista = GameObject.Find("personaje");
 
         personaje = protagonista.GetComponent<SpriteRenderer>();
 
 
+
         if (mousePos.x < transform.position.x)
         {
-            baston.flipX = true;
+            arco.flipX = true;
             Vector3 pos = puntoAparicion.localPosition;
             pos.x = -Mathf.Abs(pos.x);
             puntoAparicion.localPosition = pos;
-            baston.transform.localPosition = FlipBaston.localPosition;
-            //baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            arco.transform.localPosition = FlipArco.localPosition;
+
         }
         else
         {
-            baston.flipX = false;
+            arco.flipX = false;
             Vector3 pos = puntoAparicion.localPosition;
             pos.x = Mathf.Abs(pos.x);
             puntoAparicion.localPosition = pos;
-            baston.transform.localPosition = FlipBaston.localPosition;
-            //baston.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+            arco.transform.localPosition = FlipArco.localPosition;
+
         }
 
         if (Input.GetMouseButtonDown(0) && puedeDisparar)
@@ -62,14 +78,12 @@ public class Disparo : MonoBehaviour
             StartCoroutine(DisparoConCooldown());
         }
 
-        if (medidor.canUseUltimate)
-        { 
-            if (Input.GetMouseButtonDown(1))
-            {
-                DisparoEspecial();
-            }
+
+        if (Input.GetMouseButtonDown(1) && AtqueEspecial == true)
+        {
+            StartCoroutine(DisparoEspecial());
         }
-      
+
     }
 
     IEnumerator DisparoConCooldown()
@@ -89,25 +103,26 @@ public class Disparo : MonoBehaviour
         GameObject balNormal = Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
         SpriteRenderer srBala = balNormal.GetComponentInChildren<SpriteRenderer>();
 
-        
-
-
 
 
         Destroy(balNormal, 3f);
-
     }
 
-    void DisparoEspecial()
+
+
+
+    IEnumerator DisparoEspecial()
     {
 
+        int cantidadDeFlechas = 140;
+        float intervalo = 0.01f;
 
-        GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-        Destroy(bala, 1f);
-        medidor.canUseUltimate = false;
-        playerEC.Ultimate();
-        
-        
+        for (int i = 0; i < cantidadDeFlechas; i++)
+        {
+            AtqueEspecial = false;
+            DisparoNormal();
+            yield return new WaitForSeconds(intervalo);
+        }
 
     }
 }

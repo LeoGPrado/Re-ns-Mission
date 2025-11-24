@@ -80,7 +80,7 @@ MonoBehaviour:
   quieto: 0
   ImpoctoArma: {fileID: 5426017958451158286}
   rb: {fileID: 0}
-  spriteHijo: {fileID: 0}
+  spriteHijo: {fileID: 5047323084913038099}
   DFuego: 1
   Dhielo: 0
   Dnaturaleza: 0
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 2981208941152677349, guid: 54619fdf1c625af42a75b3f437a290ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

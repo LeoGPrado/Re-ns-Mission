@@ -2457,6 +2457,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarraUltiLLena: {fileID: 1845356816}
+  Espada: {fileID: 3983730987599214331}
+  Pollo: {fileID: 3699045074818697567}
+  Mazo: {fileID: 7399735255782081685}
+  Pescado: {fileID: 1263869414301160905}
+  Arco: {fileID: 1670558980665821805}
+  Pincel: {fileID: 2029584343332704806}
+  Baston: {fileID: 6590939162194899961}
+  Cuchilla: {fileID: 6087458016372117435}
 --- !u!212 &556353555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3723,7 +3731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6482673270048362981}
   - component: {fileID: 6648607618044843473}
-  - component: {fileID: 6823717612867909624}
+  - component: {fileID: 6648607618044843474}
   m_Layer: 0
   m_Name: Arco
   m_TagString: Untagged
@@ -3806,7 +3814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &2035928996738914657
 Rigidbody2D:
   serializedVersion: 5
@@ -3949,29 +3957,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2994189344095215642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6590939162194899961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ab271666c1e3d448737f1c91bc6c62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balaNormal: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
-  balaEspecialPrefab: {fileID: 31823557697410391, guid: a1986fd1dbf69ac42ac92ba350b76e50, type: 3}
-  puntoAparicion: {fileID: 3701519460221829670}
-  medidor: {fileID: 0}
-  playerEC: {fileID: 0}
-  FlipBaston: {fileID: 7447370483067040713}
-  velocidadBala: 10
-  personaje: {fileID: 2364512079374913877}
-  baston: {fileID: 7526225475207771020}
-  cooldown: 0.3
-  ActivarEspacialDisparo: 0
 --- !u!50 &3320665008223248142
 Rigidbody2D:
   serializedVersion: 5
@@ -4893,14 +4878,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6191957199240405170}
   - component: {fileID: 7526225475207771020}
-  - component: {fileID: 2994189344095215642}
+  - component: {fileID: 7526225475207771021}
   m_Layer: 0
   m_Name: bastonMago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &6648607618044843473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4956,7 +4941,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6823717612867909624
+--- !u!114 &6648607618044843474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4965,23 +4950,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670558980665821805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60676cd4314282448a2b0f82f4a7ab3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 08a54b42ddfecba47a20b418d0776f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   balaNormal: {fileID: 5231000209351257341, guid: 0c2e2f86af5154240b210cb2242e91d2, type: 3}
   balaEspecialPrefab: {fileID: 5231000209351257341, guid: 0c2e2f86af5154240b210cb2242e91d2, type: 3}
   puntoAparicion: {fileID: 9157181896473969719}
   FlipArco: {fileID: 7447370483067040713}
-  velocidadBala: 10
+  velocidadBala: 20
   personaje: {fileID: 2364512079374913877}
   arco: {fileID: 6648607618044843473}
-  cooldown: 0.5
+  cooldown: 0.3
   ultcooldown: 1
   timer: 0
   ultTriggered: 0
   medidor: {fileID: 0}
   playerEC: {fileID: 0}
-  ActivarEspacialArco: 0
+  AtqueEspecial: 0
 --- !u!1 &6937328269867595247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5271,6 +5256,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7526225475207771021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6590939162194899961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba5a2368fc051742984ef911738ca8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balaNormal: {fileID: 5231000209351257341, guid: b0f8af3e9919de3439c4cde4890ee0b6, type: 3}
+  balaEspecialPrefab: {fileID: 31823557697410391, guid: a1986fd1dbf69ac42ac92ba350b76e50, type: 3}
+  puntoAparicion: {fileID: 3701519460221829670}
+  FlipCuchillas: {fileID: 7447370483067040713}
+  velocidadBala: 20
+  personaje: {fileID: 2364512079374913877}
+  cuchillas: {fileID: 7526225475207771020}
+  cooldown: 0.5
+  ActivarEspacialCuchilla: 0
 --- !u!4 &7676102343617101050
 Transform:
   m_ObjectHideFlags: 0

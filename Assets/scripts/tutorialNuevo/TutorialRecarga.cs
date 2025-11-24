@@ -34,6 +34,10 @@ public class TutorialRecarga : MonoBehaviour
             {
                 cuchillasControl.controlCuchilla.ActivarEspacialCuchilla = true;
             }
+            else if (Mazo.activeInHierarchy)
+            {
+                TutorialMazo.MazoEspecia.EspecialMazo = true;
+            }
             else
             {
 

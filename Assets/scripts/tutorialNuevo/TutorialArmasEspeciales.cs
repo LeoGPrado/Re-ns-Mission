@@ -87,7 +87,7 @@ public class TutorialArmasEspeciales : MonoBehaviour
                 SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
                 srMazo.enabled = false;
 
-                Ren.SetTrigger("TAtaqueMazoP");
+                Ren.SetTrigger("TEspecialMazoP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srMazo));
             }

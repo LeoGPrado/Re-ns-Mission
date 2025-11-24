@@ -13,11 +13,22 @@ public class Disparo : MonoBehaviour
     public Transform FlipBaston;
     public float velocidadBala = 20f;
 
+    public static Disparo controlDisparo;
+
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer baston;
 
     public float cooldown = 0.5f;
     private bool puedeDisparar = true;
+    public bool ActivarEspacialDisparo = false;
+
+    private void Awake()
+    {
+        if(controlDisparo == null)
+        {
+            controlDisparo=this;
+        }
+    }
 
     void Update()
     {
@@ -58,8 +69,8 @@ public class Disparo : MonoBehaviour
             StartCoroutine(DisparoConCooldown());
         }
 
-        if (medidor.canUseUltimate)
-        {
+        if (medidor.canUseUltimate|| ActivarEspacialDisparo==true)
+        { 
             if (Input.GetMouseButtonDown(1))
             {
                 DisparoEspecial();
@@ -96,12 +107,12 @@ public class Disparo : MonoBehaviour
 
     void DisparoEspecial()
     {
-        
-        
-         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-         Destroy(bala, 1f);
-         medidor.canUseUltimate = false;
-         playerEC.Ultimate();
+
+        ActivarEspacialDisparo = false;
+        GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+        Destroy(bala, 1f);
+        medidor.canUseUltimate = false;
+        playerEC.Ultimate();
         
         
 

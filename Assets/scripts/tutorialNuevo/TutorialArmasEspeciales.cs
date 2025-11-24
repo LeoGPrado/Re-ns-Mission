@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class TutorialArmas : MonoBehaviour
+public class TutorialArmasEspeciales : MonoBehaviour
 {
-
     [SerializeField] GameObject Espada;
     [SerializeField] GameObject Pollo;
     [SerializeField] GameObject Mazo;
@@ -18,29 +17,32 @@ public class TutorialArmas : MonoBehaviour
     public SelectorArmas index;
     public MedidorArteEspecial medidor;
 
+    public GameObject tutorialBarraEspecial;
+
     bool atacando = false;
+    public bool ActivarEspecial2 = false;
 
     [SerializeField] Animator Ren;
 
 
 
-    public static TutorialArmas TutorialControlEspecial;
+    public static TutorialArmasEspeciales TutorialControlEspecialE;
 
     public bool verificar = false;
 
     private void Awake()
     {
 
-        if (TutorialControlEspecial == null)
+        if (TutorialControlEspecialE == null)
         {
-            TutorialControlEspecial = this;
+            TutorialControlEspecialE = this;
         }
 
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !atacando)
+        if (Input.GetMouseButtonDown(1) && !atacando && ActivarEspecial2 == true)
         {
             atacando = true;
 
@@ -122,17 +124,24 @@ public class TutorialArmas : MonoBehaviour
             {
                 return;
             }
-
         }
     }
 
     IEnumerator ActivarArma(SpriteRenderer arma)
     {
-
+        tutorialBarraEspecial.SetActive(false);
+        ActivarEspecial2 = false;
         yield return new WaitForSeconds(ActivarArmaE);
 
         arma.enabled = true;
         atacando = false;
 
+    }
+
+    IEnumerator RegresarNormalidad()
+    {
+        yield return new WaitForSeconds(6);
+        transform.localScale = Vector3.one;
+        verificarMazo = 0;
     }
 }

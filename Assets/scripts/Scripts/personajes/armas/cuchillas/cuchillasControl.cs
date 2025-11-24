@@ -14,8 +14,19 @@ public class cuchillasControl : MonoBehaviour
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer cuchillas;
 
+    public static cuchillasControl controlCuchilla;
+
     public float cooldown = 0.5f;
     private bool puedeDisparar = true;
+    public bool ActivarEspacialCuchilla=false;
+
+    private void Awake()
+    {
+        if(controlCuchilla == null)
+        {
+            controlCuchilla = this;
+        }
+    }
 
     void Update()
     {
@@ -55,7 +66,7 @@ public class cuchillasControl : MonoBehaviour
             StartCoroutine(DisparoConCooldown());
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1)&& ActivarEspacialCuchilla)
         {
             DisparoEspecial();
         }
@@ -84,6 +95,7 @@ public class cuchillasControl : MonoBehaviour
     {
 
         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+        ActivarEspacialCuchilla = false;
         Destroy(bala, 1f);
 
     }

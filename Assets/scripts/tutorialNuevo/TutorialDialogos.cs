@@ -23,6 +23,15 @@ public class TutorialDialogos : MonoBehaviour
 
     public TextMeshProUGUI textoDialogoInicial;
 
+    public static TutorialDialogos ActivarTutorialDialogosScript;
+
+    private void Awake()
+    {
+        if( ActivarTutorialDialogosScript == null)
+        {
+            ActivarTutorialDialogosScript = this;
+        }
+    }
 
 
     public string[] dialogosIniciales = {
@@ -80,7 +89,6 @@ public class TutorialDialogos : MonoBehaviour
             else if (indiceDialogoInicial == 4)
             {
                 //selectorArmas
-                APersoaje.enabled = true;
                 AparecerSelectorArmas.SetActive(true);
             }
             else if (indiceDialogoInicial == 5)
@@ -101,5 +109,9 @@ public class TutorialDialogos : MonoBehaviour
     {
         indiceDialogoInicial++;
         MostrarDialogoInicial();
+    }
+    public void ActivarScriptAtacque()
+    {
+        APersoaje.enabled = true;
     }
 }

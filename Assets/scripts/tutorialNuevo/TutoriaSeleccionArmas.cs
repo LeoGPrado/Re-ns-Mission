@@ -11,10 +11,12 @@ public class TutoriaSeleccionArmas : MonoBehaviour
     {
         ArmaDistacia.SetActive(true);
         selectorArmas.SetActive(false);
+        TutorialDialogos.ActivarTutorialDialogosScript.ActivarScriptAtacque();
     }
     public void activarArasCuerpoACuerpo()
     {
         ArmaCuerpoACuerpo.SetActive(true);
         selectorArmas.SetActive(false);
+        TutorialDialogos.ActivarTutorialDialogosScript.ActivarScriptAtacque();
     }
 }

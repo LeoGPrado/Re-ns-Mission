@@ -10,7 +10,10 @@ public class TutorialDialogos : MonoBehaviour
     public GameObject movimientosTutorial;
     public GameObject AparecerMuñeco;
     public GameObject AparecerSelectorArmas;
-    public GameObject AparecerRecargaEspecial;
+    public GameObject barraEspecial;
+
+    public GameObject arcoActivado;
+    public GameObject espadaActivador;
 
 
     //activarScripts
@@ -94,7 +97,17 @@ public class TutorialDialogos : MonoBehaviour
             }
             else if (indiceDialogoInicial == 6)
             {
-                AparecerRecargaEspecial.SetActive(true);
+                TutorialArmasEspeciales.TutorialControlEspecialE.ActivarEspecial2 = true;
+
+                if (arcoActivado.activeInHierarchy)
+                {
+                    TutorialArcoControl.TArcoEspecial.AtqueEspecial = true;
+                }
+                else if(espadaActivador.activeInHierarchy)
+                {
+
+                }
+                barraEspecial.SetActive(true);
             }
 
         }

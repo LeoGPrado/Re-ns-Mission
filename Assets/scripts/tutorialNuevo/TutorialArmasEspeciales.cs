@@ -131,8 +131,8 @@ public class TutorialArmasEspeciales : MonoBehaviour
 
     IEnumerator ActivarArma(SpriteRenderer arma)
     {
-        tutorialBarraEspecial.SetActive(false);
-        ActivarEspecial2 = false;
+        //tutorialBarraEspecial.SetActive(false);
+        //ActivarEspecial2 = false;
         yield return new WaitForSeconds(ActivarArmaE);
 
         arma.enabled = true;

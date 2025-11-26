@@ -119,7 +119,7 @@ public class TutorialArcoControl : MonoBehaviour
 
         for (int i = 0; i < cantidadDeFlechas; i++)
         {
-            AtqueEspecial = false;
+            
             DisparoNormal();
             yield return new WaitForSeconds(intervalo);
         }

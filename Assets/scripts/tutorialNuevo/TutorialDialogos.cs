@@ -10,6 +10,7 @@ public class TutorialDialogos : MonoBehaviour
     public GameObject movimientosTutorial;
     public GameObject AparecerMuñeco;
     public GameObject AparecerSelectorArmas;
+    public GameObject AparecerRecargaEspecial;
 
 
     //activarScripts
@@ -91,10 +92,11 @@ public class TutorialDialogos : MonoBehaviour
                 //selectorArmas
                 AparecerSelectorArmas.SetActive(true);
             }
-            else if (indiceDialogoInicial == 5)
+            else if (indiceDialogoInicial == 6)
             {
-
+                AparecerRecargaEspecial.SetActive(true);
             }
+
         }
         else
         {

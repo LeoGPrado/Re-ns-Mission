@@ -4183,6 +4183,7 @@ MonoBehaviour:
   movimientosTutorial: {fileID: 822242236}
   "AparecerMu\xF1eco": {fileID: 1976840043}
   AparecerSelectorArmas: {fileID: 856062599}
+  AparecerRecargaEspecial: {fileID: 556353552}
   RenScripts: {fileID: 0}
   MPersonaje: {fileID: 0}
   APersoaje: {fileID: 0}
@@ -4194,7 +4195,11 @@ MonoBehaviour:
   - "A continuaci\xF3n te mostraremos el selector de armas. Aqu\xED podr\xE1s elegir
     entre armas cuerpo a cuerpo y armas a distancia."
   - "Con clic izquierdo podr\xE1s realizar el ataque normal del arma."
-  - Con click derecho podras lanzar un ataque especial con el arma.
+  - Cada arma tiene un ataque especial,lo podras usar al recargar el medidor que
+    esta en la esquinja derecha inferior de la pantalla.
+  - el medidor se recarga matando enemigos pero esta vez se recargara al pisar la
+    placa de presion que acaba de aparecer.
+  - al pisar la placa da  click derecho para  lanzar un ataque especial con el arma.
   - "Recuerda: con las armas cuerpo a cuerpo debes golpear y retroceder al mismo
     tiempo. Eres un mago, no un caballero, as\xED que no te quedes demasiado cerca
     del enemigo."
@@ -9372,7 +9377,7 @@ MonoBehaviour:
   personaje: {fileID: 2364512079374913877}
   arco: {fileID: 6648607618044843473}
   cooldown: 0.3
-  ultcooldown: 1
+  ultcooldown: 0
   timer: 0
   ultTriggered: 0
   medidor: {fileID: 0}

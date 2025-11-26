@@ -45098,6 +45098,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffd74f2bd3ba0546a48716eb12d079f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lunaUI: {fileID: 0}
+  solUI: {fileID: 0}
+  duracionTransicion: 2
   timerText: {fileID: 303800696}
   hour: 0
   minutos: 0
@@ -45273,7 +45276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18beb0c28f2e7234fa97a2ede2999535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthUI: {fileID: 1758065552}
+  sliderVida: {fileID: 0}
+  vidaMax: 650
+  vidaActual: 0
 --- !u!61 &1394096925
 BoxCollider2D:
   m_ObjectHideFlags: 0

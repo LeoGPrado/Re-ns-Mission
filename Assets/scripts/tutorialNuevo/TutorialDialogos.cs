@@ -6,6 +6,15 @@ public class TutorialDialogos : MonoBehaviour
 {
     public GameObject panelDialogoInicial;
 
+    //Activarobjetos
+    public GameObject movimientosTutorial;
+    public GameObject AparecerMuñeco;
+
+
+    //activarScripts
+    public GameObject RenScripts;
+    public TutorialControlP MPersonaje;
+
 
     //public GameObject armaTutorial;
     //public GameObject EnemigoTutorial;
@@ -30,6 +39,10 @@ public class TutorialDialogos : MonoBehaviour
 
     void Start()
     {
+        RenScripts = GameObject.Find("personaje");
+        MPersonaje= RenScripts.GetComponent<TutorialControlP>();
+
+
 
         panelDialogoInicial.SetActive(true);
 
@@ -50,13 +63,20 @@ public class TutorialDialogos : MonoBehaviour
         if (indiceDialogoInicial < dialogosIniciales.Length)
         {
             textoDialogoInicial.text = dialogosIniciales[indiceDialogoInicial];
-            if (indiceDialogoInicial == 2)
+            if (indiceDialogoInicial == 1)
             {
-                //EnemigoTutorial.SetActive(true);
+                MPersonaje.enabled=true;
+                movimientosTutorial.SetActive(true);
+            }
+            else if (indiceDialogoInicial == 2)
+            {
+                movimientosTutorial.SetActive(false);
+                AparecerMuñeco.SetActive(true);
+                TutorialQuemar.controlTutorialQuemar.detectarMuñeco();
             }
             else if (indiceDialogoInicial == 3)
             {
-                //armaTutorial.SetActive(true);
+
             }
         }
         else

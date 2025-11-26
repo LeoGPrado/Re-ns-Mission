@@ -9,11 +9,13 @@ public class TutorialDialogos : MonoBehaviour
     //Activarobjetos
     public GameObject movimientosTutorial;
     public GameObject AparecerMuñeco;
+    public GameObject AparecerSelectorArmas;
 
 
     //activarScripts
     public GameObject RenScripts;
     public TutorialControlP MPersonaje;
+    public TutorialArmas APersoaje;
 
 
     //public GameObject armaTutorial;
@@ -41,6 +43,7 @@ public class TutorialDialogos : MonoBehaviour
     {
         RenScripts = GameObject.Find("personaje");
         MPersonaje= RenScripts.GetComponent<TutorialControlP>();
+        APersoaje=RenScripts.GetComponent<TutorialArmas>();
 
 
 
@@ -74,7 +77,13 @@ public class TutorialDialogos : MonoBehaviour
                 AparecerMuñeco.SetActive(true);
                 TutorialQuemar.controlTutorialQuemar.detectarMuñeco();
             }
-            else if (indiceDialogoInicial == 3)
+            else if (indiceDialogoInicial == 4)
+            {
+                //selectorArmas
+                APersoaje.enabled = true;
+                AparecerSelectorArmas.SetActive(true);
+            }
+            else if (indiceDialogoInicial == 5)
             {
 
             }

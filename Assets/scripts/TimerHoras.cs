@@ -2,28 +2,39 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TimerHoras : MonoBehaviour
 {
+
+    [Header("Cambio de luna a sol")]
+    [SerializeField] private Image iconoUI;
+    [SerializeField] private Sprite solSprite;
+    [SerializeField] private float duracionDelFade = 0.5f;
+    private bool lunaASol = false;
+    [Space(10)]
+
+
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private int hour = 0;
     [SerializeField] private int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
     [SerializeField] public string SiguienteEscena;
 
-    //[SerializeField] private GameObject[] enemigos;
+   
+   
+  
+
     [SerializeField] public GameObject parentSpawners;
     public Transform parentEnemy;
     private int cantidadEnemigos;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         UpdateTime();
         StartCoroutine(UpdateEvery30s());
     }
 
-    // Update is called once per frame
     void Update()
     {
         cantidadEnemigos = parentEnemy.childCount;
@@ -59,11 +70,7 @@ public class TimerHoras : MonoBehaviour
 
             if (minutos != 4)
             {
-                hour += 30;
-                /*if (cantidadEnemigos <= 0)
-                {
-                    SceneManager.LoadScene("FinDemo");
-                }*/
+                hour += 30;          
 
                 UpdateTime();
             }
@@ -72,13 +79,7 @@ public class TimerHoras : MonoBehaviour
                 break;
             }
 
-            /*hour += 30;
-            if (cantidadEnemigos <= 0)
-            {
-                SceneManager.LoadScene("FinDemo");
-            }
-
-            UpdateTime();*/
+          
         }
 
     }
@@ -87,5 +88,36 @@ public class TimerHoras : MonoBehaviour
     {
         timerText.text = minutos.ToString("00") + hour.ToString(":00") + " AM";
 
+        if (minutos == 1 && !lunaASol)
+        {
+            StartCoroutine(CambiarASol(solSprite));
+        }
+
     }
+
+
+    IEnumerator CambiarASol(Sprite solSprite)
+    {
+        for (float t = 0; t < duracionDelFade; t += Time.deltaTime)
+        {
+            float alpha = 1 - (t / duracionDelFade);
+            iconoUI.color = new Color(1, 1, 1, alpha);
+            yield return null;
+        }
+
+        iconoUI.color = new Color(1, 1, 1, 0);
+        iconoUI.sprite = solSprite;
+        
+        for (float t = 0; t < duracionDelFade; t += Time.deltaTime)
+        {
+            float alpha = t / duracionDelFade;
+            iconoUI.color = new Color(1, 1, 1, alpha);
+            yield return null;
+        }
+
+        iconoUI.color = Color.white;
+    }
+
+
+
 }

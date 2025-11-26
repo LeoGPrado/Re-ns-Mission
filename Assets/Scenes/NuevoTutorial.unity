@@ -772,10 +772,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 567499609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6, y: 11.220001}
-  m_SizeDelta: {x: 1062, y: 167.9}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -2.2800293, y: 7.6700134}
+  m_SizeDelta: {x: -65.64, y: -48.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &275919841
 CanvasRenderer:
@@ -808,15 +808,15 @@ MonoBehaviour:
   m_text: Bienvenido a Ren Mission, acontinuacion te diremos los controles de este
     juego
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
+  m_sharedMaterial: {fileID: -295203547670173032, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282927176
+  m_fontColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2958,10 +2958,10 @@ RectTransform:
   - {fileID: 1588221824}
   m_Father: {fileID: 667821467}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -26.909912}
-  m_SizeDelta: {x: 1188, y: 328.5}
+  m_SizeDelta: {x: -150, y: 330}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &567499610
 MonoBehaviour:
@@ -2983,7 +2983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2418600083287724647, guid: 623f3ec047e3ffb44bb3cf8506663879, type: 3}
+  m_Sprite: {fileID: -6548354871558010203, guid: b343269b13dcd124eb10122ca535fe98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3384,7 +3384,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 3.8770263
+    OrthographicSize: 4.44
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -3986,7 +3986,7 @@ Transform:
   m_GameObject: {fileID: 822242236}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.79, y: 0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4036,20 +4036,21 @@ MonoBehaviour:
   textoDialogoInicial: {fileID: 275919842}
   dialogosIniciales:
   - "Bienvenido al tutorial de Ren\u2019s Mission, Para continuar haz clic en Siguiente."
-  - Para moverte por el escenario utiliza las teclas W, A, S, D.
-  - "Lo que ves ahora es un mu\xF1eco de entrenamiento. Te servir\xE1 para practicar."
-  - "A continuaci\xF3n te mostraremos el selector de armas. Aqu\xED podr\xE1s elegir
+  - Para moverte por el escenario utiliza las teclas                                             
+    W, A, S, D.
+  - "Lo que ves ahora es un maniqui de entrenamiento. Te servir\xE1 para practicar."
+  - "A continuacion te mostraremos el selector de armas. Aqu\xED podr\xE1s elegir
     entre armas cuerpo a cuerpo y armas a distancia."
   - "Con clic izquierdo podr\xE1s realizar el ataque normal del arma."
   - Cada arma tiene un ataque especial,lo podras usar al recargar el medidor que
     esta en la esquinja derecha inferior de la pantalla.
-  - el medidor se recarga matando enemigos pero esta vez se recargara de manera automatica.
+  - El medidor se recarga matando enemigos pero esta vez se recargara de manera automatica.
     Presiona click derecho para usarlo.
   - "Recuerda: con las armas cuerpo a cuerpo debes golpear y retroceder al mismo
     tiempo. Eres un mago, no un caballero, as\xED que no te quedes demasiado cerca
     del enemigo."
-  - "Ahora que ya aprendiste lo b\xE1sico, haz clic en \u2018Siguiente\u2019 una
-    vez m\xE1s para comenzar la aventura"
+  - "Ahora que ya aprendiste lo b\xE1sico, haz clic en la flecha una vez m\xE1s para
+    comenzar la aventura"
 --- !u!4 &850882798
 Transform:
   m_ObjectHideFlags: 0
@@ -4656,7 +4657,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.8770263
+  orthographic size: 4.44
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4681,7 +4682,7 @@ Transform:
   m_GameObject: {fileID: 1012989155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2266648, y: 0.5101564, z: -9.984929}
+  m_LocalPosition: {x: 1.1995739, y: 0.9122964, z: -9.984929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6405,11 +6406,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.0572884, y: 6.624774}
-      - {x: -7.548536, y: 6.6104555}
-      - {x: -7.4813056, y: -3.3042173}
-      - {x: 10.0610895, y: -3.4310925}
-      - {x: 10.062265, y: 6.6567836}
+    - - {x: 1.1812704, y: 7.0793743}
+      - {x: -9.947987, y: 7.055714}
+      - {x: -9.956789, y: -3.5753899}
+      - {x: 11.968636, y: -3.4819605}
+      - {x: 11.893172, y: 7.256745}
   m_UseDelaunayMesh: 0
 --- !u!1 &1339075697
 GameObject:
@@ -6524,8 +6525,8 @@ Transform:
   m_GameObject: {fileID: 1354369572}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0795369, y: -0.04062891, z: 0.022757502}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.04, y: -0.05, z: 0.022757502}
+  m_LocalScale: {x: 0.5234616, y: 1.4316, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 822242237}
@@ -6574,8 +6575,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 116265308436777781, guid: 979884f2e396d4d4a8b53c9f28729f9e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -6548354871558010203, guid: b343269b13dcd124eb10122ca535fe98, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6708,8 +6709,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -118.29001, y: 110.399994}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchoredPosition: {x: -76, y: 57}
+  m_SizeDelta: {x: 64, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1588221825
 Animator:
@@ -6809,7 +6810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3427443288308981933, guid: 48e5b2f02b620ca4d8bc868b2792293e, type: 3}
+  m_Sprite: {fileID: -6754232876927243288, guid: b343269b13dcd124eb10122ca535fe98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

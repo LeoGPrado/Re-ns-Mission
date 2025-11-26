@@ -4,11 +4,10 @@ using System.Collections;
 
 public class ControlPersonaje : MonoBehaviour
 {
-
-    [SerializeField] private string escena;
+    [SerializeField] private GameObject canvasDerrota;
+    [SerializeField] private GameObject canvasGameplay;
     [SerializeField] Rigidbody2D ren;
     [SerializeField] Animator animRen;
-    [SerializeField] public string NDerrota;
 
     public BoxCollider2D DetectarEnemigo;
     public Transform puntoDeAtaque;
@@ -53,6 +52,8 @@ public class ControlPersonaje : MonoBehaviour
         ren = GetComponent<Rigidbody2D>();
         animRen = GetComponent<Animator>();
 
+        if (canvasDerrota != null)
+            canvasDerrota.SetActive(false);
     }
 
     // Update is called once per frame
@@ -152,14 +153,21 @@ public class ControlPersonaje : MonoBehaviour
 
     public void perderVida()
     {
-        //PuertaHP.BarraVida.BajarHP();
         vidaInicial--;
         if (vidaInicial == 0)
         {
-            SceneManager.LoadScene(NDerrota);
-            Destroy(gameObject);
+            if (canvasGameplay != null)
+                canvasGameplay.SetActive(false);
+
+            if (canvasDerrota != null)
+                canvasDerrota.SetActive(true);
+
+            Time.timeScale = 0f;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
+
 
     private void activar()
     {

@@ -16,8 +16,8 @@ public class TimerHoras : MonoBehaviour
 
 
     [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private int hour = 0;
-    [SerializeField] private int minutos = 0;
+    [SerializeField] public int hour = 0;
+    [SerializeField] public int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
     [SerializeField] public string SiguienteEscena;
 

@@ -37,4 +37,11 @@ public class PuertaHP : MonoBehaviour
             SceneManager.LoadScene("FinDemo");
         }
     }
+
+    public void CurarHP (int curacion)
+    {
+        vidaActual += curacion;
+        vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
+        sliderVida.value = vidaActual;
+    }
 }

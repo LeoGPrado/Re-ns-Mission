@@ -232,6 +232,7 @@ MonoBehaviour:
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
   manaPartCount: 4
   canDropMana: 1
+  objetivoPuerta: 1
   slimeFuego: 0
   slimeHielo: 0
   slimeNaturaleza: 0

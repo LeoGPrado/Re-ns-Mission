@@ -35,7 +35,7 @@ public class TimerHoras : MonoBehaviour
     {
         cantidadEnemigos = parentEnemy.childCount;
 
-        if (cantidadEnemigos <= 0 && minutos == 4)
+        if (cantidadEnemigos <= 0 && minutos == 6)
         {
             SceneManager.LoadScene(SiguienteEscena);
         }
@@ -50,7 +50,7 @@ public class TimerHoras : MonoBehaviour
                 hour = 0;
                 minutos += 1;
 
-                if (minutos == 4)
+                if (minutos == 6)
                 {
                     parentSpawners.SetActive(false);
                 }
@@ -60,7 +60,7 @@ public class TimerHoras : MonoBehaviour
 
             yield return new WaitForSeconds(cdTimer);
 
-            if (minutos != 4)
+            if (minutos != 6)
             {
                 hour += 30;
                 UpdateTime();

@@ -7,7 +7,8 @@ public class SlieControl : MonoBehaviour
     public Transform objetivo;
     public float velocidad = 5f;
     private Vector3 velo = Vector3.zero;
-    GameObject obj;
+    GameObject objPuerta;
+    GameObject objPersonaje;
     //public Rigidbody2D slimeR;
 
     //public CircleCollider2D AreaDeteccionJugador;
@@ -23,6 +24,9 @@ public class SlieControl : MonoBehaviour
     [SerializeField] private GameObject manaPartícula;
     [SerializeField] private float manaPartCount = 4f;
     [SerializeField] private bool canDropMana = true;
+
+    public bool objetivoPuerta;
+    public bool objetivoRen;
 
     public bool slimeFuego=false;
     public bool slimeHielo=false;
@@ -43,26 +47,57 @@ public class SlieControl : MonoBehaviour
     }
     private void OnEnable()
     {
-        obj = GameObject.Find("PuntoEntrada");
-        player = GameObject.FindWithTag("protagonista").transform;
-
-        if (obj != null)
+        if (objetivoPuerta == true)
         {
-            door = objetivo = obj.transform;
+            objPuerta = GameObject.Find("PuntoEntrada");
+            player = GameObject.FindWithTag("protagonista").transform;
+        }
+
+        if (objetivoRen == true)
+        {
+            objPersonaje = GameObject.Find("personaje");
+            player = GameObject.FindWithTag("protagonista").transform;
+        }
+
+
+        if (objPuerta != null)
+        {
+            door = objetivo = objPuerta.transform;
+        }
+        if (objPersonaje != null)
+        {
+            door = objetivo = objPersonaje.transform;
         }
 
     }
 
     void Start()
     {
-        obj = GameObject.Find("PuntoEntrada");
-        player = GameObject.FindWithTag("protagonista").transform;
+        if(objetivoPuerta == true)
+        {
+            objPuerta = GameObject.Find("PuntoEntrada");
+            player = GameObject.FindWithTag("protagonista").transform;
+        }
+
+        if (objetivoRen == true)
+        {
+            objPersonaje = GameObject.Find("personaje");
+            player = GameObject.FindWithTag("protagonista").transform;
+        }
+
+        /*objPuerta = GameObject.Find("PuntoEntrada");
+        player = GameObject.FindWithTag("protagonista").transform;*/
 
         VidaEnemigo = 5;
 
-        if (obj != null)
+        if (objPuerta != null)
         {
-            door = objetivo = obj.transform;
+            door = objetivo = objPuerta.transform;
+        }
+
+        if (objPersonaje != null)
+        {
+            door = objetivo = objPersonaje.transform;
         }
 
     }

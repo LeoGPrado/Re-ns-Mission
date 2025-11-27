@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;
 using System.Collections;
 
 public class SlieControl : MonoBehaviour

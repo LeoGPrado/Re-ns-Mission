@@ -42,6 +42,7 @@ public class PuertaHP : MonoBehaviour
     {
         vidaActual += curacion;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
+
         sliderVida.value = vidaActual;
     }
 }

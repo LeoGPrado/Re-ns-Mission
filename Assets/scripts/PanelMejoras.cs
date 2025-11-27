@@ -9,8 +9,7 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private TimerHoras min;
     [SerializeField] private ControlPersonaje Heart;
     [SerializeField] private PuertaHP DoorHp;
-    [SerializeField] private int healAmo = 20;
-    [SerializeField] private int porcentajeCuracion;
+    [SerializeField] private int curacion;
     [SerializeField] private float duracionMejoras = 6f;
     [SerializeField] private GameObject panel;
     [SerializeField] private bool momentoMejora = true;
@@ -22,7 +21,7 @@ public class PanelMejoras : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        curacion = 1000;
     }
 
     // Update is called once per frame
@@ -42,7 +41,8 @@ public class PanelMejoras : MonoBehaviour
 
         if (Heart.contador > 1)
         {
-            Heart.contador--;
+            Heart.contador -= 2;
+
         }
         
         switch (Heart.contador)
@@ -60,10 +60,7 @@ public class PanelMejoras : MonoBehaviour
     public void CurarPuerta()
     {
         DesactivarPanel();
-        porcentajeCuracion = (healAmo / 100) * 1000;
-
-
-        DoorHp.CurarHP(porcentajeCuracion);
+        DoorHp.CurarHP(curacion);
         
     }
 

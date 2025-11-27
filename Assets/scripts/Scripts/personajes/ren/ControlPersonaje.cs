@@ -63,7 +63,10 @@ public class ControlPersonaje : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-
+        if(contador < 5)
+        {
+            contador = 5;
+        }
 
 
         if (mousePos.x < transform.position.x)

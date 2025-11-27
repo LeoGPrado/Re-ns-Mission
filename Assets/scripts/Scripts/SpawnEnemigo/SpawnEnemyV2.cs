@@ -28,11 +28,6 @@ public class SpawnEnemyV2 : MonoBehaviour
     [SerializeField] private float tiempoMin = 2f;
     [SerializeField] private float tiempoMax = 4f;
 
-    //cantidadEnemigos
-    [SerializeField] private int CantidadEnemigosInicial = 0;
-    [SerializeField] private int CantidadEnemigosMaximo = 5;
-    public bool Infinitos;
-
 
     private void Start()
     {
@@ -56,16 +51,7 @@ public class SpawnEnemyV2 : MonoBehaviour
     {
         if (punto == null) return;
 
-        if (Infinitos == true)
-        {
-            GameObject objeto = Instantiate(ElegirSlime(), punto.position, Quaternion.identity, parent);
-        }
-        else
-        {
-
-        }
-
-
+        GameObject objeto = Instantiate(ElegirSlime(), punto.position, Quaternion.identity, parent);
 
     }
 

@@ -833,8 +833,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.36
-  m_fontSizeBase: 43.36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4036,11 +4036,11 @@ MonoBehaviour:
   textoDialogoInicial: {fileID: 275919842}
   dialogosIniciales:
   - "Bienvenido al tutorial de Ren\u2019s Mission, Para continuar haz clic en Siguiente."
-  - Para moverte por el escenario utiliza las teclas                                             
-    W, A, S, D.
+  - Para moverte por el escenario utiliza las teclas                            W,
+    A, S, D.
   - "Lo que ves ahora es un maniqui de entrenamiento. Te servir\xE1 para practicar."
-  - "A continuacion te mostraremos el selector de armas. Aqu\xED podr\xE1s elegir
-    entre armas cuerpo a cuerpo y armas a distancia."
+  - "A continuacion te mostraremos el selector de armas. Aqu\xED podras elegir entre
+    armas cuerpo a cuerpo y armas a distancia."
   - "Con clic izquierdo podr\xE1s realizar el ataque normal del arma."
   - Cada arma tiene un ataque especial,lo podras usar al recargar el medidor que
     esta en la esquinja derecha inferior de la pantalla.
@@ -4049,7 +4049,7 @@ MonoBehaviour:
   - "Recuerda: con las armas cuerpo a cuerpo debes golpear y retroceder al mismo
     tiempo. Eres un mago, no un caballero, as\xED que no te quedes demasiado cerca
     del enemigo."
-  - "Ahora que ya aprendiste lo b\xE1sico, haz clic en la flecha una vez m\xE1s para
+  - "Ahora que ya aprendiste lo basico, haz clic en la flecha una vez m\xE1s para
     comenzar la aventura"
 --- !u!4 &850882798
 Transform:
@@ -6709,7 +6709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -100, y: 64.3}
+  m_AnchoredPosition: {x: -100, y: 64.29999}
   m_SizeDelta: {x: 64, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1588221825

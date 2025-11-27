@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinDelJuego.unity
     guid: 926377463ed87c34187e780db5aca777
+  - enabled: 1
+    path: Assets/Scenes/NuevoTutorial.unity
+    guid: c756e109c2b5e4542b6450b23499e6dc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

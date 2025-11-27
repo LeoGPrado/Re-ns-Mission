@@ -653,7 +653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1689763040}
   saltarCinematica: {fileID: 1197976245}
-  siguienteEscena: Tutorial
+  siguienteEscena: NuevoTutorial
 --- !u!1 &1834543721
 GameObject:
   m_ObjectHideFlags: 0

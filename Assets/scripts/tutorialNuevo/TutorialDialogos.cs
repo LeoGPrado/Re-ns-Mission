@@ -10,6 +10,7 @@ public class TutorialDialogos : MonoBehaviour
     public GameObject movimientosTutorial;
     public GameObject AparecerMuñeco;
     public GameObject AparecerSelectorArmas;
+    public GameObject AparecerSelectorArmasCuerpoACuerpo;
     public GameObject barraEspecial;
 
     public GameObject arcoActivado;
@@ -103,11 +104,14 @@ public class TutorialDialogos : MonoBehaviour
                 {
                     TutorialArcoControl.TArcoEspecial.AtqueEspecial = true;
                 }
-                else if(espadaActivador.activeInHierarchy)
-                {
-
-                }
                 barraEspecial.SetActive(true);
+            }
+            else if (indiceDialogoInicial == 8)
+            {
+                //selectorArmas
+                APersoaje.enabled = false;
+                arcoActivado.SetActive(false);
+                AparecerSelectorArmasCuerpoACuerpo.SetActive(true);
             }
 
         }

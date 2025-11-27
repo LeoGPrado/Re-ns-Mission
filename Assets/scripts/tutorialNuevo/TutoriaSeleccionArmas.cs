@@ -6,6 +6,7 @@ public class TutoriaSeleccionArmas : MonoBehaviour
     public GameObject ArmaCuerpoACuerpo;
 
     public GameObject selectorArmas;
+    public GameObject selectorArmasCuerpoACuerpo;
 
     public void ActivarArmaDistacia()
     {
@@ -17,7 +18,7 @@ public class TutoriaSeleccionArmas : MonoBehaviour
     public void activarArasCuerpoACuerpo()
     {
         ArmaCuerpoACuerpo.SetActive(true);
-        selectorArmas.SetActive(false);
+        selectorArmasCuerpoACuerpo.SetActive(false);
         TutorialDialogos.ActivarTutorialDialogosScript.ActivarScriptAtacque();
     }
 }

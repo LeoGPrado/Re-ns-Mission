@@ -18,7 +18,7 @@ public class TutorialArmas : MonoBehaviour
     public SelectorArmas index;
     public MedidorArteEspecial medidor;
 
-    bool atacando = false;
+    public bool atacando = false;
 
     [SerializeField] Animator Ren;
 

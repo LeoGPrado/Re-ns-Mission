@@ -76,7 +76,7 @@ public class TimerHoras : MonoBehaviour
     {
         timerText.text = minutos.ToString("00") + hour.ToString(":00") + " AM";
 
-        if (minutos == 0 && !lunaASol)
+        if (minutos == 6 && !lunaASol)
         {
             lunaASol = true;
             StartCoroutine(TransicionLunaASol());

@@ -2580,6 +2580,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &448602020
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448602022}
+  - component: {fileID: 448602021}
+  m_Layer: 0
+  m_Name: Unity-RecorderBindings
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &448602021
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448602020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24bc7e8573847adbdf1198360b3c794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_References:
+    m_Keys:
+    - 30e7d42d6d18ce34b9c76c1dad5c597e
+    m_Values:
+    - {fileID: 1012989155}
+--- !u!4 &448602022
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448602020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487981430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,7 +3878,8 @@ MonoBehaviour:
   APersoaje: {fileID: 0}
   textoDialogoInicial: {fileID: 275919842}
   dialogosIniciales:
-  - "Bienvenido al tutorial de Ren\u2019s Mission, Para continuar haz clic en Siguiente."
+  - "Bienvenido al tutorial de Ren\u2019s Mission, Para continuar haz clic en la
+    flecha o presiona E"
   - Para moverte por el escenario utiliza las teclas                            W,
     A, S, D.
   - "Lo que ves ahora es un maniqui de entrenamiento. Te servir\xE1 para practicar."
@@ -9871,3 +9921,4 @@ SceneRoots:
   - {fileID: 850882798}
   - {fileID: 408479357}
   - {fileID: 1279342307}
+  - {fileID: 448602022}

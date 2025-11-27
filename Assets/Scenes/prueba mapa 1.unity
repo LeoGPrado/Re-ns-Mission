@@ -3915,7 +3915,7 @@ MonoBehaviour:
   slimeFuego: {fileID: 4891012412717606429, guid: 4e743405ed163f74d970b634ff98927a, type: 3}
   slimeNaturaleza: {fileID: 4891012412717606429, guid: 907e6bab9825cee4cb21fdd3e4f407b7, type: 3}
   punto1: {fileID: 1214845467}
-  punto2: {fileID: 1668797851}
+  punto2: {fileID: 0}
   punto3: {fileID: 0}
   punto4: {fileID: 0}
   probNormal: 50
@@ -27134,7 +27134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1207037831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30114,15 +30114,15 @@ MonoBehaviour:
   slimeFuego: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
   slimeNaturaleza: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
   punto1: {fileID: 1920166905}
-  punto2: {fileID: 1669923097}
+  punto2: {fileID: 0}
   punto3: {fileID: 0}
   punto4: {fileID: 0}
   probNormal: 50
   probHielo: 20
   probFuego: 15
   probNaturaleza: 15
-  tiempoMin: 1
-  tiempoMax: 3
+  tiempoMin: 3
+  tiempoMax: 6
 --- !u!4 &1669923097
 Transform:
   m_ObjectHideFlags: 0
@@ -34312,7 +34312,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1758065552}
   m_HandleRect: {fileID: 0}
@@ -34733,6 +34733,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1531625467}
     - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: cooldown
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: balaNormal
       value: 
       objectReference: {fileID: 5231000209351257341, guid: 4055800efc0b5c54688328243bda5790, type: 3}
@@ -34758,7 +34762,7 @@ PrefabInstance:
       objectReference: {fileID: 1531625472}
     - target: {fileID: 4553777821808253100, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: cooldown
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4553777821808253100, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: playerEC
@@ -34894,7 +34898,7 @@ PrefabInstance:
       objectReference: {fileID: 1531625472}
     - target: {fileID: 5191960523741171534, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: cooldown
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5191960523741171534, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: balaEspecialPrefab

@@ -98,6 +98,11 @@ public class SlieControl : MonoBehaviour
         }
     }
    
+    public void Instakill()
+    {
+        StartCoroutine(DropAndCooldown());
+        Destroy(gameObject);
+    }
 
     public void controlVida()
     {

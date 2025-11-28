@@ -240,6 +240,8 @@ MonoBehaviour:
   Slime: 1
   balaNormal: {fileID: 8641117397932976541, guid: aa95bf43fad930d408b58b26388f8bf5, type: 3}
   puntoAparicion: {fileID: 8735429471866289084}
+  activarDisparo: 0
+  VerificarSlime: 1
 --- !u!114 &-5876484496984574410
 MonoBehaviour:
   m_ObjectHideFlags: 0

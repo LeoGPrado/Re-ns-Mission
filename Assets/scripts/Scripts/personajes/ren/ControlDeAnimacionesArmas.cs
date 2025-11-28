@@ -15,6 +15,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     public int verificarMazo = 0;
     public SelectorArmas index;
     public MedidorArteEspecial medidor;
+    [SerializeField] private PlayerEnergyController playermana;
 
     [SerializeField] Animator Ren;
 
@@ -125,6 +126,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 verificar = false;
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srEspada));
+                //playermana.Ultimate();
 
                 //StartCoroutine(ActivarArma(Espada));
             }

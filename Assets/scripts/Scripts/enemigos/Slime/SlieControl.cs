@@ -37,6 +37,7 @@ public class SlieControl : MonoBehaviour
     public GameObject balaNormal;
     public Transform puntoAparicion;
     public bool activarDisparo;
+    public bool VerificarSlime;
 
     private void Awake()
     {
@@ -116,8 +117,12 @@ public class SlieControl : MonoBehaviour
         {
             objetivo = player;
 
-            activarDisparo = true;
-            StartCoroutine(InvocacionDeBalaSlime());
+            if (VerificarSlime == true)
+            {
+                activarDisparo = true;
+                StartCoroutine(InvocacionDeBalaSlime());
+            }
+
         }
         else if (direccion.magnitude > 5 && !activarDisparo)
         {

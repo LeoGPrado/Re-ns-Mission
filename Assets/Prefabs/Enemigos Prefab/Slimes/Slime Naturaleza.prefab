@@ -301,10 +301,13 @@ MonoBehaviour:
   manaPartCount: 4
   canDropMana: 1
   objetivoPuerta: 1
+  objetivoRen: 0
   slimeFuego: 0
   slimeHielo: 0
   slimeNaturaleza: 1
   Slime: 0
+  balaNormal: {fileID: 0}
+  puntoAparicion: {fileID: 8735429471866289084}
 --- !u!114 &3965321107546013818
 MonoBehaviour:
   m_ObjectHideFlags: 0

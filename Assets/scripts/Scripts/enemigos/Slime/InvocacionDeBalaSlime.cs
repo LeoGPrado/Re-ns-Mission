@@ -19,9 +19,10 @@ public class InvocacionDeBalaSlime : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "protegonista")
+        if (collision.gameObject.tag == "protagonista")
         {
-            GameObject BalaSlime = Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
+            
+            Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
         }
     }
 }

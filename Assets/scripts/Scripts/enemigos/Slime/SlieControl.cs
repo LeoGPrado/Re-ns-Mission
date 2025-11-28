@@ -33,6 +33,11 @@ public class SlieControl : MonoBehaviour
     public bool slimeNaturaleza=false;
     public bool Slime=false;
 
+    //invocacionBala
+    public GameObject balaNormal;
+    public Transform puntoAparicion;
+    public bool activarDisparo;
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -107,12 +112,16 @@ public class SlieControl : MonoBehaviour
     {
         //area de deteccion
         Vector2 direccion = player.position - transform.position;
-        if (direccion.magnitude < 5)
+        if (direccion.magnitude < 5 && !activarDisparo)
         {
             objetivo = player;
+
+            activarDisparo = true;
+            StartCoroutine(InvocacionDeBalaSlime());
         }
-        else
+        else if (direccion.magnitude > 5 && !activarDisparo)
         {
+            //activarDisparo = false;
             objetivo = door;
         }
 
@@ -246,44 +255,12 @@ public class SlieControl : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
         }
-
-        /*for (int i = 0; i < repeticiones; i++)
-        {
-            controlVida();
-
-            //GetComponent<SpriteRenderer>().color = Color.red;
-
-            yield return new WaitForSeconds(1f);
-        }*/
-
-
     }
 
-
-
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator InvocacionDeBalaSlime()
     {
-        if (collision.gameObject.tag == "protagonista")
-        {
-            obj = GameObject.Find("personaje");
-
-            if (obj != null)
-            {
-                objetivo = obj.transform;
-            }
-        }
+        Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
+        yield return new WaitForSecondsRealtime(1f);
+        activarDisparo = false;
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "protagonista")
-        {
-            obj = GameObject.Find("PuntoEntrada");
-
-            if (obj != null)
-            {
-                objetivo = obj.transform;
-            }
-        }
-    }*/
 }

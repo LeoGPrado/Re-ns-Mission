@@ -4,17 +4,26 @@ using UnityEngine.InputSystem;
 
 public class BalaEnemigoSlime : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D balaEnemigo;
-    public int velocidadMovimiento = 5;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float speed = 5f;
+    private Transform target;
+    public float FuerzaRetroceso = 2;
+
     void Start()
     {
-        balaEnemigo=GetComponent<Rigidbody2D>();
-    }
+        GameObject Player = GameObject.FindGameObjectWithTag("protagonista");
+        if (Player != null)
+        {
+            target = Player.transform;
+            Vector2 direction = (target.position - transform.position).normalized;
+            GetComponent<Rigidbody2D>().linearVelocity = direction * speed;
 
-    // Update is called once per frame
-    void Update()
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        balaEnemigo.linearVelocity = new Vector2(velocidadMovimiento*1, balaEnemigo.linearVelocity.y);
+        if (collision.gameObject.tag == "protagonista")
+        {
+            Destroy(gameObject);
+        }
     }
 }

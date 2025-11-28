@@ -17,6 +17,7 @@ TagManager:
   - CuerpoAcuerpo
   - "Mu\xF1ecoPrueba"
   - areaPescado
+  - InstakillCollider
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Deco
   - enemigo
   - limites
-  - 
+  - balaSlimes
   - 
   - 
   - 

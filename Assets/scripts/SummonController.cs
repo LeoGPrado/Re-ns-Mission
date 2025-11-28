@@ -5,7 +5,7 @@ public class SummonController : MonoBehaviour
 {
     
     [SerializeField] private GameObject orbPrefab;
-    [SerializeField] private float range = 5f;
+    [SerializeField] private float range = 7f;
     [SerializeField] private float fireRate = 0.5f;
    
     
@@ -14,6 +14,7 @@ public class SummonController : MonoBehaviour
     void Start()
     {
         InvokeRepeating("DoDmg", 0f, fireRate);
+        Destroy(gameObject, 15f);
 
     }
 

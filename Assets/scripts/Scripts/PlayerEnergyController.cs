@@ -34,6 +34,7 @@ public class PlayerEnergyController : MonoBehaviour
         if(currentMana >= maxMana)
         {
             energycharged = true;
+            
 
         }
     }
@@ -60,6 +61,7 @@ public class PlayerEnergyController : MonoBehaviour
         energycharged = false;
         usedUltimate = true;
         currentMana = baseMana;
+        
 
 
     }

@@ -15,6 +15,7 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private bool momentoMejora = true;
     
 
+
     [SerializeField] private Transform player;
     [SerializeField] private GameObject mascotaPrefab;
 
@@ -27,7 +28,7 @@ public class PanelMejoras : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (min.minutos == 2 && momentoMejora)
+        if (min.minutos == 2 && momentoMejora || min.minutos == 4 && momentoMejora)
         {
             Invoke("Mejora", 0f);
             Time.timeScale = 0f;
@@ -44,7 +45,7 @@ public class PanelMejoras : MonoBehaviour
             Heart.contador -= 2;
 
         }
-        
+
         switch (Heart.contador)
         {
             case 1: Heart.Corazon1.SetActive(true); break;
@@ -53,7 +54,7 @@ public class PanelMejoras : MonoBehaviour
             case 4: Heart.Corazon4.SetActive(true); break;
         }
 
-        
+
     }
 
 
@@ -61,23 +62,24 @@ public class PanelMejoras : MonoBehaviour
     {
         DesactivarPanel();
         DoorHp.CurarHP(curacion);
-        
+
     }
 
     public void InvocarMascota()
     {
         DesactivarPanel();
         Instantiate(mascotaPrefab, player.transform.position, Quaternion.identity);
-        
+
     }
 
 
     void Mejora()
     {
-        
+
         panel.SetActive(true);
         StartCoroutine(SeleccionMejoras());
         momentoMejora = false;
+        StartCoroutine(MejoraActivate());
 
 
     }
@@ -86,6 +88,12 @@ public class PanelMejoras : MonoBehaviour
     {
         yield return new WaitForSeconds(duracionMejoras);
         DesactivarPanel();
+    }
+
+    IEnumerator MejoraActivate()
+    {
+        yield return new WaitForSeconds(30f);
+        momentoMejora = true;
     }
 
     void DesactivarPanel()

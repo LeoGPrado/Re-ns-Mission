@@ -107,6 +107,7 @@ public class MedidorArteEspecial : MonoBehaviour
 
             if(cdTimer <= 0)
             {
+                playerMana.usedUltimate = false;
                 isOnCooldown = false;
                 if (ultCooldownOverlay) ultCooldownOverlay.fillAmount = 0;
                 if (cdText) cdText.gameObject.SetActive(false);

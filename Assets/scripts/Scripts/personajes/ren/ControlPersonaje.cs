@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ControlPersonaje : MonoBehaviour
@@ -23,6 +22,8 @@ public class ControlPersonaje : MonoBehaviour
 
     //vida
     [SerializeField] public int vidaInicial = 5;
+    [SerializeField] float duracionInvulnerabilidad = 1f;
+    public bool jugadorInvulnerable = false;
 
     //corazones de vida
     public GameObject Corazon1;
@@ -63,7 +64,7 @@ public class ControlPersonaje : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        if(contador > 5)
+        if (contador > 5)
         {
             contador = 5;
         }
@@ -95,7 +96,7 @@ public class ControlPersonaje : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
-            
+
             horizontal = Input.GetAxisRaw("Horizontal");
             ren.linearVelocity = new Vector2(horizontal * velocidadMovimiento, ren.linearVelocity.y);
 
@@ -109,9 +110,9 @@ public class ControlPersonaje : MonoBehaviour
 
         }
 
-         bool Moviendose = (horizontal != 0 || vertical != 0);
-         animRen.SetBool("SeMueve", Moviendose);
-         
+        bool Moviendose = (horizontal != 0 || vertical != 0);
+        animRen.SetBool("SeMueve", Moviendose);
+
 
     }
 
@@ -119,7 +120,9 @@ public class ControlPersonaje : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            //contador++;
+
+            if (jugadorInvulnerable) return;
+
             if (contador == 1)
             {
                 Corazon1.SetActive(false);
@@ -150,8 +153,13 @@ public class ControlPersonaje : MonoBehaviour
                 contador++;
             }
             perderVida();
+
+            animRen.SetTrigger("HeridoP");
+
+            StartCoroutine(Invulnerabilidad());
+
         }
-        
+
     }
 
     public void perderVida()
@@ -171,7 +179,14 @@ public class ControlPersonaje : MonoBehaviour
         }
     }
 
+    private IEnumerator Invulnerabilidad()
+ 
+    {
+        jugadorInvulnerable = true;
+        yield return new WaitForSeconds(duracionInvulnerabilidad);
+        jugadorInvulnerable = false;
 
+    }
     private void activar()
     {
         desactivar = false;

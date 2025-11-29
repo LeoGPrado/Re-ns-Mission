@@ -19,13 +19,11 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private GameObject mascotaPrefab;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         curacion = 1000;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (min.minutos == 2 && momentoMejora || min.minutos == 4 && momentoMejora)

@@ -18,6 +18,7 @@ TagManager:
   - "Mu\xF1ecoPrueba"
   - areaPescado
   - InstakillCollider
+  - PasarCiudad
   layers:
   - Default
   - TransparentFX

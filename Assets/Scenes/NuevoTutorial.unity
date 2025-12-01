@@ -2639,7 +2639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487981431}
   - component: {fileID: 487981433}
-  - component: {fileID: 487981432}
+  - component: {fileID: 487981434}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -2666,7 +2666,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &487981432
+--- !u!222 &487981433
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487981430}
+  m_CullTransparentMesh: 1
+--- !u!114 &487981434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2675,7 +2683,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 487981430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -2686,28 +2694,77 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 31
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: SELECCIONAR
---- !u!222 &487981433
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487981430}
-  m_CullTransparentMesh: 1
+  m_text: Seleccionar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
+  m_sharedMaterial: {fileID: -295203547670173032, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &517830360
 GameObject:
   m_ObjectHideFlags: 0
@@ -3878,25 +3935,30 @@ MonoBehaviour:
   APersoaje: {fileID: 0}
   textoDialogoInicial: {fileID: 275919842}
   dialogosIniciales:
-  - "Bienvenido al tutorial de Ren\u2019s Mission, Para continuar haz clic en la
-    flecha o presiona E"
-  - Para moverte por el escenario utiliza las teclas                            W,
-    A, S, D.
-  - "Lo que ves ahora es un maniqui de entrenamiento. Te servir\xE1 para practicar."
-  - A continuacion te mostraremos como funciona las armas a distancia
-  - "Con clic izquierdo podr\xE1s realizar el ataque normal del arma."
-  - Cada arma tiene un ataque especial,lo podras usar al recargar el medidor que
-    esta en la esquinja derecha inferior de la pantalla.
-  - El medidor se recarga matando enemigos pero esta vez se recargara de manera automatica.
-    Presiona click derecho para usarlo.
-  - "Ahora que ya aprendiste a manejar las armas a distancia se te ense\xF1ara a
-    manejar las armas cuerpo a cuerpo"
-  - recuerda dar click izquierdo para el ataque normal y click derecho para el especial.
-  - "Recuerda: con las armas cuerpo a cuerpo debes golpear y retroceder al mismo
-    tiempo. Eres un mago, no un caballero, as\xED que no te quedes demasiado cerca
-    del enemigo."
-  - "Ahora que ya aprendiste lo basico, haz clic en la flecha una vez m\xE1s para
-    comenzar la aventura"
+  - "<color=#FFD700>Welcome</color> to the <color=#8A2BE2>Ren\u2019s Mission</color>
+    tutorial.   To continue, click the <color=#FFA500>arrow</color> or press <color=#7CFC00>E</color>."
+  - 'To move around the area, use the <color=#7CFC00>W</color>, <color=#7CFC00>A</color>,
+    <color=#7CFC00>S</color>, <color=#7CFC00>D</color> keys. '
+  - 'What you see now is a <color=#FFA500>training dummy</color>.   It will help
+    you <color=#00BFFF>practice</color>. '
+  - 'Next, we will show you how <color=#00BFFF>ranged weapons</color> work. '
+  - "With the <color=#7CFC00>left click</color>, you can perform the weapon\u2019s
+    <color=#FFA500>normal attack</color>. "
+  - 'Each weapon has a <color=#FFA500>special attack</color>,   which you can use
+    once you recharge the meter located at the   <color=#00BFFF>bottom-right corner</color>
+    of the screen. '
+  - 'The meter recharges by defeating enemies,   but this time it will refill <color=#00BFFF>automatically</color>.  
+    Press <color=#7CFC00>right click</color> to use it. '
+  - "Now that you\u2019ve learned how to use <color=#00BFFF>ranged weapons</color>,  
+    you will be taught how to use <color=#FFA500>melee weapons</color>. "
+  - 'Remember to use <color=#7CFC00>left click</color> for the <color=#FFA500>normal
+    attack</color>   and <color=#7CFC00>right click</color> for the <color=#00BFFF>special
+    attack</color>. '
+  - "Remember: with <color=#FFA500>melee weapons</color>, you must  <color=#00BFFF>attack
+    and step back</color> at the same time. You\u2019re a <color=#7CFC00>wizard</color>,
+    not a knight, so don\u2019t stay too close to the enemy. "
+  - "Now that you\u2019ve learned the basics, click the <color=#FFA500>arrow</color>
+    or press <color=#7CFC00>E</color> once more   to <color=#00BFFF>begin your adventure</color>."
 --- !u!4 &850882798
 Transform:
   m_ObjectHideFlags: 0
@@ -11282,7 +11344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531668995}
   - component: {fileID: 1531668997}
-  - component: {fileID: 1531668996}
+  - component: {fileID: 1531668998}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -11309,7 +11371,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1531668996
+--- !u!222 &1531668997
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531668994}
+  m_CullTransparentMesh: 1
+--- !u!114 &1531668998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11318,7 +11388,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531668994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -11329,28 +11399,77 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 31
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: SELECCIONAR
---- !u!222 &1531668997
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531668994}
-  m_CullTransparentMesh: 1
+  m_text: SELECCIONAR
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
+  m_sharedMaterial: {fileID: -295203547670173032, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1587524596
 GameObject:
   m_ObjectHideFlags: 0

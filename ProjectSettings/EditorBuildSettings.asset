@@ -12,20 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/CinematicaInicial.unity
     guid: cbc6c61fe01b5414194cd9c2f57b3ae3
   - enabled: 1
-    path: Assets/Scenes/FinDemo.unity
-    guid: e7df6e25fe1957341b8505611ccb29c6
+    path: Assets/Scenes/NuevoTutorial.unity
+    guid: c756e109c2b5e4542b6450b23499e6dc
+  - enabled: 1
+    path: Assets/Scenes/ArrastrarRen.unity
+    guid: 17750c233db2faa4a92f345e76c88674
+  - enabled: 1
+    path: Assets/Scenes/CinematicaPostTutorial.unity
+    guid: 07a2b215dde59e9478caeb9f1ae8fa25
   - enabled: 1
     path: Assets/Scenes/prueba mapa 1.unity
     guid: d926556e3e2dd7449a356745536d1458
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 1eeda41456eded543beb4aa7bda99b6f
-  - enabled: 1
     path: Assets/Scenes/Victoria.unity
     guid: 93e9aea278e32e44fa690bfc011e444f
-  - enabled: 1
-    path: Assets/Scenes/CinematicaPostTutorial.unity
-    guid: 07a2b215dde59e9478caeb9f1ae8fa25
   - enabled: 1
     path: Assets/Scenes/prueba mapa 2.unity
     guid: bb81ead166bf5d84e991c3e0e1342d8d
@@ -34,13 +34,10 @@ EditorBuildSettings:
     guid: 61e3042febbd14f4a93357621ae06a87
   - enabled: 1
     path: Assets/Scenes/prueba mapa 3.unity
-    guid: 4bcae7c549994244fb17dcf9f6a0ef60
+    guid: 37fdeeb1454bdc84cbc846b60bc4293a
   - enabled: 1
     path: Assets/Scenes/FinDelJuego.unity
     guid: 926377463ed87c34187e780db5aca777
-  - enabled: 1
-    path: Assets/Scenes/NuevoTutorial.unity
-    guid: c756e109c2b5e4542b6450b23499e6dc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

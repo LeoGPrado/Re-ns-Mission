@@ -31,7 +31,7 @@ public class ArrastrarRen : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         if (Entro==true)
         {
-            SceneManager.LoadScene("prueba mapa 1");
+            SceneManager.LoadScene("NuevoTutorial");
         }
     }
 }

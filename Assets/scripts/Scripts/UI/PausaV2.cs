@@ -5,6 +5,7 @@ public class PausaV2 : MonoBehaviour
 {
 
     public GameObject ObjetoMenuPausa;
+    public GameObject CanvasGameplay;
     public bool Pausa = false;
 
     public static PausaV2 pausa;
@@ -34,6 +35,8 @@ public class PausaV2 : MonoBehaviour
     public void Continuar()
     {
         ObjetoMenuPausa.SetActive(false);
+        CanvasGameplay.SetActive(true);
+
         Pausa = false;
 
 
@@ -47,6 +50,8 @@ public class PausaV2 : MonoBehaviour
     {
         Pausa = true;
         ObjetoMenuPausa.SetActive(true);
+        CanvasGameplay.SetActive(false);
+
 
         Time.timeScale = 0;
         Cursor.visible = true;

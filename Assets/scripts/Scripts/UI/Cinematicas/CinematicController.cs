@@ -18,15 +18,15 @@ public class CinematicController : MonoBehaviour
 
     void AlTerminarVideo(VideoPlayer vp)
     {
-        LoadNextScene();
+        SiguienteEscena();
     }
 
     public void SaltarVideo()
     {
-        LoadNextScene();
+        SiguienteEscena();
     }
 
-    void LoadNextScene()
+    void SiguienteEscena()
     {
         SceneManager.LoadScene(siguienteEscena);
     }

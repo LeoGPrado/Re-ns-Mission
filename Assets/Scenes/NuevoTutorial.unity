@@ -3935,11 +3935,11 @@ MonoBehaviour:
   APersoaje: {fileID: 0}
   textoDialogoInicial: {fileID: 275919842}
   dialogosIniciales:
-  - "<color=#FFD700>Welcome</color> to the <color=#8A2BE2>Ren\u2019s Mission</color>
-    tutorial.   To continue, click the <color=#FFA500>arrow</color> or press <color=#7CFC00>E</color>."
+  - "Welcome to the <color=#8A2BE2>Ren\u2019s Mission</color> tutorial.   To continue,
+    click the <color=#FFA500>arrow</color> or press <color=#C063FF>E</color>."
   - 'To move around the area, use the <color=#7CFC00>W</color>, <color=#7CFC00>A</color>,
     <color=#7CFC00>S</color>, <color=#7CFC00>D</color> keys. '
-  - 'What you see now is a <color=#FFA500>training dummy</color>.   It will help
+  - 'What you see now is a <color=#8B5A2B>training dummy</color>.   It will help
     you <color=#00BFFF>practice</color>. '
   - 'Next, we will show you how <color=#00BFFF>ranged weapons</color> work. '
   - "With the <color=#7CFC00>left click</color>, you can perform the weapon\u2019s
@@ -12207,7 +12207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -973953775606313942, guid: 954267eb5aa68cf44b0a903446a4238d, type: 3}
+  m_Sprite: {fileID: 821119776748566927, guid: bf608b7542540bb49b7126419a0b9d4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17504,14 +17504,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3220758, g: 0.31038627, b: 0.8773585, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7817871516528041648, guid: 5d031c796f0d56845a89b6b0d1acc574, type: 3}
+  m_Sprite: {fileID: 2060844199748179992, guid: 5c5605042f54c4c4d89ad80c5657100e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

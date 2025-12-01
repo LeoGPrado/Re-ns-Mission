@@ -228,10 +228,11 @@ public class SlieControl : MonoBehaviour
 
         for (int i = 0; i < manaPartCount; i++)
         {
-            Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle.normalized * Random.Range(0.5f, 1.5f);
+            //Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle.normalized * Random.Range(0.5f, 1.5f);
             GameObject particle = Instantiate(manaPartícula, transform.position, Quaternion.identity);
+            //Instantiate(manaPartícula, spawnPos, Quaternion.identity);
 
-      
+
         }
     }
 

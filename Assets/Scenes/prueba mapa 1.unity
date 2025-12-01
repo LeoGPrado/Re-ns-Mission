@@ -399,7 +399,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1\xA1Defiende la Puerta hasta que amanezca!!"
+  m_text: 'Defend the Gate until sunrise!!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09c8280b92e32de46b98ebb7d687b6fc, type: 2}
   m_sharedMaterial: {fileID: 5713654448352698058, guid: 09c8280b92e32de46b98ebb7d687b6fc, type: 2}
@@ -38869,7 +38871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38883,10 +38885,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
-  slimeNormal: {fileID: 0}
-  slimeHielo: {fileID: 0}
-  slimeFuego: {fileID: 0}
-  slimeNaturaleza: {fileID: 0}
+  slimeNormal: {fileID: 4891012412717606429, guid: 00c9aab89b8c9d34f9a5e0aa774eda92, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 70287364f16c3f54b97d1be4473a2bb8, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 3a73b3eee0dd850448ef9dbfa42d02c2, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: 7109fc9dd40c48e4f8582c9b2ec33656, type: 3}
   punto1: {fileID: 1720703794}
   punto2: {fileID: 0}
   punto3: {fileID: 0}

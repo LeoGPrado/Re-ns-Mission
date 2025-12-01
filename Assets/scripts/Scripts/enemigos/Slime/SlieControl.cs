@@ -192,31 +192,12 @@ public class SlieControl : MonoBehaviour
     }
     public string confirmarElemento()
     {
-        if (slimeFuego == true)
-        {
-            print("slimeFuegoEsTrue");
-            return "fuego";
-        }
-        else if (slimeHielo == true)
-        {
+        if (slimeFuego) return "fuego";
+        if (slimeHielo) return "hielo";
+        if (slimeNaturaleza) return "naturaleza";
+        if (slime) return "normal";
 
-            return "hielo";
-        }
-        else if (slimeNaturaleza == true)
-        {
-
-            return "naturaleza";
-        }
-        else if (slime == true)
-        {
-
-            return "normal";
-        }
-        else
-        {
-            return "desconocido";
-        }
-        
+        return "desconocido";
     }
     public void quemarSlime()
     {
@@ -266,7 +247,7 @@ public class SlieControl : MonoBehaviour
     IEnumerator InvocacionDeBalaSlime()
     {
         Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(4f);
         activarDisparo = false;
     }
 }

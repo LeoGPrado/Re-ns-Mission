@@ -20,7 +20,7 @@ public class TutorialDialogos : MonoBehaviour
     //activarScripts
     public GameObject RenScripts;
     public TutorialControlP MPersonaje;
-    public TutorialArmas APersoaje;
+    public TutorialArmas APersonaje;
 
 
     //public GameObject armaTutorial;
@@ -57,7 +57,7 @@ public class TutorialDialogos : MonoBehaviour
     {
         RenScripts = GameObject.Find("personaje");
         MPersonaje= RenScripts.GetComponent<TutorialControlP>();
-        APersoaje=RenScripts.GetComponent<TutorialArmas>();
+        APersonaje = RenScripts.GetComponent<TutorialArmas>();
 
 
 
@@ -109,7 +109,7 @@ public class TutorialDialogos : MonoBehaviour
             else if (indiceDialogoInicial == 8)
             {
                 //selectorArmas
-                APersoaje.enabled = false;
+                APersonaje.enabled = false;
                 arcoActivado.SetActive(false);
                 AparecerSelectorArmasCuerpoACuerpo.SetActive(true);
             }
@@ -131,6 +131,6 @@ public class TutorialDialogos : MonoBehaviour
     }
     public void ActivarScriptAtacque()
     {
-        APersoaje.enabled = true;
+        APersonaje.enabled = true;
     }
 }

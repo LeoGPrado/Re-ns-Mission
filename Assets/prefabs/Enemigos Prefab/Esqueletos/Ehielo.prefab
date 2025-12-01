@@ -13,9 +13,7 @@ GameObject:
   - component: {fileID: 4139868696333227180}
   - component: {fileID: 1376289128139262805}
   - component: {fileID: -138810320447680425}
-  - component: {fileID: 7467787864324314476}
   - component: {fileID: 3056612014882842199}
-  - component: {fileID: 2544960743788468259}
   - component: {fileID: 3375965746480309621}
   - component: {fileID: -7826062763702756246}
   - component: {fileID: -3854872998054825988}
@@ -216,21 +214,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.486125, y: 0.75204766}
   m_EdgeRadius: 0
---- !u!114 &7467787864324314476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4891012412717606429}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 955d4bffc90298744a3debf81e1cd064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deteccionEnemigo: {fileID: 2544960743788468259}
-  balaEnemiga: {fileID: 3456130279922145432, guid: 1c7a13f7c02c1c644b378e2dc5858125, type: 3}
-  puntoAparicion: {fileID: 4890315612948643387}
 --- !u!95 &3056612014882842199
 Animator:
   serializedVersion: 7
@@ -253,42 +236,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &2544960743788468259
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4891012412717606429}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.16289711, y: 0}
-  m_Radius: 3.664443
 --- !u!195 &3375965746480309621
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -329,10 +276,16 @@ MonoBehaviour:
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
   manaPartCount: 4
   canDropMana: 1
+  objetivoPuerta: 0
+  objetivoRen: 1
   slimeFuego: 0
-  slimeHielo: 0
+  slimeHielo: 1
   slimeNaturaleza: 0
-  Slime: 1
+  Slime: 0
+  balaNormal: {fileID: 0}
+  puntoAparicion: {fileID: 0}
+  activarDisparo: 0
+  VerificarSlime: 0
 --- !u!114 &-3854872998054825988
 MonoBehaviour:
   m_ObjectHideFlags: 0

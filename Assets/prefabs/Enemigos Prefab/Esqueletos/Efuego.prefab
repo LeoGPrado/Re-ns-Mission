@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1376289128139262805}
   - component: {fileID: -138810320447680425}
   - component: {fileID: 3056612014882842199}
-  - component: {fileID: 2544960743788468259}
   - component: {fileID: 3375965746480309621}
   - component: {fileID: -7826062763702756246}
   - component: {fileID: -3854872998054825988}
@@ -237,42 +236,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &2544960743788468259
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4891012412717606429}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.16289711, y: 0}
-  m_Radius: 3.664443
 --- !u!195 &3375965746480309621
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -314,11 +277,11 @@ MonoBehaviour:
   manaPartCount: 4
   canDropMana: 1
   objetivoPuerta: 0
-  objetivoRen: 0
-  slimeFuego: 0
+  objetivoRen: 1
+  slimeFuego: 1
   slimeHielo: 0
   slimeNaturaleza: 0
-  Slime: 1
+  Slime: 0
   balaNormal: {fileID: 0}
   puntoAparicion: {fileID: 0}
   activarDisparo: 0

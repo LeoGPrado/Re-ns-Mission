@@ -127,8 +127,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 return;
             }
         }
-        else if (Input.GetMouseButtonDown(1)&&verificar==true) 
+        else if (Input.GetMouseButtonDown(0) && !atacando)
         {
+            atacando = true;
+
             if (index.armasIndex == 4)
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
@@ -234,6 +236,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         yield return new WaitForSeconds(ActivarArmaE);
 
         arma.enabled = true;
+        atacando = false;
 
     }
 

@@ -179,11 +179,6 @@ public class ControlPersonaje : MonoBehaviour
         }
     }
 
-    public void GanarVida()
-    {
-        vidaInicial++;
-    }
-
     private IEnumerator Invulnerabilidad()
  
     {
@@ -195,5 +190,23 @@ public class ControlPersonaje : MonoBehaviour
     private void activar()
     {
         desactivar = false;
+    }
+
+    public void ActualizarCorazones()
+    {
+        Corazon1.SetActive(vidaInicial >= 1);
+        Corazon2.SetActive(vidaInicial >= 2);
+        Corazon3.SetActive(vidaInicial >= 3);
+        Corazon4.SetActive(vidaInicial >= 4);
+        Corazon5.SetActive(vidaInicial >= 5);
+    }
+
+    public void GanarVida()
+    {
+        if (vidaInicial < 5)
+            vidaInicial++;
+
+        ActualizarCorazones();
+
     }
 }

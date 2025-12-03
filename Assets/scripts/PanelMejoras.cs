@@ -44,7 +44,9 @@ public class PanelMejoras : MonoBehaviour
 
         }
 
-        switch (Heart.contador)
+        ControlPersonaje.Ren.GanarVida();
+
+        /*switch (Heart.contador)
         {
             case 1: Heart.Corazon1.SetActive(true);
                 ControlPersonaje.Ren.GanarVida(); break;
@@ -54,7 +56,7 @@ public class PanelMejoras : MonoBehaviour
                 ControlPersonaje.Ren.GanarVida(); break;
             case 4: Heart.Corazon4.SetActive(true);
                 ControlPersonaje.Ren.GanarVida(); break;
-        }
+        }*/
 
 
     }

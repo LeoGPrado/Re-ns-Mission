@@ -117,7 +117,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
                 srPincel.enabled = false;
 
-                Ren.SetTrigger("EspecialPincelP");
+                Ren.SetTrigger("AtaquePincelP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPincel));
 

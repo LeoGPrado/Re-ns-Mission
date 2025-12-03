@@ -18,7 +18,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
     [SerializeField] private PlayerEnergyController playermana;
 
     [SerializeField] Animator Ren;
-
+    public bool atacando = false;
 
 
     public static ControlDeAnimacionesArmas ControlEspecial;
@@ -43,8 +43,10 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !atacando)
         {
+            atacando = true;
+
             if (index.armasIndex == 4)
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
@@ -108,6 +110,16 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 Ren.SetTrigger("AtaqueCuchillaP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srCuchilla));
+
+            }
+            else if (Pincel != null && Pincel.activeInHierarchy)
+            {
+                SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
+                srPincel.enabled = false;
+
+                Ren.SetTrigger("EspecialPincelP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srPincel));
 
             }
             else

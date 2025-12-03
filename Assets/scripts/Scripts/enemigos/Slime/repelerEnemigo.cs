@@ -92,6 +92,10 @@ public class repelerEnemigo : MonoBehaviour
             print("esta entrando en trigger");
             StartCoroutine(FrenarRetroceso());*/
         }
+        if (collision.gameObject.tag == "areaPescado")
+        {
+            SlieControl.slime.controlVida();
+        }
 
     }
 

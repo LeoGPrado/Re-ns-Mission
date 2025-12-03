@@ -179,6 +179,11 @@ public class ControlPersonaje : MonoBehaviour
         }
     }
 
+    public void GanarVida()
+    {
+        vidaInicial++;
+    }
+
     private IEnumerator Invulnerabilidad()
  
     {

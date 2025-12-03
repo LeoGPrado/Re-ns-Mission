@@ -46,10 +46,14 @@ public class PanelMejoras : MonoBehaviour
 
         switch (Heart.contador)
         {
-            case 1: Heart.Corazon1.SetActive(true); break;
-            case 2: Heart.Corazon2.SetActive(true); break;
-            case 3: Heart.Corazon3.SetActive(true); break;
-            case 4: Heart.Corazon4.SetActive(true); break;
+            case 1: Heart.Corazon1.SetActive(true);
+                ControlPersonaje.Ren.GanarVida(); break;
+            case 2: Heart.Corazon2.SetActive(true);
+                ControlPersonaje.Ren.GanarVida(); break;
+            case 3: Heart.Corazon3.SetActive(true);
+                ControlPersonaje.Ren.GanarVida(); break;
+            case 4: Heart.Corazon4.SetActive(true);
+                ControlPersonaje.Ren.GanarVida(); break;
         }
 
 

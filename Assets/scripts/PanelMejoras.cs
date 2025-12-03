@@ -38,11 +38,11 @@ public class PanelMejoras : MonoBehaviour
     {
         DesactivarPanel();
 
-        if (Heart.contador > 1)
+        /*if (Heart.contador > 1)
         {
             Heart.contador -= 2;
 
-        }
+        }*/
 
         ControlPersonaje.Ren.GanarVida();
 

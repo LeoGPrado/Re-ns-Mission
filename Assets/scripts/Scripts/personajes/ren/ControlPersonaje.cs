@@ -203,10 +203,11 @@ public class ControlPersonaje : MonoBehaviour
 
     public void GanarVida()
     {
-        if (vidaInicial < 5)
-            vidaInicial++;
 
-        ActualizarCorazones();
+            vidaInicial = 5;
+            ActualizarCorazones();
+
+        //ActualizarCorazones();
 
     }
 }

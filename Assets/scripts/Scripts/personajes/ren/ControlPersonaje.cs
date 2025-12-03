@@ -205,6 +205,7 @@ public class ControlPersonaje : MonoBehaviour
     {
 
             vidaInicial = 5;
+            contador = 1;
             ActualizarCorazones();
 
         //ActualizarCorazones();

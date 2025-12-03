@@ -94,6 +94,16 @@ public class repelerEnemigo : MonoBehaviour
         }
         if (collision.gameObject.tag == "areaPescado")
         {
+            Vector2 direccion = (transform.position - collision.transform.position).normalized;
+
+            // Aplicar fuerza de retroceso
+            slimeR.AddForce(direccion * 500, ForceMode2D.Impulse);
+
+            // Detener movimiento temporalmente si lo necesitas
+            slimeScript.enabled = false;
+            StartCoroutine(FrenarRetroceso());
+
+            // Daño
             SlieControl.slime.controlVida();
         }
 

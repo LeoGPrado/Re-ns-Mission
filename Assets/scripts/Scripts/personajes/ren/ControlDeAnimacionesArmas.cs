@@ -207,6 +207,16 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srPescado));
  
             }
+            else if (Pincel != null && Pincel.activeInHierarchy)
+            {
+                SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
+                srPincel.enabled = false;
+
+                Ren.SetTrigger("EspecialPincelP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srPincel));
+
+            }
             else
             {
                 return;

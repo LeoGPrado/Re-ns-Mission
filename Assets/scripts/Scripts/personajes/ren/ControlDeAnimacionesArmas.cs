@@ -127,7 +127,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 return;
             }
         }
-        else if (Input.GetMouseButtonDown(0) && !atacando)
+        else if (Input.GetMouseButtonDown(1) && !atacando && verificar==true)
         {
             atacando = true;
 

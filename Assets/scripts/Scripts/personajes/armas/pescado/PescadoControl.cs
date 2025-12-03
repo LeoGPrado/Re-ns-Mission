@@ -5,7 +5,6 @@ public class PescadoControl : MonoBehaviour
 {
     public Transform FlipPescado;
 
-
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer Pescado;
 
@@ -42,16 +41,6 @@ public class PescadoControl : MonoBehaviour
 
             Pescado.transform.localPosition = FlipPescado.localPosition;
             Pescado.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-
-        }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-
         }
     }
 }

@@ -45022,6 +45022,14 @@ PrefabInstance:
       propertyPath: balaEspecialPrefab
       value: 
       objectReference: {fileID: 31823557697410391, guid: a1986fd1dbf69ac42ac92ba350b76e50, type: 3}
+    - target: {fileID: 6253808796371425711, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275741657326952805, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e84e44befa5b01447a84c3e93dcfd5df, type: 3}
     - target: {fileID: 7365231029725861165, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_Name
       value: personaje

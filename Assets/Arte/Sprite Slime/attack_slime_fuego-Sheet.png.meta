@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 0b8ee0b9dbbbc88428bdb72feb09aeab
+guid: 1281ca61734ecc64bae40565d9c54d12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6506632418174536269
-    second: tiles pueblo_0
+      213: -941356744957569246
+    second: attack_slime_fuego-Sheet_0
+  - first:
+      213: 8697622251324956972
+    second: attack_slime_fuego-Sheet_1
+  - first:
+      213: 985475082668811528
+    second: attack_slime_fuego-Sheet_2
+  - first:
+      213: -2958221851995211624
+    second: attack_slime_fuego-Sheet_3
+  - first:
+      213: -4631508611392220974
+    second: attack_slime_fuego-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tiles pueblo_0
+      name: attack_slime_fuego-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 224
-        height: 224
+        x: 11
+        y: 7
+        width: 10
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4a8551f5b33c4a50800000000000000
-      internalID: 6506632418174536269
+      spriteID: 227d2e92701afe2f0800000000000000
+      internalID: -941356744957569246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime_fuego-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 9
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21e1c80b5924b870800000000000000
+      internalID: 8697622251324956972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime_fuego-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 9
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805297dcd5c1dad00800000000000000
+      internalID: 985475082668811528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime_fuego-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 9
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898f60126e842f6d0800000000000000
+      internalID: -2958221851995211624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime_fuego-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 9
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0ddcbe47399bfb0800000000000000
+      internalID: -4631508611392220974
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tiles pueblo_0: 6506632418174536269
+      attack_slime_fuego-Sheet_0: -941356744957569246
+      attack_slime_fuego-Sheet_1: 8697622251324956972
+      attack_slime_fuego-Sheet_2: 985475082668811528
+      attack_slime_fuego-Sheet_3: -2958221851995211624
+      attack_slime_fuego-Sheet_4: -4631508611392220974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

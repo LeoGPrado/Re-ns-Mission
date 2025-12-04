@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 110b488f9e1886240a12b1d5b345f08d
+guid: 627649d936385484a8706987cb44e2d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6349520027531120541
-    second: objetos_0
+      213: 6289026703992042890
+    second: attack_slime_tierra-Sheet_0
   - first:
-      213: 2527720842142326344
-    second: objetos_1
+      213: 4237404012687597162
+    second: attack_slime_tierra-Sheet_1
   - first:
-      213: 2115978897144711606
-    second: objetos_2
+      213: 7142116402868754728
+    second: attack_slime_tierra-Sheet_2
   - first:
-      213: -465773058034396076
-    second: objetos_3
+      213: -2403752351426370078
+    second: attack_slime_tierra-Sheet_3
   - first:
-      213: 7692122196500718559
-    second: objetos_4
+      213: -2753044162339215776
+    second: attack_slime_tierra-Sheet_4
   - first:
-      213: 2471942499591305465
-    second: objetos_5
-  - first:
-      213: 6251317240380822215
-    second: objetos_6
-  - first:
-      213: 6690336577493327282
-    second: objetos_7
+      213: 4138652443304985369
+    second: attack_slime_tierra-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,34 +128,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: objetos_0
+      name: attack_slime_tierra-Sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 127
-        width: 80
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9f8837e2d60e1850800000000000000
-      internalID: 6349520027531120541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetos_1
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 169
-        width: 14
+        x: 12
+        y: 6
+        width: 8
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84e9e37a6b4441320800000000000000
-      internalID: 2527720842142326344
+      spriteID: a853462777c174750800000000000000
+      internalID: 6289026703992042890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetos_2
+      name: attack_slime_tierra-Sheet_1
       rect:
         serializedVersion: 2
-        x: 11
-        y: 77
-        width: 41
-        height: 37
+        x: 43
+        y: 7
+        width: 10
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b9888498977d5d10800000000000000
-      internalID: 2115978897144711606
+      spriteID: a6e1f02bf784eca30800000000000000
+      internalID: 4237404012687597162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetos_3
+      name: attack_slime_tierra-Sheet_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 98
-        width: 25
-        height: 24
+        x: 72
+        y: 9
+        width: 16
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45499e91fdd3989f0800000000000000
-      internalID: -465773058034396076
+      spriteID: 8299b712705ed1360800000000000000
+      internalID: 7142116402868754728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetos_4
+      name: attack_slime_tierra-Sheet_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 104
-        width: 54
-        height: 47
+        x: 102
+        y: 9
+        width: 20
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd3a2531268efba60800000000000000
-      internalID: 7692122196500718559
+      spriteID: 2e5a835d8f724aed0800000000000000
+      internalID: -2403752351426370078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetos_5
+      name: attack_slime_tierra-Sheet_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 30
-        width: 14
-        height: 32
+        x: 133
+        y: 9
+        width: 22
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f8b4514b9a1e4220800000000000000
-      internalID: 2471942499591305465
+      spriteID: 066eeccabe83bc9d0800000000000000
+      internalID: -2753044162339215776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetos_6
+      name: attack_slime_tierra-Sheet_5
       rect:
         serializedVersion: 2
-        x: 31
-        y: 33
-        width: 34
-        height: 30
+        x: 166
+        y: 9
+        width: 20
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,30 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c29c23c8e321c650800000000000000
-      internalID: 6251317240380822215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetos_7
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 95
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2bdda499ba9d8dc50800000000000000
-      internalID: 6690336577493327282
+      spriteID: 9130ffb38727f6930800000000000000
+      internalID: 4138652443304985369
       vertices: []
       indices: 
       edges: []
@@ -323,14 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      objetos_0: 6349520027531120541
-      objetos_1: 2527720842142326344
-      objetos_2: 2115978897144711606
-      objetos_3: -465773058034396076
-      objetos_4: 7692122196500718559
-      objetos_5: 2471942499591305465
-      objetos_6: 6251317240380822215
-      objetos_7: 6690336577493327282
+      attack_slime_tierra-Sheet_0: 6289026703992042890
+      attack_slime_tierra-Sheet_1: 4237404012687597162
+      attack_slime_tierra-Sheet_2: 7142116402868754728
+      attack_slime_tierra-Sheet_3: -2403752351426370078
+      attack_slime_tierra-Sheet_4: -2753044162339215776
+      attack_slime_tierra-Sheet_5: 4138652443304985369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

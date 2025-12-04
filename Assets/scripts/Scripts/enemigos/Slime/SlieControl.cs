@@ -253,7 +253,7 @@ public class SlieControl : MonoBehaviour
 
     IEnumerator InvocacionDeBalaSlime()
     {
-        Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
+        Instantiate(balaNormal, puntoAparicion.position, Quaternion.identity);
         yield return new WaitForSecondsRealtime(4f);
         activarDisparo = false;
     }

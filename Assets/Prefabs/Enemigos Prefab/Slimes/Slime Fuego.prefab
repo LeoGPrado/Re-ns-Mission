@@ -296,6 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   velocidad: 3
+  enemigoRB: {fileID: 0}
   VidaEnemigo: 10
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
   manaPartCount: 4
@@ -306,7 +307,7 @@ MonoBehaviour:
   slimeHielo: 0
   slimeNaturaleza: 0
   Slime: 0
-  balaNormal: {fileID: 0}
+  balaNormal: {fileID: 8641117397932976541, guid: 5290f0268fd590a4eb8042ff06791b7a, type: 3}
   puntoAparicion: {fileID: 8735429471866289084}
   activarDisparo: 0
   VerificarSlime: 1

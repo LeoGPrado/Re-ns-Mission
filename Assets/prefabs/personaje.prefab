@@ -662,6 +662,7 @@ MonoBehaviour:
   personaje: {fileID: 4706434216651177473}
   cuchillas: {fileID: 4029553892581726688}
   cooldown: 0.5
+  ActivarEspacialCuchilla: 0
 --- !u!1 &4248948275373792429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &794337398655325102
 Transform:
   m_ObjectHideFlags: 0
@@ -1426,10 +1427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad175260150e9b4b93fd801b2040c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: 
+  canvasDerrota: {fileID: 0}
+  canvasGameplay: {fileID: 0}
   ren: {fileID: 0}
   animRen: {fileID: 145401186623800058}
-  NDerrota: 
   DetectarEnemigo: {fileID: 0}
   puntoDeAtaque: {fileID: 493896438784138397}
   sr: {fileID: 4706434216651177473}
@@ -1437,6 +1438,8 @@ MonoBehaviour:
   boxRenIzquierdaAtaque: {fileID: 7300663867261070810}
   espada: {fileID: 6253808796371425711}
   vidaInicial: 5
+  duracionInvulnerabilidad: 1
+  jugadorInvulnerable: 0
   Corazon1: {fileID: 0}
   Corazon2: {fileID: 0}
   Corazon3: {fileID: 0}
@@ -1489,7 +1492,9 @@ MonoBehaviour:
   verificarMazo: 0
   index: {fileID: 0}
   medidor: {fileID: 0}
+  playermana: {fileID: 0}
   Ren: {fileID: 145401186623800058}
+  atacando: 0
   verificar: 0
 --- !u!114 &5757480769003061603
 MonoBehaviour:
@@ -1505,7 +1510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ren: {fileID: 9061771779671193141}
   renCuerpo: {fileID: 7991573791341615264}
-  renAnimaciones: {fileID: 0}
   renScript: {fileID: 3466108242841532832}
   FuerzaDeRetroceso: 10
 --- !u!114 &4558935199646370775

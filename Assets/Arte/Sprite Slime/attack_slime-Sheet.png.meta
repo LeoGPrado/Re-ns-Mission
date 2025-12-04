@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 0b8ee0b9dbbbc88428bdb72feb09aeab
+guid: 782ad2cbec2eea34e97e202f6fe68d54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6506632418174536269
-    second: tiles pueblo_0
+      213: -8294532482661404415
+    second: attack_slime-Sheet_0
+  - first:
+      213: 5977946452865800386
+    second: attack_slime-Sheet_1
+  - first:
+      213: 9140319437603231611
+    second: attack_slime-Sheet_2
+  - first:
+      213: 5989041028675925978
+    second: attack_slime-Sheet_3
+  - first:
+      213: 5429840347742493895
+    second: attack_slime-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tiles pueblo_0
+      name: attack_slime-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 224
-        height: 224
+        x: 11
+        y: 7
+        width: 10
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4a8551f5b33c4a50800000000000000
-      internalID: 6506632418174536269
+      spriteID: 101370147a6e3ec80800000000000000
+      internalID: -8294532482661404415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 9
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c85f5950aee5f250800000000000000
+      internalID: 5977946452865800386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 9
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7750fbd910f8de70800000000000000
+      internalID: 9140319437603231611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 9
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7f77395195d1350800000000000000
+      internalID: 5989041028675925978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_slime-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 9
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc564a170baa5b40800000000000000
+      internalID: 5429840347742493895
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tiles pueblo_0: 6506632418174536269
+      attack_slime-Sheet_0: -8294532482661404415
+      attack_slime-Sheet_1: 5977946452865800386
+      attack_slime-Sheet_2: 9140319437603231611
+      attack_slime-Sheet_3: 5989041028675925978
+      attack_slime-Sheet_4: 5429840347742493895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

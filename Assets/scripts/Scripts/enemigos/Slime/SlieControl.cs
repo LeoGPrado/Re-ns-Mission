@@ -15,7 +15,7 @@ public class SlieControl : MonoBehaviour
     //public bool DetectaAlJugador = false;
 
     public static SlieControl slime;
-
+    public Rigidbody enemigoRB;
     private NavMeshAgent agent;
     private Transform player, door;
     [SerializeField] public int VidaEnemigo;
@@ -79,6 +79,7 @@ public class SlieControl : MonoBehaviour
 
     void Start()
     {
+
         if(objetivoPuerta == true)
         {
             objPuerta = GameObject.Find("PuntoEntrada");
@@ -111,6 +112,7 @@ public class SlieControl : MonoBehaviour
 
     void Update()
     {
+
         //area de deteccion
         Vector2 direccion = player.position - transform.position;
         if (direccion.magnitude < 5 && !activarDisparo)
@@ -215,6 +217,11 @@ public class SlieControl : MonoBehaviour
 
 
         }
+    }
+
+    public void congelamiento()
+    {
+        agent.isStopped = false;
     }
 
     IEnumerator DropAndCooldown()

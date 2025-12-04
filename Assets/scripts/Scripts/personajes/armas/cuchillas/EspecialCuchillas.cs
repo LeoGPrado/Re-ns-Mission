@@ -7,10 +7,10 @@ public class EspecialCuchillas : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            print("congelando NAVMESH");
+            //print("congelando NAVMESH");
             NavMeshAgent agent = collision.GetComponent<NavMeshAgent>();
             agent.isStopped = true;
-            SlieControl.slime.CongelamientoControl();
+            collision.GetComponent<SlieControl>().CongelamientoControl();
         }
     }
 }

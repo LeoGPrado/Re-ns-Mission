@@ -4301,7 +4301,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 6.64
+  orthographic size: 3.54
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4326,7 +4326,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.436628, y: 10.54682, z: -10}
+  m_LocalPosition: {x: -14.09081, y: 25.07299, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45214,6 +45214,22 @@ PrefabInstance:
       propertyPath: ultiScaleMultiplier
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2469749297486188994, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.42500004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469749297486188994, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.2375004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469749297486188994, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469749297486188994, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2608597339268149911, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Especial
       value: 
@@ -45307,9 +45323,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: medidor
+      value: 
+      objectReference: {fileID: 1531625472}
+    - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: cooldown
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: playerEC
+      value: 
+      objectReference: {fileID: 1254898821}
     - target: {fileID: 3676463899190519846, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: balaNormal
       value: 

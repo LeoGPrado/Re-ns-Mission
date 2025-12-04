@@ -20,6 +20,10 @@ public class cuchillasControl : MonoBehaviour
     private bool puedeDisparar = true;
     public bool ActivarEspacialCuchilla=false;
 
+
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
+
     private void Awake()
     {
         if(controlCuchilla == null)
@@ -67,8 +71,9 @@ public class cuchillasControl : MonoBehaviour
         }
 
         //if (Input.GetMouseButtonDown(1)&& ActivarEspacialCuchilla)
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
         {
+            print("Entrando en medidor");
             DisparoEspecial();
         }
     }
@@ -94,10 +99,12 @@ public class cuchillasControl : MonoBehaviour
 
     void DisparoEspecial()
     {
+        playerEC.Ultimate();
 
         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
         ActivarEspacialCuchilla = false;
         Destroy(bala, 1f);
+        medidor.canUseUltimate = false;
 
     }
 }

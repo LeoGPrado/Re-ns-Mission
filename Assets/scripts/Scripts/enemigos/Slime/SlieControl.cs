@@ -261,7 +261,7 @@ public class SlieControl : MonoBehaviour
 
     public void CongelamientoControl()
     {
-        print("descongelando navmesh");
+        //print("descongelando navmesh");
         StartCoroutine(ExCongelamiento());
     }
 

@@ -66,7 +66,8 @@ public class cuchillasControl : MonoBehaviour
             StartCoroutine(DisparoConCooldown());
         }
 
-        if (Input.GetMouseButtonDown(1)&& ActivarEspacialCuchilla)
+        //if (Input.GetMouseButtonDown(1)&& ActivarEspacialCuchilla)
+        if (Input.GetMouseButtonDown(1))
         {
             DisparoEspecial();
         }

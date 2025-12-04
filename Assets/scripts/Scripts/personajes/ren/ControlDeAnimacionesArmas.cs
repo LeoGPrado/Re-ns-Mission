@@ -127,7 +127,8 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 return;
             }
         }
-        else if (Input.GetMouseButtonDown(1) && !atacando && verificar==true)
+        //verificar falta
+        else if (Input.GetMouseButtonDown(1) && !atacando)
         {
             atacando = true;
 
@@ -219,6 +220,18 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srPincel));
 
             }
+            else if (Cuchilla != null && Cuchilla.activeInHierarchy)
+            {
+                SpriteRenderer srCuchilla = Cuchilla.GetComponent<SpriteRenderer>();
+                srCuchilla.enabled = false;
+
+                Ren.SetTrigger("AtaqueCuchillaP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srCuchilla));
+
+            }
+
+
             else
             {
                 return;

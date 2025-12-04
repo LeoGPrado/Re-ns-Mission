@@ -1,16 +1,16 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EspecialCuchillas : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == "Enemigo")
+        {
+            print("congelando NAVMESH");
+            NavMeshAgent agent = collision.GetComponent<NavMeshAgent>();
+            agent.isStopped = true;
+            SlieControl.slime.CongelamientoControl();
+        }
     }
 }

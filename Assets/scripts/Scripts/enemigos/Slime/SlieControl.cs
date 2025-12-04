@@ -6,7 +6,7 @@ public class SlieControl : MonoBehaviour
 {
     public Transform objetivo;
     public float velocidad = 5f;
-    private Vector3 velo = Vector3.zero;
+    //private Vector3 velo = Vector3.zero;
     GameObject objPuerta;
     GameObject objPersonaje;
     //public Rigidbody2D slimeR;
@@ -121,13 +121,18 @@ public class SlieControl : MonoBehaviour
 
             if (VerificarSlime == true)
             {
+                //ControlPersonaje.Ren.DetectorSlime = true;
                 activarDisparo = true;
                 StartCoroutine(InvocacionDeBalaSlime());
+            }
+            else if(VerificarSlime == false){
+                //ControlPersonaje.Ren.DetectorSlime = false;
             }
 
         }
         else if (direccion.magnitude > 5 && !activarDisparo)
         {
+
             //activarDisparo = false;
             objetivo = door;
         }
@@ -219,10 +224,6 @@ public class SlieControl : MonoBehaviour
         }
     }
 
-    public void congelamiento()
-    {
-        agent.isStopped = false;
-    }
 
     IEnumerator DropAndCooldown()
     {
@@ -256,5 +257,17 @@ public class SlieControl : MonoBehaviour
         Instantiate(balaNormal, puntoAparicion.position, Quaternion.identity);
         yield return new WaitForSecondsRealtime(4f);
         activarDisparo = false;
+    }
+
+    public void CongelamientoControl()
+    {
+        print("descongelando navmesh");
+        StartCoroutine(ExCongelamiento());
+    }
+
+    IEnumerator ExCongelamiento()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        agent.isStopped = false;
     }
 }

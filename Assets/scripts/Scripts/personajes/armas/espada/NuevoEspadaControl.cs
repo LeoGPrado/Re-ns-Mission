@@ -10,6 +10,7 @@ public class NuevoEspadaControl : MonoBehaviour
     [SerializeField] SpriteRenderer Espada;
     public MedidorArteEspecial medidor;
     public PlayerEnergyController playerEC;
+    [SerializeField] GameObject muroPrefab;
 
     private void Start()
     {
@@ -45,5 +46,20 @@ public class NuevoEspadaControl : MonoBehaviour
             Espada.transform.localPosition = FlipEspada.localPosition + new Vector3(0f, 0f, 0f);
             Espada.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
         }
+
+
+        if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
+        {
+            MurodeFuego();
+        }
     }
+
+
+    void MurodeFuego()
+    {
+        Instantiate(muroPrefab, Espada.transform.position, Quaternion.identity);
+    }
+
+
+
 }

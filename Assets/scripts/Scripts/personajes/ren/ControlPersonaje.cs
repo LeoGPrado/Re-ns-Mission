@@ -38,6 +38,10 @@ public class ControlPersonaje : MonoBehaviour
 
     public bool desactivar;
 
+    //cantidadEnemigos
+    public int ContadorEnemigos=0;
+    public string ContadorEnemigosString="0";
+
     //movimiento
     public int velocidadMovimiento = 5;
     private void Awake()
@@ -55,6 +59,7 @@ public class ControlPersonaje : MonoBehaviour
 
         if (canvasDerrota != null)
             canvasDerrota.SetActive(false);
+        ContadorEnemigosString = ContadorEnemigos.ToString();
     }
 
     // Update is called once per frame
@@ -210,5 +215,10 @@ public class ControlPersonaje : MonoBehaviour
 
         //ActualizarCorazones();
 
+    }
+    public void AumentarContadorEnemigos()
+    {
+        ContadorEnemigos++;
+        ContadorEnemigosString = ContadorEnemigos.ToString();
     }
 }

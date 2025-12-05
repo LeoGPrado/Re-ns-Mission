@@ -167,8 +167,8 @@ public class SlieControl : MonoBehaviour
         {
             StartCoroutine(DropAndCooldown());
             Destroy(gameObject);
-            
-            
+            ControlPersonaje.Ren.AumentarContadorEnemigos();
+
         }
         else
         {

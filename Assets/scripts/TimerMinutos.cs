@@ -9,6 +9,16 @@ public class TimerMinutos : MonoBehaviour
     [SerializeField] private float elpTime = 0f;
     [SerializeField] private bool timeIsRunning = true;
 
+    public static TimerMinutos SeleccionarTiempo;
+    public string TiempoTotal;
+
+    public void Awake()
+    {
+        if (SeleccionarTiempo == null)
+        {
+            SeleccionarTiempo = this;
+        }
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +42,7 @@ public class TimerMinutos : MonoBehaviour
                 UpdateTimer(); //Mostrar el tiempo exacto (3min)
             }
         }
+        recolectarTiempo();
     }
 
     void UpdateTimer()
@@ -45,7 +56,10 @@ public class TimerMinutos : MonoBehaviour
         int sec = (int)elpTime % 30;
         minutesText.text = string.Format("{0:00}:{1:00}", min, sec); //$"{:00}:{sec:00}";
     }
-
+    public void recolectarTiempo()
+    {
+        TiempoTotal = minutesText.text;
+    }
 
 
 

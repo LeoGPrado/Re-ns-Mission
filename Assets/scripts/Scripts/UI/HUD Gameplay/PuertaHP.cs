@@ -6,6 +6,7 @@ public class PuertaHP : MonoBehaviour
 {
 
     [SerializeField] private Slider sliderVida;
+    //[SerializeField] public Slider sliderVidaFinDeJuego;
     [SerializeField] private int vidaMax = 650;
     [SerializeField] private int vidaActual;
 
@@ -13,7 +14,13 @@ public class PuertaHP : MonoBehaviour
     {
         vidaActual = vidaMax;
         sliderVida.maxValue = vidaMax;
+        //sliderVidaFinDeJuego.value = vidaMax;
         sliderVida.value = vidaActual;
+        //sliderVidaFinDeJuego.value = vidaActual;
+    }
+    private void Update()
+    {
+        //sliderVidaFinDeJuego.value = sliderVida.value;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +38,7 @@ public class PuertaHP : MonoBehaviour
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
 
         sliderVida.value = vidaActual;
+        //sliderVidaFinDeJuego.value = vidaActual;
 
         if (vidaActual <= 0)
         {
@@ -44,5 +52,6 @@ public class PuertaHP : MonoBehaviour
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
 
         sliderVida.value = vidaActual;
+        //sliderVidaFinDeJuego.value = vidaActual;
     }
 }

@@ -4239,7 +4239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 189.5}
+  m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 312.5, y: 512.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956118950
@@ -4403,7 +4403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.699982, y: -176.66}
+  m_AnchoredPosition: {x: 0, y: -190}
   m_SizeDelta: {x: 312.5, y: 112.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001733423
@@ -4588,7 +4588,7 @@ Transform:
   m_GameObject: {fileID: 1012989155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2011719, y: 0.9122864, z: -9.984929}
+  m_LocalPosition: {x: 1.2044208, y: 0.9122564, z: -9.984929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5939,7 +5939,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -2
   m_Sprite: {fileID: 8092533692389283209, guid: 829754314a4892149b8c628804138e4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11506,7 +11506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.399994, y: -176.66}
+  m_AnchoredPosition: {x: 0, y: -190}
   m_SizeDelta: {x: 312.5, y: 112.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1587524598
@@ -12051,7 +12051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37, y: 189.5}
+  m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 312.5, y: 512.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830086847
@@ -18037,6 +18037,7 @@ MonoBehaviour:
   Espada: {fileID: 3933641420646616625}
   medidor: {fileID: 0}
   playerEC: {fileID: 0}
+  muroPrefab: {fileID: 0}
 --- !u!212 &2364512079374913877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18906,6 +18907,8 @@ MonoBehaviour:
   cuchillas: {fileID: 6227117247482033844}
   cooldown: 0.5
   ActivarEspacialCuchilla: 0
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
 --- !u!1 &6087458016372117435
 GameObject:
   m_ObjectHideFlags: 0
@@ -19471,6 +19474,8 @@ MonoBehaviour:
   cuchillas: {fileID: 7526225475207771020}
   cooldown: 0.5
   ActivarEspacialCuchilla: 0
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
 --- !u!4 &7676102343617101050
 Transform:
   m_ObjectHideFlags: 0
@@ -19601,6 +19606,8 @@ MonoBehaviour:
   cuchillas: {fileID: 5593323626007347250}
   cooldown: 0.5
   ActivarEspacialCuchilla: 0
+  medidor: {fileID: 0}
+  playerEC: {fileID: 0}
 --- !u!4 &8790835719802888927
 Transform:
   m_ObjectHideFlags: 0

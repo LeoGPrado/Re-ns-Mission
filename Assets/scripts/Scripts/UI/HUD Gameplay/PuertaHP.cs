@@ -4,10 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class PuertaHP : MonoBehaviour
 {
-
+    [SerializeField] private GameObject canvasDerrota;
+    [SerializeField] private GameObject canvasGameplay;
     [SerializeField] private Slider sliderVida;
     //[SerializeField] public Slider sliderVidaFinDeJuego;
-    [SerializeField] private int vidaMax = 650;
+    [SerializeField] private int vidaMax = 1000;
     [SerializeField] private int vidaActual;
 
     private void Start()
@@ -42,7 +43,10 @@ public class PuertaHP : MonoBehaviour
 
         if (vidaActual <= 0)
         {
-            SceneManager.LoadScene("FinDemo");
+            canvasGameplay.SetActive(false);
+            canvasDerrota.SetActive(true); 
+            Time.timeScale = 0f;
+
         }
     }
 

@@ -54,12 +54,16 @@ public class ControlPersonaje : MonoBehaviour
 
     void Start()
     {
+        desactivar = true;
+
         ren = GetComponent<Rigidbody2D>();
         animRen = GetComponent<Animator>();
+        animRen.SetBool("SeMueve", false);
 
         if (canvasDerrota != null)
             canvasDerrota.SetActive(false);
         ContadorEnemigosString = ContadorEnemigos.ToString();
+        StartCoroutine(ActivarMovimientoDespues(3f));
     }
 
     // Update is called once per frame
@@ -119,6 +123,12 @@ public class ControlPersonaje : MonoBehaviour
         animRen.SetBool("SeMueve", Moviendose);
 
 
+    }
+    IEnumerator ActivarMovimientoDespues(float tiempo)
+    {
+        ren.linearVelocity = Vector2.zero; 
+        yield return new WaitForSeconds(tiempo);
+        desactivar = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -192,10 +202,10 @@ public class ControlPersonaje : MonoBehaviour
         jugadorInvulnerable = false;
 
     }
-    private void activar()
-    {
-        desactivar = false;
-    }
+    //private void activar()
+    //{
+    //    desactivar = false;
+    //}
 
     public void ActualizarCorazones()
     {

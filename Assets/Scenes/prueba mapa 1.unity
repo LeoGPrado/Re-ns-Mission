@@ -521,6 +521,7 @@ MonoBehaviour:
   player: {fileID: 8028158966399061198}
   tiempoDeEspera: 3.5
   textoDelay: 1
+  delayInicial: 1
 --- !u!1 &209195175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,7 +4735,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.355272, y: 10.550799, z: -10}
+  m_LocalPosition: {x: -14.00081, y: 10.55299, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

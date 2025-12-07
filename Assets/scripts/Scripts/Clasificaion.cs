@@ -8,6 +8,8 @@ public class Clasificaion : MonoBehaviour
     public TextMeshProUGUI CantidadTiempo;
     public TextMeshProUGUI clasificacionFinal;
     public PuertaHP puerta;
+    public ControlPersonaje ren;
+
     //public Image ImagenDePuerta;
     //public Image NuevoEstadoPuerta;
     public int CantidadEnemigosOperador;
@@ -67,10 +69,12 @@ public class Clasificaion : MonoBehaviour
         if (clasificacionFinal == null)
             return;
 
-        int daño = puerta.dañoTotalRecibido;
+        int dañoPuerta = puerta.dañoTotalRecibido;
+        int dañoRen = ren.dañoRecibido;
         string rango;
+        int dañoTotalClasificacion = dañoPuerta + (dañoRen * 100);
 
-        switch (daño)
+        switch (dañoTotalClasificacion)
         {
             case 0: rango = "S"; clasificacionFinal.color = colorS; break;
             case <= 200: rango = "A"; clasificacionFinal.color = colorA; break;

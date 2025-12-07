@@ -25,7 +25,7 @@ public class ControlPersonaje : MonoBehaviour
     [SerializeField] public int vidaInicial = 5;
     [SerializeField] float duracionInvulnerabilidad = 1f;
     public bool jugadorInvulnerable = false;
-    public int dañoRen = 1;
+    public int dañoRecibido = 1;
 
     [Header("Corazones del UI")]
     public GameObject Corazon1;
@@ -135,6 +135,7 @@ public class ControlPersonaje : MonoBehaviour
             if (jugadorInvulnerable) return;
 
             vidaInicial--;
+            dañoRecibido++;
 
             ActualizarCorazones();
             perderVida();

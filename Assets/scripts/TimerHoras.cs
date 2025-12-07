@@ -17,9 +17,11 @@ public class TimerHoras : MonoBehaviour
     [SerializeField] public int hour = 0;
     [SerializeField] public int minutos = 0;
     [SerializeField] private float cdTimer = 30f;
-    [SerializeField] public string SiguienteEscena;
+    [SerializeField] private string SiguienteEscena;
 
     [SerializeField] public GameObject parentSpawners;
+    [SerializeField] private GameObject canvasVictoria;
+    [SerializeField] private GameObject canvasGameplay;
     public Transform parentEnemy;
     private int cantidadEnemigos;
 
@@ -35,9 +37,11 @@ public class TimerHoras : MonoBehaviour
     {
         cantidadEnemigos = parentEnemy.childCount;
 
-        if (cantidadEnemigos <= 0 && minutos == 6)
+        if (minutos >= 6 && cantidadEnemigos <= 0)
         {
-            SceneManager.LoadScene(SiguienteEscena);
+            canvasVictoria.SetActive(true);
+            canvasGameplay.SetActive(false);
+            Time.timeScale = 0f;
         }
     }
 

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ControlPersonaje : MonoBehaviour
 {
+    [Header("HUD")]
     [SerializeField] private GameObject canvasDerrota;
     [SerializeField] private GameObject canvasGameplay;
     [SerializeField] Rigidbody2D ren;
@@ -20,12 +21,12 @@ public class ControlPersonaje : MonoBehaviour
     public GameObject espada;
     public static ControlPersonaje Ren;
 
-    //vida
+    [Header("Valores Vida")]
     [SerializeField] public int vidaInicial = 5;
     [SerializeField] float duracionInvulnerabilidad = 1f;
     public bool jugadorInvulnerable = false;
 
-    //corazones de vida
+    [Header("Corazones del UI")]
     public GameObject Corazon1;
     public GameObject Corazon2;
     public GameObject Corazon3;
@@ -35,14 +36,14 @@ public class ControlPersonaje : MonoBehaviour
     public int contador = 1;
 
 
-
+    [SerializeField] private float tiempoQuieto = 1f;
     public bool desactivar;
 
-    //cantidadEnemigos
+    [Header("Cantidad de Enemigos")]
     public int ContadorEnemigos=0;
     public string ContadorEnemigosString="0";
 
-    //movimiento
+    [Header("Movimiento")]
     public int velocidadMovimiento = 5;
     private void Awake()
     {
@@ -63,21 +64,14 @@ public class ControlPersonaje : MonoBehaviour
         if (canvasDerrota != null)
             canvasDerrota.SetActive(false);
         ContadorEnemigosString = ContadorEnemigos.ToString();
-        StartCoroutine(ActivarMovimientoDespues(3f));
+        StartCoroutine(ActivarMovimientoDespues());
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 mousePos = Input.mousePosition;
 
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
-        if (contador > 5)
-        {
-            contador = 5;
-        }
-
 
         if (mousePos.x < transform.position.x)
         {
@@ -124,12 +118,13 @@ public class ControlPersonaje : MonoBehaviour
 
 
     }
-    IEnumerator ActivarMovimientoDespues(float tiempo)
+    IEnumerator ActivarMovimientoDespues()
     {
-        ren.linearVelocity = Vector2.zero; 
-        yield return new WaitForSeconds(tiempo);
+        ren.linearVelocity = Vector2.zero;
+        yield return new WaitForSeconds(tiempoQuieto);
         desactivar = false;
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -138,49 +133,19 @@ public class ControlPersonaje : MonoBehaviour
 
             if (jugadorInvulnerable) return;
 
-            if (contador == 1)
-            {
-                Corazon1.SetActive(false);
-                contador++;
+            vidaInicial--;
 
-            }
-            else if (contador == 2)
-            {
-                Corazon2.SetActive(false);
-                contador++;
-
-            }
-            else if (contador == 3)
-            {
-                Corazon3.SetActive(false);
-                contador++;
-
-            }
-            else if (contador == 4)
-            {
-                Corazon4.SetActive(false);
-                contador++;
-
-            }
-            else if (contador == 5)
-            {
-                Corazon5.SetActive(false);
-                contador++;
-            }
+            ActualizarCorazones();
             perderVida();
 
             animRen.SetTrigger("HeridoP");
-
-            StartCoroutine(Invulnerabilidad());
-
+            StartCoroutine(Invulnerabilidad());          
         }
 
     }
-
     public void perderVida()
     {
-        vidaInicial--;
-        if (vidaInicial == 0)
+        if (vidaInicial <= 0)
         {
             if (canvasGameplay != null)
                 canvasGameplay.SetActive(false);
@@ -200,7 +165,6 @@ public class ControlPersonaje : MonoBehaviour
         jugadorInvulnerable = true;
         yield return new WaitForSeconds(duracionInvulnerabilidad);
         jugadorInvulnerable = false;
-
     }
     //private void activar()
     //{
@@ -218,13 +182,8 @@ public class ControlPersonaje : MonoBehaviour
 
     public void GanarVida()
     {
-
             vidaInicial = 5;
-            contador = 1;
             ActualizarCorazones();
-
-        //ActualizarCorazones();
-
     }
     public void AumentarContadorEnemigos()
     {

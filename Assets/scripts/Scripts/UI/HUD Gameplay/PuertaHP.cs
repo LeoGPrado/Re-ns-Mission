@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PuertaHP : MonoBehaviour
 {
@@ -10,6 +9,8 @@ public class PuertaHP : MonoBehaviour
     //[SerializeField] public Slider sliderVidaFinDeJuego;
     [SerializeField] private int vidaMax = 1000;
     [SerializeField] private int vidaActual;
+    public int dañoTotalRecibido = 0;
+    public PuertaHP puerta;
 
     private void Start()
     {
@@ -37,6 +38,7 @@ public class PuertaHP : MonoBehaviour
     {
         vidaActual -= daño;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
+        dañoTotalRecibido += daño;
 
         sliderVida.value = vidaActual;
         //sliderVidaFinDeJuego.value = vidaActual;

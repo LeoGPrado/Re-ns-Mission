@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 525171993}
   - component: {fileID: 525171994}
   - component: {fileID: 525171995}
+  - component: {fileID: 525171996}
   m_Layer: 5
   m_Name: Ren
   m_TagString: Untagged
@@ -425,7 +426,7 @@ MonoBehaviour:
   spriteRenClickeado: {fileID: 6654498485860036680, guid: 361d6af7f365f4a40af6cf6457a5051a, type: 3}
   cursorNuevo: {fileID: 2800000, guid: ad94626b57102174ea9bc2239c2942a2, type: 3}
   posicionMouse: {x: 0, y: 0}
-  colorAlPasarCursor: {r: 0.9811321, g: 0.7821289, b: 0.7821289, a: 1}
+  colorAlPasarCursor: {r: 1, g: 1, b: 1, a: 0.8235294}
   alphaAlClickear: 0.5
   sonidoAlClickear: {fileID: 8300000, guid: 309a591b02877b54292326b8c95e50a5, type: 3}
 --- !u!82 &525171992
@@ -611,6 +612,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &525171996
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525171986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 580124c42dc22ff47b19a7db9a1cb5bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1102976287
 GameObject:
   m_ObjectHideFlags: 0

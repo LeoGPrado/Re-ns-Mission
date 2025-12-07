@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 public class Clasificaion : MonoBehaviour
 {
+    [Header("Datos")]
     public TextMeshProUGUI CantidadEnemigos;
     public TextMeshProUGUI CantidadTiempo;
     public TextMeshProUGUI clasificacionFinal;
@@ -10,16 +11,21 @@ public class Clasificaion : MonoBehaviour
     //public Image ImagenDePuerta;
     //public Image NuevoEstadoPuerta;
     public int CantidadEnemigosOperador;
+    [Space(10)]
 
-    public Image ArmaUtiliazada;
-    public GameObject Espada;
-    public GameObject Mazo;
-    public GameObject Pescado;
-    public GameObject Pollo;
-    public GameObject Arco;
-    public GameObject Cuchillas;
-    public GameObject Baston;
-    public GameObject Pincel;
+
+    [Header("Colores")]
+    [SerializeField] private Color colorS;
+    [SerializeField] private Color colorA;
+    [SerializeField] private Color colorB;
+    [SerializeField] private Color colorC;
+    [SerializeField] private Color colorF;
+    [Space(10)]
+
+    [Header("Armas")]
+    public Image ArmaUtilizada;
+    [SerializeField] private GameObject[] armas;
+    
 
     void Start()
     {
@@ -44,42 +50,16 @@ public class Clasificaion : MonoBehaviour
 
     void armaUsada()
     {
-        if (Espada.activeInHierarchy)
+        for (int i = 0; i < armas.Length; i++)
         {
-            ArmaUtiliazada.sprite= Espada.GetComponent<SpriteRenderer>().sprite;
+            if (armas[i].activeInHierarchy)
+            {
+                ArmaUtilizada.sprite = armas[i].GetComponent<SpriteRenderer>().sprite;
+                return;
+                /// Mano prioriza no usar tantos else if
+            }
         }
-        else if (Mazo.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Mazo.GetComponent<SpriteRenderer>().sprite;
-        }
-        else if (Pescado.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Pescado.GetComponent<SpriteRenderer>().sprite;
-        }
-        else if (Pollo.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Pollo.GetComponent<SpriteRenderer>().sprite;
-        }
-        else if (Arco.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Arco.GetComponent<SpriteRenderer>().sprite;
-        }
-        else if (Cuchillas.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Cuchillas.GetComponent<SpriteRenderer>().sprite;
-        }
-        else if (Baston.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Baston.GetComponent<SpriteRenderer>().sprite;
-        }
-        else if (Pincel.activeInHierarchy)
-        {
-            ArmaUtiliazada.sprite = Pincel.GetComponent<SpriteRenderer>().sprite;
-        }
-        else
-        {
 
-        }
     }
 
     public void operarClasificacion()
@@ -90,34 +70,17 @@ public class Clasificaion : MonoBehaviour
         int daño = puerta.dañoTotalRecibido;
         string rango;
 
-        if (daño == 0)
+        switch (daño)
         {
-            rango = "S";
-            clasificacionFinal.color = new Color(1f, 0.7f, 0.2f);
+            case 0: rango = "S"; clasificacionFinal.color = colorS; break;
+            case <= 200: rango = "A"; clasificacionFinal.color = colorA; break;
+            case <= 400: rango = "B"; clasificacionFinal.color = colorB; break;
+            case <= 600: rango = "C"; clasificacionFinal.color = colorC; break;
+            default: rango = "F"; clasificacionFinal.color = colorF; break;
         }
-        else if (daño <= 200)
-        {
-            rango = "A";
-            clasificacionFinal.color = new Color(0.3f, 1f, 0.3f);
-        }
-        else if (daño <= 400)
-        {
-            rango = "B";
-            clasificacionFinal.color = Color.cyan;
-        }
-        else if (daño <= 600)
-        {
-            rango = "C";
-            clasificacionFinal.color = Color.white;
-        }
-        else
-        {
-            rango = "F";
-            clasificacionFinal.color = Color.red;
-        }
-
         clasificacionFinal.text = rango;
     }
 }
+
 
 

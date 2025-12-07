@@ -33934,7 +33934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1036980629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34028,7 +34028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1077183019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34041,20 +34041,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b768029738b764b9c690b4f51fe429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CantidadEnemigos: {fileID: 854526436}
-  CantidadTiempo: {fileID: 1347283916}
-  clasificacionFinal: {fileID: 340754831}
+  CantidadEnemigos: {fileID: 1966791077}
+  CantidadTiempo: {fileID: 262266129}
+  clasificacionFinal: {fileID: 0}
   puerta: {fileID: 1394096929}
   CantidadEnemigosOperador: 0
-  ArmaUtiliazada: {fileID: 1787536334}
-  Espada: {fileID: 1346287263956441220}
-  Mazo: {fileID: 1346287263956441221}
-  Pescado: {fileID: 1493610295}
-  Pollo: {fileID: 114797379}
-  Arco: {fileID: 1346287263956441222}
-  Cuchillas: {fileID: 852608786}
-  Baston: {fileID: 2005525124}
-  Pincel: {fileID: 1346287263956441219}
+  colorS: {r: 0, g: 0, b: 0, a: 0}
+  colorA: {r: 0, g: 0, b: 0, a: 0}
+  colorB: {r: 0, g: 0, b: 0, a: 0}
+  colorC: {r: 0, g: 0, b: 0, a: 0}
+  colorF: {r: 0, g: 0, b: 0, a: 0}
+  ArmaUtilizada: {fileID: 1787536334}
+  armas:
+  - {fileID: 1346287263956441220}
+  - {fileID: 1346287263956441221}
+  - {fileID: 1493610295}
+  - {fileID: 114797379}
+  - {fileID: 2005525124}
+  - {fileID: 1346287263956441222}
+  - {fileID: 1346287263956441219}
+  - {fileID: 852608786}
 --- !u!114 &1077183020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35949,15 +35955,21 @@ MonoBehaviour:
   clasificacionFinal: {fileID: 0}
   puerta: {fileID: 1394096929}
   CantidadEnemigosOperador: 0
-  ArmaUtiliazada: {fileID: 1694958045}
-  Espada: {fileID: 1346287263956441220}
-  Mazo: {fileID: 1346287263956441221}
-  Pescado: {fileID: 1493610295}
-  Pollo: {fileID: 114797379}
-  Arco: {fileID: 1346287263956441222}
-  Cuchillas: {fileID: 852608786}
-  Baston: {fileID: 2005525124}
-  Pincel: {fileID: 1346287263956441219}
+  colorS: {r: 0, g: 0, b: 0, a: 0}
+  colorA: {r: 0, g: 0, b: 0, a: 0}
+  colorB: {r: 0, g: 0, b: 0, a: 0}
+  colorC: {r: 0, g: 0, b: 0, a: 0}
+  colorF: {r: 0, g: 0, b: 0, a: 0}
+  ArmaUtilizada: {fileID: 1694958045}
+  armas:
+  - {fileID: 1346287263956441220}
+  - {fileID: 1346287263956441221}
+  - {fileID: 1493610295}
+  - {fileID: 114797379}
+  - {fileID: 2005525124}
+  - {fileID: 1346287263956441222}
+  - {fileID: 1346287263956441219}
+  - {fileID: 852608786}
 --- !u!1001 &1321276056
 PrefabInstance:
   m_ObjectHideFlags: 0

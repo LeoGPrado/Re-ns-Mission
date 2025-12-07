@@ -10,7 +10,7 @@ public class PuertaHP : MonoBehaviour
     [SerializeField] private int vidaMax = 1000;
     [SerializeField] private int vidaActual;
     public int dañoTotalRecibido = 0;
-    public PuertaHP puerta;
+
 
     private void Start()
     {

@@ -11,6 +11,16 @@ public class Clasificaion : MonoBehaviour
     //public Image NuevoEstadoPuerta;
     public int CantidadEnemigosOperador;
 
+    public Image ArmaUtiliazada;
+    public GameObject Espada;
+    public GameObject Mazo;
+    public GameObject Pescado;
+    public GameObject Pollo;
+    public GameObject Arco;
+    public GameObject Cuchillas;
+    public GameObject Baston;
+    public GameObject Pincel;
+
     void Start()
     {
         CantidadEnemigos.text = "0";
@@ -22,6 +32,7 @@ public class Clasificaion : MonoBehaviour
         CantidadTiempo.text = TimerMinutos.SeleccionarTiempo.TiempoTotal;
         //ImagenDePuerta.sprite = NuevoEstadoPuerta.sprite;
         operarClasificacion();
+        armaUsada();
     }
 
 
@@ -29,6 +40,46 @@ public class Clasificaion : MonoBehaviour
     {
         CantidadEnemigosOperador = int.Parse(CantidadEnemigos.text);
 
+    }
+
+    void armaUsada()
+    {
+        if (Espada.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite= Espada.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Mazo.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Mazo.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Pescado.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Pescado.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Pollo.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Pollo.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Arco.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Arco.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Cuchillas.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Cuchillas.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Baston.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Baston.GetComponent<SpriteRenderer>().sprite;
+        }
+        else if (Pincel.activeInHierarchy)
+        {
+            ArmaUtiliazada.sprite = Pincel.GetComponent<SpriteRenderer>().sprite;
+        }
+        else
+        {
+
+        }
     }
 
     public void operarClasificacion()

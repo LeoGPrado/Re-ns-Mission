@@ -275,6 +275,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93395919}
   m_CullTransparentMesh: 1
+--- !u!1 &114797379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5968771623980213771, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+  m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &138406859
 GameObject:
   m_ObjectHideFlags: 0
@@ -28313,6 +28318,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852229236}
   m_CullTransparentMesh: 1
+--- !u!1 &852608786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3889435653079392495, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+  m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &853909532
 GameObject:
   m_ObjectHideFlags: 0
@@ -33924,7 +33934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1036980629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34018,7 +34028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1077183019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34036,6 +34046,15 @@ MonoBehaviour:
   clasificacionFinal: {fileID: 340754831}
   puerta: {fileID: 1394096929}
   CantidadEnemigosOperador: 0
+  ArmaUtiliazada: {fileID: 1787536334}
+  Espada: {fileID: 1346287263956441220}
+  Mazo: {fileID: 1346287263956441221}
+  Pescado: {fileID: 1493610295}
+  Pollo: {fileID: 114797379}
+  Arco: {fileID: 1346287263956441222}
+  Cuchillas: {fileID: 852608786}
+  Baston: {fileID: 2005525124}
+  Pincel: {fileID: 1346287263956441219}
 --- !u!114 &1077183020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35927,9 +35946,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CantidadEnemigos: {fileID: 1966791077}
   CantidadTiempo: {fileID: 262266129}
-  clasificacionFinal: {fileID: 1423029663}
+  clasificacionFinal: {fileID: 0}
   puerta: {fileID: 1394096929}
   CantidadEnemigosOperador: 0
+  ArmaUtiliazada: {fileID: 1694958045}
+  Espada: {fileID: 1346287263956441220}
+  Mazo: {fileID: 1346287263956441221}
+  Pescado: {fileID: 1493610295}
+  Pollo: {fileID: 114797379}
+  Arco: {fileID: 1346287263956441222}
+  Cuchillas: {fileID: 852608786}
+  Baston: {fileID: 2005525124}
+  Pincel: {fileID: 1346287263956441219}
 --- !u!1001 &1321276056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37774,6 +37802,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469150547}
   m_CullTransparentMesh: 1
+--- !u!1 &1493610295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8073504183625022109, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+  m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506794696
 GameObject:
   m_ObjectHideFlags: 0
@@ -43869,6 +43902,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003849398}
   m_CullTransparentMesh: 1
+--- !u!1 &2005525124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4248948275373792429, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+  m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2012106147
 GameObject:
   m_ObjectHideFlags: 0

@@ -34681,17 +34681,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6163041750064377217, guid: bfb348d92d91a4543a6e3ca25689b712, type: 3}
   m_PrefabInstance: {fileID: 1146298695}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1179899892 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 780317459675480848, guid: bfb348d92d91a4543a6e3ca25689b712, type: 3}
-  m_PrefabInstance: {fileID: 1146298695}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1188630023 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7518149626578725437, guid: 81e325464b6c2e54eb0d2371d9e5be0e, type: 3}
@@ -37214,8 +37203,8 @@ MonoBehaviour:
   canvasDerrota: {fileID: 1741856933}
   canvasGameplay: {fileID: 1531625467}
   sliderVida: {fileID: 2079442206}
-  sliderDerrota: {fileID: 1179899892}
-  sliderVictoria: {fileID: 2108691530}
+  sliderDerrota: {fileID: 0}
+  sliderVictoria: {fileID: 0}
   vidaMax: 1000
   vidaActual: 0
   "da\xF1oTotalRecibido": 0
@@ -43793,6 +43782,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5515361752823117014, guid: 81e325464b6c2e54eb0d2371d9e5be0e, type: 3}
   m_PrefabInstance: {fileID: 2444008604953736616}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1994824655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 127970513044904635, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+  m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003849398
 GameObject:
   m_ObjectHideFlags: 0
@@ -44513,17 +44507,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2108691530 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 780317459675480848, guid: bfb348d92d91a4543a6e3ca25689b712, type: 3}
-  m_PrefabInstance: {fileID: 1918154090}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2111566452
 GameObject:
   m_ObjectHideFlags: 0
@@ -49937,6 +49920,10 @@ PrefabInstance:
       propertyPath: balaEspecialPrefab
       value: 
       objectReference: {fileID: 31823557697410391, guid: a1986fd1dbf69ac42ac92ba350b76e50, type: 3}
+    - target: {fileID: 5757480769003061603, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: CuerpoRen
+      value: 
+      objectReference: {fileID: 1994824655}
     - target: {fileID: 6253808796371425711, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_IsActive
       value: 0

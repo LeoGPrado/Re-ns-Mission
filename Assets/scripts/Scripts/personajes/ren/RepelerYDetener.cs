@@ -6,6 +6,9 @@ public class RepelerYDetener : MonoBehaviour
     [SerializeField] Rigidbody2D ren;
     [SerializeField] BoxCollider2D renCuerpo;
 
+    public GameObject CuerpoRen;
+    int layerOriginal=0;
+
     public ControlPersonaje renScript;
     
 
@@ -26,15 +29,21 @@ public class RepelerYDetener : MonoBehaviour
         renScript.enabled = false;
 
         StartCoroutine(FrenarRetroceso());
+        StartCoroutine(traspasar());
     }
 
     IEnumerator FrenarRetroceso()
     {
-
         yield return new WaitForSeconds(0.3f);
 
         ren.linearVelocity = Vector2.zero;
         renScript.enabled = true;
 
+    }
+    IEnumerator traspasar()
+    {
+        CuerpoRen.layer = LayerMask.NameToLayer("CuerpoProta");
+        yield return new WaitForSeconds(4f);
+        CuerpoRen.layer = layerOriginal;
     }
 }

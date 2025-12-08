@@ -26,7 +26,7 @@ public class PanelMejoras : MonoBehaviour
     {
         if ((min.minutos == 2 || min.minutos == 4) && momentoMejora)
         {
-            Invoke("Mejora", 0f);
+            Mejora();
             Time.timeScale = 0f;
         }
     }
@@ -53,7 +53,7 @@ public class PanelMejoras : MonoBehaviour
     }
 
 
-    void Mejora()
+    public void Mejora()
     {
         panel.SetActive(true);
         StartCoroutine(SeleccionMejoras());

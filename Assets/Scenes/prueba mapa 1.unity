@@ -34041,10 +34041,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b768029738b764b9c690b4f51fe429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CantidadEnemigos: {fileID: 1966791077}
-  CantidadTiempo: {fileID: 262266129}
+  CantidadEnemigos: {fileID: 854526436}
+  CantidadTiempo: {fileID: 1347283916}
   clasificacionFinal: {fileID: 0}
   puerta: {fileID: 1394096929}
+  ren: {fileID: 0}
   CantidadEnemigosOperador: 0
   colorS: {r: 0, g: 0, b: 0, a: 0}
   colorA: {r: 0, g: 0, b: 0, a: 0}
@@ -35954,6 +35955,7 @@ MonoBehaviour:
   CantidadTiempo: {fileID: 262266129}
   clasificacionFinal: {fileID: 0}
   puerta: {fileID: 1394096929}
+  ren: {fileID: 0}
   CantidadEnemigosOperador: 0
   colorS: {r: 0, g: 0, b: 0, a: 0}
   colorA: {r: 0, g: 0, b: 0, a: 0}

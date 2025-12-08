@@ -1,6 +1,6 @@
 using UnityEngine;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
-using UnityEngine.InputSystem;
+//using static UnityEditor.Searcher.SearcherWindow.Alignment;
+//using UnityEngine.InputSystem;
 
 public class BalaEnemigoSlime : MonoBehaviour
 {

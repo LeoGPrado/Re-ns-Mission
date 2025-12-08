@@ -128,7 +128,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
             }
         }
         //verificar falta
-        else if (Input.GetMouseButtonDown(1) && !atacando)
+        else if (Input.GetMouseButtonDown(1) && !atacando && medidor.canUseUltimate)
         {
             atacando = true;
 

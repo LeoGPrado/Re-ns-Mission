@@ -49594,6 +49594,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1254898807}
     - target: {fileID: 2124830460431483517, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: medidor
+      value: 
+      objectReference: {fileID: 1531625472}
+    - target: {fileID: 2124830460431483517, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

@@ -6,7 +6,8 @@ public class PuertaHP : MonoBehaviour
     [SerializeField] private GameObject canvasDerrota;
     [SerializeField] private GameObject canvasGameplay;
     [SerializeField] private Slider sliderVida;
-    //[SerializeField] public Slider sliderVidaFinDeJuego;
+    [SerializeField] private Slider sliderDerrota;
+    [SerializeField] private Slider sliderVictoria;
     [SerializeField] private int vidaMax = 1000;
     [SerializeField] private int vidaActual;
     public int dañoTotalRecibido = 0;
@@ -16,13 +17,9 @@ public class PuertaHP : MonoBehaviour
     {
         vidaActual = vidaMax;
         sliderVida.maxValue = vidaMax;
-        //sliderVidaFinDeJuego.value = vidaMax;
-        sliderVida.value = vidaActual;
-        //sliderVidaFinDeJuego.value = vidaActual;
-    }
-    private void Update()
-    {
-        //sliderVidaFinDeJuego.value = sliderVida.value;
+        sliderDerrota.maxValue = vidaMax;
+        sliderVictoria.maxValue = vidaMax;
+        ActualizarSliders();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,9 +36,8 @@ public class PuertaHP : MonoBehaviour
         vidaActual -= daño;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
         dañoTotalRecibido += daño;
-
         sliderVida.value = vidaActual;
-        //sliderVidaFinDeJuego.value = vidaActual;
+        ActualizarSliders();
 
         if (vidaActual <= 0)
         {
@@ -51,13 +47,19 @@ public class PuertaHP : MonoBehaviour
 
         }
     }
+    public void ActualizarSliders()
+    {
+        sliderVida.value = vidaActual;
+        sliderDerrota.value = vidaActual;
+        sliderVictoria.value = vidaActual;
+    }
 
-    public void CurarHP (int curacion)
+    public void CurarHP(int curacion)
     {
         vidaActual += curacion;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMax);
 
         sliderVida.value = vidaActual;
-        //sliderVidaFinDeJuego.value = vidaActual;
+        ActualizarSliders();
     }
 }

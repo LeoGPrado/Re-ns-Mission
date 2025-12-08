@@ -1,7 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class PanelMejoras : MonoBehaviour
 {
@@ -26,39 +24,17 @@ public class PanelMejoras : MonoBehaviour
 
     void Update()
     {
-        if (min.minutos == 2 && momentoMejora || min.minutos == 4 && momentoMejora)
+        if ((min.minutos == 2 || min.minutos == 4) && momentoMejora)
         {
             Invoke("Mejora", 0f);
             Time.timeScale = 0f;
-
         }
     }
 
     public void CurarRen()
     {
-        DesactivarPanel();
-
-        /*if (Heart.contador > 1)
-        {
-            Heart.contador -= 2;
-
-        }*/
-
         ControlPersonaje.Ren.GanarVida();
-
-        /*switch (Heart.contador)
-        {
-            case 1: Heart.Corazon1.SetActive(true);
-                ControlPersonaje.Ren.GanarVida(); break;
-            case 2: Heart.Corazon2.SetActive(true);
-                ControlPersonaje.Ren.GanarVida(); break;
-            case 3: Heart.Corazon3.SetActive(true);
-                ControlPersonaje.Ren.GanarVida(); break;
-            case 4: Heart.Corazon4.SetActive(true);
-                ControlPersonaje.Ren.GanarVida(); break;
-        }*/
-
-
+        DesactivarPanel();
     }
 
 
@@ -79,18 +55,15 @@ public class PanelMejoras : MonoBehaviour
 
     void Mejora()
     {
-
         panel.SetActive(true);
         StartCoroutine(SeleccionMejoras());
         momentoMejora = false;
         StartCoroutine(MejoraActivate());
-
-
     }
 
     IEnumerator SeleccionMejoras()
     {
-        yield return new WaitForSeconds(duracionMejoras);
+        yield return new WaitForSecondsRealtime(duracionMejoras);
         DesactivarPanel();
     }
 

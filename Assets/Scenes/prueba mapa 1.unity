@@ -33912,7 +33912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: {fileID: 1352449121}
   Heart: {fileID: 8028158966399061211}
-  DoorHp: {fileID: 0}
+  DoorHp: {fileID: 1394096930}
   curacion: 0
   duracionMejoras: 6
   panel: {fileID: 432485194}
@@ -34043,9 +34043,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CantidadEnemigos: {fileID: 854526436}
   CantidadTiempo: {fileID: 1347283916}
-  clasificacionFinal: {fileID: 0}
-  puerta: {fileID: 1394096929}
-  ren: {fileID: 0}
+  clasificacionFinal: {fileID: 340754831}
+  puerta: {fileID: 1394096930}
+  ren: {fileID: 8028158966399061211}
   CantidadEnemigosOperador: 0
   colorS: {r: 0, g: 0, b: 0, a: 0}
   colorA: {r: 0, g: 0, b: 0, a: 0}
@@ -35965,8 +35965,8 @@ MonoBehaviour:
   CantidadEnemigos: {fileID: 1966791077}
   CantidadTiempo: {fileID: 262266129}
   clasificacionFinal: {fileID: 0}
-  puerta: {fileID: 1394096929}
-  ren: {fileID: 0}
+  puerta: {fileID: 1394096930}
+  ren: {fileID: 8028158966399061211}
   CantidadEnemigosOperador: 0
   colorS: {r: 0, g: 0, b: 0, a: 0}
   colorA: {r: 0, g: 0, b: 0, a: 0}
@@ -37022,8 +37022,6 @@ GameObject:
   - component: {fileID: 1394096926}
   - component: {fileID: 1394096925}
   - component: {fileID: 1394096930}
-  - component: {fileID: 1394096929}
-  - component: {fileID: 1394096931}
   - component: {fileID: 1394096928}
   m_Layer: 0
   m_Name: PuertaDelCastillo
@@ -37201,24 +37199,6 @@ MonoBehaviour:
   - {x: 2.0320482, y: -3.8998165, z: 0}
   - {x: 1.270091, y: -1.6716557, z: 0}
   - {x: -1.2542086, y: -1.6716537, z: 0}
---- !u!114 &1394096929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394096923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18beb0c28f2e7234fa97a2ede2999535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasDerrota: {fileID: 1741856933}
-  canvasGameplay: {fileID: 1531625467}
-  sliderVida: {fileID: 1179899892}
-  vidaMax: 1000
-  vidaActual: 0
-  "da\xF1oTotalRecibido": 0
 --- !u!114 &1394096930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37234,24 +37214,8 @@ MonoBehaviour:
   canvasDerrota: {fileID: 1741856933}
   canvasGameplay: {fileID: 1531625467}
   sliderVida: {fileID: 2079442206}
-  vidaMax: 1000
-  vidaActual: 0
-  "da\xF1oTotalRecibido": 0
---- !u!114 &1394096931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394096923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18beb0c28f2e7234fa97a2ede2999535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasDerrota: {fileID: 1741856933}
-  canvasGameplay: {fileID: 1531625467}
-  sliderVida: {fileID: 2108691530}
+  sliderDerrota: {fileID: 1179899892}
+  sliderVictoria: {fileID: 2108691530}
   vidaMax: 1000
   vidaActual: 0
   "da\xF1oTotalRecibido": 0

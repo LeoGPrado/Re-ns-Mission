@@ -13,6 +13,11 @@ public class DestruirV2 : MonoBehaviour
     public SlieControl slimeScript;
     float fuerzaRechazoConstante = 300;
 
+    public GameObject espada;
+    public GameObject mazo;
+    public GameObject pollo;
+    public GameObject pescado;
+
     public bool DFuego = false;
     public bool Dhielo = false;
     public bool Dnaturaleza = false;
@@ -79,6 +84,24 @@ public class DestruirV2 : MonoBehaviour
     {
         if (!puedeDestruir) return;
         print("deteccion!!!!");
+
+        if (espada.activeInHierarchy)
+        {
+            DestruirV2.SeleccionElemento.DFuego = true;
+        }
+        else if(mazo.activeInHierarchy)
+        {
+            DestruirV2.SeleccionElemento.Dnaturaleza = true;
+        }
+        else if (pollo.activeInHierarchy)
+        {
+            DestruirV2.SeleccionElemento.Dnormal = true;
+        }
+        else if (pescado.activeInHierarchy)
+        {
+            DestruirV2.SeleccionElemento.Dhielo = true;
+        }
+        //DestruirV2.SeleccionElemento.DFuego=true
 
         if (collision.gameObject.tag == "Enemigo")
         {

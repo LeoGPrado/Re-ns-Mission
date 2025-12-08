@@ -8,7 +8,7 @@ public class DisparoEspecialPincell : MonoBehaviour
 
     void Start()
     {
-        enemigo = BuscarEnemigoCercano();
+        enemigo = BuscarEnemigoMasCercano();
 
     }
 
@@ -47,25 +47,25 @@ public class DisparoEspecialPincell : MonoBehaviour
 
     }
 
-    Transform BuscarEnemigoCercano()
+    Transform BuscarEnemigoMasCercano()
     {
         GameObject[] enemigos = GameObject.FindGameObjectsWithTag("Enemigo");
 
-        if (enemigos.Length == 0) return null;
+        Transform enemigoCercano = null;
+        float distanciaMinima = Mathf.Infinity;
+        Vector3 posicionActual = transform.position;
 
-        Transform cercano = enemigos[0].transform;
-        float distanciaMin = Vector2.Distance(transform.position, cercano.position);
-
-        foreach (GameObject e in enemigos)
+        foreach (GameObject enemigo in enemigos)
         {
-            float d = Vector2.Distance(transform.position, e.transform.position);
-            if (d < distanciaMin)
+            float dist = Vector3.Distance(enemigo.transform.position, posicionActual);
+
+            if (dist < distanciaMinima)
             {
-                distanciaMin = d;
-                cercano = e.transform;
+                distanciaMinima = dist;
+                enemigoCercano = enemigo.transform;
             }
         }
 
-        return cercano;
+        return enemigoCercano;
     }
 }

@@ -52,6 +52,10 @@ public class NuevoEspadaControl : MonoBehaviour
         {
             MurodeFuego();
         }
+        else
+        {
+
+        }
     }
 
 

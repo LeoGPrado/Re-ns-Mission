@@ -5,7 +5,7 @@ public class cambioPantalla : MonoBehaviour
 {
     public void CargarSiguienteEscena(int Cambio)
     {
-        // SceneManager.LoadScene() puede tomar un índice entero
+        Time.timeScale = 1f;
         SceneManager.LoadScene(Cambio);
 
     }

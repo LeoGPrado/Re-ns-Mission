@@ -3958,7 +3958,7 @@ MonoBehaviour:
     and step back</color> at the same time. You\u2019re a <color=#541696>wizard</color>,
     not a knight, so don\u2019t stay too close to the enemy. "
   - "Now that you\u2019ve learned the basics, click the <color=#966C20>arrow</color>
-    or press <color=#966C20>E</color> once more   to <color=966C20>begin your adventure</color>."
+    or press <color=#966C20>E</color> once more   to <color=#966C20>begin your adventure</color>."
 --- !u!4 &850882798
 Transform:
   m_ObjectHideFlags: 0

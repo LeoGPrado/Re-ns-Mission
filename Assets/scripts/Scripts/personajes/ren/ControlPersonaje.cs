@@ -9,6 +9,12 @@ public class ControlPersonaje : MonoBehaviour
     [SerializeField] Rigidbody2D ren;
     [SerializeField] Animator animRen;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip movimientoSonido;
+    [SerializeField] private AudioClip dañoRecibidoAudio;
+
+    [Header("Demas")]
     public BoxCollider2D DetectarEnemigo;
     public Transform puntoDeAtaque;
 
@@ -116,8 +122,7 @@ public class ControlPersonaje : MonoBehaviour
 
         bool Moviendose = (horizontal != 0 || vertical != 0);
         animRen.SetBool("SeMueve", Moviendose);
-
-
+        audioSource.PlayOneShot(movimientoSonido);
     }
     IEnumerator ActivarMovimientoDespues()
     {
@@ -125,8 +130,6 @@ public class ControlPersonaje : MonoBehaviour
         yield return new WaitForSeconds(tiempoQuieto);
         desactivar = false;
     }
-
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemigo")
@@ -136,6 +139,7 @@ public class ControlPersonaje : MonoBehaviour
 
             vidaInicial--;
             dañoRecibido++;
+            audioSource.PlayOneShot(dañoRecibidoAudio);
 
             ActualizarCorazones();
             perderVida();
@@ -160,7 +164,6 @@ public class ControlPersonaje : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
-
     private IEnumerator Invulnerabilidad()
  
     {
@@ -168,11 +171,6 @@ public class ControlPersonaje : MonoBehaviour
         yield return new WaitForSeconds(duracionInvulnerabilidad);
         jugadorInvulnerable = false;
     }
-    //private void activar()
-    //{
-    //    desactivar = false;
-    //}
-
     public void ActualizarCorazones()
     {
         Corazon1.SetActive(vidaInicial >= 1);
@@ -181,7 +179,6 @@ public class ControlPersonaje : MonoBehaviour
         Corazon4.SetActive(vidaInicial >= 4);
         Corazon5.SetActive(vidaInicial >= 5);
     }
-
     public void GanarVida()
     {
             vidaInicial = 5;

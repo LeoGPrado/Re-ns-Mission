@@ -3935,30 +3935,30 @@ MonoBehaviour:
   APersonaje: {fileID: 0}
   textoDialogoInicial: {fileID: 275919842}
   dialogosIniciales:
-  - "Welcome to the <color=#60376C>Ren\u2019s Mission</color> tutorial.   To continue,
-    click the <color=#1E581F>arrow</color> or press <color=#C063FF>E</color>."
-  - 'To move around the area, use the <color=#7CFC00>W</color>, <color=#7CFC00>A</color>,
-    <color=#7CFC00>S</color>, <color=#7CFC00>D</color> keys. '
-  - 'What you see now is a <color=#8B5A2B>training dummy</color>.   It will help
-    you <color=#00BFFF>practice</color>. '
-  - 'Next, we will show you how <color=#00BFFF>ranged weapons</color> work. '
-  - "With the <color=#7CFC00>left click</color>, you can perform the weapon\u2019s
-    <color=#FFA500>normal attack</color>. "
-  - 'Each weapon has a <color=#FFA500>special attack</color>,   which you can use
-    once you recharge the meter located at the   <color=#00BFFF>bottom-right corner</color>
+  - "Welcome to the <color=#4A11CF>Ren\u2019s Mission</color> tutorial.   To continue,
+    click the <color=#966C20>arrow</color> or press <color=#966C20>E</color>."
+  - 'To move around the area, use the <color=#541696>W</color>, <color=#541696>A</color>,
+    <color=#541696>S</color>, <color=#541696>D</color> keys. '
+  - 'What you see now is a <color=#9A4528>training dummy</color>.   It will help
+    you <color=#B30344>practice</color>. '
+  - 'Next, we will show you how <color=#3EA600>ranged weapons</color> work. '
+  - "With the <color=#0082DB>left click</color>, you can perform the weapon\u2019s
+    <color=#7CF136>normal attack</color>. "
+  - 'Each weapon has a <color=#7CF136>special attack</color>,   which you can use
+    once you recharge the meter located at the   <color=#9101AE>bottom-right corner</color>
     of the screen. '
-  - 'The meter recharges by defeating enemies,   but this time it will refill <color=#00BFFF>automatically</color>.  
-    Press <color=#7CFC00>right click</color> to use it. '
-  - "Now that you\u2019ve learned how to use <color=#00BFFF>ranged weapons</color>,  
-    you will be taught how to use <color=#FFA500>melee weapons</color>. "
-  - 'Remember to use <color=#7CFC00>left click</color> for the <color=#FFA500>normal
-    attack</color>   and <color=#7CFC00>right click</color> for the <color=#00BFFF>special
+  - 'The meter recharges by defeating enemies,   but this time it will refill <color=#9101AE>automatically</color>.  
+    Press <color=#005BA6>right click</color> to use it. '
+  - "Now that you\u2019ve learned how to use <color=#3EA600>ranged weapons</color>,  
+    you will be taught how to use <color=#9619BF>melee weapons</color>. "
+  - 'Remember to use <color=#0082DB>left click</color> for the <color=#7CF136>normal
+    attack</color>   and <color=#005BA6>right click</color> for the <color=#7CF136>special
     attack</color>. '
-  - "Remember: with <color=#FFA500>melee weapons</color>, you must  <color=#00BFFF>attack
-    and step back</color> at the same time. You\u2019re a <color=#7CFC00>wizard</color>,
+  - "Remember: with <color=#9619BF>melee weapons</color>, you must  <color=#7CF136>attack
+    and step back</color> at the same time. You\u2019re a <color=#541696>wizard</color>,
     not a knight, so don\u2019t stay too close to the enemy. "
-  - "Now that you\u2019ve learned the basics, click the <color=#FFA500>arrow</color>
-    or press <color=#7CFC00>E</color> once more   to <color=#00BFFF>begin your adventure</color>."
+  - "Now that you\u2019ve learned the basics, click the <color=#966C20>arrow</color>
+    or press <color=#966C20>E</color> once more   to <color=966C20>begin your adventure</color>."
 --- !u!4 &850882798
 Transform:
   m_ObjectHideFlags: 0
@@ -10878,93 +10878,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.6553994}
   m_EdgeRadius: 0
---- !u!1 &1208719476
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1208719478}
-  - component: {fileID: 1208719477}
-  m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1208719477
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208719476}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3731605, g: 0.21268801, b: 0.42200002, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1208719478
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208719476}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.17, y: -1.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1251622845
 GameObject:
   m_ObjectHideFlags: 0
@@ -19805,4 +19718,3 @@ SceneRoots:
   - {fileID: 408479357}
   - {fileID: 1279342307}
   - {fileID: 448602022}
-  - {fileID: 1208719478}

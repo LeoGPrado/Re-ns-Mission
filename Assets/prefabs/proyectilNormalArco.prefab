@@ -171,6 +171,7 @@ MonoBehaviour:
   ImpoctoArma: {fileID: 0}
   rb: {fileID: 0}
   spriteHijo: {fileID: 1387522220993689463}
+  luz: {fileID: -5737653307805296072}
   DFuego: 0
   Dhielo: 0
   Dnaturaleza: 1

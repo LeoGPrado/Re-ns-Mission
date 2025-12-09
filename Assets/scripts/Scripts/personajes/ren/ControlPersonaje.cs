@@ -122,7 +122,23 @@ public class ControlPersonaje : MonoBehaviour
 
         bool Moviendose = (horizontal != 0 || vertical != 0);
         animRen.SetBool("SeMueve", Moviendose);
-        audioSource.PlayOneShot(movimientoSonido);
+
+        if (Moviendose)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
+
+
     }
     IEnumerator ActivarMovimientoDespues()
     {
@@ -153,6 +169,7 @@ public class ControlPersonaje : MonoBehaviour
     {
         if (vidaInicial <= 0)
         {
+            audioSource.Stop();
             if (canvasGameplay != null)
                 canvasGameplay.SetActive(false);
 

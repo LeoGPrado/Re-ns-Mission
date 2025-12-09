@@ -170,6 +170,18 @@ public class ControlPersonaje : MonoBehaviour
         if (vidaInicial <= 0)
         {
             audioSource.Stop();
+
+            SlieControl[] slimes = FindObjectsByType<SlieControl>(FindObjectsSortMode.None);
+            foreach (SlieControl enemigos in slimes)
+            {         
+                    enemigos.enabled = false;
+                    AudioSource[] audios = enemigos.GetComponentsInChildren<AudioSource>(true);
+                    foreach (AudioSource audio in audios)
+                    {
+                        audio.Stop();
+                    }                
+            }
+
             if (canvasGameplay != null)
                 canvasGameplay.SetActive(false);
 

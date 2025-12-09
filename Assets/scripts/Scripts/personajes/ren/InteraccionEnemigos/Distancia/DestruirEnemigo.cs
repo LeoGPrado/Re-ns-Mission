@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class DestruirEnemigo : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class DestruirEnemigo : MonoBehaviour
     public static DestruirEnemigo DEnemigo;
     [SerializeField] private Rigidbody2D rb;
     public Transform spriteHijo;
+    [SerializeField] private Light2D luz;
 
     [Header("Tipo De Daño")]
     public bool DFuego = false;
@@ -163,6 +165,7 @@ public class DestruirEnemigo : MonoBehaviour
         spriteHijo.gameObject.SetActive(false);
         Collider2D collider = GetComponent<Collider2D>();
         collider.enabled = false;
+        luz.enabled = false;
         rb.linearVelocity = Vector2.zero;
         StartCoroutine(DestruirDespuesDelAudio());
     }

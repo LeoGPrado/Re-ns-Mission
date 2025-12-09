@@ -49711,6 +49711,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: ren
+      value: 
+      objectReference: {fileID: 8028158966399061231}
+    - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Corazon1
       value: 
       objectReference: {fileID: 469633420}
@@ -49761,11 +49765,11 @@ PrefabInstance:
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: movimientoSonido
       value: 
-      objectReference: {fileID: 8300000, guid: 6ad9c2ed16bf0ef4fb100332345aa3d6, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: "da\xF1oRecibidoAudio"
       value: 
-      objectReference: {fileID: 8300000, guid: 5987946bd68a25c46867d29660adb9d9, type: 3}
+      objectReference: {fileID: 8300000, guid: 4db678dda2b593547a862bd60eab705b, type: 3}
     - target: {fileID: 3466108242841532832, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: duracionInvulnerabilidad
       value: 1
@@ -51019,7 +51023,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6ad9c2ed16bf0ef4fb100332345aa3d6, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -51105,6 +51109,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &8028158966399061231 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 9061771779671193141, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+  m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8175067172642270565
 PrefabInstance:
   m_ObjectHideFlags: 0

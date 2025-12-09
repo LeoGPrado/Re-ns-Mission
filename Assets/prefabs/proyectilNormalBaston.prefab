@@ -168,9 +168,10 @@ MonoBehaviour:
   sonidoBala: {fileID: 8300000, guid: 9c86accaf1489604ba7b8096da615317, type: 3}
   velocidad: 5
   quieto: 0
-  rb: {fileID: 0}
   ImpoctoArma: {fileID: 0}
+  rb: {fileID: 0}
   spriteHijo: {fileID: 899863213298973618}
+  luz: {fileID: -5737653307805296072}
   DFuego: 1
   Dhielo: 0
   Dnaturaleza: 0

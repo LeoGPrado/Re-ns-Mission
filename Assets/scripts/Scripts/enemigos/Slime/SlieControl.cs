@@ -4,6 +4,12 @@ using System.Collections;
 
 public class SlieControl : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sonidoMovimiento;
+    [SerializeField] private AudioClip sonidoDisparoSlime;
+    [SerializeField] private AudioClip sonidoDeMuerte;
+
     public Transform objetivo;
     public float velocidad = 5f;
     //private Vector3 velo = Vector3.zero;
@@ -152,8 +158,20 @@ public class SlieControl : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+        if (agent.velocity.magnitude > 0.1f)
+        {
+            if (audioSource != null && !audioSource.isPlaying)
+                audioSource.Play();
+        }
+        else
+        {
+            if (audioSource != null && audioSource.isPlaying)
+                audioSource.Stop();
+        }
+
+
     }
-   
+
     public void Instakill()
     {
         StartCoroutine(DropAndCooldown());
@@ -165,10 +183,7 @@ public class SlieControl : MonoBehaviour
         print("RECIBIO DAÑO!!!!");
         if (VidaEnemigo < 1)
         {
-            StartCoroutine(DropAndCooldown());
-            Destroy(gameObject);
-            ControlPersonaje.Ren.AumentarContadorEnemigos();
-
+            StartCoroutine(SlimeMuere());          
         }
         else
         {
@@ -270,4 +285,19 @@ public class SlieControl : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         agent.isStopped = false;
     }
+    IEnumerator SlimeMuere()
+    {
+        VidaEnemigo = 0;
+        if (audioSource != null && sonidoDeMuerte != null)
+            audioSource.PlayOneShot(sonidoDeMuerte);
+
+        StartCoroutine(DropAndCooldown());
+        if (sonidoDeMuerte != null)
+            yield return new WaitForSeconds(sonidoDeMuerte.length);
+
+        Destroy(gameObject);
+        ControlPersonaje.Ren.AumentarContadorEnemigos();
+
+    }
+
 }

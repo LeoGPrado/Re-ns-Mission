@@ -17,12 +17,12 @@ public class PostProcessingTest : MonoBehaviour
         else print("XD");
     }
 
-    public void SaturacionGradual(float target, float duracion)
+    public void SaturacionGradual(float estado, float duracion)
     {
         if (Corrutina != null) StopCoroutine(Corrutina);
-        Corrutina = StartCoroutine(ChangeSaturation(target, duracion));
+        Corrutina = StartCoroutine(ChangeSaturation(estado, duracion));
     }
-    IEnumerator ChangeSaturation(float target, float duracion)
+    IEnumerator ChangeSaturation(float estado, float duracion)
     {
         float Inicio = colorAdjustments.saturation.value;
         float tiempo = 0;
@@ -30,10 +30,10 @@ public class PostProcessingTest : MonoBehaviour
         while (tiempo < duracion)
         {
             tiempo += Time.deltaTime;
-            colorAdjustments.saturation.value = Mathf.Lerp(Inicio, target, tiempo / duracion);
+            colorAdjustments.saturation.value = Mathf.Lerp(Inicio, estado, tiempo / duracion);
             yield return null;
         }
-        colorAdjustments.saturation.value = target;
+        colorAdjustments.saturation.value = estado;
     }
     public void RestaurarSaturacion(float duracion)
     {

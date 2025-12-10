@@ -19,15 +19,10 @@ public class PlayerEnergyController : MonoBehaviour
     
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
-    {
-              
-        currentMana = baseMana;
-        
+    {           
+        currentMana = baseMana;       
     }
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -61,12 +56,5 @@ public class PlayerEnergyController : MonoBehaviour
         energycharged = false;
         usedUltimate = true;
         currentMana = baseMana;
-        
-
-
     }
-
-    
-
-
 }

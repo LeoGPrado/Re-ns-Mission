@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/prueba mapa 1.unity
     guid: d926556e3e2dd7449a356745536d1458
   - enabled: 1
+    path: Assets/Scenes/RenBailando.unity
+    guid: 824cc0a08cf349e4993f026d09bafaae
+  - enabled: 1
     path: Assets/Scenes/Victoria.unity
     guid: 93e9aea278e32e44fa690bfc011e444f
   - enabled: 1

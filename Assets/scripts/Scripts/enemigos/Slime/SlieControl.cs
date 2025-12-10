@@ -12,15 +12,12 @@ public class SlieControl : MonoBehaviour
 
     public Transform objetivo;
     public float velocidad = 5f;
-    //private Vector3 velo = Vector3.zero;
     GameObject objPuerta;
     GameObject objPersonaje;
-    //public Rigidbody2D slimeR;
 
-    //public CircleCollider2D AreaDeteccionJugador;
-    //public bool DetectaAlJugador = false;
 
     public static SlieControl slime;
+    public bool estaMuerto = false;
     public Rigidbody enemigoRB;
     private NavMeshAgent agent;
     private Transform player, door;
@@ -50,7 +47,6 @@ public class SlieControl : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        //slimeR = GetComponent<Rigidbody2D>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
@@ -100,9 +96,6 @@ public class SlieControl : MonoBehaviour
             player = GameObject.FindWithTag("protagonista").transform;
         }
 
-        /*objPuerta = GameObject.Find("PuntoEntrada");
-        player = GameObject.FindWithTag("protagonista").transform;*/
-
         VidaEnemigo = 5;
 
         if (objPuerta != null)
@@ -129,7 +122,6 @@ public class SlieControl : MonoBehaviour
 
             if (VerificarSlime == true)
             {
-                //ControlPersonaje.Ren.DetectorSlime = true;
                 activarDisparo = true;
                 StartCoroutine(InvocacionDeBalaSlime());
             }
@@ -189,6 +181,7 @@ public class SlieControl : MonoBehaviour
 
     public void controlVida()
     {
+        if (estaMuerto) return;
         print("RECIBIO DAÑO!!!!");
         if (VidaEnemigo < 1)
         {
@@ -296,6 +289,10 @@ public class SlieControl : MonoBehaviour
     }
     IEnumerator SlimeMuere()
     {
+        if (estaMuerto) yield break;
+        estaMuerto = true;
+        GetComponent<Collider2D>().enabled = false;
+
         VidaEnemigo = 0;
         if (audioSource != null && sonidoDeMuerte != null)
             audioSource.PlayOneShot(sonidoDeMuerte);

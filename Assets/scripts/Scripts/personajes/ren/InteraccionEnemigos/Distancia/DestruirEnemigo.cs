@@ -73,11 +73,12 @@ public class DestruirEnemigo : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
+
             if (ImpoctoArma == null)
             {
                 if (collision.TryGetComponent<SlieControl>(out var slime))
-                {
-                    print("entrando");
+                {                 
+                        print("entrando");
                     string tipoSlime = slime.confirmarElemento();
                     print("Elemento detectado en enemigo: " + tipoSlime);
 

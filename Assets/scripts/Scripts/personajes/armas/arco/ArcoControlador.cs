@@ -4,6 +4,8 @@ using UnityEditor;
 
 public class ArcoControlador : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip sonidoFlechaUlti;
     public GameObject balaNormal;
     public GameObject balaEspecialPrefab;
     public Transform puntoAparicion;
@@ -146,13 +148,16 @@ public class ArcoControlador : MonoBehaviour
         isOnUltimate = true;
         medidor.canUseUltimate = false;
         playerEC.Ultimate();
+        audioSource.PlayOneShot(sonidoFlechaUlti);
 
-        int cantidadDeFlechas = 140;      
-        float intervalo = 0.01f;         
+        int cantidadDeFlechas = 140;
+        float intervalo = 0.01f;
 
         for (int i = 0; i < cantidadDeFlechas; i++)
         {
-            DisparoNormal();           
+            GameObject flechaEspecial = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+
+            Destroy(flechaEspecial, 3f);
             yield return new WaitForSeconds(intervalo);
         }
 

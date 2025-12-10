@@ -85,6 +85,3 @@ public class Clasificaion : MonoBehaviour
         clasificacionFinal.text = rango;
     }
 }
-
-
-

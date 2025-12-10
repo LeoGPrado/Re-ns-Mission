@@ -41,6 +41,7 @@ public class PuertaHP : MonoBehaviour
 
         if (vidaActual <= 0)
         {
+            SlieControl.MutearTodosSlimes(true);
             canvasGameplay.SetActive(false);
             canvasDerrota.SetActive(true); 
             Time.timeScale = 0f;

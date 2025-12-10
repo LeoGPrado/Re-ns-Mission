@@ -21,6 +21,7 @@ public class PausaV2 : MonoBehaviour
     public void Continuar()
     {
         Pausa = false;
+        SlieControl.MutearTodosSlimes(false);
         ObjetoMenuPausa.SetActive(false);
         CanvasGameplay.SetActive(true);
         Time.timeScale = 1f;
@@ -29,6 +30,7 @@ public class PausaV2 : MonoBehaviour
     public void PausarJuego()
     {
         Pausa = true;
+        SlieControl.MutearTodosSlimes(true);
         ObjetoMenuPausa.SetActive(true);
         CanvasGameplay.SetActive(false);
         Time.timeScale = 0f;  

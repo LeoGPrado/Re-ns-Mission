@@ -55,6 +55,7 @@ public class PanelMejoras : MonoBehaviour
 
     public void Mejora()
     {
+        SlieControl.MutearTodosSlimes(true);
         panel.SetActive(true);
         StartCoroutine(SeleccionMejoras());
         momentoMejora = false;
@@ -75,6 +76,7 @@ public class PanelMejoras : MonoBehaviour
 
     void DesactivarPanel()
     {
+        SlieControl.MutearTodosSlimes(false);
         panel.SetActive(false);
         Time.timeScale = 1f;
     }

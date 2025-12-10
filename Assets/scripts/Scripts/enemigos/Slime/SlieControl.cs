@@ -30,6 +30,8 @@ public class SlieControl : MonoBehaviour
     [SerializeField] private GameObject manaPartícula;
     [SerializeField] private float manaPartCount = 4f;
     [SerializeField] private bool canDropMana = true;
+    private bool audioMuteado = false;
+
 
     public bool objetivoPuerta;
     public bool objetivoRen;
@@ -131,7 +133,8 @@ public class SlieControl : MonoBehaviour
                 activarDisparo = true;
                 StartCoroutine(InvocacionDeBalaSlime());
             }
-            else if(VerificarSlime == false){
+            else if (VerificarSlime == false)
+            {
                 //ControlPersonaje.Ren.DetectorSlime = false;
             }
 
@@ -158,20 +161,26 @@ public class SlieControl : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        if (agent.velocity.magnitude > 0.1f)
+        if (!audioMuteado)
         {
-            if (audioSource != null && !audioSource.isPlaying)
-                audioSource.Play();
+            if (agent.velocity.magnitude > 0.1f)
+            {
+                if (audioSource != null && !audioSource.isPlaying)
+                    audioSource.Play();
+            }
+            else
+            {
+                if (audioSource != null && audioSource.isPlaying)
+                    audioSource.Stop();
+            }
         }
         else
         {
             if (audioSource != null && audioSource.isPlaying)
-                audioSource.Stop();
+                audioSource.Pause();
+
         }
-
-
     }
-
     public void Instakill()
     {
         StartCoroutine(DropAndCooldown());
@@ -299,5 +308,14 @@ public class SlieControl : MonoBehaviour
         ControlPersonaje.Ren.AumentarContadorEnemigos();
 
     }
-
+    public static void MutearTodosSlimes(bool mutear)
+    {
+        SlieControl[] slimes = FindObjectsByType<SlieControl>(FindObjectsSortMode.None);
+        foreach (SlieControl slime in slimes)
+        {
+            slime.audioMuteado = mutear;
+            if (mutear) slime.audioSource.Pause();
+            else slime.audioSource.UnPause();
+        }
+    }
 }

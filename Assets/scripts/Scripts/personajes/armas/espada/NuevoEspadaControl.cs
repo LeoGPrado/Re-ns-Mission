@@ -50,7 +50,7 @@ public class NuevoEspadaControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
         {
-            MurodeFuego();
+            //MurodeFuego();
         }
         else
         {

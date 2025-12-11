@@ -50143,6 +50143,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9007121198516831774, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: medidor
+      value: 
+      objectReference: {fileID: 1531625472}
+    - target: {fileID: 9007121198516831774, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: muroPrefab
       value: 
       objectReference: {fileID: 59671839462443129, guid: 4ef48b1f25de2764c927b94de6d432a7, type: 3}

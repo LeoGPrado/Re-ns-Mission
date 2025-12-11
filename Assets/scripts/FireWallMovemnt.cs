@@ -3,19 +3,25 @@ using UnityEngine;
 public class FireWallMovemnt : MonoBehaviour
 {
 
-    [SerializeField] private Rigidbody2D rb2d;
-    [SerializeField] private float speed = 2;
+    public float speed = 5f;
+    private Vector3 direccion;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Init(Vector3 direction)
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        direccion = direction;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, -speed);
+        transform.position += direccion * speed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemigo")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
 }

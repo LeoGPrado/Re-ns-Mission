@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: -5895763232839339643}
-  sonidoBala: {fileID: 0}
+  sonidoBala: {fileID: 8300000, guid: 7428e52679689be45aa90f343dd218d4, type: 3}
   velocidad: 5
   quieto: 0
   ImpoctoArma: {fileID: 0}

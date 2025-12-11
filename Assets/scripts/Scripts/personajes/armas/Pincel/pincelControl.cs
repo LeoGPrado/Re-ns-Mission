@@ -122,9 +122,9 @@ public class pincelControl : MonoBehaviour
             float angulo = i * (360f / cantidadBalas);
             float rad = angulo * Mathf.Deg2Rad;
             Vector3 spawnPosicion = centro + new Vector3(Mathf.Cos(rad), Mathf.Sin(rad), 0) * radio;
-            Quaternion rotacion = Quaternion.Euler(0f, 0f, angulo);
+            Quaternion rotacion = Quaternion.AngleAxis(angulo - 90, Vector3.forward);
             GameObject bala = Instantiate(balaEspecialPrefab, spawnPosicion, rotacion);
-            Destroy(bala, 3f);
+            Destroy(bala, 1f);
 
             yield return new WaitForSeconds(delayEntreBalas);
         }

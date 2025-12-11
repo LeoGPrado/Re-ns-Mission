@@ -16,7 +16,7 @@ public class IntroCamera : MonoBehaviour
     [SerializeField] private float textoDelay = 1.5f;
     [SerializeField] private float delayInicial = 1f;
     [SerializeField] private float tiempoCamaraSpawn = 2f;
-
+ 
 
 
     void Start()

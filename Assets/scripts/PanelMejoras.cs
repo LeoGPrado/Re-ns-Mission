@@ -11,7 +11,7 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private float duracionMejoras = 6f;
     [SerializeField] private GameObject panel;
     [SerializeField] private bool momentoMejora = true;
-    
+
 
 
     [SerializeField] private Transform player;
@@ -79,7 +79,5 @@ public class PanelMejoras : MonoBehaviour
         SlieControl.MutearTodosSlimes(false);
         panel.SetActive(false);
         Time.timeScale = 1f;
-    }
-
-
+    }    
 }

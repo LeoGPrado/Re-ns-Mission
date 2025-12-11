@@ -12,7 +12,6 @@ public class DestruirEnemigo : MonoBehaviour
     [SerializeField] float velocidad = 8f;
     public bool quieto = true;
     [SerializeField] Animator ImpoctoArma;
-    public static DestruirEnemigo DEnemigo;
     [SerializeField] private Rigidbody2D rb;
     public Transform spriteHijo;
     [SerializeField] private Light2D luz;
@@ -25,23 +24,14 @@ public class DestruirEnemigo : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        if (DEnemigo == null)
-        {
-            DEnemigo = this;
-        }
+        rb = GetComponent<Rigidbody2D>();  
     }
 
     void Start()
     {
         audioSource.PlayOneShot(sonidoBala);
 
-        if (quieto == true)
-        {
-
-        }
-        else
+        if (!quieto)        
         {
 
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -51,7 +41,7 @@ public class DestruirEnemigo : MonoBehaviour
             Vector2 direccion = (mousePos - transform.position).normalized;
 
 
-            GetComponent<Rigidbody2D>().linearVelocity = direccion * velocidad;
+            rb.linearVelocity = direccion * velocidad;
         }
 
     }
@@ -71,96 +61,37 @@ public class DestruirEnemigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemigo")
+        if (!collision.CompareTag("Enemigo")) return;
+
+        if (ImpoctoArma == null)
         {
-
-            if (ImpoctoArma == null)
+            if (collision.TryGetComponent<SlieControl>(out var slime))
             {
-                if (collision.TryGetComponent<SlieControl>(out var slime))
-                {                 
-                        print("entrando");
-                    string tipoSlime = slime.confirmarElemento();
-                    print("Elemento detectado en enemigo: " + tipoSlime);
+                int golpes = slime.CalcularDañoRecibido(DFuego, Dhielo, Dnaturaleza);
 
-                    //si coloco un nuevo metodo en slimecontrol que decuelva un true o folse
-                    if (tipoSlime == "fuego")//y lo cocloca aqui ya que slimecontrol es static
-                    {
-                        if (DFuego == true)
-                        {
-                            slime.controlVida();
-                        }
-                        else if (Dhielo == true)
-                        {
-                            slime.controlVida();
-                            slime.controlVida();
-                            slime.controlVida();
-                        }
-                        else
-                        {
-                            slime.controlVida();
-                            slime.controlVida();
-                        }
-                        
-                    }
-                    else if (tipoSlime == "hielo")
-                    {
-                        if (Dhielo == true)
-                        {
-                            slime.controlVida();
-                        }
-                        else if (Dnaturaleza == true)
-                        {
-                            slime.controlVida();
-                            slime.controlVida();
-                            slime.controlVida();
-                        }
-                        else
-                        {
-                            slime.controlVida();
-                            slime.controlVida();
-                        }                     
-                    }
-                    else if (tipoSlime == "naturaleza")
-                    {
-                        if (Dnaturaleza == true)
-                        {
-                            slime.controlVida();
-                        }
-                        else if (DFuego == true)
-                        {
-                            slime.controlVida();
-                            slime.controlVida();
-                            slime.controlVida();
-                        }
-                        else
-                        {
-                            slime.controlVida();
-                            slime.controlVida();
-                        }                     
-                    }
-                    else if (tipoSlime == "normal")
-                    {
-                        print("La bala ha entrado a enemigo normal");
-                        slime.controlVida();
-                        slime.controlVida();
-                    }
-                    else
-                    {
-                        Destroy(collision.gameObject);
-                       
-                    }
+                if (golpes == -1)
+                {
+                    Destroy(collision.gameObject);
                 }
-                DesactivarYEsperarAudio();
+                else
+                {
+                    for (int i = 0; i < golpes; i++)
+                        slime.controlVida();
+                }
             }
-            else
-            {
-                ImpoctoArma.SetTrigger("ImpactoP");
-                GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-                Destroy(collision.gameObject);
-            }
-        }
 
+            DesactivarYEsperarAudio();
+        }
+        else
+        {
+            ImpoctoArma.SetTrigger("ImpactoP");
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            Destroy(collision.gameObject);
+        }
     }
+
+
+
     private void DesactivarYEsperarAudio()
     {
         spriteHijo.gameObject.SetActive(false);

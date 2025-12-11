@@ -233,6 +233,8 @@ MonoBehaviour:
   sonidoDeMuerte: {fileID: 8300000, guid: 5987946bd68a25c46867d29660adb9d9, type: 3}
   objetivo: {fileID: 0}
   velocidad: 3
+  sr: {fileID: 0}
+  estaMuerto: 0
   enemigoRB: {fileID: 0}
   VidaEnemigo: 10
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
@@ -255,7 +257,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4891012412717606429}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d7963a9d6d31504aaad151c8545734c, type: 3}
   m_Name: 

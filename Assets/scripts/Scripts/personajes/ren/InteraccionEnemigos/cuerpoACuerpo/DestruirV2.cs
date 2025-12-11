@@ -103,31 +103,19 @@ public class DestruirV2 : MonoBehaviour
         }
         //DestruirV2.SeleccionElemento.DFuego=true
 
-        if (collision.gameObject.tag == "Enemigo")
+        if (collision.CompareTag("Enemigo"))
         {
-            print("enemigo!!!!");
-            //talvez esto sea el problema
             if (collision.TryGetComponent<SlieControl>(out var slime))
             {
-                print("tiene componente!!!!");
                 xDist = transform.position.x - collision.transform.position.x;
                 slimeR = collision.GetComponent<Rigidbody2D>();
                 SlimeSprite = collision.GetComponent<SpriteRenderer>();
-                slimeScript = collision.GetComponent<SlieControl>();
+                slimeScript = slime;
 
-                string tipoSlime = slime.confirmarElemento();
-                print("Elemento detectado en enemigo: " + tipoSlime);
+                Vector2 directionEnemy =
+                    (transform.position - collision.transform.position).normalized;
 
-                Vector2 directionEnemy = (transform.position - (collision.transform.position * 10)).normalized;
-
-                if (xDist <= 0)
-                {
-                    slimeR?.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
-                }
-                else
-                {
-                    slimeR?.AddForce(directionEnemy * -250, ForceMode2D.Impulse);
-                }
+                slimeR?.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
 
                 if (ataqueDeFuego)
                 {
@@ -135,52 +123,20 @@ public class DestruirV2 : MonoBehaviour
                 }
                 else
                 {
-                    switch (tipoSlime)
-                    {
-                        case "fuego": ApplyDamage(DFuego, Dhielo); break;
-                        case "hielo": ApplyDamage(Dhielo, Dnaturaleza); break;
-                        case "naturaleza": ApplyDamage(Dnaturaleza, DFuego); break;
-                        default: ataqueNormal(); break;
-                    }
-                    if (tipoSlime == "normal")
-                    {
-                        print("La bala ha entrado a enemigo normal");
-                        ataqueNormal();
-                        ataqueNormal();
-                    }
-                    else
-                    {
-                        ataqueNormal();
-                    }
+                    int golpes = slime.CalcularDañoRecibido(DFuego, Dhielo, Dnaturaleza);
+
+                    for (int i = 0; i < golpes; i++)
+                        slime.controlVida();
+
+                    DFuego = Dhielo = Dnaturaleza = Dnormal = false;
                 }
 
-
                 slimeScript.enabled = false;
-                print("esta entrando en trigger");
                 StartCoroutine(FrenarRetroceso());
             }
-
         }
-
-        void ApplyDamage(bool firstOption, bool secondOption)
-        {
-            if (firstOption)
-            {
-                ataqueNormal();
-            }
-            else if (secondOption)
-            {
-                ataqueNormal();
-                ataqueNormal();
-                ataqueNormal();
-            }
-            else
-            {
-                ataqueNormal();
-                ataqueNormal();
-            }
-        }
-        IEnumerator FrenarRetroceso()
+    }
+    IEnumerator FrenarRetroceso()
         {
 
             yield return new WaitForSeconds(0.5f);
@@ -191,6 +147,4 @@ public class DestruirV2 : MonoBehaviour
             if (slimeScript)
                 slimeScript.enabled = true;
         }
-
-    }
 }

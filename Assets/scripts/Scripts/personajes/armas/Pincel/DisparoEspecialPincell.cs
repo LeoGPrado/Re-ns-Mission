@@ -14,8 +14,11 @@ public class DisparoEspecialPincell : MonoBehaviour
 
     void Update()
     {
-        if (enemigo == null) return;
-
+        if (enemigo == null)  
+        {
+            enemigo = BuscarEnemigoCercano();
+            if (enemigo == null) return;
+        }
 
         transform.position = Vector2.MoveTowards(transform.position, enemigo.position, velocidad * Time.deltaTime);
 
@@ -41,7 +44,6 @@ public class DisparoEspecialPincell : MonoBehaviour
             {
                 ImpoctoArma.SetTrigger("ImpactoP");
                 GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-                Destroy(collision.gameObject);       
             }
         }
 

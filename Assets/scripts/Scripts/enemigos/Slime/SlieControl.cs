@@ -14,6 +14,10 @@ public class SlieControl : MonoBehaviour
     public float velocidad = 5f;
     GameObject objPuerta;
     GameObject objPersonaje;
+    [SerializeField] private SpriteRenderer sr;
+    private bool parpadear = false;
+
+
 
 
     public static SlieControl slime;
@@ -46,6 +50,7 @@ public class SlieControl : MonoBehaviour
 
     private void Awake()
     {
+        sr = GetComponent<SpriteRenderer>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -179,40 +184,48 @@ public class SlieControl : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public int CalcularDañoRecibido(bool dFuego, bool dHielo, bool dNaturaleza)
+    {
+        string tipo = confirmarElemento();
+        switch (tipo)
+        {
+            /// ya saben aca revisen si esta bien, si dDaño impacta con Case "elemento" cuanto daño haria
+            case "fuego":
+                if (dFuego) return 2;
+                if (dNaturaleza) return 1;
+                if (dHielo) return 3;
+                return 2;
+
+            case "hielo":
+                if (dFuego) return 1;
+                if (dHielo) return 2;
+                if (dNaturaleza) return 3;
+                return 2;
+
+            case "naturaleza":
+                if (dHielo) return 1; 
+                if (dNaturaleza) return 2;
+                if (dFuego) return 3;
+                return 2;
+
+            case "normal":
+                return 2;
+
+            default:
+                return 0;
+        }
+    }
+
     public void controlVida()
     {
+        StartCoroutine(CambioDeColor());
         if (estaMuerto) return;
+        VidaEnemigo--;
         print("RECIBIO DAÑO!!!!");
         if (VidaEnemigo < 1)
         {
             StartCoroutine(SlimeMuere());          
-        }
-        else
-        {
-            if (slimeFuego == true)
-            {
-                VidaEnemigo --;
-            }
-            else if (slimeHielo==true)
-            {
-
-                VidaEnemigo--;
-            }
-            else if (slimeNaturaleza == true)
-            {
-
-                VidaEnemigo--;
-            }
-            else if (slime == true)
-            {
-
-                VidaEnemigo--;
-            }
-            else
-            {
-                VidaEnemigo--;
-            }
-        }
+        }              
     }
     public string confirmarElemento()
     {
@@ -258,9 +271,9 @@ public class SlieControl : MonoBehaviour
     IEnumerator DañoPorFuego()
     {
         int repeticiones = 0;
-        GetComponent<SpriteRenderer>().color = Color.red;
+        sr.color = Color.red;
 
-        while (repeticiones > 6)
+        while (repeticiones < 6)
         {
             repeticiones++;
             controlVida();
@@ -286,6 +299,25 @@ public class SlieControl : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3f);
         agent.isStopped = false;
+    }
+    IEnumerator CambioDeColor()
+    {
+        if (parpadear) yield break;
+        parpadear = true;
+
+        Color originalColor = sr.color;
+        float blinkTime = 0.1f;
+
+        for (int i = 0; i < 3; i++)
+        {
+            sr.color = Color.red;
+            yield return new WaitForSeconds(blinkTime);
+            sr.color = Color.white;
+            yield return new WaitForSeconds(blinkTime);
+        }
+
+        sr.color = originalColor;
+        parpadear = false;
     }
     IEnumerator SlimeMuere()
     {

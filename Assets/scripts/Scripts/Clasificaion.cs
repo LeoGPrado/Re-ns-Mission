@@ -76,7 +76,7 @@ public class Clasificaion : MonoBehaviour
 
         switch (dañoTotalClasificacion)
         {
-            case 0: rango = "S"; clasificacionFinal.color = colorS; break;
+            case 0: rango = "S"; clasificacionFinal.color = Color.black; break;
             case <= 200: rango = "A"; clasificacionFinal.color = colorA; break;
             case <= 400: rango = "B"; clasificacionFinal.color = colorB; break;
             case <= 600: rango = "C"; clasificacionFinal.color = colorC; break;

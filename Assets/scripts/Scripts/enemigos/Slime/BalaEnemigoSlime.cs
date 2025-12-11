@@ -31,12 +31,7 @@ public class BalaEnemigoSlime : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("protagonista"))
         {
-            Invoke(nameof(DestruirBala), 0.02f);
+            Destroy(gameObject);
         }
-    }
-
-    void DestruirBala()
-    {
-        Destroy(gameObject);
     }
 }

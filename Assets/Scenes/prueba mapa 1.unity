@@ -49771,9 +49771,17 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2608597339268149911, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: medidor
+      value: 
+      objectReference: {fileID: 1531625472}
+    - target: {fileID: 2608597339268149911, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: Especial
       value: 
       objectReference: {fileID: 1857950075}
+    - target: {fileID: 2608597339268149911, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: playerEC
+      value: 
+      objectReference: {fileID: 1254898821}
     - target: {fileID: 2707528958081541113, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: medidor
       value: 

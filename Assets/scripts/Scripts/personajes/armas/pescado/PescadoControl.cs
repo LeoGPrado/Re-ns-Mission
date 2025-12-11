@@ -1,9 +1,12 @@
-using UnityEngine;
 using System.Collections;
+using UnityEditor;
+using UnityEngine;
 
 public class PescadoControl : MonoBehaviour
 {
     public Transform FlipPescado;
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
 
     [SerializeField] SpriteRenderer personaje;
     [SerializeField] SpriteRenderer Pescado;
@@ -41,6 +44,12 @@ public class PescadoControl : MonoBehaviour
 
             Pescado.transform.localPosition = FlipPescado.localPosition;
             Pescado.GetComponent<SpriteRenderer>().flipX = personaje.flipX;
+        }
+
+        if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
+        {
+            playerEC.Ultimate();
+            //MurodeFuego();
         }
     }
 }

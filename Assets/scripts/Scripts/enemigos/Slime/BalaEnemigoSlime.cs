@@ -13,18 +13,30 @@ public class BalaEnemigoSlime : MonoBehaviour
     void Start()
     {
         target = GameObject.FindWithTag("protagonista").transform;
+
         direccion = (target.position - transform.position).normalized;
+
         float ang = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, ang - 90f);
-        GetComponent<Rigidbody2D>().linearVelocity = direccion * speed;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = direccion * speed;
+        rb.WakeUp();
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
+
         Destroy(gameObject, tiempoDeVida);
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "protagonista")
+        if (collision.gameObject.CompareTag("protagonista"))
         {
-            Destroy(gameObject);
+            Invoke(nameof(DestruirBala), 0.02f);
         }
+    }
+
+    void DestruirBala()
+    {
+        Destroy(gameObject);
     }
 }

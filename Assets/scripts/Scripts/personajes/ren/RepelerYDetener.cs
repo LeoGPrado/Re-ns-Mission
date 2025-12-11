@@ -43,7 +43,7 @@ public class RepelerYDetener : MonoBehaviour
     IEnumerator traspasar()
     {
         CuerpoRen.layer = LayerMask.NameToLayer("CuerpoProta");
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1.5f);
         CuerpoRen.layer = layerOriginal;
     }
 }

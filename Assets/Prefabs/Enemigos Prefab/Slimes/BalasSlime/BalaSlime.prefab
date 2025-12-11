@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 787163689172774439}
   - component: {fileID: 3522991923525773347}
   - component: {fileID: 8885198709562791524}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BalaSlime
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

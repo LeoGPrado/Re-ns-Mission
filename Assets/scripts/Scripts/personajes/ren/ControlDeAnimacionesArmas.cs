@@ -132,7 +132,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         {
             atacando = true;
 
-            if (index.armasIndex == 4)
+            if (index.armasIndex == 4 || (Espada.activeInHierarchy && Espada!=null))
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
                 srEspada.enabled = false;

@@ -301,8 +301,10 @@ MonoBehaviour:
   sonidoDeMuerte: {fileID: 0}
   objetivo: {fileID: 0}
   velocidad: 3
+  sr: {fileID: 0}
+  estaMuerto: 0
   enemigoRB: {fileID: 0}
-  VidaEnemigo: 10
+  VidaEnemigo: 5
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
   manaPartCount: 4
   canDropMana: 1

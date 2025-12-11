@@ -37008,7 +37008,7 @@ GameObject:
   - component: {fileID: 1394096925}
   - component: {fileID: 1394096930}
   - component: {fileID: 1394096928}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PuertaDelCastillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39119,7 +39119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1669923095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43762,7 +43762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1971618063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49706,6 +49706,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 127970513044904635, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 518432706999937985, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -50123,6 +50127,10 @@ PrefabInstance:
       value: personaje
       objectReference: {fileID: 0}
     - target: {fileID: 7365231029725861165, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365231029725861165, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -50146,6 +50154,10 @@ PrefabInstance:
       propertyPath: medidor
       value: 
       objectReference: {fileID: 1531625472}
+    - target: {fileID: 9007121198516831774, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: playerEC
+      value: 
+      objectReference: {fileID: 1254898821}
     - target: {fileID: 9007121198516831774, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: muroPrefab
       value: 

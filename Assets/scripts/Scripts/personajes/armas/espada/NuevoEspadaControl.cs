@@ -11,6 +11,7 @@ public class NuevoEspadaControl : MonoBehaviour
     public MedidorArteEspecial medidor;
     public PlayerEnergyController playerEC;
     [SerializeField] GameObject muroPrefab;
+    private bool ultiActive = false;
 
     private void Start()
     {
@@ -50,6 +51,7 @@ public class NuevoEspadaControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && medidor.canUseUltimate)
         {
+            playerEC.Ultimate();
             //MurodeFuego();
         }
         else

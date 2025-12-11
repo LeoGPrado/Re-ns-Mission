@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 288beff7db7b4c84587123cd88c93928
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3459543356940037202
+    second: rollo_armas_icono(80x144)-Sheet_0
+  - first:
+      213: -1055852831734469872
+    second: rollo_armas_icono(80x144)-Sheet_1
+  - first:
+      213: -7037344018216882868
+    second: rollo_armas_icono(80x144)-Sheet_2
+  - first:
+      213: 509673823352182913
+    second: rollo_armas_icono(80x144)-Sheet_3
+  - first:
+      213: -7934288376718746422
+    second: rollo_armas_icono(80x144)-Sheet_4
+  - first:
+      213: 2575213960493188631
+    second: rollo_armas_icono(80x144)-Sheet_5
+  - first:
+      213: -1007203863285493960
+    second: rollo_armas_icono(80x144)-Sheet_6
+  - first:
+      213: 2815859778848447049
+    second: rollo_armas_icono(80x144)-Sheet_7
+  - first:
+      213: 1378098958474886195
+    second: rollo_armas_icono(80x144)-Sheet_8
+  - first:
+      213: 1772454351708113211
+    second: rollo_armas_icono(80x144)-Sheet_9
+  - first:
+      213: -5611698287581673589
+    second: rollo_armas_icono(80x144)-Sheet_10
+  - first:
+      213: 4385447604674019163
+    second: rollo_armas_icono(80x144)-Sheet_11
+  - first:
+      213: 7263894899426736574
+    second: rollo_armas_icono(80x144)-Sheet_12
+  - first:
+      213: 6055787447246848271
+    second: rollo_armas_icono(80x144)-Sheet_13
+  - first:
+      213: -3188374673256403235
+    second: rollo_armas_icono(80x144)-Sheet_14
+  - first:
+      213: 1891466837657492401
+    second: rollo_armas_icono(80x144)-Sheet_15
+  - first:
+      213: 5817783729211486519
+    second: rollo_armas_icono(80x144)-Sheet_16
+  - first:
+      213: -7075138246850843960
+    second: rollo_armas_icono(80x144)-Sheet_17
+  - first:
+      213: 9115745116448189015
+    second: rollo_armas_icono(80x144)-Sheet_18
+  - first:
+      213: 556213958455030126
+    second: rollo_armas_icono(80x144)-Sheet_19
+  - first:
+      213: -5094678137543635427
+    second: rollo_armas_icono(80x144)-Sheet_20
+  - first:
+      213: -1270597182076954530
+    second: rollo_armas_icono(80x144)-Sheet_21
+  - first:
+      213: 7308658563527468866
+    second: rollo_armas_icono(80x144)-Sheet_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 70
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3d68475ab3dffc0800000000000000
+      internalID: -3459543356940037202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 69
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b6065917bd851f0800000000000000
+      internalID: -1055852831734469872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 71
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d66ff96e4565e90800000000000000
+      internalID: -7037344018216882868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 81
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188d83854a9b21700800000000000000
+      internalID: 509673823352182913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 69
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc1b2052ceb3e190800000000000000
+      internalID: -7934288376718746422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 70
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716c2d7f37ffcb320800000000000000
+      internalID: 2575213960493188631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 69
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f87783c61b502f0800000000000000
+      internalID: -1007203863285493960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 74
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a529fbc81f31720800000000000000
+      internalID: 2815859778848447049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 70
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c3b3583bdff1310800000000000000
+      internalID: 1378098958474886195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 57
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39482e87d5099810800000000000000
+      internalID: 1772454351708113211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 56
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87c606b32e3f12b0800000000000000
+      internalID: -5611698287581673589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fbea18c5d3cdc30800000000000000
+      internalID: 4385447604674019163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 56
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb93a1edce98ec460800000000000000
+      internalID: 7263894899426736574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 57
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f010b6c299a7a0450800000000000000
+      internalID: 6055787447246848271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 57
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde23bd902e90c3d0800000000000000
+      internalID: -3188374673256403235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 57
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb91034117df3a10800000000000000
+      internalID: 1891466837657492401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 57
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731b2bf4a7becb050800000000000000
+      internalID: 5817783729211486519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8caecab004f00dd90800000000000000
+      internalID: -7075138246850843960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 56
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a65e8d2e1a18e70800000000000000
+      internalID: 9115745116448189015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6173d4f5a118b700800000000000000
+      internalID: 556213958455030126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 57
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e43c60a311c49b0800000000000000
+      internalID: -5094678137543635427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 57
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58d0b5489eed5ee0800000000000000
+      internalID: -1270597182076954530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollo_armas_icono(80x144)-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 57
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247eba79d329d6560800000000000000
+      internalID: 7308658563527468866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rollo_armas_icono(80x144)-Sheet_0: -3459543356940037202
+      rollo_armas_icono(80x144)-Sheet_1: -1055852831734469872
+      rollo_armas_icono(80x144)-Sheet_10: -5611698287581673589
+      rollo_armas_icono(80x144)-Sheet_11: 4385447604674019163
+      rollo_armas_icono(80x144)-Sheet_12: 7263894899426736574
+      rollo_armas_icono(80x144)-Sheet_13: 6055787447246848271
+      rollo_armas_icono(80x144)-Sheet_14: -3188374673256403235
+      rollo_armas_icono(80x144)-Sheet_15: 1891466837657492401
+      rollo_armas_icono(80x144)-Sheet_16: 5817783729211486519
+      rollo_armas_icono(80x144)-Sheet_17: -7075138246850843960
+      rollo_armas_icono(80x144)-Sheet_18: 9115745116448189015
+      rollo_armas_icono(80x144)-Sheet_19: 556213958455030126
+      rollo_armas_icono(80x144)-Sheet_2: -7037344018216882868
+      rollo_armas_icono(80x144)-Sheet_20: -5094678137543635427
+      rollo_armas_icono(80x144)-Sheet_21: -1270597182076954530
+      rollo_armas_icono(80x144)-Sheet_22: 7308658563527468866
+      rollo_armas_icono(80x144)-Sheet_3: 509673823352182913
+      rollo_armas_icono(80x144)-Sheet_4: -7934288376718746422
+      rollo_armas_icono(80x144)-Sheet_5: 2575213960493188631
+      rollo_armas_icono(80x144)-Sheet_6: -1007203863285493960
+      rollo_armas_icono(80x144)-Sheet_7: 2815859778848447049
+      rollo_armas_icono(80x144)-Sheet_8: 1378098958474886195
+      rollo_armas_icono(80x144)-Sheet_9: 1772454351708113211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

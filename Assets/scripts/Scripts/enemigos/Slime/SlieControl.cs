@@ -306,14 +306,14 @@ public class SlieControl : MonoBehaviour
         parpadear = true;
 
         Color originalColor = sr.color;
-        float blinkTime = 0.1f;
+        float duracionParpadeo = 0.1f;
 
         for (int i = 0; i < 3; i++)
         {
             sr.color = Color.red;
-            yield return new WaitForSeconds(blinkTime);
+            yield return new WaitForSeconds(duracionParpadeo);
             sr.color = Color.white;
-            yield return new WaitForSeconds(blinkTime);
+            yield return new WaitForSeconds(duracionParpadeo);
         }
 
         sr.color = originalColor;

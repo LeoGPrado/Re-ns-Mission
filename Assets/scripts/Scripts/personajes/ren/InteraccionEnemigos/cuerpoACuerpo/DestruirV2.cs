@@ -112,10 +112,9 @@ public class DestruirV2 : MonoBehaviour
                 SlimeSprite = collision.GetComponent<SpriteRenderer>();
                 slimeScript = slime;
 
-                Vector2 directionEnemy =
-                    (transform.position - collision.transform.position).normalized;
-
+                Vector2 directionEnemy = (collision.transform.position - transform.position).normalized;
                 slimeR?.AddForce(directionEnemy * 250, ForceMode2D.Impulse);
+
 
                 if (ataqueDeFuego)
                 {

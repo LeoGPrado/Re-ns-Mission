@@ -218,8 +218,8 @@ public class SlieControl : MonoBehaviour
 
     public void controlVida()
     {
-        StartCoroutine(CambioDeColor());
         if (estaMuerto) return;
+        StartCoroutine(CambioDeColor());
         VidaEnemigo--;
         print("RECIBIO DAÑO!!!!");
         if (VidaEnemigo < 1)

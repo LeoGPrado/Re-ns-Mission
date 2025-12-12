@@ -46,114 +46,58 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !atacando)
         {
             atacando = true;
-
-            if (index.armasIndex == 4)
+            if (index.armasIndex == 0)
             {
-                SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
-                srEspada.enabled = false;
-
-                Ren.SetTrigger("AtaqueEspadaP");
-                ActivarArmaE = 0.6f;
-                StartCoroutine(ActivarArma(srEspada));
-                //StartCoroutine(ActivarArma(Espada));
-            }
-            else if (index.armasIndex == 2)
-            {
-                SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
-                srPollo.enabled = false;
-
-                Ren.SetTrigger("AtaquePolloP");
-                ActivarArmaE = 0.6f;
-                StartCoroutine(ActivarArma(srPollo));
-            }
-            else if (index.armasIndex == 1)
-            {
-                SpriteRenderer srArco = Arco.GetComponent<SpriteRenderer>();
-                srArco.enabled = false;
-
-                Ren.SetTrigger("AtaqueArcoP");
-                ActivarArmaE = 0.6f;
-                StartCoroutine(ActivarArma(srArco));
-            }
-            else if (index.armasIndex == 0)
-            {
-                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
-                srBaston.enabled = false;
+                SpriteRenderer sr = Baston.GetComponent<SpriteRenderer>();
+                sr.enabled = false;
 
                 Ren.SetTrigger("AtaqueBastonP");
                 ActivarArmaE = 0.5f;
-                StartCoroutine(ActivarArma(srBaston));
+                StartCoroutine(ActivarArma(sr));
             }
-            else if (index.armasIndex == 3)
+            else if (index.armasIndex == 1)
             {
-                SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
-                srMazo.enabled = false;
+                SpriteRenderer sr = Arco.GetComponent<SpriteRenderer>();
+                sr.enabled = false;
 
-                Ren.SetTrigger("AtaqueMazoP");
-                ActivarArmaE = 0.7f;
-                StartCoroutine(ActivarArma(srMazo));
+                Ren.SetTrigger("AtaqueArcoP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(sr));
             }
-            else if (Pescado != null && Pescado.activeInHierarchy)
+            else if (index.armasIndex == 2)
             {
-                SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
-                srPescado.enabled = false;
-
-                Ren.SetTrigger("AtaquePescadoP");
-                ActivarArmaE = 0.7f;
-                StartCoroutine(ActivarArma(srPescado));
-            }
-            else if (Cuchilla != null && Cuchilla.activeInHierarchy)
-            {
-                SpriteRenderer srCuchilla = Cuchilla.GetComponent<SpriteRenderer>();
-                srCuchilla.enabled = false;
-
-                Ren.SetTrigger("AtaqueCuchillaP");
-                ActivarArmaE = 0.7f;
-                StartCoroutine(ActivarArma(srCuchilla));
-
-            }
-            else if (Pincel != null && Pincel.activeInHierarchy)
-            {
-                SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
-                srPincel.enabled = false;
+                SpriteRenderer sr = Pincel.GetComponent<SpriteRenderer>();
+                sr.enabled = false;
 
                 Ren.SetTrigger("AtaquePincelP");
                 ActivarArmaE = 0.7f;
-                StartCoroutine(ActivarArma(srPincel));
-
+                StartCoroutine(ActivarArma(sr));
             }
-            else
+            else if (index.armasIndex == 3)
             {
-                return;
+                SpriteRenderer sr = Cuchilla.GetComponent<SpriteRenderer>();
+                sr.enabled = false;
+
+                Ren.SetTrigger("AtaqueCuchillaP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(sr));
             }
+                               
         }
         //verificar falta
         else if (Input.GetMouseButtonDown(1) && !atacando && medidor.canUseUltimate)
         {
             atacando = true;
 
-            if (index.armasIndex == 4 || (Espada.activeInHierarchy && Espada != null))
+            if (index.armasIndex == 0)
             {
-                SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
-                srEspada.enabled = false;
+                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
+                srBaston.enabled = false;
 
-                Ren.SetTrigger("EspecialEspadaP");
+                Ren.SetTrigger("AtaqueBastonP");
                 verificar = false;
-                ActivarArmaE = 0.6f;
-                StartCoroutine(ActivarArma(srEspada));
-                //playermana.Ultimate();
-
-                //StartCoroutine(ActivarArma(Espada));
-            }
-            else if (index.armasIndex == 2)
-            {
-                SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
-                srPollo.enabled = false;
-
-                Ren.SetTrigger("AtaquePolloP");
-                verificar = false;
-                ActivarArmaE = 0.6f;
-                StartCoroutine(ActivarArma(srPollo));
+                ActivarArmaE = 0.5f;
+                StartCoroutine(ActivarArma(srBaston));
 
             }
             else if (index.armasIndex == 1)
@@ -167,50 +111,8 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srArco));
 
             }
-            else if (index.armasIndex == 0)
-            {
-                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
-                srBaston.enabled = false;
 
-                Ren.SetTrigger("AtaqueBastonP");
-                verificar = false;
-                ActivarArmaE = 0.5f;
-                StartCoroutine(ActivarArma(srBaston));
-
-            }
-            else if (index.armasIndex == 3)
-            {
-                SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
-                srMazo.enabled = false;
-
-                Ren.SetTrigger("AtaqueMazoP");
-                verificar = false;
-                ActivarArmaE = 0.7f;
-                if (verificarMazo == 0)
-                {
-                    transform.localScale *= 3;
-                    verificarMazo++;
-
-                }
-
-                StartCoroutine(ActivarArma(srMazo));
-                StartCoroutine(RegresarNormalidad());
-
-
-                //transform.localScale = Vector3.one;
-                //verificarMazo = 0;
-            }
-            else if (Pescado != null && Pescado.activeInHierarchy)
-            {
-                SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
-                srPescado.enabled = false;
-
-                Ren.SetTrigger("EspecialPecadoP");
-                ActivarArmaE = 0.7f;
-                StartCoroutine(ActivarArma(srPescado));
-
-            }
-            else if (Pincel != null && Pincel.activeInHierarchy)
+            else if (index.armasIndex == 2)
             {
                 SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
                 srPincel.enabled = false;
@@ -220,7 +122,9 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srPincel));
 
             }
-            else if (Cuchilla != null && Cuchilla.activeInHierarchy)
+            
+             
+            else if (index.armasIndex == 3)
             {
                 SpriteRenderer srCuchilla = Cuchilla.GetComponent<SpriteRenderer>();
                 srCuchilla.enabled = false;
@@ -228,18 +132,12 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 Ren.SetTrigger("AtaqueCuchillaP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srCuchilla));
-
             }
-
-
+     
             else
             {
                 return;
             }
-
-
-
-
         }
     }
 

@@ -73,10 +73,11 @@ public class Clasificaion : MonoBehaviour
         int dañoRen = ren.dañoRecibido;
         string rango;
         int dañoTotalClasificacion = dañoPuerta + (dañoRen * 100);
+        
 
         switch (dañoTotalClasificacion)
         {
-            case 0: rango = "S"; clasificacionFinal.color = Color.black; break;
+            case <= 100: rango = "S"; clasificacionFinal.color = colorS; break;
             case <= 200: rango = "A"; clasificacionFinal.color = colorA; break;
             case <= 400: rango = "B"; clasificacionFinal.color = colorB; break;
             case <= 600: rango = "C"; clasificacionFinal.color = colorC; break;

@@ -6,12 +6,13 @@ public class Special3 : MonoBehaviour
 {
     public MedidorArteEspecial medidor;
     public PlayerEnergyController playerEC;
+    public ControlPersonaje personaje;
 
     public GameObject ataqueArea;
     public Animator renAnimator;
     void Update()
     {
-        if(medidor.canUseUltimate && Input.GetMouseButtonDown(2))
+        if(medidor.canUseUltimate && Input.GetMouseButtonDown(2) && personaje.vidaInicial <= 2)
         {
             ataqueArea.SetActive(true);
             StartCoroutine(FrenarRetroceso());

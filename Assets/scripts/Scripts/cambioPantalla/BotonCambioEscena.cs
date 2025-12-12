@@ -11,6 +11,7 @@ public class BotonCambioEscena : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(() =>
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene(sceneName);
         });
     }

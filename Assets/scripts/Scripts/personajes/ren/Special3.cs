@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class Special3 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public MedidorArteEspecial medidor;
+    public PlayerEnergyController playerEC;
 
-    // Update is called once per frame
+    public GameObject ataqueArea;
+    public Animator renAnimator;
     void Update()
     {
-        
+        if(medidor.canUseUltimate && Input.GetMouseButtonDown(2))
+        {
+
+            renAnimator.SetTrigger("AtaqueTerceario");
+            medidor.canUseUltimate = false;
+            playerEC.Ultimate();
+        }
+
     }
 }

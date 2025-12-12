@@ -4,10 +4,10 @@ using UnityEngine;
 public class SelectorArmas : MonoBehaviour
 {
 
-    public List<GameObject> listaArmas = new List<GameObject>(7);
-    public List<GameObject> listaBotonesA1 = new List<GameObject>(7);
-    public List<GameObject> listaBotonesA2 = new List<GameObject>(7);
-    public List<GameObject> listaBotonesA3 = new List<GameObject>(7);
+    public List<GameObject> listaArmas = new List<GameObject>(4);
+    public List<GameObject> listaBotonesA1 = new List<GameObject>(4);
+    public List<GameObject> listaBotonesA2 = new List<GameObject>(4);
+    public List<GameObject> listaBotonesA3 = new List<GameObject>(4);
     [SerializeField] private int randomizer1, randomizer2, randomizer3;
     [SerializeField] private GameObject panelArmas;
     //[SerializeField] private bool armaElegida = false;

@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Special3 : MonoBehaviour
 {
@@ -11,11 +13,20 @@ public class Special3 : MonoBehaviour
     {
         if(medidor.canUseUltimate && Input.GetMouseButtonDown(2))
         {
-
+            ataqueArea.SetActive(true);
+            StartCoroutine(FrenarRetroceso());
             renAnimator.SetTrigger("AtaqueTerceario");
             medidor.canUseUltimate = false;
             playerEC.Ultimate();
         }
+
+    }
+
+    IEnumerator FrenarRetroceso()
+    {
+        yield return new WaitForSeconds(1f);
+        ataqueArea.SetActive(false);
+
 
     }
 }

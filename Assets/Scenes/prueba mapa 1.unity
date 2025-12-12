@@ -5846,7 +5846,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.771516, y: 8.57288, z: -10}
+  m_LocalPosition: {x: -11.771515, y: 8.57288, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34759,7 +34759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1036980629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44647,11 +44647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6434044567907888287, guid: bfb348d92d91a4543a6e3ca25689b712, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6434044567907888287, guid: bfb348d92d91a4543a6e3ca25689b712, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6434044567907888287, guid: bfb348d92d91a4543a6e3ca25689b712, type: 3}
       propertyPath: m_AnchorMin.x

@@ -155,9 +155,7 @@ public class ArcoControlador : MonoBehaviour
 
         for (int i = 0; i < cantidadDeFlechas; i++)
         {
-            GameObject flechaEspecial = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-
-            Destroy(flechaEspecial, 3f);
+            DisparoNormal();
             yield return new WaitForSeconds(intervalo);
         }
 

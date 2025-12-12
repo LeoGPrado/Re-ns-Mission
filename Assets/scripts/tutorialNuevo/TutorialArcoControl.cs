@@ -16,6 +16,7 @@ public class TutorialArcoControl : MonoBehaviour
 
     public float cooldown = 2f;
     public float ultcooldown = 1f;
+    private bool puedeUsarUlti = true;
     private bool puedeDisparar = true;
     public float timer = 0;
     [SerializeField] private bool ultTriggered = false;
@@ -79,7 +80,7 @@ public class TutorialArcoControl : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(1) && AtqueEspecial == true)
+        if (Input.GetMouseButtonDown(1) && AtqueEspecial == true && puedeUsarUlti)
         {
             StartCoroutine(DisparoEspecial());
         }
@@ -109,20 +110,27 @@ public class TutorialArcoControl : MonoBehaviour
     }
 
 
+    void DisparoEspecialUnitario()
+    {
+        GameObject balaEsp = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+        Destroy(balaEsp, 3f);
+
+    }
 
 
     IEnumerator DisparoEspecial()
     {
-
+        puedeUsarUlti = false;
         int cantidadDeFlechas = 140;
         float intervalo = 0.01f;
 
         for (int i = 0; i < cantidadDeFlechas; i++)
         {
-            
-            DisparoNormal();
+
+            DisparoEspecialUnitario();
             yield return new WaitForSeconds(intervalo);
         }
-
+        yield return new WaitForSeconds(ultcooldown);
+        puedeUsarUlti = true;
     }
 }

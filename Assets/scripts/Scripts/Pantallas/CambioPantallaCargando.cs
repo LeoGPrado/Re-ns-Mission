@@ -7,6 +7,7 @@ public class CambioPantallaCargando : MonoBehaviour
     [SerializeField] private float delay;
     void Start()
     {
+        Time.timeScale = 1f;
         Invoke("CargarEscena", delay);
     }
 

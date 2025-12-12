@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5735786804356175002}
   - component: {fileID: -1845374927972742014}
   - component: {fileID: -2216042830411055285}
+  - component: {fileID: -8982382377981387053}
   m_Layer: 0
   m_Name: PincelNomralA
   m_TagString: Untagged
@@ -140,7 +141,7 @@ MonoBehaviour:
   velocidad: 5
   quieto: 0
   ImpoctoArma: {fileID: 0}
-  rb: {fileID: 0}
+  rb: {fileID: 6061480999453450493}
   spriteHijo: {fileID: 1932140528153053673}
   luz: {fileID: -2216042830411055285}
   DFuego: 0
@@ -296,6 +297,18 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &-8982382377981387053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3456130279922145432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64bb31dc4b43df4c9d33004d1d5fdc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4258590106258934903
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932140528153053673}
   - component: {fileID: 5594515323637112446}
+  - component: {fileID: 3422394643432640906}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -383,3 +397,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3422394643432640906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258590106258934903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0a9070092c8b943a73e0256ab46aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

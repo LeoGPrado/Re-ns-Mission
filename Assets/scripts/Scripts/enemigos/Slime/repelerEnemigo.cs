@@ -94,7 +94,8 @@ public class repelerEnemigo : MonoBehaviour
         }
         if (collision.gameObject.tag == "areaPescado")
         {
-            Vector2 direccion = (transform.position - collision.transform.position).normalized;
+            Destroy(gameObject);
+            /*Vector2 direccion = (transform.position - collision.transform.position).normalized;
 
 
             slimeR.AddForce(direccion * 500, ForceMode2D.Impulse);
@@ -103,7 +104,7 @@ public class repelerEnemigo : MonoBehaviour
             StartCoroutine(FrenarRetroceso());
 
 
-            SlieControl.slime.controlVida();
+            SlieControl.slime.controlVida();*/
         }
 
     }

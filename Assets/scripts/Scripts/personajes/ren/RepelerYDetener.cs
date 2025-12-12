@@ -17,6 +17,7 @@ public class RepelerYDetener : MonoBehaviour
 
     void Start()
     {
+        CuerpoRen.layer = layerOriginal;
         ren = GetComponent<Rigidbody2D>();
         renScript = GetComponent<ControlPersonaje>();
     }

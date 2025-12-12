@@ -12,7 +12,7 @@ public class Special3 : MonoBehaviour
     public Animator renAnimator;
     void Update()
     {
-        if(medidor.canUseUltimate && Input.GetMouseButtonDown(2) && personaje.vidaInicial <= 2 && ControlPersonaje.Ren.activarEspecialTercieario==true)
+        if(medidor.canUseUltimate && Input.GetMouseButtonDown(2))
         {
             ataqueArea.SetActive(true);
             StartCoroutine(FrenarRetroceso());

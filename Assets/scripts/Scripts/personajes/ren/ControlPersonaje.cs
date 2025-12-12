@@ -41,7 +41,7 @@ public class ControlPersonaje : MonoBehaviour
     public GameObject Corazon5;
 
     public int contador = 1;
-
+    public bool activarEspecialTercieario;
 
     [SerializeField] private float tiempoQuieto = 1f;
     public bool desactivar;
@@ -181,6 +181,10 @@ public class ControlPersonaje : MonoBehaviour
             Time.timeScale = 0f;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+        }
+        if (vidaInicial == 2)
+        {
+            activarEspecialTercieario = true;
         }
     }
     private IEnumerator Invulnerabilidad()

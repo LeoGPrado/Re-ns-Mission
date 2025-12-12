@@ -47,16 +47,25 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         {
             atacando = true;
 
-            if (index.armasIndex == 0)
+            if (index.armasIndex == 4)
             {
-                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
-                srBaston.enabled = false;
+                SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
+                srEspada.enabled = false;
 
-                Ren.SetTrigger("AtaqueBastonP");
-                ActivarArmaE = 0.5f;
-                StartCoroutine(ActivarArma(srBaston));
+                Ren.SetTrigger("AtaqueEspadaP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srEspada));
+                //StartCoroutine(ActivarArma(Espada));
             }
-            
+            else if (index.armasIndex == 2)
+            {
+                SpriteRenderer srPollo = Pollo.GetComponent<SpriteRenderer>();
+                srPollo.enabled = false;
+
+                Ren.SetTrigger("AtaquePolloP");
+                ActivarArmaE = 0.6f;
+                StartCoroutine(ActivarArma(srPollo));
+            }
             else if (index.armasIndex == 1)
             {
                 SpriteRenderer srArco = Arco.GetComponent<SpriteRenderer>();
@@ -66,10 +75,34 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 ActivarArmaE = 0.6f;
                 StartCoroutine(ActivarArma(srArco));
             }
-           
-           
-           
-            else if (index.armasIndex == 3 && Cuchilla.activeInHierarchy)
+            else if (index.armasIndex == 0)
+            {
+                SpriteRenderer srBaston = Baston.GetComponent<SpriteRenderer>();
+                srBaston.enabled = false;
+
+                Ren.SetTrigger("AtaqueBastonP");
+                ActivarArmaE = 0.5f;
+                StartCoroutine(ActivarArma(srBaston));
+            }
+            else if (index.armasIndex == 3)
+            {
+                SpriteRenderer srMazo = Mazo.GetComponent<SpriteRenderer>();
+                srMazo.enabled = false;
+
+                Ren.SetTrigger("AtaqueMazoP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srMazo));
+            }
+            else if (Pescado != null && Pescado.activeInHierarchy)
+            {
+                SpriteRenderer srPescado = Pescado.GetComponent<SpriteRenderer>();
+                srPescado.enabled = false;
+
+                Ren.SetTrigger("AtaquePescadoP");
+                ActivarArmaE = 0.7f;
+                StartCoroutine(ActivarArma(srPescado));
+            }
+            else if (Cuchilla != null && Cuchilla.activeInHierarchy)
             {
                 SpriteRenderer srCuchilla = Cuchilla.GetComponent<SpriteRenderer>();
                 srCuchilla.enabled = false;
@@ -79,7 +112,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 StartCoroutine(ActivarArma(srCuchilla));
 
             }
-            else if (index.armasIndex == 2 && Pincel.activeInHierarchy)
+            else if (Pincel != null && Pincel.activeInHierarchy)
             {
                 SpriteRenderer srPincel = Pincel.GetComponent<SpriteRenderer>();
                 srPincel.enabled = false;
@@ -99,7 +132,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
         {
             atacando = true;
 
-            if (index.armasIndex == 4 || (Espada.activeInHierarchy && Espada!=null))
+            if (index.armasIndex == 4 || (Espada.activeInHierarchy && Espada != null))
             {
                 SpriteRenderer srEspada = Espada.GetComponent<SpriteRenderer>();
                 srEspada.enabled = false;
@@ -143,7 +176,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 verificar = false;
                 ActivarArmaE = 0.5f;
                 StartCoroutine(ActivarArma(srBaston));
-       
+
             }
             else if (index.armasIndex == 3)
             {
@@ -162,7 +195,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
 
                 StartCoroutine(ActivarArma(srMazo));
                 StartCoroutine(RegresarNormalidad());
-          
+
 
                 //transform.localScale = Vector3.one;
                 //verificarMazo = 0;
@@ -175,7 +208,7 @@ public class ControlDeAnimacionesArmas : MonoBehaviour
                 Ren.SetTrigger("EspecialPecadoP");
                 ActivarArmaE = 0.7f;
                 StartCoroutine(ActivarArma(srPescado));
- 
+
             }
             else if (Pincel != null && Pincel.activeInHierarchy)
             {

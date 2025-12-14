@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -7826062763702756246}
   - component: {fileID: -3854872998054825988}
   - component: {fileID: 5039655910798126522}
+  - component: {fileID: 7053895325231770749}
   m_Layer: 6
   m_Name: Esqueleto
   m_TagString: Enemigo
@@ -140,7 +141,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -177,7 +178,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4891012412717606429}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -186,7 +187,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -278,6 +279,8 @@ MonoBehaviour:
   sonidoDeMuerte: {fileID: 0}
   objetivo: {fileID: 0}
   velocidad: 3
+  sr: {fileID: 0}
+  estaMuerto: 0
   enemigoRB: {fileID: 0}
   VidaEnemigo: 5
   "manaPart\xEDcula": {fileID: 62417721714255131, guid: 934f1f668d13c0541a44b7f5bbd392b3, type: 3}
@@ -405,6 +408,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7053895325231770749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891012412717606429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a1b5be5263eed4e88ee05ec61ceb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivadorDeColliders: {fileID: -138810320447680425}
 --- !u!1 &8260507403143763005
 GameObject:
   m_ObjectHideFlags: 0

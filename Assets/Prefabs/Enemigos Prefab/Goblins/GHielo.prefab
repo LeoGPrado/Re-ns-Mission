@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -7465132440106826210}
   - component: {fileID: 668392257908525714}
   - component: {fileID: 7069133877851238161}
+  - component: {fileID: -945233367880179781}
   m_Layer: 6
   m_Name: GHielo
   m_TagString: Enemigo
@@ -140,7 +141,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -177,7 +178,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4891012412717606429}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -186,7 +187,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -407,6 +408,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-945233367880179781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891012412717606429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a1b5be5263eed4e88ee05ec61ceb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivadorDeColliders: {fileID: -138810320447680425}
 --- !u!1 &7998418140678279740
 GameObject:
   m_ObjectHideFlags: 0

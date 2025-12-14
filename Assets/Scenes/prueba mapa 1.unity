@@ -5850,7 +5850,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.682972, y: 8.57123, z: -10}
+  m_LocalPosition: {x: -10.499678, y: 8.57101, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51281,6 +51281,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
+      propertyPath: TextoArmas
+      value: 
+      objectReference: {fileID: 993971773}
     - target: {fileID: 4558935199646370775, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
       propertyPath: elegirArma
       value: 0

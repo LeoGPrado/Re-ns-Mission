@@ -10,6 +10,7 @@ public class SelectorArmas : MonoBehaviour
     public List<GameObject> listaBotonesA3 = new List<GameObject>(4);
     [SerializeField] private int randomizer1, randomizer2, randomizer3;
     [SerializeField] private GameObject panelArmas;
+    [SerializeField] public GameObject TextoArmas;
     //[SerializeField] private bool armaElegida = false;
     [SerializeField] private bool elegirArma = false;
     //public int numeroArma;
@@ -59,6 +60,7 @@ public class SelectorArmas : MonoBehaviour
             ActivarArmas();
 
             panelArmas.SetActive(false);
+            TextoArmas.SetActive(false);
             elegirArma = false;
         }
     }

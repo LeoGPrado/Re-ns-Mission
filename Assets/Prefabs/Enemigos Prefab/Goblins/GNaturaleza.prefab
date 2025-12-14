@@ -287,7 +287,7 @@ MonoBehaviour:
   manaPartCount: 4
   canDropMana: 1
   objetivoPuerta: 0
-  objetivoRen: 0
+  objetivoRen: 1
   slimeFuego: 0
   slimeHielo: 0
   slimeNaturaleza: 1

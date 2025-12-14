@@ -291,7 +291,7 @@ MonoBehaviour:
   slimeFuego: 1
   slimeHielo: 0
   slimeNaturaleza: 0
-  Slime: 1
+  Slime: 0
   balaNormal: {fileID: 0}
   puntoAparicion: {fileID: 0}
   activarDisparo: 0

@@ -5850,7 +5850,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.560767, y: 8.57108, z: -10}
+  m_LocalPosition: {x: -10.682972, y: 8.57123, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40232,8 +40232,8 @@ MonoBehaviour:
   probHielo: 20
   probFuego: 15
   probNaturaleza: 15
-  tiempoMin: 16.37
-  tiempoMax: 22.47
+  tiempoMin: 2
+  tiempoMax: 5
 --- !u!4 &1669923097
 Transform:
   m_ObjectHideFlags: 0

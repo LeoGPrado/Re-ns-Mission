@@ -3949,14 +3949,6 @@ MonoBehaviour:
     of the screen. '
   - 'The meter recharges by defeating enemies,   but this time it will refill <color=#9101AE>automatically</color>.  
     Press <color=#005BA6>right click</color> to use it. '
-  - "Now that you\u2019ve learned how to use <color=#3EA600>ranged weapons</color>,  
-    you will be taught how to use <color=#9619BF>melee weapons</color>. "
-  - 'Remember to use <color=#0082DB>left click</color> for the <color=#7CF136>normal
-    attack</color>   and <color=#005BA6>right click</color> for the <color=#7CF136>special
-    attack</color>. '
-  - "Remember: with <color=#9619BF>melee weapons</color>, you must  <color=#7CF136>attack
-    and step back</color> at the same time. You\u2019re a <color=#541696>wizard</color>,
-    not a knight, so don\u2019t stay too close to the enemy. "
   - "Now that you\u2019ve learned the basics, click the <color=#966C20>arrow</color>
     or press <color=#966C20>E</color> once more   to <color=#966C20>begin your adventure</color>."
 --- !u!4 &850882798
@@ -4588,7 +4580,7 @@ Transform:
   m_GameObject: {fileID: 1012989155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2011719, y: 0.9122864, z: -9.984929}
+  m_LocalPosition: {x: 1.2063702, y: 0.9122464, z: -9.984929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

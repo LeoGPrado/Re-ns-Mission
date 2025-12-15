@@ -106,13 +106,6 @@ public class TutorialDialogos : MonoBehaviour
                 }
                 barraEspecial.SetActive(true);
             }
-            else if (indiceDialogoInicial == 8)
-            {
-                //selectorArmas
-                APersonaje.enabled = false;
-                arcoActivado.SetActive(false);
-                AparecerSelectorArmasCuerpoACuerpo.SetActive(true);
-            }
 
         }
         else

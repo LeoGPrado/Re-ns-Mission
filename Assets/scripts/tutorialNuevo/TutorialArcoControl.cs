@@ -103,25 +103,19 @@ public class TutorialArcoControl : MonoBehaviour
 
         GameObject balNormal = Instantiate(balaNormal, puntoAparicion.position, puntoAparicion.rotation);
         SpriteRenderer srBala = balNormal.GetComponentInChildren<SpriteRenderer>();
-
-
-
-        Destroy(balNormal, 3f);
     }
 
 
     void DisparoEspecialUnitario()
     {
         GameObject balaEsp = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-        Destroy(balaEsp, 3f);
-
     }
 
 
     IEnumerator DisparoEspecial()
     {
         puedeUsarUlti = false;
-        int cantidadDeFlechas = 140;
+        int cantidadDeFlechas = 40;
         float intervalo = 0.01f;
 
         for (int i = 0; i < cantidadDeFlechas; i++)

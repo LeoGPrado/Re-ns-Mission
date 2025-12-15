@@ -28,7 +28,6 @@ public class TutorialMuñeco : MonoBehaviour
         if (collision.gameObject.tag == "proyectil")
         {
             AnimacionRecibirDañlo();
-            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "areaPescado")
         {

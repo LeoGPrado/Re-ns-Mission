@@ -24,6 +24,7 @@ public class ArrastrarRen : MonoBehaviour, IDragHandler, IEndDragHandler
 
     private Image ren;
     private RectTransform rect;
+    private Vector3 posicionOriginal;
     private bool mouseSobreRen = false;
     private bool Entro = false;
     private Color colorOriginal;
@@ -37,6 +38,7 @@ public class ArrastrarRen : MonoBehaviour, IDragHandler, IEndDragHandler
         rect = GetComponent<RectTransform>();
         audioClick = GetComponent<AudioSource>();
         colorOriginal = ren.color;
+        posicionOriginal = rect.position;
     }
     void Update()
     {
@@ -96,6 +98,10 @@ public void OnDrag(PointerEventData eventData)
         if (Entro==true)
         {
             SceneManager.LoadScene("NuevoTutorial");
+        }
+        else
+        {
+            rect.position = posicionOriginal;
         }
     }
 }

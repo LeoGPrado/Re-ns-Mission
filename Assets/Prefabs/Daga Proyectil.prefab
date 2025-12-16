@@ -173,8 +173,8 @@ MonoBehaviour:
   spriteHijo: {fileID: 1387522220993689463}
   luz: {fileID: -5737653307805296072}
   DFuego: 0
-  Dhielo: 0
-  Dnaturaleza: 1
+  Dhielo: 1
+  Dnaturaleza: 0
   Dnormal: 0
 --- !u!58 &1318121328455716405
 CircleCollider2D:

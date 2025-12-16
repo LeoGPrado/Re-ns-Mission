@@ -11,7 +11,6 @@ public class CambioPantallaCargando : MonoBehaviour
         Invoke("CargarEscena", delay);
     }
 
-    // Update is called once per frame
     void CargarEscena()
     {
         SceneManager.LoadScene(scene);

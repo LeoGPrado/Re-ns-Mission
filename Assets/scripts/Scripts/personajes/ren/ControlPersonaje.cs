@@ -17,12 +17,19 @@ public class ControlPersonaje : MonoBehaviour
     [Header("Demas")]
     public BoxCollider2D DetectarEnemigo;
     public Transform puntoDeAtaque;
-
+    [SerializeField] private CamaraShake camaraShake;
 
     [SerializeField] SpriteRenderer sr;
     [SerializeField] private BoxCollider2D boxRenDerechaAtaque;
     [SerializeField] private BoxCollider2D boxRenIzquierdaAtaque;
 
+    [Header("Parpadeo vida baja")]
+    [SerializeField] private UnityEngine.UI.Image dañoRojo;
+    [SerializeField] private int vidaUmbral = 2; 
+    [SerializeField] private float intensidadMaxima = 0.15f; 
+    [SerializeField] private float frecuencia = 2f;
+    [SerializeField] private AudioSource audioLatido;
+    [SerializeField] private AudioClip latidoAudio;
 
     public GameObject espada;
     public static ControlPersonaje Ren;
@@ -96,6 +103,44 @@ public class ControlPersonaje : MonoBehaviour
 
         if (desactivar) return;
 
+        if (vidaInicial <= 2)
+        {
+            float ratioVida = Mathf.Clamp01(2 - vidaInicial);
+            float alphaMax = Mathf.Lerp(0.05f, 0.15f, ratioVida);
+            float freq = Mathf.Lerp(1f, 2f, ratioVida);
+            float alpha = Mathf.Abs(Mathf.Sin(Time.time * Mathf.PI * freq)) * alphaMax;
+            Color c = dañoRojo.color;
+            c.a = alpha;
+            dañoRojo.color = c;
+
+            if (!audioLatido.isPlaying)
+            {
+                audioLatido.clip = latidoAudio;
+                audioLatido.loop = true;
+                audioLatido.Play();
+            }
+
+            if (vidaInicial == 1)
+            {
+                audioLatido.pitch = 2f;  
+            }
+            else
+            {
+                audioLatido.pitch = 1f;  
+            }
+        }
+        else
+        {
+            Color c = dañoRojo.color;
+            c.a = 0;
+            dañoRojo.color = c;
+
+            if (audioLatido.isPlaying)
+                audioLatido.Stop();
+        }
+        audioLatido.mute = (Time.timeScale == 0f);
+
+
         movimiento();
     }
 
@@ -139,8 +184,8 @@ public class ControlPersonaje : MonoBehaviour
         }
 
 
-    }
-    IEnumerator ActivarMovimientoDespues()
+}
+IEnumerator ActivarMovimientoDespues()
     {
         ren.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(tiempoQuieto);
@@ -152,10 +197,10 @@ public class ControlPersonaje : MonoBehaviour
         {
 
             if (jugadorInvulnerable) return;
-
             vidaInicial--;
             dañoRecibido++;
             audioSource.PlayOneShot(dañoRecibidoAudio);
+            camaraShake.Shake();
 
             ActualizarCorazones();
             perderVida();

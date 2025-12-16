@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 
@@ -14,7 +15,7 @@ public class SummonController : MonoBehaviour
     void Start()
     {
         InvokeRepeating("DoDmg", 0f, fireRate);
-        Destroy(gameObject, 15f);
+        StartCoroutine(DeactivateTurret());
 
     }
 
@@ -50,6 +51,12 @@ public class SummonController : MonoBehaviour
             }
         }
         
+    }
+
+    IEnumerator DeactivateTurret()
+    {
+        yield return new WaitForSeconds(15f);
+        gameObject.SetActive(false);
     }
 
     private void OnDrawGizmosSelected()

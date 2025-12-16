@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PanelMejoras : MonoBehaviour
@@ -16,6 +17,7 @@ public class PanelMejoras : MonoBehaviour
 
     [SerializeField] private Transform player;
     [SerializeField] private GameObject mascotaPrefab;
+    [SerializeField] private GameObject[] torretas;
 
     void Start()
     {
@@ -48,7 +50,12 @@ public class PanelMejoras : MonoBehaviour
     public void InvocarMascota()
     {
         DesactivarPanel();
-        Instantiate(mascotaPrefab, player.transform.position, Quaternion.identity);
+        for(int i = 0; i < torretas.Length; i++)
+        {
+            torretas[i].SetActive(true);
+            
+        }
+       
 
     }
 

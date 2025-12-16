@@ -280,6 +280,9 @@ MonoBehaviour:
   objetivo: {fileID: 0}
   velocidad: 3
   sr: {fileID: 0}
+  usarAnimacionAtaque: 1
+  distanciaAnimacion: 1
+  animator: {fileID: 0}
   estaMuerto: 0
   enemigoRB: {fileID: 0}
   VidaEnemigo: 5

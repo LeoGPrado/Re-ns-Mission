@@ -1,6 +1,7 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
-using System.Collections;
 
 public class SlieControl : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class SlieControl : MonoBehaviour
     GameObject objPersonaje;
     [SerializeField] private SpriteRenderer sr;
     private bool parpadear = false;
+
+    [Header("Animación Ataque")]
+    [SerializeField] private bool usarAnimacionAtaque = false;
+    [SerializeField] private float distanciaAnimacion = 5f;
+    private bool animacionActivada = false;
+    [SerializeField] private Animator animator;
 
 
 
@@ -54,6 +61,7 @@ public class SlieControl : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        animator = GetComponent<Animator>();
 
         if (slime == null)
         {
@@ -121,6 +129,12 @@ public class SlieControl : MonoBehaviour
 
         //area de deteccion
         Vector2 direccion = player.position - transform.position;
+        if (usarAnimacionAtaque)
+        {
+            bool estaCerca = direccion.magnitude <= distanciaAnimacion;
+            animator.SetBool("Atacando", estaCerca);
+        }
+
         if (direccion.magnitude < 5 && !activarDisparo)
         {
             objetivo = player;

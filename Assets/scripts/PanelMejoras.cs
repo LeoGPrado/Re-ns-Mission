@@ -14,7 +14,7 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private bool momentoMejora = true;
 
 
-
+    [SerializeField] private SummonController turret;
     [SerializeField] private Transform player;
     [SerializeField] private GameObject mascotaPrefab;
     [SerializeField] private GameObject[] torretas;
@@ -52,7 +52,7 @@ public class PanelMejoras : MonoBehaviour
         DesactivarPanel();
         for(int i = 0; i < torretas.Length; i++)
         {
-            torretas[i].SetActive(true);
+            torretas[i].GetComponent<SummonController>().isSummoned = true;
             
         }
        

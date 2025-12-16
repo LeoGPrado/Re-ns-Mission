@@ -34994,9 +34994,11 @@ MonoBehaviour:
   duracionMejoras: 6
   panel: {fileID: 432485194}
   momentoMejora: 1
+  turret: {fileID: 0}
   player: {fileID: 8028158966399061198}
   mascotaPrefab: {fileID: 6388618481357479221, guid: 5444893a628a39f44a393759f299da7a, type: 3}
-  torretas: []
+  torretas:
+  - {fileID: 1150097650}
 --- !u!1 &1036980628
 GameObject:
   m_ObjectHideFlags: 0
@@ -35728,6 +35730,11 @@ PrefabInstance:
 --- !u!4 &1150097649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_PrefabInstance: {fileID: 1150097648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1150097650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 1150097648}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1164081333

@@ -4,19 +4,48 @@ using UnityEngine;
 
 public class SummonController : MonoBehaviour
 {
-    
+
+    [SerializeField] Animator anim;
     [SerializeField] private GameObject orbPrefab;
+
     [SerializeField] private float range = 7f;
     [SerializeField] private float fireRate = 0.5f;
-   
-    
+    [SerializeField] private float summonDuration = 15f;
+    public bool isSummoned = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Coroutine attackRout;
+    private Coroutine durationRout;
+
+    private void Awake()
     {
-        InvokeRepeating("DoDmg", 0f, fireRate);
-        StartCoroutine(DeactivateTurret());
+        anim = GetComponent<Animator>();
+    }
 
+    public void SummonTurret()
+    {
+        if (isSummoned) return;
+
+        isSummoned = true;
+        anim.SetBool("isSummoned", true);
+
+        attackRout = StartCoroutine(AttackLoop());
+        durationRout = StartCoroutine(DeactivateTurret());
+    }
+
+    private void Update()
+    {
+
+        if (!isSummoned)
+            return;
+
+        if (isSummoned)
+        {
+            anim.SetBool("isSummoned", true);
+            
+            StartCoroutine(DeactivateTurret());
+            
+        }
+           
     }
 
 
@@ -53,10 +82,37 @@ public class SummonController : MonoBehaviour
         
     }
 
+    IEnumerator AttackLoop()
+    {
+        while (isSummoned)
+        {
+            DoDmg();
+            yield return new WaitForSeconds(fireRate);
+        }
+       
+    }
+
     IEnumerator DeactivateTurret()
     {
-        yield return new WaitForSeconds(15f);
-        gameObject.SetActive(false);
+        yield return new WaitForSeconds(fireRate);
+        Deactivate();
+    }
+    
+    void Deactivate()
+    {
+        isSummoned = false;
+        anim.SetBool("isSummoned", false);
+
+        if(attackRout != null)
+        {
+            StopCoroutine(attackRout);
+            attackRout = null;
+        }
+        if(durationRout != null)
+        {
+            StopCoroutine(durationRout);
+            durationRout = null;
+        }
     }
 
     private void OnDrawGizmosSelected()

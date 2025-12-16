@@ -1,5 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
+
+
 
 public class ControlPersonaje : MonoBehaviour
 {
@@ -30,6 +33,9 @@ public class ControlPersonaje : MonoBehaviour
     [SerializeField] private float frecuencia = 2f;
     [SerializeField] private AudioSource audioLatido;
     [SerializeField] private AudioClip latidoAudio;
+    [SerializeField] private float duracionEfecto = 7;
+    private float tiempo = 0;
+    private bool EfectoEstaActivo = false;
 
     public GameObject espada;
     public static ControlPersonaje Ren;
@@ -105,13 +111,27 @@ public class ControlPersonaje : MonoBehaviour
 
         if (vidaInicial <= 2)
         {
-            float ratioVida = Mathf.Clamp01(2 - vidaInicial);
-            float alphaMax = Mathf.Lerp(0.05f, 0.15f, ratioVida);
-            float freq = Mathf.Lerp(1f, 2f, ratioVida);
-            float alpha = Mathf.Abs(Mathf.Sin(Time.time * Mathf.PI * freq)) * alphaMax;
-            Color c = dañoRojo.color;
-            c.a = alpha;
-            dañoRojo.color = c;
+            if (!EfectoEstaActivo)
+            {
+                EfectoEstaActivo = true;
+                tiempo = duracionEfecto;
+            }
+            if (duracionEfecto > 0f)
+            {
+                duracionEfecto -= Time.deltaTime;
+                float ratioVida = Mathf.Clamp01(2 - vidaInicial);
+                float alphaMax = Mathf.Lerp(0.05f, 0.15f, ratioVida);
+                float freq = Mathf.Lerp(1f, 2f, ratioVida);
+                float alpha = Mathf.Abs(Mathf.Sin(Time.time * Mathf.PI * freq)) * alphaMax;
+                Color c = dañoRojo.color;
+                c.a = alpha;
+                dañoRojo.color = c;
+            }
+            else
+            {
+                ApagarEfecto();
+            }
+
 
             if (!audioLatido.isPlaying)
             {

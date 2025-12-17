@@ -46449,7 +46449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mision en pausa
+  m_text: Mission paused
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
   m_sharedMaterial: {fileID: -295203547670173032, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
@@ -49576,7 +49576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reanudar partida
+  m_text: Resume game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
   m_sharedMaterial: {fileID: -295203547670173032, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
@@ -58603,7 +58603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir de la partida
+  m_text: Exit game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}
   m_sharedMaterial: {fileID: -295203547670173032, guid: 6f34be6243f051f498b89fe47f7aa702, type: 2}

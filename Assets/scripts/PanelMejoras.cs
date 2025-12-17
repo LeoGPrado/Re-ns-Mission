@@ -63,16 +63,17 @@ public class PanelMejoras : MonoBehaviour
 
     public void InvocarMascota()
     {
-        
-         DesactivarPanel();
+        if (!cartaSeleccionable) return;
+
          for (int i = 0; i < turretList.Count; i++)
          {
             turretList[i].GetComponent<PruebaTorreta>().Dispara();
 
          }
-        
-     
-       
+        DesactivarPanel();
+
+
+
 
     }
 
@@ -81,10 +82,16 @@ public class PanelMejoras : MonoBehaviour
     {
         SlieControl.MutearTodosSlimes(true);
         panel.SetActive(true);
-        cartaSeleccionable = true;
+        cartaSeleccionable = false;
+        StartCoroutine(HabilitarSeleccion());
         StartCoroutine(SeleccionMejoras());
         momentoMejora = false;
         StartCoroutine(MejoraActivate());
+    }
+    IEnumerator HabilitarSeleccion()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        cartaSeleccionable = true;
     }
 
     IEnumerator SeleccionMejoras()

@@ -103,7 +103,7 @@ public class cuchillasControl : MonoBehaviour
 
         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
         ActivarEspacialCuchilla = false;
-        Destroy(bala, 1f);
+        Destroy(bala, 6f);
         medidor.canUseUltimate = false;
 
     }

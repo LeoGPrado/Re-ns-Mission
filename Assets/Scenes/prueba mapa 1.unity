@@ -5576,7 +5576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &462636396
 Transform:
   m_ObjectHideFlags: 0
@@ -41676,9 +41676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1700568973}
   slimeNormal: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
-  slimeHielo: {fileID: 4891012412717606429, guid: 5b0f5d919d5b6744391bfac3d2e1af35, type: 3}
-  slimeFuego: {fileID: 4891012412717606429, guid: 447085923814c5e41af7ad10f2f6a318, type: 3}
-  slimeNaturaleza: {fileID: 4891012412717606429, guid: 73adb15a8c17f1e4eac6f32b0dbc17db, type: 3}
+  slimeHielo: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
+  slimeFuego: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
+  slimeNaturaleza: {fileID: 4891012412717606429, guid: 30252abf0ff60be40bd7b541f53e975c, type: 3}
   punto1: {fileID: 1920166905}
   punto2: {fileID: 0}
   punto3: {fileID: 0}

@@ -3827,9 +3827,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogos:
-  - Wasdasd
-  - 2easd
-  - asdw
+  - "Hello, I\u2019m Sebastian Chacon, the most recent member of the group."
+  - I was mainly in charge of the documentation, and also did some programming.
+  - And I also worked on the UI design.
+  - Thank you for playing our project.
 --- !u!1 &684155741
 GameObject:
   m_ObjectHideFlags: 0

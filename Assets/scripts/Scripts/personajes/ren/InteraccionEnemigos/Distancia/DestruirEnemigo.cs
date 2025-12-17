@@ -22,6 +22,8 @@ public class DestruirEnemigo : MonoBehaviour
     public bool Dnaturaleza = false;
     public bool Dnormal = false;
 
+    public AudioSource Explosion;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();  
@@ -85,6 +87,7 @@ public class DestruirEnemigo : MonoBehaviour
         else
         {
             ImpoctoArma.SetTrigger("ImpactoP");
+            Explosion.Play();
             GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             Destroy(collision.gameObject);
         }

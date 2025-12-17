@@ -5,6 +5,7 @@ using UnityEditor;
 public class ArcoControlador : MonoBehaviour
 {
     public AudioSource audioSource;
+    public AudioSource arcoTiro;
     public AudioClip sonidoFlechaUlti;
     public GameObject balaNormal;
     public GameObject balaEspecialPrefab;
@@ -72,6 +73,8 @@ public class ArcoControlador : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) && puedeDisparar)
             {
+
+                arcoTiro.Play();
                 StartCoroutine(DisparoConCooldown());
             }
         }

@@ -103,7 +103,7 @@ public class Disparo : MonoBehaviour
 
 
         GameObject bala = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
-        Destroy(bala, 1f);
+        Destroy(bala, 6f);
         medidor.canUseUltimate = false;
         playerEC.Ultimate();
         

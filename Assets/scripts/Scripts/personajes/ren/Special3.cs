@@ -39,7 +39,7 @@ public class Special3 : MonoBehaviour
     void Update()
     {
         VerificarTutorialEspecial();
-        if (medidor.canUseUltimate && Input.GetMouseButtonDown(2) && personaje.vidaInicial <= 1)
+        if (medidor.canUseUltimate && Input.GetKeyDown(KeyCode.F) && personaje.vidaInicial <= 1)
         {
             ataqueArea.SetActive(true);
             StartCoroutine(FrenarRetroceso());

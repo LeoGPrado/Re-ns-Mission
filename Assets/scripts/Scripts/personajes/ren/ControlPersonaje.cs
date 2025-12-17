@@ -30,6 +30,10 @@ public class ControlPersonaje : MonoBehaviour
     [SerializeField] private float frecuencia = 2f;
     [SerializeField] private AudioSource audioLatido;
     [SerializeField] private AudioClip latidoAudio;
+    [SerializeField] private float duracionEfectoVidaBaja = 5f;
+    private float timerVidaBaja = 0f;
+    private bool efectoVidaBajaActivo = false;
+
 
     public GameObject espada;
     public static ControlPersonaje Ren;
@@ -103,42 +107,42 @@ public class ControlPersonaje : MonoBehaviour
 
         if (desactivar) return;
 
-        if (vidaInicial <= 2)
+        if (vidaInicial <= vidaUmbral && efectoVidaBajaActivo)
         {
-            float ratioVida = Mathf.Clamp01(2 - vidaInicial);
-            float alphaMax = Mathf.Lerp(0.05f, 0.15f, ratioVida);
-            float freq = Mathf.Lerp(1f, 2f, ratioVida);
-            float alpha = Mathf.Abs(Mathf.Sin(Time.time * Mathf.PI * freq)) * alphaMax;
-            Color c = dañoRojo.color;
-            c.a = alpha;
-            dañoRojo.color = c;
-
-            if (!audioLatido.isPlaying)
+            if (timerVidaBaja > 0f)
             {
-                audioLatido.clip = latidoAudio;
-                audioLatido.loop = true;
-                audioLatido.Play();
-            }
+                timerVidaBaja -= Time.deltaTime;
 
-            if (vidaInicial == 1)
-            {
-                audioLatido.pitch = 2f;  
+                float ratioVida = Mathf.Clamp01(vidaUmbral - vidaInicial);
+                float alphaMax = Mathf.Lerp(0.05f, intensidadMaxima, ratioVida);
+                float freq = Mathf.Lerp(1f, frecuencia, ratioVida);
+                float alpha = Mathf.Abs(Mathf.Sin(Time.time * Mathf.PI * freq)) * alphaMax;
+
+                Color c = dañoRojo.color;
+                c.a = alpha;
+                dañoRojo.color = c;
+
+                if (!audioLatido.isPlaying)
+                {
+                    audioLatido.clip = latidoAudio;
+                    audioLatido.loop = true;
+                    audioLatido.Play();
+                }
+
+                audioLatido.pitch = (vidaInicial == 1) ? 2f : 1f;
             }
             else
             {
-                audioLatido.pitch = 1f;  
+                ApagarEfectoVidaBaja();
             }
         }
         else
         {
-            Color c = dañoRojo.color;
-            c.a = 0;
-            dañoRojo.color = c;
-
-            if (audioLatido.isPlaying)
-                audioLatido.Stop();
+            ApagarEfectoVidaBaja();
         }
+
         audioLatido.mute = (Time.timeScale == 0f);
+
 
 
         movimiento();
@@ -185,7 +189,22 @@ public class ControlPersonaje : MonoBehaviour
 
 
 }
-IEnumerator ActivarMovimientoDespues()
+
+
+        void  ApagarEfectoVidaBaja()
+    {
+        efectoVidaBajaActivo = false;
+        timerVidaBaja = 0f;
+
+        Color c = dañoRojo.color;
+        c.a = 0f;
+        dañoRojo.color = c;
+
+        if (audioLatido.isPlaying)
+            audioLatido.Stop();
+
+    }
+    IEnumerator ActivarMovimientoDespues()
     {
         ren.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(tiempoQuieto);
@@ -195,20 +214,29 @@ IEnumerator ActivarMovimientoDespues()
     {
         if (collision.gameObject.tag == "Enemigo")
         {
+            if (collision.gameObject.tag == "Enemigo")
+            {
+                if (jugadorInvulnerable) return;
 
-            if (jugadorInvulnerable) return;
-            vidaInicial--;
-            dañoRecibido++;
-            audioSource.PlayOneShot(dañoRecibidoAudio);
-            camaraShake.Shake();
+                vidaInicial--;
+                dañoRecibido++;
 
-            ActualizarCorazones();
-            perderVida();
+                if (vidaInicial <= vidaUmbral)
+                {
+                    efectoVidaBajaActivo = true;
+                    timerVidaBaja = duracionEfectoVidaBaja;
+                }
 
-            animRen.SetTrigger("HeridoP");
-            StartCoroutine(Invulnerabilidad());          
+                audioSource.PlayOneShot(dañoRecibidoAudio);
+                camaraShake.Shake();
+
+                ActualizarCorazones();
+                perderVida();
+
+                animRen.SetTrigger("HeridoP");
+                StartCoroutine(Invulnerabilidad());
+            }
         }
-
     }
     public void perderVida()
     {

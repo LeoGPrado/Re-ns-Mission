@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7660785890780553276}
   - component: {fileID: 8989609964489676724}
-  - component: {fileID: -4162081362295116366}
   - component: {fileID: 5627686641284528688}
+  - component: {fileID: 7283464767591210442}
   m_Layer: 0
   m_Name: EspecialCuchilla
   m_TagString: Untagged
@@ -77,9 +77,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.21537916, g: 0.6593347, b: 0.8301887, a: 1}
+  m_SortingOrder: -2
+  m_Sprite: {fileID: -8381714262496599357, guid: a77e299a5f537a340b86332cb62abc32, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -89,8 +89,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &-4162081362295116366
-CircleCollider2D:
+--- !u!114 &5627686641284528688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631815792947031483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325244db28978324584b64b4949065c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &7283464767591210442
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,21 +131,30 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.36
---- !u!114 &5627686641284528688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7631815792947031483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 325244db28978324584b64b4949065c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 0.96}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.3425303, y: 0.29588115}
+      - {x: -0.54388225, y: 0.3717817}
+      - {x: -0.35600975, y: 0.18384475}
+      - {x: -0.8664625, y: 0.07652449}
+      - {x: -0.59707695, y: -0.28371173}
+      - {x: 0.53170514, y: -0.31435436}
+      - {x: 0.81199443, y: -0.23989725}
+      - {x: 0.6302902, y: -0.19752152}
+      - {x: 0.6630057, y: 0.03873065}
+      - {x: 0.80791354, y: 0.16725278}
+  m_UseDelaunayMesh: 0

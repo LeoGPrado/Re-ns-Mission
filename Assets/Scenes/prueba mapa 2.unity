@@ -42514,7 +42514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42568,7 +42568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &926103193 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 926103191}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &956540407
@@ -42933,7 +42933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42987,7 +42987,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &993606396 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 993606394}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1006537397
@@ -43633,12 +43633,14 @@ MonoBehaviour:
   duracionMejoras: 6
   panel: {fileID: 1035750410}
   momentoMejora: 1
+  turret: {fileID: 0}
   player: {fileID: 651193275}
   mascotaPrefab: {fileID: 6388618481357479221, guid: 5444893a628a39f44a393759f299da7a, type: 3}
-  torretas:
+  turretList:
   - {fileID: 993606396}
   - {fileID: 1386579363}
   - {fileID: 926103193}
+  cartaSeleccionable: 0
 --- !u!1 &1040109813
 GameObject:
   m_ObjectHideFlags: 0
@@ -50897,7 +50899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50951,7 +50953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1386579363 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 1386579361}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1420968336

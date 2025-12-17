@@ -9,7 +9,7 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private ControlPersonaje Heart;
     [SerializeField] private PuertaHP DoorHp;
     [SerializeField] private int curacion;
-    [SerializeField] private float duracionMejoras = 6f;
+    [SerializeField] private float duracionMejoras = 8f;
     [SerializeField] private GameObject panel;
     [SerializeField] private bool momentoMejora = true;
 
@@ -17,7 +17,9 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private SummonController turret;
     [SerializeField] private Transform player;
     [SerializeField] private GameObject mascotaPrefab;
-    [SerializeField] private GameObject[] torretas;
+    [SerializeField] private static int turretNum;
+    [SerializeField] private List<GameObject> turretList = new List<GameObject>(turretNum);
+    [SerializeField] private bool cartaSeleccionable;
 
     void Start()
     {
@@ -35,26 +37,41 @@ public class PanelMejoras : MonoBehaviour
 
     public void CurarRen()
     {
-        ControlPersonaje.Ren.GanarVida();
-        DesactivarPanel();
+        if (!cartaSeleccionable) return;
+
+        if (cartaSeleccionable)
+        {
+            ControlPersonaje.Ren.GanarVida();
+            DesactivarPanel();
+        }
+        
     }
 
 
     public void CurarPuerta()
     {
-        DesactivarPanel();
-        DoorHp.CurarHP(curacion);
+        if (!cartaSeleccionable) return;
+
+        if (cartaSeleccionable)
+        {
+            DesactivarPanel();
+            DoorHp.CurarHP(curacion);
+        }
+        
 
     }
 
     public void InvocarMascota()
     {
-        DesactivarPanel();
-        for(int i = 0; i < torretas.Length; i++)
-        {
-            torretas[i].GetComponent<SummonController>().isSummoned = true;
-            
-        }
+        
+         DesactivarPanel();
+         for (int i = 0; i <= turretList.Count; i++)
+         {
+            turretList[i].GetComponent<PruebaTorreta>().Dispara();
+
+         }
+        
+     
        
 
     }

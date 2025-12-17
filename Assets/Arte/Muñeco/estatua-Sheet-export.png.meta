@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,6 +105,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,9 +125,9 @@ TextureImporter:
       name: estatua-Sheet-export_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 23
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,10 +147,10 @@ TextureImporter:
       name: estatua-Sheet-export_1
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 0
-        width: 23
-        height: 47
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +169,10 @@ TextureImporter:
       name: estatua-Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 68
+        x: 64
         y: 0
-        width: 23
-        height: 44
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +191,10 @@ TextureImporter:
       name: estatua-Sheet-export_3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 96
         y: 0
-        width: 23
-        height: 44
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9056f7ecd4c8e294fa733c2bb452d37e
     internalID: 0
     vertices: []
     indices: 

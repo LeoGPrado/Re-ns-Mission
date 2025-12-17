@@ -81,6 +81,7 @@ public class PanelMejoras : MonoBehaviour
     {
         SlieControl.MutearTodosSlimes(true);
         panel.SetActive(true);
+        cartaSeleccionable = true;
         StartCoroutine(SeleccionMejoras());
         momentoMejora = false;
         StartCoroutine(MejoraActivate());
@@ -100,6 +101,7 @@ public class PanelMejoras : MonoBehaviour
 
     void DesactivarPanel()
     {
+        cartaSeleccionable = false;
         SlieControl.MutearTodosSlimes(false);
         panel.SetActive(false);
         Time.timeScale = 1f;

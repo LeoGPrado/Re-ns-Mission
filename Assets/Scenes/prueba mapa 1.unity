@@ -35344,8 +35344,9 @@ MonoBehaviour:
   turret: {fileID: 0}
   player: {fileID: 8028158966399061198}
   mascotaPrefab: {fileID: 6388618481357479221, guid: 5444893a628a39f44a393759f299da7a, type: 3}
-  turretList: []
-  cartaSeleccionable: 0
+  turretList:
+  - {fileID: 2003252501}
+  cartaSeleccionable: 1
 --- !u!1 &1036980628
 GameObject:
   m_ObjectHideFlags: 0
@@ -46827,6 +46828,11 @@ RectTransform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 127970513044904635, guid: c8140b8313eaea842a30104fc6043eb9, type: 3}
   m_PrefabInstance: {fileID: 1346287263956441218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2003252501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_PrefabInstance: {fileID: 1150097648}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003849398
 GameObject:

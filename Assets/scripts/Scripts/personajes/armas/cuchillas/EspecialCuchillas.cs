@@ -3,14 +3,14 @@ using UnityEngine.AI;
 
 public class EspecialCuchillas : MonoBehaviour
 {
+    public GameObject ZonaHelada;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            //print("congelando NAVMESH");
-            NavMeshAgent agent = collision.GetComponent<NavMeshAgent>();
-            agent.isStopped = true;
-            collision.GetComponent<SlieControl>().CongelamientoControl();
+
+            Instantiate(ZonaHelada, transform.position, Quaternion.identity);
         }
     }
 }

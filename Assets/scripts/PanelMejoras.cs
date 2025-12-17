@@ -40,7 +40,7 @@ public class PanelMejoras : MonoBehaviour
 
     void Update()
     {
-        if ((min.minutos == 2 || min.minutos == 4) && momentoMejora)
+        if (min.minutos  == 2 && momentoMejora || min.minutos == 4 && momentoMejora)
         {
             Mejora();
             Time.timeScale = 0f;
@@ -145,9 +145,9 @@ public class PanelMejoras : MonoBehaviour
 
     IEnumerator ResetMomentoMejora()
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(45f);
 
-        if(contadorPaneles == 1)
+        if(contadorPaneles >= 1)
         momentoMejora = true;
     }
 

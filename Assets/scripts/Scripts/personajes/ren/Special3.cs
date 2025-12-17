@@ -16,6 +16,7 @@ public class Special3 : MonoBehaviour
     [Header("Timer Canvas Especial")]
     [SerializeField] private float tiempoCanvas = 3f;
     [SerializeField] private TMPro.TextMeshProUGUI textoTimer;
+    [SerializeField] private float delayAntesCanvas = 0.5f;
 
 
 
@@ -59,8 +60,15 @@ public class Special3 : MonoBehaviour
 
     void MostrarCanvasEspecial()
     {
+        StartCoroutine(DelayMostrarCanvas());
+    }
+
+    IEnumerator DelayMostrarCanvas()
+    {
+        yield return new WaitForSeconds(delayAntesCanvas);
         StartCoroutine(CanvasEspecialConTimer());
     }
+
     IEnumerator CanvasEspecialConTimer()
     {
         float tiempo = tiempoCanvas;

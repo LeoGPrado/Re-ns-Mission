@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ManáParticlePc : MonoBehaviour
@@ -15,7 +16,7 @@ public class ManáParticlePc : MonoBehaviour
 
     //vfx
     //[SerializeField] private AudioClip PickUpsfx;
-    [SerializeField] private float lifeTime = 5f;
+    [SerializeField] private float lifeTime = 3f;
 
     //Fuerza Inicial
     [SerializeField] private float initialForce = 2f;
@@ -39,9 +40,9 @@ public class ManáParticlePc : MonoBehaviour
             Vector2 randomDir = Random.insideUnitCircle.normalized * Random.Range(0.5f, 1f);
             rb.AddForce(randomDir * initialForce, ForceMode2D.Impulse);
         }
-        
 
-        Destroy(gameObject, lifeTime);
+
+        StartCoroutine(DestroyMana());
 
     }
 
@@ -85,5 +86,11 @@ public class ManáParticlePc : MonoBehaviour
 
         
         }
+    }
+
+    IEnumerator DestroyMana()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(gameObject);
     }
 }

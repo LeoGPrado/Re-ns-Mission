@@ -17,6 +17,7 @@ public class PanelMejoras : MonoBehaviour
     [SerializeField] private Slider timeBar;
     [SerializeField] private TextMeshProUGUI cdText;
     [SerializeField] private int curacion;
+    [SerializeField] private int contadorPaneles = 0;
 
     [Header("Timer")]
     [SerializeField] private float duracionMejoras = 6.5f;
@@ -90,6 +91,7 @@ public class PanelMejoras : MonoBehaviour
     public void Mejora()
     {
         momentoMejora = false;
+        contadorPaneles++;
 
         panel.SetActive(true);
         mejorasUI.SetActive(true);
@@ -144,6 +146,8 @@ public class PanelMejoras : MonoBehaviour
     IEnumerator ResetMomentoMejora()
     {
         yield return new WaitForSeconds(30f);
+
+        if(contadorPaneles == 1)
         momentoMejora = true;
     }
 

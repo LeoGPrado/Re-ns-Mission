@@ -65,7 +65,7 @@ public class PanelMejoras : MonoBehaviour
     {
         
          DesactivarPanel();
-         for (int i = 0; i <= turretList.Count; i++)
+         for (int i = 0; i < turretList.Count; i++)
          {
             turretList[i].GetComponent<PruebaTorreta>().Dispara();
 

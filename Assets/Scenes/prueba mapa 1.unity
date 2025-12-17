@@ -36013,6 +36013,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 950841717776049318, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+      propertyPath: isSummoned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7227642293784905060, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: range
       value: 6.5
@@ -45623,7 +45627,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 32, y: 32}
+    oldSize: {x: 3.2, y: 3.2}
     newSize: {x: 5.3333335, y: 5.3333335}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -45937,7 +45941,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 32, y: 32}
+    oldSize: {x: 3.2, y: 3.2}
     newSize: {x: 5.3333335, y: 5.3333335}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

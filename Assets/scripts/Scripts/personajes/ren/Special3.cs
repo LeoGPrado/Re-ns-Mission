@@ -78,7 +78,7 @@ public class Special3 : MonoBehaviour
         }
     
         canvasEspecial.SetActive(false);
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1f;
         SlieControl.MutearTodosSlimes(false);
         canvasGamePlay.SetActive(true);

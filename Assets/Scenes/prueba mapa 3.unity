@@ -1263,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1313,6 +1313,11 @@ PrefabInstance:
 --- !u!4 &200207971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_PrefabInstance: {fileID: 200207970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &200207972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 200207970}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &204562993
@@ -6364,9 +6369,15 @@ MonoBehaviour:
   duracionMejoras: 6
   panel: {fileID: 408831510}
   momentoMejora: 1
+  turret: {fileID: 0}
   player: {fileID: 999247512}
   mascotaPrefab: {fileID: 6388618481357479221, guid: 5444893a628a39f44a393759f299da7a, type: 3}
-  torretas: []
+  turretList:
+  - {fileID: 1603759701}
+  - {fileID: 200207972}
+  - {fileID: 1767083946}
+  - {fileID: 1092789759}
+  cartaSeleccionable: 0
 --- !u!1 &429127759
 GameObject:
   m_ObjectHideFlags: 0
@@ -39852,7 +39863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39902,6 +39913,11 @@ PrefabInstance:
 --- !u!4 &1092789758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_PrefabInstance: {fileID: 1092789757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1092789759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 1092789757}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1094520875
@@ -48084,7 +48100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48134,6 +48150,11 @@ PrefabInstance:
 --- !u!4 &1603759700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_PrefabInstance: {fileID: 1603759699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1603759701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 1603759699}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1608555918
@@ -54927,7 +54948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473852536723144152, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54977,6 +54998,11 @@ PrefabInstance:
 --- !u!4 &1767083945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8614410117183299151, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
+  m_PrefabInstance: {fileID: 1767083944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1767083946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821609288695625281, guid: beff7d17fb38e5448a90f84c987209a3, type: 3}
   m_PrefabInstance: {fileID: 1767083944}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1768873340

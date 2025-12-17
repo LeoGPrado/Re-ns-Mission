@@ -1,57 +1,32 @@
 using System.Collections;
 using UnityEngine;
 
-
-public class SummonController : MonoBehaviour
+public class PruebaTorreta : MonoBehaviour
 {
-
     [SerializeField] Animator anim;
     [SerializeField] private GameObject orbPrefab;
-
     [SerializeField] private float range = 7f;
     [SerializeField] private float fireRate = 0.5f;
-    [SerializeField] private float summonDuration = 15f;
     public bool isSummoned = false;
 
-    private Coroutine attackRout;
-    private Coroutine durationRout;
-
-    private void Awake()
+    void Start()
     {
-        anim = GetComponent<Animator>();
-    }
 
-    public void SummonTurret()
-    {
-        if (isSummoned) return;
-
-        isSummoned = true;
-        anim.SetBool("isSummoned", true);
-
-        attackRout = StartCoroutine(AttackLoop());
-        durationRout = StartCoroutine(DeactivateTurret());
+    
     }
 
     private void Update()
     {
 
-        if (isSummoned)
-        {
-            anim.SetBool("isSummoned", true);
-            
-            StartCoroutine(DeactivateTurret());
-            
-        }
-           
-    }
 
+    }
 
     void DoDmg()
     {
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemigo");
 
-        
+
         bool enemyInRange = false;
 
         for (int i = 0; i < enemies.Length; i++)
@@ -63,53 +38,40 @@ public class SummonController : MonoBehaviour
             }
         }
 
-        
+
         if (!enemyInRange) return;
 
         for (int i = 0; i < enemies.Length; i++)
         {
             float distancia = Vector2.Distance(transform.position, enemies[i].transform.position);
 
-            if(distancia <= range)
+            if (distancia <= range)
             {
                 GameObject b = Instantiate(orbPrefab, transform.position, Quaternion.identity);
                 b.GetComponent<SummonOrbScript>()?.SetTarget(enemies[i]);
             }
         }
-        
+
     }
 
-    IEnumerator AttackLoop()
+    public void Dispara()
     {
-        while (isSummoned)
-        {
-            DoDmg();
-            yield return new WaitForSeconds(fireRate);
-        }
-       
+        isSummoned = true;
+
+        anim.SetBool("isSummoned", true);
+        InvokeRepeating("DoDmg", 0, fireRate);
+        StartCoroutine(DeactivateTurret());
+
+
     }
 
     IEnumerator DeactivateTurret()
     {
-        yield return new WaitForSeconds(summonDuration);
-        Deactivate();
-    }
-    
-    void Deactivate()
-    {
+        yield return new WaitForSeconds(15f);
         isSummoned = false;
         anim.SetBool("isSummoned", false);
-
-        if(attackRout != null)
-        {
-            StopCoroutine(attackRout);
-            attackRout = null;
-        }
-        if(durationRout != null)
-        {
-            StopCoroutine(durationRout);
-            durationRout = null;
-        }
+        
+        
     }
 
 
@@ -117,4 +79,12 @@ public class SummonController : MonoBehaviour
     {
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
+
+
+
+
+
+
+
 }

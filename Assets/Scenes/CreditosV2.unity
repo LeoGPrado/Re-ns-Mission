@@ -5780,9 +5780,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogos:
-  - wa
-  - as
-  - dsa
+  - hola soy la creacion numero 3 de hernando cuba.
+  - hernando es el programador principal de este proyecto.
+  - gracias por jugar el proyecto de segundo ciclo del grupo refugio 68 "ren mission"
 --- !u!1 &1124181181
 GameObject:
   m_ObjectHideFlags: 0
@@ -9922,7 +9922,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 32, y: 32}
+    oldSize: {x: 3.2, y: 3.2}
     newSize: {x: 5.3333335, y: 5.3333335}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

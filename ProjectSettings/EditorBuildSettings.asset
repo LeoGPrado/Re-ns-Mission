@@ -27,13 +27,13 @@ EditorBuildSettings:
     path: Assets/Scenes/RenBailando.unity
     guid: 824cc0a08cf349e4993f026d09bafaae
   - enabled: 1
-    path: Assets/Scenes/prueba mapa 2.unity
+    path: Assets/Scenes/pruebaMapa 2.unity
     guid: bb81ead166bf5d84e991c3e0e1342d8d
   - enabled: 1
     path: Assets/Scenes/RenBailando2.unity
     guid: 8211a5299edd1df4495c1fd5615d347e
   - enabled: 1
-    path: Assets/Scenes/prueba mapa 3.unity
+    path: Assets/Scenes/pruebMapa 3.unity
     guid: 37fdeeb1454bdc84cbc846b60bc4293a
   - enabled: 1
     path: Assets/Scenes/Creditos.unity

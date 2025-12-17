@@ -70,6 +70,7 @@ public class PruebaTorreta : MonoBehaviour
         yield return new WaitForSeconds(15f);
         isSummoned = false;
         anim.SetBool("isSummoned", false);
+        CancelInvoke("DoDmg");
         
         
     }

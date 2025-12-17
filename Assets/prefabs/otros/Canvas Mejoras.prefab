@@ -52,7 +52,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1623009627120306963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1400, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4212296500414679302
@@ -1149,7 +1149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 520, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6380495728900974297
@@ -1261,7 +1261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6842112555442046261
@@ -1454,13 +1454,15 @@ MonoBehaviour:
   min: {fileID: 0}
   Heart: {fileID: 0}
   DoorHp: {fileID: 0}
-  healAmo: 20
-  porcentajeCuracion: 0
+  curacion: 0
   duracionMejoras: 6
   panel: {fileID: 1369889705829667272}
   momentoMejora: 1
+  turret: {fileID: 0}
   player: {fileID: 0}
   mascotaPrefab: {fileID: 6388618481357479221, guid: 5444893a628a39f44a393759f299da7a, type: 3}
+  turretList: []
+  cartaSeleccionable: 0
 --- !u!1 &7275687434502348639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,7 +1709,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2.4000244, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1162386385567253163
 CanvasRenderer:

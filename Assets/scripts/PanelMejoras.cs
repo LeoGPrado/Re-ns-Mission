@@ -1,25 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PanelMejoras : MonoBehaviour
 {
 
+    [Header("Referencias")]
     [SerializeField] private TimerHoras min;
-    [SerializeField] private ControlPersonaje Heart;
     [SerializeField] private PuertaHP DoorHp;
-    [SerializeField] private int curacion;
-    [SerializeField] private float duracionMejoras = 8f;
+
+    [Header("UI")]
     [SerializeField] private GameObject panel;
-    [SerializeField] private bool momentoMejora = true;
+    [SerializeField] private GameObject mejorasUI;
+    [SerializeField] private Slider timeBar;
+    [SerializeField] private TextMeshProUGUI cdText;
+    [SerializeField] private int curacion;
 
+    [Header("Timer")]
+    [SerializeField] private float duracionMejoras = 6.5f;
 
-    [SerializeField] private SummonController turret;
-    [SerializeField] private Transform player;
-    [SerializeField] private GameObject mascotaPrefab;
-    [SerializeField] private static int turretNum;
-    [SerializeField] private List<GameObject> turretList = new List<GameObject>(turretNum);
-    [SerializeField] private bool cartaSeleccionable;
+    [Header("Botones")]
+    [SerializeField] private List<Button> buttons;
+
+    [Header("Torretas")]
+    [SerializeField] private List<GameObject> turretList;
+
+    private float tiempoActual;
+    private bool timerActivo;
+    private bool momentoMejora = true;
+    private bool cartaSeleccionable;
 
     void Start()
     {
@@ -33,6 +44,8 @@ public class PanelMejoras : MonoBehaviour
             Mejora();
             Time.timeScale = 0f;
         }
+
+        ActualizarTimer();
     }
 
     public void CurarRen()
@@ -76,27 +89,59 @@ public class PanelMejoras : MonoBehaviour
 
     public void Mejora()
     {
-        SlieControl.MutearTodosSlimes(true);
-        panel.SetActive(true);
-        cartaSeleccionable = false;
-        StartCoroutine(HabilitarSeleccion());
-        StartCoroutine(SeleccionMejoras());
         momentoMejora = false;
-        StartCoroutine(MejoraActivate());
+
+        panel.SetActive(true);
+        mejorasUI.SetActive(true);
+        Time.timeScale = 0f;
+
+        SlieControl.MutearTodosSlimes(true);
+
+        tiempoActual = duracionMejoras;
+        timerActivo = true;
+        cartaSeleccionable = false;
+
+        timeBar.maxValue = duracionMejoras;
+        timeBar.value = duracionMejoras;
+
+        StartCoroutine(HabilitarSeleccion());
+        StartCoroutine(ResetMomentoMejora());
     }
+
+    void ActualizarTimer()
+    {
+        if (!timerActivo) return;
+
+        tiempoActual -= Time.unscaledDeltaTime;
+        tiempoActual = Mathf.Clamp(tiempoActual, 0f, duracionMejoras);
+
+        timeBar.value = tiempoActual;
+        cdText.text = Mathf.CeilToInt(tiempoActual).ToString();
+
+        if (tiempoActual <= 0f)
+        {
+            timerActivo = false;
+            ElegirAleatorio();
+        }
+    }
+
     IEnumerator HabilitarSeleccion()
     {
         yield return new WaitForSecondsRealtime(1f);
         cartaSeleccionable = true;
     }
 
-    IEnumerator SeleccionMejoras()
+    void ElegirAleatorio()
     {
-        yield return new WaitForSecondsRealtime(duracionMejoras);
+        if (buttons.Count == 0) return;
+
+        int index = Random.Range(0, buttons.Count);
+        buttons[index].onClick.Invoke();
+
         DesactivarPanel();
     }
 
-    IEnumerator MejoraActivate()
+    IEnumerator ResetMomentoMejora()
     {
         yield return new WaitForSeconds(30f);
         momentoMejora = true;
@@ -107,6 +152,7 @@ public class PanelMejoras : MonoBehaviour
         cartaSeleccionable = false;
         SlieControl.MutearTodosSlimes(false);
         panel.SetActive(false);
+        mejorasUI.SetActive(false);
         Time.timeScale = 1f;
     }    
 }

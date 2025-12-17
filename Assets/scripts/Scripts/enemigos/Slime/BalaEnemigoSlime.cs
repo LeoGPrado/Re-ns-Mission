@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 //using static UnityEditor.Searcher.SearcherWindow.Alignment;
 //using UnityEngine.InputSystem;
@@ -9,6 +10,18 @@ public class BalaEnemigoSlime : MonoBehaviour
     public float FuerzaRetroceso = 2;
     private Vector2 direccion;
     public float tiempoDeVida = 5f;
+
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip sonidoDisparo;
+    private AudioSource fxSource;
+
+
+    [Header("Visual & Collider")]
+    [SerializeField] private GameObject spriteBala;
+    [SerializeField] private Collider2D col;
+    private bool impacto = false;
+
 
     void Start()
     {
@@ -25,18 +38,47 @@ public class BalaEnemigoSlime : MonoBehaviour
         rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
 
         Destroy(gameObject, tiempoDeVida);
+        fxSource = gameObject.AddComponent<AudioSource>();
+        fxSource.playOnAwake = false;
+        if (sonidoDisparo != null)
+            fxSource.PlayOneShot(sonidoDisparo);
 
+        Destroy(gameObject, tiempoDeVida);
     }
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (impacto) return;
+
         if (collision.gameObject.CompareTag("protagonista"))
         {
-            Destroy(gameObject);
+            Impacto();
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (impacto) return;
+
         if (collision.gameObject.CompareTag("proyectil"))
+        {
+            Impacto();
+        }
+    }
+
+    private void Impacto()
+    {
+        impacto = true;
+
+        if (spriteBala != null) spriteBala.SetActive(false);
+        if (col != null) col.enabled = false;
+
+        if (fxSource != null && sonidoDisparo != null)
+        {
+            Destroy(gameObject, fxSource.clip.length);
+        }
+        else
         {
             Destroy(gameObject);
         }

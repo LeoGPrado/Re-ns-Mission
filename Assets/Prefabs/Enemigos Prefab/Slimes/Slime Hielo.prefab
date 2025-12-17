@@ -298,11 +298,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 557434741473425324}
   sonidoMovimiento: {fileID: 0}
-  sonidoDisparoSlime: {fileID: 0}
-  sonidoDeMuerte: {fileID: 0}
+  sonidoDeMuerte: {fileID: 8300000, guid: c4d5b79777ee0f44f997299958da899e, type: 3}
   objetivo: {fileID: 0}
   velocidad: 3
   sr: {fileID: 0}
+  usarAnimacionAtaque: 0
+  distanciaAnimacion: 5
+  animator: {fileID: 0}
   estaMuerto: 0
   enemigoRB: {fileID: 0}
   VidaEnemigo: 5

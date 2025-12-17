@@ -39000,7 +39000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camaraNormal: {fileID: 857878269}
   camarashake: {fileID: 1971399891}
-  duracion: 0.25
+  duracion: 0.15
 --- !u!1 &1356075200
 GameObject:
   m_ObjectHideFlags: 0
@@ -53322,6 +53322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EfectoMusica
       objectReference: {fileID: 0}
+    - target: {fileID: 5712465232957980785, guid: 8df4aa1ddb51f9b4ca3048985884c47d, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: a556e971376739747b6917e766b2d679, type: 3}
     - target: {fileID: 7857458321452005448, guid: 8df4aa1ddb51f9b4ca3048985884c47d, type: 3}
       propertyPath: Loop
       value: 0
@@ -53964,7 +53968,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: a498d69e1276a7c49ae45c1d5037a8c2, type: 3}
+  m_Resource: {fileID: 8300000, guid: a556e971376739747b6917e766b2d679, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

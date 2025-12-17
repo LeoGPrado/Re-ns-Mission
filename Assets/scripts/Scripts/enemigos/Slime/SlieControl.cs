@@ -8,7 +8,6 @@ public class SlieControl : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip sonidoMovimiento;
-    [SerializeField] private AudioClip sonidoDisparoSlime;
     [SerializeField] private AudioClip sonidoDeMuerte;
 
     public Transform objetivo;
@@ -182,7 +181,7 @@ public class SlieControl : MonoBehaviour
             else
             {
                 if (audioSource != null && audioSource.isPlaying)
-                    audioSource.Stop();
+                    audioSource.Pause();
             }
         }
         else

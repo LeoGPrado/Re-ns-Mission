@@ -71,10 +71,6 @@ public class PanelMejoras : MonoBehaviour
 
          }
         DesactivarPanel();
-
-
-
-
     }
 
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8989609964489676724}
   - component: {fileID: 5627686641284528688}
   - component: {fileID: 7283464767591210442}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EspecialCuchilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}

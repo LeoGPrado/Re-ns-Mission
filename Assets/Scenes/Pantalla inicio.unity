@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6eb789bd21c7b149aba412d8f787c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: prueba mapa 3
+  sceneName: pruebMapa 3
 --- !u!1 &335730123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +1786,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 56cb42cbf1f6f4445ba17d09bd1cf7af, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.035
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2144,7 +2144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6eb789bd21c7b149aba412d8f787c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: prueba mapa 2
+  sceneName: pruebaMapa 2
 --- !u!114 &1799904339
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -26,9 +26,7 @@ public class BalaEnemigoSlime : MonoBehaviour
     void Start()
     {
         target = GameObject.FindWithTag("protagonista").transform;
-
         direccion = (target.position - transform.position).normalized;
-
         float ang = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, ang - 90f);
 
@@ -37,13 +35,14 @@ public class BalaEnemigoSlime : MonoBehaviour
         rb.WakeUp();
         rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
 
-        Destroy(gameObject, tiempoDeVida);
         fxSource = gameObject.AddComponent<AudioSource>();
         fxSource.playOnAwake = false;
+        fxSource.clip = sonidoDisparo;
         if (sonidoDisparo != null)
-            fxSource.PlayOneShot(sonidoDisparo);
+            fxSource.Play();
 
         Destroy(gameObject, tiempoDeVida);
+
     }
 
 
@@ -74,13 +73,14 @@ public class BalaEnemigoSlime : MonoBehaviour
         if (spriteBala != null) spriteBala.SetActive(false);
         if (col != null) col.enabled = false;
 
-        if (fxSource != null && sonidoDisparo != null)
+        if (fxSource != null && fxSource.clip != null)
         {
             Destroy(gameObject, fxSource.clip.length);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0f);
         }
+
     }
 }

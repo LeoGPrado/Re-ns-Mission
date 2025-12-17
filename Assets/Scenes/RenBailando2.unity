@@ -340,8 +340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21eb859297899e34bbdea26ea24c03fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: prueba mapa 3
-  delay: 7
+  scene: pruebMapa 3
+  delay: 5
 --- !u!1 &1102976287
 GameObject:
   m_ObjectHideFlags: 0

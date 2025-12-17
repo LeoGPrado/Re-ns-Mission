@@ -176,6 +176,7 @@ MonoBehaviour:
   Dhielo: 0
   Dnaturaleza: 1
   Dnormal: 0
+  Explosion: {fileID: 0}
 --- !u!58 &1318121328455716405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -297,7 +298,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: a556e971376739747b6917e766b2d679, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

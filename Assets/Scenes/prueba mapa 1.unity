@@ -35342,6 +35342,7 @@ MonoBehaviour:
   timeBar: {fileID: 1676422234}
   cdText: {fileID: 1676422232}
   curacion: 0
+  contadorPaneles: 0
   duracionMejoras: 6
   buttons:
   - {fileID: 1321276059}

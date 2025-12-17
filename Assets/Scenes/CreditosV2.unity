@@ -1026,9 +1026,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogos:
-  - wrer
-  - asda
-  - egras
+  - 'I am Mauricio Tucto
+
+'
+  - "And thanks to my \u201C\"\"eloquence\"\"\u201D, we considered every possible
+    action the player might take."
+  - "Remember: \u201CBeing brave is not the absence of fear; being brave is feeling
+    fear and still facing the challenge.\u201D"
 --- !u!1 &262934292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +3637,9 @@ MonoBehaviour:
   - Hi, I'm Leonardo Guillen.
   - I was mainly in charge of the game's animations and programming.
   - I was also involved in level design and in the design of some enemies.
+  - I was also in charge of assigning tasks to others... in other words, exploiting
+    them.
+  - By the way, hello Tanaka!
 --- !u!1 &682726935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,6 +4539,7 @@ MonoBehaviour:
   Dhielo: 0
   Dnaturaleza: 0
   Dnormal: 0
+  Explosion: {fileID: 0}
 --- !u!212 &755265695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5780,9 +5788,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogos:
-  - hola soy la creacion numero 3 de hernando cuba.
-  - hernando es el programador principal de este proyecto.
-  - gracias por jugar el proyecto de segundo ciclo del grupo refugio 68 "ren mission"
+  - Hello, I am creation number 3 of Hernando Cuba.
+  - Hernando is the lead programmer of this project.
+  - "Thank you for playing \u2018Ren\u2019s Mission,\u2019 the second cycle project
+    by Refugio 68."
 --- !u!1 &1124181181
 GameObject:
   m_ObjectHideFlags: 0

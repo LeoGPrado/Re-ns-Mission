@@ -143,7 +143,13 @@ public class ArcoControlador : MonoBehaviour
         Destroy(balNormal, 3f);
     }
 
+    void DisparoEspecialBala()
+    {
+        GameObject balaEspecial = Instantiate(balaEspecialPrefab, puntoAparicion.position, puntoAparicion.rotation);
+        SpriteRenderer srBala = balaEspecial.GetComponentInChildren<SpriteRenderer>();
 
+        Destroy(balaEspecial, 3f);
+    }
 
 
     IEnumerator DisparoEspecial()
@@ -153,16 +159,17 @@ public class ArcoControlador : MonoBehaviour
         playerEC.Ultimate();
         audioSource.PlayOneShot(sonidoFlechaUlti);
 
-        int cantidadDeFlechas = 140;
+        int cantidadDeFlechas = 70;
         float intervalo = 0.01f;
 
         for (int i = 0; i < cantidadDeFlechas; i++)
         {
-            DisparoNormal();
+            DisparoEspecialBala();
             yield return new WaitForSeconds(intervalo);
         }
 
         isOnUltimate = false;
+
     }
 
 

@@ -73,16 +73,34 @@ public class Clasificaion : MonoBehaviour
         int dañoRen = ren.dañoRecibido;
         string rango;
         int dañoTotalClasificacion = dañoPuerta + (dañoRen * 100);
-        
 
-        switch (dañoTotalClasificacion)
+        if (dañoTotalClasificacion <= 400)
         {
-            case <= 100: rango = "S"; clasificacionFinal.color = colorS; break;
-            case <= 200: rango = "A"; clasificacionFinal.color = colorA; break;
-            case <= 400: rango = "B"; clasificacionFinal.color = colorB; break;
-            case <= 600: rango = "C"; clasificacionFinal.color = colorC; break;
-            default: rango = "F"; clasificacionFinal.color = colorF; break;
+            rango = "S";
+            clasificacionFinal.color = colorS;
         }
+        else if (dañoTotalClasificacion <= 800)
+        {
+            rango = "A";
+            clasificacionFinal.color = colorA;
+        }
+        else if (dañoTotalClasificacion <= 1000)
+        {
+            rango = "B";
+            clasificacionFinal.color = colorB;
+        }
+        else if (dañoTotalClasificacion <= 1200)
+        {
+            rango = "C";
+            clasificacionFinal.color = colorC;
+        }
+        else
+        {
+            rango = "F";
+            clasificacionFinal.color = colorF;
+        }
+
         clasificacionFinal.text = rango;
     }
+
 }

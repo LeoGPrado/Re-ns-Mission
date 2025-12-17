@@ -6135,7 +6135,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.769203, y: 8.57288, z: -10}
+  m_LocalPosition: {x: -13.38981, y: 8.57699, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -57175,7 +57175,7 @@ MonoBehaviour:
   canvasGamePlay: {fileID: 1531625467}
   audioSource: {fileID: 8028158966399061264}
   sonidoEspecial: {fileID: 8300000, guid: 5987946bd68a25c46867d29660adb9d9, type: 3}
-  tiempoCanvas: 5
+  tiempoCanvas: 8
   textoTimer: {fileID: 1207455575}
   delayAntesCanvas: 0.5
   medidor: {fileID: 1531625472}

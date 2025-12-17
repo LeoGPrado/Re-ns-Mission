@@ -7292,7 +7292,7 @@ MonoBehaviour:
   canvasGamePlay: {fileID: 1809761624}
   audioSource: {fileID: 535280490}
   sonidoEspecial: {fileID: 8300000, guid: 5987946bd68a25c46867d29660adb9d9, type: 3}
-  tiempoCanvas: 5
+  tiempoCanvas: 8
   textoTimer: {fileID: 201988898}
   delayAntesCanvas: 0.5
   medidor: {fileID: 1809761625}
